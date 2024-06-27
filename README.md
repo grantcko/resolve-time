@@ -15,3 +15,4 @@ notes:
   user should backup log files themselves
   things to learn: python syntax brush up, python tests (including which tests make to ensure no problems),
   i must understand how to write the tests and the basic stucture of the app (which files, methods, arguments, etc.) before I start talking to LLMs. I don't want advice or any extra information until i have a footing. I need to know what i want before I ask for help from someone who who doesn't understand reality like i do
+i would like to continure learning unit test so i can really understand how to make tests for all the use cases i need and understand what things are, the lines of code i don't know what they do

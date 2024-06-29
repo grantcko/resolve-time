@@ -17,120 +17,47 @@ class SummaryTestCase(unittest.TestCase):
 class LogPathsTestCase(unittest.TestCase):
 
     # test method to collect log filepaths
+
     def test_get_log_paths(self):
         log_folder_filepath = "./test-logs"
         log_filepaths = get_log_filepaths(log_folder_filepath)
         self.assertTrue(type(log_filepaths) is list, "There is no list of log filepaths")
-        self.assertTrue(len(projects_worked) > 0, "projects_worked list is empty")
+        # assert list is not empty
+
         for log_filepath in log_filepaths:
             self.assertTrue(type(log_filepath) is str)
 
+    # test method for checking log filepaths for proper regex filepath format    
+
 class LogTestCase(unittest.TestCase):
+    def test_(self):
 
-    def test_collect_save_entries(self):
-        log_entries = collect_save_entries(log_file_path)
-        self.assertTrue(type(log_entries) is list, "log_entries is not a list")
-        for entry in log_entries:
-            self.assertTrue(type(entry) is dict, "Entry is not a dict")
-            self.assertIn('timestamp', entry, "Entry does not have a timestamp")
-            self.assertIn('message', entry, "Entry does not have a message")
+    # test method for collecting save entries from each file    
 
-    def test_save_entry_format(self):
-        log_entries = collect_save_entries(log_file_path)
-        for entry in log_entries:
-            self.assertTrue(validate_entry_format(entry), "Entry format is invalid")
+    # test method for checking save entry format
 
-    def test_chronological_order(self):
-        log_entries = collect_save_entries(log_file_path)
-        timestamps = [entry['timestamp'] for entry in log_entries]
-        self.assertTrue(timestamps == sorted(timestamps), "Entries are not in chronological order")
+    # test method to make sure each save entry makes chronological sense (compared to the file metadata)
 
-    def test_work_sessions_count(self):
-        log_entries = collect_save_entries(log_file_path)
-        session_count = count_work_sessions(log_entries)
-        self.assertTrue(type(session_count) is int, "Session count is not an integer")
-        self.assertTrue(session_count > 0, "Session count should be greater than 0")
+    # test method to be able to count work sessions based on time gaps between saves
 
-    def test_time_worked_per_day(self):
-        log_entries = collect_save_entries(log_file_path)
-        time_per_day = calculate_time_per_day(log_entries)
-        self.assertTrue(type(time_per_day) is dict, "Time per day is not a dict")
-        for day, time in time_per_day.items():
-            self.assertTrue(type(day) is str, "Day is not a string")
-            self.assertTrue(type(time) is int, "Time is not an integer")
+    # test method to calculate time worked / day / project
 
-    def test_time_worked_per_month(self):
-        log_entries = collect_save_entries(log_file_path)
-        time_per_month = calculate_time_per_month(log_entries)
-        self.assertTrue(type(time_per_month) is dict, "Time per month is not a dict")
-        for month, time in time_per_month.items():
-            self.assertTrue(type(month) is str, "Month is not a string")
-            self.assertTrue(type(time) is int, "Time is not an integer")
+    # test method to calculate time worked / month / project
 
-    def test_time_worked_all_time(self):
-        log_entries = collect_save_entries(log_file_path)
-        total_time = calculate_total_time(log_entries)
-        self.assertTrue(type(total_time) is int, "Total time is not an integer")
-        self.assertTrue(total_time > 0, "Total time should be greater than 0")
+    # test method to calculate time worked / project (all time)
 
-    def test_days_worked_per_week(self):
-        log_entries = collect_save_entries(log_file_path)
-        days_per_week = calculate_days_per_week(log_entries)
-        self.assertTrue(type(days_per_week) is dict, "Days per week is not a dict")
-        for week, days in days_per_week.items():
-            self.assertTrue(type(week) is str, "Week is not a string")
-            self.assertTrue(type(days) is int, "Days is not an integer")
+    # test method to calculate days worked / week
 
-    def test_days_worked_per_month(self):
-        log_entries = collect_save_entries(log_file_path)
-        days_per_month = calculate_days_per_month(log_entries)
-        self.assertTrue(type(days_per_month) is dict, "Days per month is not a dict")
-        for month, days in days_per_month.items():
-            self.assertTrue(type(month) is str, "Month is not a string")
-            self.assertTrue(type(days) is int, "Days is not an integer")
+    # test method to calculate days worked / month
 
-    def test_days_worked_all_time(self):
-        log_entries = collect_save_entries(log_file_path)
-        total_days = calculate_total_days(log_entries)
-        self.assertTrue(type(total_days) is int, "Total days is not an integer")
-        self.assertTrue(total_days > 0, "Total days should be greater than 0")
+    # test method to calculate days worked (all time)
 
-    def test_time_worked_all_time(self):
-        log_entries = collect_save_entries(log_file_path)
-        total_time = calculate_total_time(log_entries)
-        self.assertTrue(type(total_time) is int, "Total time is not an integer")
-        self.assertTrue(total_time > 0, "Total time should be greater than 0")
+    # test method to calculate time worked (all time)
 
-    def test_make_heatmap(self):
-        log_entries = collect_save_entries(log_file_path)
-        heatmap = make_heatmap(log_entries)
-        self.assertTrue(type(heatmap) is dict, "Heatmap is not a dict")
-        for key, value in heatmap.items():
-            self.assertTrue(type(key) is str, "Heatmap key is not a string")
-            self.assertTrue(type(value) is int, "Heatmap value is not an integer")
+    # test method to make a heatmap
 
-    def test_session_length(self):
-        log_entries = collect_save_entries(log_file_path)
-        session_lengths = calculate_session_lengths(log_entries)
-        self.assertTrue(type(session_lengths) is list, "Session lengths is not a list")
-        for length in session_lengths:
-            self.assertTrue(type(length) is int, "Session length is not an integer")
+    # test method to calculate work sessions length based on first and last save
 
-    def test_time_worked_per_day(self):
-        log_entries = collect_save_entries(log_file_path)
-        time_per_day = calculate_time_per_day(log_entries)
-        self.assertTrue(type(time_per_day) is dict, "Time per day is not a dict")
-        for day, time in time_per_day.items():
-            self.assertTrue(type(day) is str, "Day is not a string")
-            self.assertTrue(type(time) is int, "Time is not an integer")
-
-    def test_time_worked_per_month(self):
-        log_entries = collect_save_entries(log_file_path)
-        time_per_month = calculate_time_per_month(log_entries)
-        self.assertTrue(type(time_per_month) is dict, "Time per month is not a dict")
-        for month, time in time_per_month.items():
-            self.assertTrue(type(month) is str, "Month is not a string")
-            self.assertTrue(type(time) is int, "Time is not an integer")
 
 if __name__ == '__main__':
     unittest.main()

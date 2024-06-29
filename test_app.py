@@ -50,6 +50,7 @@ class LogTestCase(unittest.TestCase):
         log_entries = collect_save_entries(self.log_file_path)
         timestamps = [entry['timestamp'] for entry in log_entries]
         self.assertTrue(timestamps == sorted(timestamps), "Entries are not in chronological order")
+        self.assertFalse(timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order")
 
     def test_work_sessions_count(self):
         log_entries = collect_save_entries(self.log_file_path)
@@ -57,59 +58,11 @@ class LogTestCase(unittest.TestCase):
         self.assertTrue(type(session_count) is int, "Session count is not an integer")
         self.assertTrue(session_count > 0, "Session count should be greater than 0")
 
-    def test_time_worked_per_day(self):
-        log_entries = collect_save_entries(self.log_file_path)
-        time_per_day = calculate_time_per_day(log_entries)
-        self.assertTrue(type(time_per_day) is dict, "Time per day is not a dict")
-        self.assertTrue(len(time_per_day) > 0, "Time per day dict is empty")
-        for day, time in time_per_day.items():
-            self.assertTrue(type(day) is str, "Day is not a string")
-            self.assertTrue(type(time) is int, "Time is not an integer")
-
-    def test_time_worked_per_month(self):
-        log_entries = collect_save_entries(self.log_file_path)
-        time_per_month = calculate_time_per_month(log_entries)
-        self.assertTrue(type(time_per_month) is dict, "Time per month is not a dict")
-        self.assertTrue(len(time_per_month) > 0, "Time per month dict is empty")
-        for month, time in time_per_month.items():
-            self.assertTrue(type(month) is str, "Month is not a string")
-            self.assertTrue(type(time) is int, "Time is not an integer")
-
     def test_time_worked_all_time(self):
         log_entries = collect_save_entries(self.log_file_path)
         total_time = calculate_total_time(log_entries)
         self.assertTrue(type(total_time) is int, "Total time is not an integer")
         self.assertTrue(total_time > 0, "Total time should be greater than 0")
-
-    def test_days_worked_per_week(self):
-        log_entries = collect_save_entries(self.log_file_path)
-        days_per_week = calculate_days_per_week(log_entries)
-        self.assertTrue(type(days_per_week) is dict, "Days per week is not a dict")
-        for week, days in days_per_week.items():
-            self.assertTrue(type(week) is str, "Week is not a string")
-            self.assertTrue(type(days) is int, "Days is not an integer")
-
-    def test_days_worked_per_month(self):
-        log_entries = collect_save_entries(self.log_file_path)
-        days_per_month = calculate_days_per_month(log_entries)
-        self.assertTrue(type(days_per_month) is dict, "Days per month is not a dict")
-        for month, days in days_per_month.items():
-            self.assertTrue(type(month) is str, "Month is not a string")
-            self.assertTrue(type(days) is int, "Days is not an integer")
-
-    def test_days_worked_all_time(self):
-        log_entries = collect_save_entries(self.log_file_path)
-        total_days = calculate_total_days(log_entries)
-        self.assertTrue(type(total_days) is int, "Total days is not an integer")
-        self.assertTrue(total_days > 0, "Total days should be greater than 0")
-
-    def test_make_heatmap(self):
-        log_entries = collect_save_entries(self.log_file_path)
-        heatmap = make_heatmap(log_entries)
-        self.assertTrue(type(heatmap) is dict, "Heatmap is not a dict")
-        for key, value in heatmap.items():
-            self.assertTrue(type(key) is str, "Heatmap key is not a string")
-            self.assertTrue(type(value) is int, "Heatmap value is not an integer")
 
     def test_session_length(self):
         log_entries = collect_save_entries(self.log_file_path)

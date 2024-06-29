@@ -27,15 +27,10 @@ class LogPathsTestCase(unittest.TestCase):
         for log_filepath in log_filepaths:
             self.assertTrue(type(log_filepath) is str)
 
-    # test method for checking log filepaths
+    # test method for checking log filepaths for proper file path format
 
-    # def test_check_log_filepath
-    #     def test_(self):
-
-
-
-# class LogTestCase(unittest.TestCase):
-#     def test_(self):
+class LogTestCase(unittest.TestCase):
+    def test_(self):
 
     # test method for collecting save entries from each file
 

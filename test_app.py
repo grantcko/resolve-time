@@ -38,26 +38,13 @@ class LogTestCase(unittest.TestCase):
 
     # test method to make sure each save entry makes chronological sense (compared to the file metadata)
 
+    # test method to identify start date and end date of logs
+
     # test method to be able to count work sessions based on time gaps between saves
 
-    # test method to calculate time worked / day / project
+    # test method to calculate work sessions length based on first and last save and what project they belong to
 
-    # test method to calculate time worked / month / project
-
-    # test method to calculate time worked / project (all time)
-
-    # test method to calculate days worked / week
-
-    # test method to calculate days worked / month
-
-    # test method to calculate days worked (all time)
-
-    # test method to calculate time worked (all time)
-
-    # test method to make a heatmap
-
-    # test method to calculate work sessions length based on first and last save
-
+    # test method to calculate hours worked / project (all time)
 
 if __name__ == '__main__':
     unittest.main()

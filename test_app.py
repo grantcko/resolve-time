@@ -90,7 +90,7 @@ class LogTestCase(unittest.TestCase):
 
     # test function to calculate time spent per project
 
-    def test_calculate_time_per_project(self):
+    def test_calculate_time_per_project_function(self):
         project_name = self.example_project_name
         total_time = calculate_time_per_project(self.save_entries, project_name)
         self.assertIsInstance(total_time, float, "calculate_time_per_project does not return a float")

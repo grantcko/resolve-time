@@ -4,7 +4,6 @@ import os
 import re
 
 def get_log_filepaths(log_folder_filepath):
-    # TODO:
 
     """
     Function to get all log file paths in the given directory.
@@ -12,10 +11,10 @@ def get_log_filepaths(log_folder_filepath):
 
     # Define the pattern for the log files
     log_filepath_pattern = "test_logs/davinci_resolve.log*"
-    
+
     # Collect all matching file paths
     log_file_paths = glob.glob(log_filepath_pattern)
-    
+
     # Return the list of log file paths
     return log_file_paths
 
@@ -31,6 +30,16 @@ def collect_save_entries(log_file_path):
     Function to collect log entries from a file.
     """
     # TODO:
+
+    # get reference to empty list for collecting save entries
+    # read log file at given file path
+    # for every line that includes "Started saving project *" append dictionary to save entry list with:
+        # datetime: date time str that matches this format "2024-06-25 10:11:22,128"
+        # project_name: project name on that same line, listed right after "Started saving project"
+    # collect the dates and the project titles in a dict
+        # example:
+    # append to the list
+
     return []
 
 def validate_entry_format(save_entry):

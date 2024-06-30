@@ -53,7 +53,7 @@ class LogTestCase(unittest.TestCase):
         for entry in self.save_entries:
             self.assertTrue(type(entry) is dict, "Entry is not a dict")
             self.assertIn('timestamp', entry, "Entry does not have a timestamp")
-            self.assertIn('project_title', entry, "Entry does not have a project_title")
+            self.assertIn('project_name', entry, "Entry does not have a project_name")
 
     # test function to ensure the proper formatting of the save entries
 
@@ -85,7 +85,7 @@ class LogTestCase(unittest.TestCase):
 
     def test_calculate_total_time_function(self):
         total_time = calculate_total_time(self.save_entries)
-        self.assertTrue(type(total_time) is int, "Total time is not an integer")
+        self.assertTrue(type(total_time) is float, "Total time is not a float")
         self.assertTrue(total_time > 0, "Total time should be greater than 0")
 
     # test function to calculate time spent per project

@@ -96,7 +96,7 @@ def calculate_total_time(save_entries):
         return 0
     timestamps = [datetime.strptime(entry['timestamp'], "%Y-%m-%d %H:%M:%S,%f") for entry in save_entries]
     total_time = (max(timestamps) - min(timestamps)).total_seconds()
-    return total_time
+    return float(total_time)
 
 def calculate_time_per_project(save_entries, project_name):
     """

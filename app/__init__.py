@@ -3,6 +3,8 @@ import re
 from datetime import datetime
 
 def get_log_filepaths(log_folder_filepath):
+    # TODO:
+
     """
     Function to get all log file paths in the given directory.
     """

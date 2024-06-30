@@ -96,3 +96,6 @@ class LogTestCase(unittest.TestCase):
         self.assertIsInstance(total_time, float, "calculate_time_per_project does not return a float")
         self.assertTrue(total_time > 0, "total time should be larger than 0")
 
+if __name__ == '__main__':
+    unittest.main()
+

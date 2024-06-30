@@ -1,6 +1,7 @@
+from datetime import datetime
+import glob
 import os
 import re
-from datetime import datetime
 
 def get_log_filepaths(log_folder_filepath):
     # TODO:
@@ -9,14 +10,13 @@ def get_log_filepaths(log_folder_filepath):
     Function to get all log file paths in the given directory.
     """
 
-    # collect all the folder's filepaths where they match a specific format
-    # filepath is "test-logs/davinci_resolve.log" or "test-logs/davinci_resolve.log.[int]"
-
-    log_file_paths = []
-    log_file_paths.append()
-
-    # check to see if each one is a log file and kick it out if not
-
+    # Define the pattern for the log files
+    log_filepath_pattern = "test_logs/davinci_resolve.log*"
+    
+    # Collect all matching file paths
+    log_file_paths = glob.glob(log_filepath_pattern)
+    
+    # Return the list of log file paths
     return log_file_paths
 
 def build_summary(work_sessions, total_time):

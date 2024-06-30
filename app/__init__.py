@@ -22,8 +22,19 @@ def build_summary(work_sessions, total_time):
     """
     Function to build a summary of projects worked on.
     """
-    # TODO:
-    return []
+    summary = []
+    for project_name in set(entry['project_name'] for entry in work_sessions):
+        project_entries = [entry for entry in work_sessions if entry['project_name'] == project_name]
+        work_days_total = len(set(entry['timestamp'].split(' ')[0] for entry in project_entries))
+        work_sessions_total = len(project_entries)
+        work_hours_total = total_time / 3600  # Assuming total_time is in seconds
+        summary.append({
+            'project_name': project_name,
+            'work_days_total': work_days_total,
+            'work_sessions_total': work_sessions_total,
+            'work_hours_total': work_hours_total
+        })
+    return summary
 
 def collect_save_entries(log_file_path):
     """
@@ -60,22 +71,32 @@ def validate_entry_format(save_entry):
     """
     Function to validate the format of a save entry.
     """
-    # TODO:
-    return False
+    timestamp_pattern = re.compile(r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3}")
+    if not isinstance(save_entry, dict):
+        return False
+    if 'timestamp' not in save_entry or 'project_name' not in save_entry:
+        return False
+    if not timestamp_pattern.match(save_entry['timestamp']):
+        return False
+    if not isinstance(save_entry['project_name'], str):
+        return False
+    return True
 
 def count_work_sessions(save_entries):
     """
     Function to count the number of work sessions from save entries.
     """
-    # TODO:
-    return 0
+    return len(save_entries)
 
 def calculate_total_time(save_entries):
     """
     Function to calculate total time worked from save entries.
     """
-    # TODO:
-    return 0
+    if not save_entries:
+        return 0
+    timestamps = [datetime.strptime(entry['timestamp'], "%Y-%m-%d %H:%M:%S,%f") for entry in save_entries]
+    total_time = (max(timestamps) - min(timestamps)).total_seconds()
+    return total_time
 
 def calculate_time_per_project(save_entries, project_name):
     """

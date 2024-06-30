@@ -96,5 +96,18 @@ class LogTestCase(unittest.TestCase):
         self.assertIsInstance(total_time, float, "calculate_time_per_project does not return a float")
         self.assertTrue(total_time > 0, "total time should be larger than 0")
 
-if __name__ == '__main__':
+class PoemTestCase(unittest.TestCase):
+
+    def test_poem_structure(self):
+        with open('tmp.txt', 'r') as file:
+            lines = file.readlines()
+        
+        for line in lines:
+            self.assertTrue(line.strip().endswith('tokens)'), f"Line does not end with token count: {line.strip()}")
+
+    def test_poem_introduction(self):
+        with open('tmp.txt', 'r') as file:
+            content = file.read()
+        
+        self.assertIn("I am an AI developed by OpenAI", content, "Introduction not found in the poem")
     unittest.main()

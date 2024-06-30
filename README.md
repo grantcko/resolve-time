@@ -18,6 +18,8 @@ Resolve Time Tracker analyzes your DaVinci Resolve log files and provides a deta
 
 ## Usage
 
+## Problem Statement
+Tracking the time spent on DaVinci Resolve video projects is challenging, making it difficult to understand productivity levels or determine appropriate client charges.
 
 ## Running Tests
 To run the tests, use:

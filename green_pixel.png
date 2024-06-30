@@ -1,7 +1,0 @@
-from PIL import Image
-
-# Create a new image with mode 'RGB', size 1x1, and color green
-image = Image.new('RGB', (1, 1), color='green')
-
-# Save the image
-image.save('green_pixel.png')

@@ -54,8 +54,6 @@ def collect_save_entries(log_file_path):
         print(f"The file {log_file_path} does not exist.")
     except Exception as e:
         print(f"An error occurred: {e}")
-
-    print(save_entries[0])
     return save_entries
 
 def validate_entry_format(save_entry):

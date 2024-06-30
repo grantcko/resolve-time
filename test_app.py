@@ -4,7 +4,7 @@ from app import get_log_filepaths, build_summary, collect_save_entries, validate
 # test method to build summary
 class TestSummary:
 
-    def setUp(self):
+    def setup_method(self):
         # Setup code to initialize necessary variables or state
         self.log_file_path = 'test_logs/davinci_resolve.log'
         self.save_entries = collect_save_entries(self.log_file_path)
@@ -39,7 +39,7 @@ class TestLog:
 
     # get references to first log's filepath and save entries from that filepath
 
-    def setUp(self):
+    def setup_method(self):
         # Setup code to initialize necessary variables or state
         self.log_file_path = 'test_logs/davinci_resolve.log'
         self.save_entries = collect_save_entries(self.log_file_path)

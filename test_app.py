@@ -1,8 +1,8 @@
-import unittest
+import pytest
 from app import get_log_filepaths, build_summary, collect_save_entries, validate_entry_format, count_work_sessions, calculate_total_time, calculate_time_per_project
 
 # test method to build summary
-class SummaryTestCase(unittest.TestCase):
+class TestSummary:
 
     def setUp(self):
         # Setup code to initialize necessary variables or state
@@ -24,7 +24,7 @@ class SummaryTestCase(unittest.TestCase):
             self.assertTrue(type(project["work_sessions_total"]) is int, "work_sessions in project is not an int")
             self.assertTrue(type(project["work_hours_total"]) is int, "work_hours in project is not an int")
 
-class LogPathsTestCase(unittest.TestCase):
+class TestLogPaths:
 
     # test method to collect log filepaths
     def test_get_log_paths_function(self):
@@ -35,7 +35,7 @@ class LogPathsTestCase(unittest.TestCase):
         for log_filepath in log_filepaths:
             self.assertTrue(type(log_filepath) is str, "log_filepath is not a string")
 
-class LogTestCase(unittest.TestCase):
+class TestLog:
 
     # get references to first log's filepath and save entries from that filepath
 
@@ -96,6 +96,4 @@ class LogTestCase(unittest.TestCase):
         self.assertIsInstance(total_time, float, "calculate_time_per_project does not return a float")
         self.assertTrue(total_time > 0, "total time should be larger than 0")
 
-if __name__ == '__main__':
-    unittest.main()
 

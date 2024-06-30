@@ -80,12 +80,17 @@ def count_work_sessions(save_entries):
             first_timestamp = timestamp
             continue
 
-        time_difference = (timestamp - first_timestamp).total_seconds() / 60.0
+        time_difference_min = (timestamp - first_timestamp).total_seconds() / 60.0
 
-        if time_difference > 10:
+        if time_difference_min > 10:
             session_count += 1
+            print(f'{first_timestamp}------{timestamp}')
+            first_timestamp = timestamp
+        else:
             first_timestamp = timestamp
 
+
+    print(session_count)
     return session_count
 
 def calculate_total_time(save_entries):

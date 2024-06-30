@@ -1,18 +1,32 @@
-problem: i have no idea how much time i am spending on davinci resolve video projects, so I can't understand my level of productivity/how much to charge clients.
+# resolve-time
 
-solution: a computer checks your resolve log files and shows you a breakdown per project, per day, per month, etc of time spent on each project
+## Introduction
+resolve-time is a tool designed to help you monitor the time spent on DaVinci Resolve video projects
+
+## Problem Statement
+Tracking the time spent on DaVinci Resolve video projects is challenging, making it difficult to understand productivity levels or determine appropriate client charges.
+
+## Solution
+Resolve Time Tracker analyzes your DaVinci Resolve log files and provides a detailed breakdown of time spent on each project, per day, per month, etc.
+
+## User Stories
+- **As a user,** I can provide my log file folder for analysis.
+- **As a user,** I can view a breakdown of time spent on projects to understand my effort.
+- **As a user,** I can view a heatmap graph showing total days spent editing to understand my consistency.
+
+## Installation
+
+## Usage
 
 
+## Running Tests
+To run the tests, use:
+```bash
+pytest
+```
 
-USER JOURNEY 1:
-  stories
-    as a user i can give my log file folder so that the app can analyse it
-    as a user i can read a breakdown of time spent so that i can learn about my effort
-    as a user i can read a heatmap graph including total days spent editing so that i can learn about my consistency
-
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 notes:
-  user should backup log files themselves
-  things to learn: python syntax brush up, python tests (including which tests make to ensure no problems),
-  i must understand how to write the tests and the basic stucture of the app (which files, methods, arguments, etc.) before I start talking to LLMs. I don't want advice or any extra information until i have a footing. I need to know what i want before I ask for help from someone who who doesn't understand reality like i do
-i would like to continure learning unit test so i can really understand how to make tests for all the use cases i need and understand what things are, the lines of code i don't know what they do
+- i want options to customise timeout time

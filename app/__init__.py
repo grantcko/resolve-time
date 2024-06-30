@@ -28,19 +28,35 @@ def build_summary(work_sessions, total_time):
 def collect_save_entries(log_file_path):
     """
     Function to collect log entries from a file.
+    
+    Args:
+    log_file_path (str): Path to the log file.
+    
+    Returns:
+    list: A list of dictionaries containing 'datetime' and 'project_name' from the log entries.
     """
-    # TODO:
+    save_entries = []
 
-    # get reference to empty list for collecting save entries
-    # read log file at given file path
-    # for every line that includes "Started saving project *" append dictionary to save entry list with:
-        # datetime: date time str that matches this format "2024-06-25 10:11:22,128"
-        # project_name: project name on that same line, listed right after "Started saving project"
-    # collect the dates and the project titles in a dict
-        # example:
-    # append to the list
+    # Regular expression to match the log line
+    log_pattern = re.compile(r"^\S+\s+\|\s+SyManager\.ProjectManager\s+\|\s+INFO\s+\|\s+(?P<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\s+\|\s+Start saving project (?P<project_name>.+)$")
+    
+    try:
+        with open(log_file_path, 'r') as log_file:
+            for line in log_file:
+                match = log_pattern.match(line)
+                if match:
+                    save_entry = {
+                        'timestamp': match.group('timestamp'),
+                        'project_name': match.group('project_name')
+                    }
+                    save_entries.append(save_entry)
+    except FileNotFoundError:
+        print(f"The file {log_file_path} does not exist.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
-    return []
+    print(save_entries[0])
+    return save_entries
 
 def validate_entry_format(save_entry):
     """

@@ -6,7 +6,7 @@ class SummaryTestCase(unittest.TestCase):
 
     def setUp(self):
         # Setup code to initialize necessary variables or state
-        self.log_file_path = 'test-logs/davinci_resolve.log'
+        self.log_file_path = 'test_logs/davinci_resolve.log'
         self.save_entries = collect_save_entries(self.log_file_path)
 
     def test_build_summary(self):
@@ -28,7 +28,7 @@ class LogPathsTestCase(unittest.TestCase):
 
     # test method to collect log filepaths
     def test_get_log_paths_function(self):
-        log_folder_filepath = "./test-logs"
+        log_folder_filepath = "./test_logs"
         log_filepaths = get_log_filepaths(log_folder_filepath)
         self.assertTrue(type(log_filepaths) is list, "log_filepaths is not a list")
         self.assertTrue(len(log_filepaths) > 0, "log_filepaths list is empty")
@@ -41,7 +41,7 @@ class LogTestCase(unittest.TestCase):
 
     def setUp(self):
         # Setup code to initialize necessary variables or state
-        self.log_file_path = 'test-logs/davinci_resolve.log'
+        self.log_file_path = 'test_logs/davinci_resolve.log'
         self.save_entries = collect_save_entries(self.log_file_path)
         self.example_project_name = "treehouse-doc_1"
 

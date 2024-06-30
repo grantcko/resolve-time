@@ -67,19 +67,26 @@ def count_work_sessions(save_entries):
     """
     Function to count the number of work sessions from save entries.
     """
-    # TODO:
+    if not save_entries:
+        return 0
 
-    # iterate over every save entry
-    # get ref to first_timestamp with nothing in it
-    # get ref to second_timestamp with nothing in it
-    # get ref to session_count starting at 0
-    # set first_timestamp equal to that entry's timestamp if first_timestamp is empty then move on
-    
-    # otherwise set second_timestamp equal to the save entry's timestamp
-    # then find the time difference between each timestamp
-    # if it's bigger than 10 minutes, add 1 to the count
+    session_count = 1
+    first_timestamp = None
 
-    return 0
+    for entry in save_entries:
+        timestamp = datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f')
+
+        if first_timestamp is None:
+            first_timestamp = timestamp
+            continue
+
+        time_difference = (timestamp - first_timestamp).total_seconds() / 60.0
+
+        if time_difference > 10:
+            session_count += 1
+            first_timestamp = timestamp
+
+    return session_count
 
 def calculate_total_time(save_entries):
     """

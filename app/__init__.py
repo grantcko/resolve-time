@@ -108,7 +108,7 @@ def save_entries_info(save_entries):
     return {
         'session_count': session_count,
         'work_hours': work_hours.total_seconds()/60/60,
-        'project_work_hours': {"not empty"}
+        'project_work_hours': {"project_title":"something", 'hours':0.0}
     }
 
 # COMMAND LINE LOGIC

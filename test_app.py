@@ -7,7 +7,8 @@ class TestSummaryFunction:
     def setup_method(self):
         # Setup code to initialize necessary variables or state
         self.log_folder_filepath = './test_logs'
-        self.save_entries = collect_save_entries(self.log_folder_filepath)
+        self.log_filepaths = get_log_filepaths(self.log_folder_filepath)
+        self.save_entries = collect_save_entries(self.log_filepaths)
 
     def test_build_summary(self):
         info = save_entries_info(self.save_entries)
@@ -60,7 +61,8 @@ class TestSaveEntriesInfoFunction:
     def setup_method(self):
         # Setup code to initialize necessary variables or state
         self.log_folder_filepath = './test_logs'
-        self.save_entries = collect_save_entries(self.log_folder_filepath)
+        self.log_filepaths = get_log_filepaths(self.log_folder_filepath)
+        self.save_entries = collect_save_entries(self.log_filepaths)
 
     # test if save_entries_info method returns work sessions count
 

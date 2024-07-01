@@ -57,7 +57,7 @@ class TestSaveEntriesInfoFunction:
         session_count = info['session_count']
         assert type(session_count) is int, "Session count is not an integer"
         assert session_count > 0, "Session count should be greater than 0"
-        # TODO: assert session_count == , "Session count should be "
+        complete_function()
 
     # test if save_entries_info method returns work hours
 

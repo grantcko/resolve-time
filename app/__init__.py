@@ -78,6 +78,10 @@ def save_entries_info(save_entries):
     session_count = 1
     work_hours = timedelta(microseconds=0)
     compare_timestamp = None
+    project_work_hours = {}
+    
+    current_project = None
+    current_project_hours = timedelta(microseconds=0)
 
     for entry in save_entries:
         timestamp = datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f')
@@ -100,15 +104,18 @@ def save_entries_info(save_entries):
 
             difference = timestamp - compare_timestamp
             work_hours += difference
+            current_project_hours += difference
             compare_timestamp = timestamp
 
-    # print(f'session_count:{session_count}')
-    # print(f'work_hours:{work_hours.total_seconds()/60/60}')
+            # if current_project != project of the entry currently being iterated
+                # add into project_work_hours - current_project:current hours
+                # reset current project hours to 0 and 
+                # set current project to project of the entry currently being iterated
 
     return {
         'session_count': session_count,
         'work_hours': work_hours.total_seconds()/60/60,
-        'project_work_hours': {"project_title":"something", 'hours':0.0}
+        'project_work_hours': project_work_hours
     }
 
 # COMMAND LINE LOGIC

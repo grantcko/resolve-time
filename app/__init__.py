@@ -65,7 +65,7 @@ def collect_save_entries(log_file_paths):
     
     # sort list save_entries based on the datetime pertaining to the timestamp value
 
-    return save_entries
+    return sorted(save_entries, key=lambda entry: datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f'))
 
 def save_entries_info(save_entries):
     """

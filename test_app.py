@@ -74,6 +74,7 @@ class TestSaveEntriesInfoFunction:
         project_hours = info['project_work_hours']
         assert type(project_hours) is dict, "project_work_hours is not a dict"
         assert len(project_hours) > 0, "project_work_hours should not be an empty dict"
+        # AIDER: iterate over project work hours. test if values are floats
             
     # test if save_entries_info method returns project hours
 

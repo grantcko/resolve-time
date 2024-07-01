@@ -1,8 +1,8 @@
 import pytest
-from app import get_log_filepaths, build_summary, collect_save_entries, validate_entry_format, count_work_sessions, calculate_total_time, calculate_time_per_project
+from app import get_log_filepaths, build_summary, collect_save_entries, validate_entry_format, save_entries_info
 
 # test method to build summary
-class TestSummary:
+class TestSummaryFunction:
 
     def setup_method(self):
         # Setup code to initialize necessary variables or state
@@ -10,19 +10,8 @@ class TestSummary:
         self.save_entries = collect_save_entries(self.log_file_path)
 
     def test_build_summary(self):
-        work_sessions = count_work_sessions(self.save_entries)
-        total_time = calculate_total_time(self.save_entries)
-        projects_worked = build_summary(work_sessions, total_time)
-
-        assert type(projects_worked) is list, "projects_worked is not a list"
-        assert len(projects_worked) > 0, "projects_worked list is empty"
-
-        for project in projects_worked:
-            assert type(project) is dict, "project in projects_worked is not a dict"
-            assert type(project["project_name"]) is str, "project_name in project is not a str"
-            assert type(project["work_days_total"]) is int, "work_days in project is not an int"
-            assert type(project["work_sessions_total"]) is int, "work_sessions in project is not an int"
-            assert type(project["work_hours_total"]) is int, "work_hours in project is not an int"
+        info = save_entries_info(self.save_entries)
+        assert type(build_summary(info)) is str
 
 class TestLogPaths:
 
@@ -74,26 +63,56 @@ class TestLog:
         assert timestamps == sorted(timestamps), "Entries are not in chronological order"
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"
 
-    # test function to count total number of work sessions
+class TestSaveEntriesInfoFunction:
 
-    def test_count_work_sessions_fuction(self):
-        session_count = count_work_sessions(self.save_entries)
+    # get references
+
+    def setup_method(self):
+        # Setup code to initialize necessary variables or state
+        self.log_file_path = 'test_logs/davinci_resolve.log'
+        self.save_entries = collect_save_entries(self.log_file_path)
+        self.example_project_name = "treehouse-doc_1"
+
+    # test if save_entries_info method returns work sessions count
+
+    def test_work_sessions_count(self):
+        session_count = save_entries_info(self.save_entries)['session_count']
         assert type(session_count) is int, "Session count is not an integer"
         assert session_count > 0, "Session count should be greater than 0"
 
-    # test function to calculate the total time spent across all projects
+    # test if save_entries_info method returns work hours
 
-    def test_calculate_total_time_function(self):
-        total_time = calculate_total_time(self.save_entries)
-        assert type(total_time) is int, "Total time is not an integer"
-        assert total_time > 0, "Total time should be greater than 0"
+    def test_work_hours(self):
+        work_hours = save_entries_info(self.save_entries)['work_hours']
+        assert type(work_hours) is float, "Work hours is not an float"
+        assert work_hours > 0, "Work hours should be greater than 0"
 
-    # test function to calculate time spent per project
-
-    def test_calculate_time_per_project_function(self):
-        project_name = self.example_project_name
-        total_time = calculate_time_per_project(self.save_entries, project_name)
-        assert isinstance(total_time, float), "calculate_time_per_project does not return a float"
-        assert total_time > 0, "total time should be larger than 0"
+    # test if save_entries_info method returns project hours
+    def test_project_hours(self):
+        project_hours = save_entries_info(self.save_entries)['project_hours']
+        assert type(project_hours) is dict, "work_hours is not an dict"
 
 
+#### THESE TESTS TURN INTO TESTING save_entries_info FUNCTION ####
+
+    # # test function to count total number of work sessions
+
+    # def test_count_work_sessions_fuction(self):
+    #     session_count = count_work_sessions(self.save_entries)
+    #     assert type(session_count) is int, "Session count is not an integer"
+    #     assert session_count > 0, "Session count should be greater than 0"
+
+    # # test function to calculate the total time spent across all projects
+
+    # def test_calculate_total_time_function(self):
+    #     total_time = calculate_total_time(self.save_entries)
+    #     assert type(total_time) is int, "Total time is not an integer"
+    #     assert total_time > 0, "Total time should be greater than 0"
+
+    # # test function to calculate time spent per project
+
+    # def test_calculate_time_per_project_function(self):
+    #     project_name = self.example_project_name
+    #     total_time = calculate_time_per_project(self.save_entries, project_name)
+    #     assert isinstance(total_time, float), "calculate_time_per_project does not return a float"
+    #     assert total_time > 0, "total time should be larger than 0"

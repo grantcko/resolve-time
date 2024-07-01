@@ -1,12 +1,15 @@
 import pytest
 from app import get_log_filepaths, build_summary, collect_save_entries, save_entries_info
 
-# test method to build summary
+@pytest.fixture(scope="class")
+def setup_log_paths(request):
+    request.cls.log_folder_filepath = './test_logs'
+    request.cls.log_filepaths = get_log_filepaths(request.cls.log_folder_filepath)
+    request.cls.save_entries = collect_save_entries(request.cls.log_filepaths)
+
+@pytest.mark.usefixtures("setup_log_paths")
 class TestSummaryFunction:
 
-    def setup_method(self):
-        # Setup code to initialize necessary variables or state
-        setup_log_paths()
 
     def test_build_summary(self):
         info = save_entries_info(self.save_entries)
@@ -28,9 +31,6 @@ class TestLog:
 
     # get references to first log's filepath and save entries from that filepath
 
-    def setup_method(self):
-        # Setup code to initialize necessary variables or state
-        setup_log_paths()
 
     # test if save entries are actually collected and stored correctly
 
@@ -55,9 +55,6 @@ class TestSaveEntriesInfoFunction:
 
     # get references
 
-    def setup_method(self):
-        # Setup code to initialize necessary variables or state
-        setup_log_paths()
 
     # test if save_entries_info method returns work sessions count
 
@@ -81,7 +78,3 @@ class TestSaveEntriesInfoFunction:
         project_hours = save_entries_info(self.save_entries)['project_work_hours']
         assert type(project_hours) is dict, "project_work_hours is not an dict"
 
-    def setup_log_paths():
-        self.log_folder_filepath = './test_logs'
-        self.log_filepaths = get_log_filepaths(self.log_folder_filepath)
-        self.save_entries = collect_save_entries(self.log_filepaths)

@@ -20,11 +20,9 @@ class TestLogPaths:
     # test funciton to collect log filepaths
 
     def test_get_log_filepaths_function(self):
-        log_folder_filepath = "./test_logs"
-        log_filepaths = get_log_filepaths(log_folder_filepath)
-        assert type(log_filepaths) is list, "log_filepaths is not a list"
-        assert len(log_filepaths) > 0, "log_filepaths list is empty"
-        for log_filepath in log_filepaths:
+        assert type(self.log_filepaths) is list, "log_filepaths is not a list"
+        assert len(self.log_filepaths) > 0, "log_filepaths list is empty"
+        for log_filepath in self.log_filepaths:
             assert type(log_filepath) is str, "log_filepath is not a string"
 
 class TestLog:

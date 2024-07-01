@@ -3,7 +3,15 @@ import glob
 import os
 import re
 
-print("work in progress")
+# AIDER: get argument from command line and assign it to log_folder_filepath variable
+log_filepaths = get_log_filepaths(log_folder_filepath)
+save_entries = collect_save_entries(log_filepaths)
+info = save_entries_info(save_entries)
+print(info)
+summary = build_summary(info)
+print(summary)
+
+
 
 def get_log_filepaths(log_folder_filepath):
 
@@ -25,9 +33,10 @@ def build_summary(info):
     Function to build a summary of projects worked on.
     """
     # TODO:
+
     return ""
 
-def collect_save_entries(log_file_paths):
+def collect_save_entries(log_filepaths):
     """
     Function to collect log entries from a file.
 
@@ -45,7 +54,7 @@ def collect_save_entries(log_file_paths):
 
     # collect timestamp and project title into into a save entry dict, into save entries list (for each filepath)
 
-    for log_file_path in log_file_paths:
+    for log_file_path in log_filepaths:
         try:
             with open(log_file_path, 'r') as log_file:
                 for line in log_file:

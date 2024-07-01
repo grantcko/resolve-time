@@ -1,5 +1,6 @@
 import pytest
 import os
+from datetime import datetime
 from app import get_log_filepaths, build_summary, collect_save_entries, save_entries_info
 
 # get references to log filepaths and save entries
@@ -39,7 +40,7 @@ class TestLog:
     # test if timestamps are in chronological order
 
     def test_timestamps_chronological_order(self):
-        timestamps = [entry['timestamp'] for entry in save_entries]
+        timestamps = [datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S') for entry in save_entries]
         assert len(timestamps) > 0, "timestamps should be greater than 0"
         assert timestamps == sorted(timestamps), "Entries are not in chronological order"
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"

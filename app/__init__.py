@@ -3,6 +3,8 @@ import glob
 import os
 import re
 
+print("work in progress")
+
 def get_log_filepaths(log_folder_filepath):
 
     """

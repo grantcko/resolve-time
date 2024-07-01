@@ -1,5 +1,8 @@
 # resolve-time
 
+## Status: working, but not well check back later
+
+
 ## Introduction
 resolve-time is a tool designed to help you monitor the time spent on DaVinci Resolve video projects
 

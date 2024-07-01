@@ -3,15 +3,7 @@ import glob
 import os
 import re
 
-# AIDER: get argument from command line and assign it to log_folder_filepath variable
-log_filepaths = get_log_filepaths(log_folder_filepath)
-save_entries = collect_save_entries(log_filepaths)
-info = save_entries_info(save_entries)
-print(info)
-summary = build_summary(info)
-print(summary)
-
-
+import sys
 
 def get_log_filepaths(log_folder_filepath):
 
@@ -118,3 +110,15 @@ def save_entries_info(save_entries):
         'work_hours': work_hours.total_seconds()/60/60,
         'project_work_hours': {}
     }
+
+if len(sys.argv) < 2:
+    print("Usage: python app/__init__.py <log_folder_filepath>")
+    sys.exit(1)
+
+log_folder_filepath = sys.argv[1]
+log_filepaths = get_log_filepaths(log_folder_filepath)
+save_entries = collect_save_entries(log_filepaths)
+info = save_entries_info(save_entries)
+print(info)
+summary = build_summary(info)
+print(summary)

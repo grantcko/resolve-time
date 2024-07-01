@@ -74,6 +74,7 @@ class TestSaveEntriesInfoFunction:
         info = save_entries_info(save_entries)
         project_hours = info['project_work_hours']
         assert type(project_hours) is dict, "project_work_hours is not a dict"
+        assert len(project_hours) > 0, "project_work_hours should not be empty"
             
     # test if save_entries_info method returns project hours
 

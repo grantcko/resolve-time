@@ -68,12 +68,12 @@ class TestSaveEntriesInfoFunction:
         assert work_hours > 0, "Work hours should be greater than 0"
         assert work_hours == 8.469408611111112, "Work hours should be 8.469408611111112"        
 
-    # test if save_entries_info method returns project hours
-
-    def test_project_hours(self):
+    # AIDER: test if project_hours is an empty dict
+    def test_project_hours_empty(self):
         info = save_entries_info(save_entries)
         project_hours = info['project_work_hours']
         assert type(project_hours) is dict, "project_work_hours is not a dict"
+        assert len(project_hours) == 0, "project_work_hours should be an empty dict"
         assert len(project_hours) == 0, "project_work_hours should be an empty dict"
         for project, hours in project_hours.items():
             assert type(hours) is float, f"Work hours for project {project} is not a float"

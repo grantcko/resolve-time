@@ -107,12 +107,11 @@ def save_entries_info(save_entries):
             current_project_hours += difference
             compare_timestamp = timestamp
 
-            # AIDER:
-        if current_project != entry['project_title']:
-            if current_project is not None:
-                project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
-            current_project = entry['project_title']
-            current_project_hours = timedelta(microseconds=0)
+            if current_project != entry['project_title']:
+                if current_project is not None:
+                    project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
+                current_project = entry['project_title']
+                current_project_hours = timedelta(microseconds=0)
 
     if current_project is not None:
         project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600

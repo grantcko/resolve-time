@@ -102,14 +102,16 @@ def save_entries_info(save_entries):
             work_hours += difference
             compare_timestamp = timestamp
 
-    print(f'session_count:{session_count}')
-    print(f'work_hours:{work_hours.total_seconds()/60/60}')
+    # print(f'session_count:{session_count}')
+    # print(f'work_hours:{work_hours.total_seconds()/60/60}')
 
     return {
         'session_count': session_count,
         'work_hours': work_hours.total_seconds()/60/60,
-        'project_work_hours': {}
+        'project_work_hours': {"not empty"}
     }
+
+# COMMAND LINE LOGIC
 
 if len(sys.argv) < 2:
     print("Usage: python app/__init__.py <log_folder_filepath>")

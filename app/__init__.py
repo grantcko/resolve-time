@@ -24,9 +24,17 @@ def build_summary(info):
     """
     Function to build a summary of projects worked on.
     """
-    # TODO:
+    project_summaries = []
+    for project, hours in info['project_work_hours'].items():
+        project_summaries.append(f"Project: {project}, Hours: {hours:.2f}")
 
-    return ""
+    summary = (
+        f"Total Sessions: {info['session_count']}\n"
+        f"Total Work Hours: {info['work_hours']:.2f}\n"
+        f"Project Work Hours:\n" + "\n".join(project_summaries)
+    )
+
+    return summary
 
 def collect_save_entries(log_filepaths):
     """
@@ -112,6 +120,9 @@ def save_entries_info(save_entries):
                     project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
                 current_project = entry['project_title']
                 current_project_hours = timedelta(microseconds=0)
+
+    if current_project is not None:
+        project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
 
     if current_project is not None:
         project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600

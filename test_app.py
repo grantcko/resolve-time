@@ -29,9 +29,6 @@ class TestLogPaths:
 
 class TestLog:
 
-    # get references to first log's filepath and save entries from that filepath
-
-
     # test if save entries are actually collected and stored correctly
 
     def test_save_entries(self):
@@ -52,9 +49,6 @@ class TestLog:
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"
 
 class TestSaveEntriesInfoFunction:
-
-    # get references
-
 
     # test if save_entries_info method returns work sessions count
 

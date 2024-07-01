@@ -107,4 +107,8 @@ def validate_entry_format(save_entry):
     Function to validate the format of a save entry.
     """
     # TODO:
+
+    # check with regex to match save entry format
+    # save entry example: 0x20291bac0    | SyManager.ProjectManager | INFO  | 2024-06-25 10:11:22,128 | Start saving project treehouse-doc_1
+
     return True

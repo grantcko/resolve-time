@@ -81,7 +81,11 @@ def save_entries_info(save_entries):
     Function to get number of work sessions, total hours, hours per project from save entries.
     """
     if not save_entries:
-        return 0
+        return {                                                                                                           
+             'session_count': 0,                                                                                            
+             'work_hours': 0.0,                                                                                             
+             'project_work_hours': {}                                                                                       
+            }   
 
     session_count = 1
     work_hours = timedelta(microseconds=0)
@@ -143,6 +147,5 @@ log_folder_filepath = sys.argv[1]
 log_filepaths = get_log_filepaths(log_folder_filepath)
 save_entries = collect_save_entries(log_filepaths)
 info = save_entries_info(save_entries)
-print(info)
 summary = build_summary(info)
 print(summary)

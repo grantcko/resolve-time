@@ -12,7 +12,7 @@ def get_log_filepaths(log_folder_filepath):
     """
 
     # Define the pattern for the log files
-    log_filepath_pattern = "test_logs/davinci_resolve.log*"
+    log_filepath_pattern = f'{log_folder_filepath}/davinci_resolve.log*'
 
     # Collect all matching file paths
     log_file_paths = glob.glob(log_filepath_pattern)
@@ -27,7 +27,7 @@ def build_summary(info):
     # TODO:
     return ""
 
-def collect_save_entries(log_file_path):
+def collect_save_entries(log_file_paths):
     """
     Function to collect log entries from a file.
 
@@ -43,20 +43,26 @@ def collect_save_entries(log_file_path):
 
     log_pattern = re.compile(r"^\S+\s+\|\s+SyManager\.ProjectManager\s+\|\s+INFO\s+\|\s+(?P<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\s+\|\s+Start saving project (?P<project_title>.+)$")
 
-    try:
-        with open(log_file_path, 'r') as log_file:
-            for line in log_file:
-                match = log_pattern.match(line)
-                if match:
-                    save_entry = {
-                        'timestamp': match.group('timestamp'),
-                        'project_title': match.group('project_title')
-                    }
-                    save_entries.append(save_entry)
-    except FileNotFoundError:
-        print(f"The file {log_file_path} does not exist.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    # collect timestamp and project title into into a save entry dict, into save entries list (for each filepath)
+
+    for log_file_path in log_file_paths:
+        try:
+            with open(log_file_path, 'r') as log_file:
+                for line in log_file:
+                    match = log_pattern.match(line)
+                    if match:
+                        save_entry = {
+                            'timestamp': match.group('timestamp'),
+                            'project_title': match.group('project_title')
+                        }
+                        save_entries.append(save_entry)
+        except FileNotFoundError:
+            print(f"The file {log_file_path} does not exist.")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+
+    # return save entries, a list of dicts [{'timstamp'},{...}]
+    
     return save_entries
 
 def save_entries_info(save_entries):

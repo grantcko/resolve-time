@@ -108,10 +108,14 @@ def save_entries_info(save_entries):
             compare_timestamp = timestamp
 
             # AIDER:
-            # if current_project != project of the entry currently being iterated
-                # add into project_work_hours - current_project:current project hours
-                # reset current project hours to 0
-                # set current project to project of the entry currently being iterated
+        if current_project != entry['project_title']:
+            if current_project is not None:
+                project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
+            current_project = entry['project_title']
+            current_project_hours = timedelta(microseconds=0)
+
+    if current_project is not None:
+        project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
 
     return {
         'session_count': session_count,

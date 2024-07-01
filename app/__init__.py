@@ -24,15 +24,9 @@ def build_summary(info):
     """
     Function to build a summary of projects worked on.
     """
-    project_summaries = []
-    for project, hours in info['project_work_hours'].items():
-        project_summaries.append(f"Project: {project}, Hours: {hours:.2f}")
+    # TODO:
 
-    summary = (
-        f"Total Sessions: {info['session_count']}\n"
-        f"Total Work Hours: {info['work_hours']:.2f}\n"
-        f"Project Work Hours:\n" + "\n".join(project_summaries)
-    )
+    return ""
 
     return summary
 

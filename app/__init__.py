@@ -3,8 +3,7 @@ import glob
 import os
 import re
 
-def complete_function():
-    print("Function completed by the assistant!")
+print("work in progress")
 
 def get_log_filepaths(log_folder_filepath):
 

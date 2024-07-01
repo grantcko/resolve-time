@@ -6,7 +6,7 @@ class TestSummaryFunction:
 
     def setup_method(self):
         # Setup code to initialize necessary variables or state
-        self.setup_log_paths()
+        setup_log_paths()
 
     def test_build_summary(self):
         info = save_entries_info(self.save_entries)
@@ -30,7 +30,7 @@ class TestLog:
 
     def setup_method(self):
         # Setup code to initialize necessary variables or state
-        self.setup_log_paths()
+        setup_log_paths()
 
     # test if save entries are actually collected and stored correctly
 
@@ -57,7 +57,7 @@ class TestSaveEntriesInfoFunction:
 
     def setup_method(self):
         # Setup code to initialize necessary variables or state
-        self.setup_log_paths()
+        setup_log_paths()
 
     # test if save_entries_info method returns work sessions count
 
@@ -80,7 +80,8 @@ class TestSaveEntriesInfoFunction:
     def test_project_hours(self):
         project_hours = save_entries_info(self.save_entries)['project_work_hours']
         assert type(project_hours) is dict, "project_work_hours is not an dict"
-    def setup_log_paths(self):
+
+    def setup_log_paths():
         self.log_folder_filepath = './test_logs'
         self.log_filepaths = get_log_filepaths(self.log_folder_filepath)
         self.save_entries = collect_save_entries(self.log_filepaths)

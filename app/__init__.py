@@ -101,10 +101,3 @@ def save_entries_info(save_entries):
         'work_hours': work_hours.total_seconds()/60/60,
         'project_work_hours': {}
     }
-
-def validate_entry_format(save_entry):
-    """
-    Function to validate the format of a save entry.
-    """
-    log_pattern = re.compile(r"^\S+\s+\|\s+SyManager\.ProjectManager\s+\|\s+INFO\s+\|\s+\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3}\s+\|\s+Start saving project .+$")
-    return bool(log_pattern.match(save_entry))

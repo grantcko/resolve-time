@@ -1,5 +1,5 @@
 import pytest
-from app import get_log_filepaths, build_summary, collect_save_entries, validate_entry_format, save_entries_info
+from app import get_log_filepaths, build_summary, collect_save_entries, save_entries_info
 
 # test method to build summary
 class TestSummaryFunction:
@@ -43,17 +43,6 @@ class TestLog:
             assert type(entry) is dict, "Entry is not a dict"
             assert 'timestamp' in entry, "Entry does not have a timestamp"
             assert 'project_title' in entry, "Entry does not have a project_title"
-
-    # test function to ensure the proper formatting of the save entries
-
-    def test_validate_entry_format_function(self):
-        assert len(self.save_entries) > 0, "self.save_entries list is empty"
-        for entry in self.save_entries:
-            assert isinstance(validate_entry_format(entry), bool), "function does not return boolean"
-            assert not validate_entry_format("onExecutor | INFO  | 2024"), "Entry format is invalid, (should return false)"
-            assert validate_entry_format(entry), "Entry format is valid, (should return true)"
-            assert not validate_entry_format("Start saving project treehouse-doc_1"), "Entry format is invalid, missing date, (should return false)"
-            assert not validate_entry_format("2024-04-10 20:35:07,604"), "Entry format is invalid, missing title (should return false)"
 
     # test if timestamps are in chronological order
 

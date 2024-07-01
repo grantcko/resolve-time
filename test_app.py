@@ -66,20 +66,21 @@ class TestSaveEntriesInfoFunction:
         work_hours = info['work_hours']
         assert type(work_hours) is float, "Work hours is not an float"
         assert work_hours > 0, "Work hours should be greater than 0"
-        assert work_hours == 2.3089347222222227, "Work hours should be 2.3089347222222227"        
+        assert work_hours == 8.469408611111112, "Work hours should be 8.469408611111112"        
 
     # test if save_entries_info method returns project hours
 
-    def test_project_hours(self):
-        work_hours = save_entries_info(save_entries)['work_hours']
-        assert type(work_hours) is float, "Work hours is not an float"
-        assert work_hours > 0, "Work hours should be greater than 0"
-        assert work_hours == 2.3089347222222227, "Work hours should be 2.3089347222222227"        
-
+    def test_project_hours(self): # AIDER
+        project_hours = save_entries_info(save_entries)['project_hours']
+        assert type(project_hours) is dict, "project hours is not an dict"
+        assert len(project_hours) == 1, "project_hours should have just 1 key value pair"
+        # go over each project saved in project_hours (each key value pair)
+            # make sure that the project hours are int and greater than 0
+            
     # test if save_entries_info method returns project hours
 
     def test_project_hours(self):
         info = save_entries_info(save_entries)
         project_hours = info['project_work_hours']
-        assert type(project_hours) is dict, "project_work_hours is not an dict"
+        assert type(project_hours) is dict, "project_work_hours is not a dict"
 

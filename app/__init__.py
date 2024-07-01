@@ -61,8 +61,10 @@ def collect_save_entries(log_file_paths):
         except Exception as e:
             print(f"An error occurred: {e}")
 
-    # return save entries, a list of dicts [{'timstamp'},{...}]
+    # return save entries, a list of dicts [{'timestamp':'...', 'project_title':'...'},{'...'}]
     
+    # sort list save_entries based on the datetime pertaining to the timestamp value
+
     return save_entries
 
 def save_entries_info(save_entries):

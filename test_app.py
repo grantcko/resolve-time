@@ -6,8 +6,8 @@ class TestSummaryFunction:
 
     def setup_method(self):
         # Setup code to initialize necessary variables or state
-        self.log_file_path = 'test_logs/davinci_resolve.log'
-        self.save_entries = collect_save_entries(self.log_file_path)
+        self.log_folder_filepath = './test_logs'
+        self.save_entries = collect_save_entries(self.log_folder_filepath)
 
     def test_build_summary(self):
         info = save_entries_info(self.save_entries)
@@ -15,8 +15,9 @@ class TestSummaryFunction:
 
 class TestLogPaths:
 
-    # test method to collect log filepaths
-    def test_get_log_paths_function(self):
+    # test funciton to collect log filepaths
+
+    def test_get_log_filepaths_function(self):
         log_folder_filepath = "./test_logs"
         log_filepaths = get_log_filepaths(log_folder_filepath)
         assert type(log_filepaths) is list, "log_filepaths is not a list"
@@ -30,15 +31,15 @@ class TestLog:
 
     def setup_method(self):
         # Setup code to initialize necessary variables or state
-        self.log_file_path = 'test_logs/davinci_resolve.log'
-        self.save_entries = collect_save_entries(self.log_file_path)
-        self.example_project_name = "treehouse-doc_1"
+        self.log_filepaths = get_log_filepaths('./test_logs')
+        self.save_entries = collect_save_entries(self.log_filepaths)
 
     # test if save entries are actually collected and stored correctly
 
     def test_save_entries(self):
         assert type(self.save_entries) is list, "self.save_entries is not a list"
-        assert len(self.save_entries) > 0, "self.save_entries list is empty"
+        assert len(self.save_entries) > 0, "self.save_entries should be greater than 0"
+        assert len(self.save_entries) == 886, "self.save_entries should have 886 entries"
         for entry in self.save_entries:
             assert type(entry) is dict, "Entry is not a dict"
             assert 'timestamp' in entry, "Entry does not have a timestamp"
@@ -58,9 +59,8 @@ class TestSaveEntriesInfoFunction:
 
     def setup_method(self):
         # Setup code to initialize necessary variables or state
-        self.log_file_path = 'test_logs/davinci_resolve.log'
-        self.save_entries = collect_save_entries(self.log_file_path)
-        self.example_project_name = "treehouse-doc_1"
+        self.log_folder_filepath = './test_logs'
+        self.save_entries = collect_save_entries(self.log_folder_filepath)
 
     # test if save_entries_info method returns work sessions count
 
@@ -68,6 +68,7 @@ class TestSaveEntriesInfoFunction:
         session_count = save_entries_info(self.save_entries)['session_count']
         assert type(session_count) is int, "Session count is not an integer"
         assert session_count > 0, "Session count should be greater than 0"
+        assert session_count == 2, "Session count should be 275"
 
     # test if save_entries_info method returns work hours
 
@@ -75,6 +76,7 @@ class TestSaveEntriesInfoFunction:
         work_hours = save_entries_info(self.save_entries)['work_hours']
         assert type(work_hours) is float, "Work hours is not an float"
         assert work_hours > 0, "Work hours should be greater than 0"
+        assert work_hours == 2.3089347222222227, "Work hours should be 2.3089347222222227"        
 
     # test if save_entries_info method returns project hours
 

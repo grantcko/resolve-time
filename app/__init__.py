@@ -23,7 +23,7 @@ def build_summary(info):
     Function to build a summary of projects worked on.
     """
     # TODO:
-    return []
+    return ""
 
 def collect_save_entries(log_file_path):
     """
@@ -92,11 +92,11 @@ def save_entries_info(save_entries):
             compare_timestamp = timestamp
 
     print(f'session_count:{session_count}')
-    print(f'work_hours:{work_hours}')
+    print(f'work_hours:{work_hours.total_seconds()/60/60}')
 
     return {
         'session_count': session_count,
-        'work_hours': work_hours,
+        'work_hours': work_hours.total_seconds()/60/60,
         'project_work_hours': {}
     }
 
@@ -105,4 +105,4 @@ def validate_entry_format(save_entry):
     Function to validate the format of a save entry.
     """
     # TODO:
-    return False
+    return True

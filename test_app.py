@@ -49,11 +49,11 @@ class TestLog:
     def test_validate_entry_format_function(self):
         assert len(self.save_entries) > 0, "self.save_entries list is empty"
         for entry in self.save_entries:
-            assert not validate_entry_format("onExecutor | INFO  | 2024"), "Entry format is invalid"
-            assert isinstance(validate_entry_format(entry), bool), "Entry format is not boolean"
-            assert validate_entry_format(entry), "Entry format is invalid"
-            assert not validate_entry_format("Start saving project treehouse-doc_1"), "Entry format is invalid, missing date"
-            assert not validate_entry_format("2024-04-10 20:35:07,604"), "Entry format is invalid missing title"
+            assert isinstance(validate_entry_format(entry), bool), "function does not return boolean"
+            assert not validate_entry_format("onExecutor | INFO  | 2024"), "Entry format is invalid, (should return false)"
+            assert validate_entry_format(entry), "Entry format is valid, (should return true)"
+            assert not validate_entry_format("Start saving project treehouse-doc_1"), "Entry format is invalid, missing date, (should return false)"
+            assert not validate_entry_format("2024-04-10 20:35:07,604"), "Entry format is invalid, missing title (should return false)"
 
     # test if timestamps are in chronological order
 
@@ -88,31 +88,7 @@ class TestSaveEntriesInfoFunction:
         assert work_hours > 0, "Work hours should be greater than 0"
 
     # test if save_entries_info method returns project hours
+
     def test_project_hours(self):
-        project_hours = save_entries_info(self.save_entries)['project_hours']
-        assert type(project_hours) is dict, "work_hours is not an dict"
-
-
-#### THESE TESTS TURN INTO TESTING save_entries_info FUNCTION ####
-
-    # # test function to count total number of work sessions
-
-    # def test_count_work_sessions_fuction(self):
-    #     session_count = count_work_sessions(self.save_entries)
-    #     assert type(session_count) is int, "Session count is not an integer"
-    #     assert session_count > 0, "Session count should be greater than 0"
-
-    # # test function to calculate the total time spent across all projects
-
-    # def test_calculate_total_time_function(self):
-    #     total_time = calculate_total_time(self.save_entries)
-    #     assert type(total_time) is int, "Total time is not an integer"
-    #     assert total_time > 0, "Total time should be greater than 0"
-
-    # # test function to calculate time spent per project
-
-    # def test_calculate_time_per_project_function(self):
-    #     project_name = self.example_project_name
-    #     total_time = calculate_time_per_project(self.save_entries, project_name)
-    #     assert isinstance(total_time, float), "calculate_time_per_project does not return a float"
-    #     assert total_time > 0, "total time should be larger than 0"
+        project_hours = save_entries_info(self.save_entries)['project_work_hours']
+        assert type(project_hours) is dict, "project_work_hours is not an dict"

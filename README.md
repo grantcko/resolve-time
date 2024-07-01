@@ -1,66 +1,34 @@
-# Project Title
+# resolve-time
 
-This project processes log files to extract and summarize work sessions and project hours.
+## Introduction
+resolve-time is a tool designed to help you monitor the time spent on DaVinci Resolve video projects
 
-## Table of Contents
+## Problem Statement
+Tracking the time spent on DaVinci Resolve video projects is challenging, making it difficult to understand productivity levels or determine appropriate client charges.
 
-- [Project Title](#project-title)
-  - [Table of Contents](#table-of-contents)
-  - [Setup](#setup)
-  - [Usage](#usage)
-  - [Testing](#testing)
-  - [Contributing](#contributing)
-  - [License](#license)
+## Solution
+Resolve Time Tracker analyzes your DaVinci Resolve log files and provides a detailed breakdown of time spent on each project, per day, per month, etc.
 
-## Setup
+## User Stories
+- **As a user,** I can provide my log file folder for analysis.
+- **As a user,** I can view a breakdown of time spent on projects to understand my effort.
+- **As a user,** I can view a heatmap graph showing total days spent editing to understand my consistency.
 
-1. Clone the repository:
-    ```sh
-    git clone <repository-url>
-    cd <repository-directory>
-    ```
-
-2. Create a virtual environment and activate it:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. Install the required dependencies:
-    ```sh
-    pip install -r requirements.txt
-    ```
+## Installation
 
 ## Usage
 
-1. Run the script with the path to the log folder:
-    ```sh
-    python app/__init__.py <log_folder_filepath>
-    ```
+## Problem Statement
+Tracking the time spent on DaVinci Resolve video projects is challenging, making it difficult to understand productivity levels or determine appropriate client charges.
 
-2. The script will output a summary of the work sessions and project hours.
-
-## Testing
-
-1. Install the testing dependencies:
-    ```sh
-    pip install pytest
-    ```
-
-2. Run the tests:
-    ```sh
-    pytest
-    ```
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Create a new Pull Request.
+## Running Tests
+To run the tests, use:
+```bash
+pytest
+```
 
 ## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-This project is licensed under the MIT License.
+notes:
+- i want options to customise timeout time

@@ -51,7 +51,8 @@ class TestSaveEntriesInfoFunction:
     # test if save_entries_info method returns work sessions count
 
     def test_work_sessions_count(self):
-        session_count = save_entries_info(self.save_entries)['session_count']
+        info = save_entries_info(self.save_entries)
+        session_count = info['session_count']
         assert type(session_count) is int, "Session count is not an integer"
         assert session_count > 0, "Session count should be greater than 0"
         assert session_count == 2, "Session count should be 275"
@@ -59,7 +60,8 @@ class TestSaveEntriesInfoFunction:
     # test if save_entries_info method returns work hours
 
     def test_work_hours(self):
-        work_hours = save_entries_info(self.save_entries)['work_hours']
+        info = save_entries_info(self.save_entries)
+        work_hours = info['work_hours']
         assert type(work_hours) is float, "Work hours is not an float"
         assert work_hours > 0, "Work hours should be greater than 0"
         assert work_hours == 2.3089347222222227, "Work hours should be 2.3089347222222227"        
@@ -75,6 +77,7 @@ class TestSaveEntriesInfoFunction:
     # test if save_entries_info method returns project hours
 
     def test_project_hours(self):
-        project_hours = save_entries_info(self.save_entries)['project_work_hours']
+        info = save_entries_info(self.save_entries)
+        project_hours = info['project_work_hours']
         assert type(project_hours) is dict, "project_work_hours is not an dict"
 

@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 from datetime import datetime, time, timedelta
 import glob
 import os
@@ -124,9 +127,6 @@ def save_entries_info(save_entries):
                     project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
                 current_project = entry['project_title']
                 current_project_hours = timedelta(microseconds=0)
-
-    if current_project is not None:
-        project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
 
     if current_project is not None:
         project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600

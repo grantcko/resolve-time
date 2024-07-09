@@ -1,17 +1,19 @@
 import pytest
 import os
 from datetime import datetime
-from app import get_log_filepaths, build_summary, collect_save_entries, save_entries_info
+from app import get_log_filepaths, build_summary, collect_save_entries, collect_monthly_save_entries, save_entries_info
 
 # get references to log filepaths and save entries
 
 log_filepaths = get_log_filepaths("./test_logs")
 save_entries = collect_save_entries(log_filepaths)
+monthly_save_entries = collect_monthly_save_entries(save_entries)
 
 class TestSummaryFunction:
 
     def test_build_summary(self):
         info = save_entries_info(save_entries)
+        monthly_info = save_entries_info(monthly_save_entries)
         assert type(build_summary(info)) is str
         assert """Total Sessions: 35
 Total Work Hours: 8.47

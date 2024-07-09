@@ -83,14 +83,17 @@ def collect_monthly_save_entries(all_entries):
     months_worked = {}
     # go through each entry
     for entry in all_entries:
-        # get ref to mm_yyyy (06_2024) unless it's a duplicate
-        mm_yyyy = f"{datetime.strptime(entry['timestamp']), '%m_%y'}"
+        # get ref to mm_yyyy (ex:06_2024) unless it's a duplicate
+        mm_yyyy = f"{datetime.strftime(datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f'), '%m_%Y')}"
+        # add key:value pair with key as 'mm/yyyy', and value as an empty list, if that month isn't already there
+        if mm_yyyy not in months_worked:
+            months_worked[mm_yyyy] = []
+        # append current save entry to save_entries list pertaining to the month
+        print(months_worked)
+        months_worked[mm_yyyy].append(entry)
 
-
-    # if it doesnt exist, add key:value pair with key as 'mm/yyyy', and value as an empty list
-    # append current save entry to save_entries list pertaining to the month
-
-    # {'04/2024':[save entries], '05/2024':[save entries], '06/2024':[save entries]}
+    return months_worked
+    # example :{'04/2024':[save entries], '05/2024':[save entries], '06/2024':[save entries]}
 
 
 def save_entries_info(save_entries):

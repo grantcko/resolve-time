@@ -31,14 +31,40 @@ def build_summary(info, monthly_info):
     for project, hours in info['project_work_hours'].items():
         project_summaries.append(f"Project: {project}, Hours: {hours:.2f}")
 
-    summary = (
+    total_summary = (
         f"Total Sessions: {info['session_count']}\n"
         f"Total Work Hours: {info['work_hours']:.2f}\n"
         f"Project Work Hours:\n" + "\n".join(project_summaries)
-        # TODO: print monthly info (monthly_info should be a dict with mmyyyy:)
     )
 
+    # TODO: print monthly info (monthly_info should be a dict with dicts (keys, mmyyyy:)
+    # iterate over monthly info and print each month name , year, total sessions, total hours
+
+    monthly_summary = []
+    months = monthly_info.keys()
+    for month in months:
+        month_project_summaries = []
+        for project, hours in monthly_info[month]['project_work_hours'].items():
+            month_project_summaries.append(f"Project: {project}, Hours: {hours:.2f}")
+
+        monthly_summary.append(
+            f"----{month}----\n"
+            f"Total Sessions: {monthly_info[month]['session_count']}\n"
+            f"Total Work Hours: {monthly_info[month]['work_hours']:.2f}\n"
+            f"Project Work Hours:\n" + "\n".join(month_project_summaries)
+        )
+
+    # get ref to the total summary
+    summary = f"{total_summary}\n\n"
+
+    # add each month's summary to that
+    for month_summary in monthly_summary:
+        summary = f"{summary}\n\n{month_summary}"
+    # print(summary)
+    # print("\n\n\n")
+
     return summary
+
 
 def collect_save_entries(log_filepaths):
     """
@@ -89,7 +115,7 @@ def collect_monthly_save_entries(all_entries):
         if mm_yyyy not in months_worked:
             months_worked[mm_yyyy] = []
         # append current save entry to save_entries list pertaining to the month
-        print(months_worked)
+        # print(months_worked)
         months_worked[mm_yyyy].append(entry)
 
     return months_worked
@@ -156,14 +182,20 @@ def save_entries_info(save_entries):
 
 # COMMAND LINE LOGIC
 
-# if len(sys.argv) < 2:
-#     print("Usage: python app/__init__.py <log_folder_filepath>")
-#     sys.exit(1)
+if len(sys.argv) < 2:
+    print("Usage: python app/__init__.py <log_folder_filepath>")
+    sys.exit(1)
 
-# log_folder_filepath = sys.argv[1]
-# log_filepaths = get_log_filepaths(log_folder_filepath)
-# save_entries = collect_save_entries(log_filepaths)
-# info = save_entries_info(save_entries)
-# # collect monthly save entries and get save entries info from each month, build summary from info and monthly info
-# summary = build_summary(info, monthly_info)
-# print(summary)
+log_folder_filepath = sys.argv[1]
+log_filepaths = get_log_filepaths(log_folder_filepath)
+save_entries = collect_save_entries(log_filepaths)
+info = save_entries_info(save_entries)
+# collect monthly save entries and get save entries info from each month, build summary from info and monthly info
+monthly_save_entries = collect_monthly_save_entries(save_entries)
+months = monthly_save_entries.keys()
+monthly_info = {}
+for month in months:
+    if month not in monthly_info:
+        monthly_info[month] = save_entries_info(monthly_save_entries[month])
+summary = build_summary(info, monthly_info)
+print(summary)

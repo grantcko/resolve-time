@@ -20,33 +20,15 @@ class TestSummaryFunction:
                 monthly_info[month] = save_entries_info(monthly_save_entries[month])
         # print(monthly_info)
 
-        assert type(build_summary(info, save_entries_info)) is str
+        assert type(build_summary(info, monthly_info)) is str
         assert """Total Sessions: 35
 Total Work Hours: 8.47
 Project Work Hours:
 Project: treehouse-doc_1, Hours: 8.41
-Project: --------------CHOP--------------, Hours: 0.05""" in build_summary(info, save_entries_info)
-        assert """MONTHLY:
------APRIL-2024-----
-Sessions: # TODO
-Work Hours: # TODO
-Projects: # TODO
-Project: treehouse-doc_1, Hours: # TODO
-Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info, save_entries_info)
-        assert """MONTHLY:
------MAY-2024-----
-Sessions: # TODO
-Work Hours: # TODO
-Projects: # TODO
-Project: treehouse-doc_1, Hours: # TODO
-Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info, save_entries_info)
-        assert """MONTHLY:
------JUNE-2024-----
-Sessions: # TODO
-Work Hours: # TODO
-Projects: # TODO
-Project: treehouse-doc_1, Hours: # TODO
-Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info, save_entries_info)
+Project: --------------CHOP--------------, Hours: 0.05""" in build_summary(info, monthly_info)
+        assert "----04_2024----" in build_summary(info, monthly_info)
+        assert "----05_2024----" in build_summary(info, monthly_info)
+        assert "----06_2024----" in build_summary(info, monthly_info)
 
 class TestLogPaths:
 

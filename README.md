@@ -1,6 +1,10 @@
 # resolve-time
 
-## Status: working, but not well check back later
+## Status: work in progress
+
+# Known issues:
+- resolve only saves 12mb worth of log files and will delete the oldest logs
+- weird calulation error between total hours worked and the sole project worked that month (should be same)
 
 
 ## Introduction
@@ -18,6 +22,12 @@ Resolve Time Tracker analyzes your DaVinci Resolve log files and provides a deta
 - **As a user,** I can view a heatmap graph showing total days spent editing to understand my consistency.
 
 ## Installation
+
+1. Navigate to project directory
+2. Run:
+```
+cp app/__init__.py /usr/local/bin/resolve-time
+```
 
 ## Usage
 

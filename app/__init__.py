@@ -183,7 +183,7 @@ def save_entries_info(save_entries):
 # COMMAND LINE LOGIC
 
 if len(sys.argv) < 2:
-    print("Usage: python app/__init__.py <log_folder_filepath>")
+    print("Usage: resolve-time <log_folder_filepath>")
     sys.exit(1)
 
 log_folder_filepath = sys.argv[1]

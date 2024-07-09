@@ -35,7 +35,7 @@ def build_summary(info, monthly_info):
         f"Total Sessions: {info['session_count']}\n"
         f"Total Work Hours: {info['work_hours']:.2f}\n"
         f"Project Work Hours:\n" + "\n".join(project_summaries)
-        # TODO: print monthly info
+        # TODO: print monthly info (monthly_info should be a dict with mmyyyy:)
     )
 
     return summary

@@ -13,34 +13,40 @@ class TestSummaryFunction:
 
     def test_build_summary(self):
         info = save_entries_info(save_entries)
-        monthly_info = save_entries_info(monthly_save_entries)
-        assert type(build_summary(info)) is str
+        months = monthly_save_entries.keys()
+        monthly_info = {}
+        for month in months:
+            if month not in monthly_info:
+                monthly_info[month] = save_entries_info(monthly_save_entries[month])
+        # print(monthly_info)
+
+        assert type(build_summary(info, save_entries_info)) is str
         assert """Total Sessions: 35
 Total Work Hours: 8.47
 Project Work Hours:
 Project: treehouse-doc_1, Hours: 8.41
-Project: --------------CHOP--------------, Hours: 0.05""" in build_summary(info)
+Project: --------------CHOP--------------, Hours: 0.05""" in build_summary(info, save_entries_info)
         assert """MONTHLY:
 -----APRIL-2024-----
 Sessions: # TODO
 Work Hours: # TODO
 Projects: # TODO
 Project: treehouse-doc_1, Hours: # TODO
-Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info)
+Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info, save_entries_info)
         assert """MONTHLY:
 -----MAY-2024-----
 Sessions: # TODO
 Work Hours: # TODO
 Projects: # TODO
 Project: treehouse-doc_1, Hours: # TODO
-Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info)
+Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info, save_entries_info)
         assert """MONTHLY:
 -----JUNE-2024-----
 Sessions: # TODO
 Work Hours: # TODO
 Projects: # TODO
 Project: treehouse-doc_1, Hours: # TODO
-Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info)
+Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info, save_entries_info)
 
 class TestLogPaths:
 

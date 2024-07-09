@@ -13,6 +13,32 @@ class TestSummaryFunction:
     def test_build_summary(self):
         info = save_entries_info(save_entries)
         assert type(build_summary(info)) is str
+        assert """Total Sessions: 35
+Total Work Hours: 8.47
+Project Work Hours:
+Project: treehouse-doc_1, Hours: 8.41
+Project: --------------CHOP--------------, Hours: 0.05""" in build_summary(info)
+        assert """MONTHLY:
+-----APRIL-2024-----
+Sessions: # TODO
+Work Hours: # TODO
+Projects: # TODO
+Project: treehouse-doc_1, Hours: # TODO
+Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info)
+        assert """MONTHLY:
+-----MAY-2024-----
+Sessions: # TODO
+Work Hours: # TODO
+Projects: # TODO
+Project: treehouse-doc_1, Hours: # TODO
+Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info)
+        assert """MONTHLY:
+-----JUNE-2024-----
+Sessions: # TODO
+Work Hours: # TODO
+Projects: # TODO
+Project: treehouse-doc_1, Hours: # TODO
+Project: --------------CHOP--------------, Hours: # TODO""" in build_summary(info)
 
 class TestLogPaths:
 
@@ -66,7 +92,7 @@ class TestSaveEntriesInfoFunction:
         work_hours = info['work_hours']
         assert type(work_hours) is float, "Work hours is not an float"
         assert work_hours > 0, "Work hours should be greater than 0"
-        assert work_hours == 8.469408611111112, "Work hours should be 8.469408611111112"        
+        assert work_hours == 8.469408611111112, "Work hours should be 8.469408611111112"
 
 
         info = save_entries_info(save_entries)
@@ -76,7 +102,7 @@ class TestSaveEntriesInfoFunction:
         for project, hours in project_hours.items():
             assert type(hours) is float, f"Work hours for project {project} is not a float"
             assert hours > 0, f"Work hours for project {project} should be greater than 0"
-            
+
     # test if save_entries_info method returns project hours
 
     def test_project_hours(self):

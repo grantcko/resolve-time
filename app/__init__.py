@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 from datetime import datetime, time, timedelta
 import glob
 import os
@@ -23,10 +22,11 @@ def get_log_filepaths(log_folder_filepath):
     # Return the list of log file paths
     return log_file_paths
 
-def build_summary(info):
+def build_summary(info, monthly_info):
     """
     Function to build a summary of projects worked on.
     """
+
     project_summaries = []
     for project, hours in info['project_work_hours'].items():
         project_summaries.append(f"Project: {project}, Hours: {hours:.2f}")
@@ -35,6 +35,7 @@ def build_summary(info):
         f"Total Sessions: {info['session_count']}\n"
         f"Total Work Hours: {info['work_hours']:.2f}\n"
         f"Project Work Hours:\n" + "\n".join(project_summaries)
+        # TODO: print monthly info
     )
 
     return summary
@@ -73,28 +74,41 @@ def collect_save_entries(log_filepaths):
         except Exception as e:
             print(f"An error occurred: {e}")
 
-    # return save entries, a list of dicts [{'timestamp':'...', 'project_title':'...'},{'...'}]
-    
+    # return saveentries, a list of dicts [{'timestamp':'...', 'project_title':'...'},{'...'}]
     # sort list save_entries based on the datetime pertaining to the timestamp value
 
     return sorted(save_entries, key=lambda entry: datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f'))
+
+def collect_monthly_save_entries(all_entries):
+    months_worked = {}
+    # go through each entry
+    for entry in all_entries:
+        # get ref to mm_yyyy (06_2024) unless it's a duplicate
+        mm_yyyy = f"{datetime.strptime(entry['timestamp']), '%m_%y'}"
+
+
+    # if it doesnt exist, add key:value pair with key as 'mm/yyyy', and value as an empty list
+    # append current save entry to save_entries list pertaining to the month
+
+    # {'04/2024':[save entries], '05/2024':[save entries], '06/2024':[save entries]}
+
 
 def save_entries_info(save_entries):
     """
     Function to get number of work sessions, total hours, hours per project from save entries.
     """
     if not save_entries:
-        return {                                                                                                           
-             'session_count': 0,                                                                                            
-             'work_hours': 0.0,                                                                                             
-             'project_work_hours': {}                                                                                       
-            }   
+        return {
+             'session_count': 0,
+             'work_hours': 0.0,
+             'project_work_hours': {}
+            }
 
     session_count = 1
     work_hours = timedelta(microseconds=0)
     compare_timestamp = None
     project_work_hours = {}
-    
+
     current_project = None
     current_project_hours = timedelta(microseconds=0)
 
@@ -139,13 +153,14 @@ def save_entries_info(save_entries):
 
 # COMMAND LINE LOGIC
 
-if len(sys.argv) < 2:
-    print("Usage: python app/__init__.py <log_folder_filepath>")
-    sys.exit(1)
+# if len(sys.argv) < 2:
+#     print("Usage: python app/__init__.py <log_folder_filepath>")
+#     sys.exit(1)
 
-log_folder_filepath = sys.argv[1]
-log_filepaths = get_log_filepaths(log_folder_filepath)
-save_entries = collect_save_entries(log_filepaths)
-info = save_entries_info(save_entries)
-summary = build_summary(info)
-print(summary)
+# log_folder_filepath = sys.argv[1]
+# log_filepaths = get_log_filepaths(log_folder_filepath)
+# save_entries = collect_save_entries(log_filepaths)
+# info = save_entries_info(save_entries)
+# # collect monthly save entries and get save entries info from each month, build summary from info and monthly info
+# summary = build_summary(info, monthly_info)
+# print(summary)

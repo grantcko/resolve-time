@@ -45,3 +45,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 notes:
 - i want options to customise timeout time
+- i want to impement a feature that saves logs in a new file in the application folder or application support, or some other folder. Then it really only has to collect the save lines in the files and write them to a new file. then i want the option to change that folder as well

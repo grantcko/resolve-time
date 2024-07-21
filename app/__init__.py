@@ -2,7 +2,11 @@
 
 import sys
 from functions import *
-from hello import hello
+
+def hello():
+    "print a greeting"
+
+    print("hello")
 
 # COMMAND LINE LOGIC
 

@@ -1,7 +1,7 @@
 import pytest
 import os
 from datetime import datetime
-from app import get_log_filepaths, build_summary, collect_save_entries, collect_monthly_save_entries, save_entries_info
+from functions import get_log_filepaths, build_summary, collect_save_entries, collect_monthly_save_entries, save_entries_info
 
 # get references to log filepaths and save entries
 

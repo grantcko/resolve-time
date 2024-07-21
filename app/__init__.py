@@ -2,6 +2,7 @@
 
 import sys
 from functions import *
+from hello import hello
 
 # COMMAND LINE LOGIC
 

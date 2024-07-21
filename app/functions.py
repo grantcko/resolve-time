@@ -91,6 +91,10 @@ def collect_save_entries(log_filepaths):
                             'project_title': match.group('project_title')
                         }
                         save_entries.append(save_entry)
+
+                        # create "/Applications/DaVinci Resolve/save-logs" if the filepath won't work, throw an error
+                        # write line in "/Applications/DaVinci Resolve/save-logs", if it's not already written there
+
         except FileNotFoundError:
             print(f"The file {log_file_path} does not exist.")
         except Exception as e:

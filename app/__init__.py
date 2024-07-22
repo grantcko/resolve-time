@@ -28,11 +28,11 @@ def summarize(log_filepaths):
 # Get a reference to txt file filepath
 txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
 
-# Run resolve's CaptureLogs app
-subprocess.run(['open', '/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app'])
-
 # Get a reference to the date and time
 current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
+
+# Run resolve's CaptureLogs app
+subprocess.run(['open', '/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app'])
 
 # Wait a second and press "enter" using pyautogui
 pyautogui.PAUSE = 1.0
@@ -54,3 +54,5 @@ log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get refere
 # Add our new resolve time log to log_filepaths, at the end of the list
 log_filepaths.append(txt_file_path)
 summarize(log_filepaths) # summarize
+
+# remove those folders. select the newest 2 folders added to desktop and make sure the same is almost accurate - up to the day with the tgz and up to the end of the word Library with the other folder

@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
 import sys
+import os
+import time
+import pyautogui
+from datetime import datetime
 from functions import *
 
 # COMMAND LINE LOGIC
@@ -21,15 +25,31 @@ def summarize(log_filepaths):
 
 ## TODO:
 
-# get a reference to txt file filepath (/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt)
+# Get a reference to txt file filepath
+txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
 
-# run resolve's CaptureLogs app (/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app)
-# wait a second and press "enter" - use pyautogui
-# get a reference to the date and time (used for the filename generated)
-# get a reference to the title of the generated zip file using the date and time (format: "DaVinci-Resolve-logs-20240721-170737")
-# unzip that zip file
-# get reference (log_folder_filepath) to unzipped folder containing log files (/Users/granthall/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs)
+# Run resolve's CaptureLogs app
+os.system('open "/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app"')
 
-log_filepaths = get_log_filepaths(log_folder_filepath) # (keep this) get reference to log_filepaths, a list of filepaths
-# add our new resolve time log to log_filepaths, at the end of the list
+# Wait a second and press "enter" using pyautogui
+time.sleep(1)
+pyautogui.press('enter')
+
+# Get a reference to the date and time
+current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
+
+# Get a reference to the title of the generated zip file using the date and time
+zip_file_name = f"DaVinci-Resolve-logs-{current_datetime}.zip"
+zip_file_path = f"/Users/granthall/Desktop/{zip_file_name}"
+
+# Unzip that zip file
+os.system(f'unzip {zip_file_path} -d /Users/granthall/Desktop/')
+
+# Get reference to the unzipped folder containing log files
+log_folder_filepath = "/Users/granthall/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
+
+log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get reference to log_filepaths, a list of filepaths
+
+# Add our new resolve time log to log_filepaths, at the end of the list
+log_filepaths.append(txt_file_path)
 summarize(log_filepaths) # summarize

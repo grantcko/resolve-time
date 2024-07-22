@@ -92,8 +92,16 @@ def collect_save_entries(log_filepaths):
                         save_entries.append(save_entry)
 
                         # TODO:
-                        # make a txt file at the application support directory (/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt)
-                        # write current line in that file, if it's not already written there
+                        # Make a txt file at the application support directory
+                        txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
+                        if not os.path.exists(txt_file_path):
+                            with open(txt_file_path, 'w') as txt_file:
+                                txt_file.write(line)
+                        else:
+                            with open(txt_file_path, 'r') as txt_file:
+                                if line not in txt_file.read():
+                                    with open(txt_file_path, 'a') as txt_file_append:
+                                        txt_file_append.write(line)
 
         except FileNotFoundError:
             print(f"The file {log_file_path} does not exist.")

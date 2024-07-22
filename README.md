@@ -5,6 +5,7 @@
 # Known issues:
 - resolve only saves 12mb worth of log files and will delete the oldest logs
 - weird calulation error between total hours worked and the sole project worked that month (should be same)
+- if you change the project name, it will be logged as a different project
 
 
 ## Introduction
@@ -50,3 +51,4 @@ notes:
 - doc for subproccess.call, .extract() and .extractall()
 - dont have any other folders on your desktop
 - users encouraged to backup resolve-time-log file
+- idea from git-hours

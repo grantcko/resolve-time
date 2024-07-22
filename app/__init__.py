@@ -32,7 +32,7 @@ txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/
 os.system('open "/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app"')
 
 # Wait a second and press "enter" using pyautogui
-time.sleep(1)
+time.sleep(1.0)
 pyautogui.press('enter')
 
 # Get a reference to the date and time

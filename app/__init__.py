@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
-import os
+import subprocess
 import time
 import pyautogui
 from datetime import datetime
@@ -29,7 +29,7 @@ def summarize(log_filepaths):
 txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
 
 # Run resolve's CaptureLogs app
-os.system('open "/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app"')
+subprocess.run(['open', '/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app'])
 
 # Get a reference to the date and time
 current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -44,7 +44,7 @@ zip_file_name = f"DaVinci-Resolve-logs-{current_datetime}.tgz"
 zip_file_path = f"/Users/granthall/Desktop/{zip_file_name}"
 
 # Unzip that zip file
-os.system(f'open {zip_file_path}')
+subprocess.run(['open', zip_file_path])
 
 # Get reference to the unzipped folder containing log files
 log_folder_filepath = "/Users/granthall/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"

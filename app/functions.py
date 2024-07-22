@@ -25,30 +25,30 @@ def build_summary(info, monthly_info):
 
     project_summaries = []
     for project, hours in info['project_work_hours'].items():
-        project_summaries.append(f"\"{project}\" {hours:.2f} hours")
+        project_summaries.append(f"  \"{project}\" {hours:.2f} hours")
 
     total_summary = (
-        f"\n    [ALL-TIME]    \n"
-        f"sessions: {info['session_count']}\n"
-        f"time: {info['work_hours']:.2f} hours\n"
-        f"-\n" + "\n".join(project_summaries) + "\n"
+        f"\n      [ALL-TIME]\n      ----------\n"
+        f"  sessions : {info['session_count']}\n"
+        f"  time : {info['work_hours']:.2f} hours\n"
+        f"  -\n" + "\n".join(project_summaries) + "\n"
     )
 
     # TODO: print monthly info (monthly_info should be a dict with dicts (keys, mmyyyy:)
-    # iterate over monthly info and print each month name , year, total sessions, total hours
+    # iterate over monthly info and print each month name , year, total sessions , total hours
 
     monthly_summary = []
     months = monthly_info.keys()
     for month in months:
         month_project_summaries = []
         for project, hours in monthly_info[month]['project_work_hours'].items():
-            month_project_summaries.append(f"\"{project}\" {hours:.2f} hours")
+            month_project_summaries.append(f"  \"{project}\" {hours:.2f} hours")
 
         monthly_summary.append(
-            f"    [{month}]    \n"
-            f"sessions: {monthly_info[month]['session_count']} hours\n"
-            f"time: {monthly_info[month]['work_hours']:.2f} hours\n"
-            f"-\n" + "\n".join(month_project_summaries)
+            f"      [{month}]\n      ---------\n"
+            f"  sessions : {monthly_info[month]['session_count']}\n"
+            f"  time : {monthly_info[month]['work_hours']:.2f} hours\n"
+            f"  -\n" + "\n".join(month_project_summaries)
         )
 
     # get ref to the total summary
@@ -56,7 +56,7 @@ def build_summary(info, monthly_info):
 
     # add each month's summary to that
     for month_summary in monthly_summary:
-        summary = f"{summary}\n{month_summary}\n"
+        summary = f"  {summary}\n{month_summary}\n"
 
     #
 

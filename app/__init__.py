@@ -6,7 +6,8 @@ import threading
 import pyautogui
 from datetime import datetime
 from functions import *
-
+import glob
+import os
 
 def summarize(log_filepaths):
     save_entries = collect_save_entries(log_filepaths)
@@ -20,7 +21,6 @@ def summarize(log_filepaths):
             monthly_info[month] = save_entries_info(monthly_save_entries[month])
     summary = build_summary(info, monthly_info)
     print(summary)
-
 
 # COMMAND LINE
 
@@ -43,8 +43,6 @@ zip_file_name = f"DaVinci-Resolve-logs-{current_datetime}.tgz"
 zip_file_path = f"/Users/granthall/Desktop/{zip_file_name}"
 
 # Unzip that zip file with a margin of error in the filename (up to the minute in the timestamp)
-import glob
-import os
 
 # Use a glob pattern to find the file
 zip_file_pattern = f"/Users/granthall/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"

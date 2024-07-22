@@ -55,3 +55,4 @@ notes:
 - advantage is that you don't need the app running all the time to use it
 - need to allow accessability
 - can't do anything untill it's done
+- tests not running

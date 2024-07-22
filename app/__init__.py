@@ -54,6 +54,7 @@ log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get refere
 log_filepaths.append(txt_file_path)
 summarize(log_filepaths) # summarize
 
+# Wait 3 seconds. Not using sleep() because of iteraction with datetime
 threading.Event().wait(3)
 
 # # Remove the generated zip file

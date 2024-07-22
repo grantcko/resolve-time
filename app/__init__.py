@@ -2,7 +2,7 @@
 
 import sys
 import subprocess
-import os
+import time
 import pyautogui
 from datetime import datetime
 from functions import *
@@ -23,6 +23,8 @@ def summarize(log_filepaths):
     print(summary)
 
 
+## TODO:
+
 # Get a reference to txt file filepath
 txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
 
@@ -35,13 +37,14 @@ subprocess.run(['open', '/Library/Application Support/Blackmagic Design/DaVinci 
 # Wait a second and press "enter" using pyautogui
 pyautogui.PAUSE = 1.0
 pyautogui.press('enter')
+pyautogui.press('enter')
 
 # Get a reference to the title of the generated zip file using the date and time
-zip_file_name = f"DaVinci-Resolve-logs-{current_datetime}.zip"
+zip_file_name = f"DaVinci-Resolve-logs-{current_datetime}.tgz"
 zip_file_path = f"/Users/granthall/Desktop/{zip_file_name}"
 
 # Unzip that zip file
-subprocess.run(['unzip', zip_file_path, '-d', '/Users/granthall/Desktop/'])
+subprocess.run(['open', zip_file_path])
 
 # Get reference to the unzipped folder containing log files
 log_folder_filepath = "/Users/granthall/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
@@ -50,13 +53,6 @@ log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get refere
 
 # Add our new resolve time log to log_filepaths, at the end of the list
 log_filepaths.append(txt_file_path)
+summarize(log_filepaths) # summarize
 
-# Summarize the log filepaths
-summarize(log_filepaths)
-
-# Remove those folders. Select the newest 2 folders added to desktop and make sure the same is almost accurate - up to the day with the tgz and up to the end of the word Library with the other folder
-desktop_path = "/Users/granthall/Desktop/"
-folders_to_remove = sorted([f for f in os.listdir(desktop_path) if os.path.isdir(os.path.join(desktop_path, f))], key=lambda x: os.path.getctime(os.path.join(desktop_path, x)), reverse=True)[:2]
-for folder in folders_to_remove:
-    folder_path = os.path.join(desktop_path, folder)
-    subprocess.run(['rm', '-rf', folder_path])
+# TODO: remove those folders. select the newest 2 folders added to desktop and make sure the same is almost accurate - up to the day with the tgz and up to the end of the word Library with the other folder

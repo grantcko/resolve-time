@@ -91,16 +91,16 @@ def collect_save_entries(log_filepaths):
                         }
                         save_entries.append(save_entry)
 
-                        # create "/Applications/DaVinci Resolve/save-logs" if the filepath won't work, throw an error
-                        # write line in "/Applications/DaVinci Resolve/save-logs", if it's not already written there
+                        # TODO:
+                        # make a txt file at the application support directory (/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt)
+                        # write current line in that file, if it's not already written there
 
         except FileNotFoundError:
             print(f"The file {log_file_path} does not exist.")
         except Exception as e:
             print(f"An error occurred: {e}")
 
-    # return saveentries, a list of dicts [{'timestamp':'...', 'project_title':'...'},{'...'}]
-    # sort list save_entries based on the datetime pertaining to the timestamp value
+    # return save_entries, a list of sorted dicts [{'timestamp':'...', 'project_title':'...'},{'...'}]
 
     return sorted(save_entries, key=lambda entry: datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f'))
 

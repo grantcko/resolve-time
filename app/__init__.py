@@ -19,25 +19,17 @@ def summarize(log_filepaths):
     print(summary)
 
 
-if len(sys.argv) < 2:
+## TODO:
 
-    # make a txt file at the application support directory (/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt)
-    # get a reference to that txt file filepath (resolve_time_log)
+# get a reference to txt file filepath (/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt)
 
-    # run resolve's CaptureLogs app (/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app)
-    # wait a second and press "enter" - use pyautogui
-    # get a reference to the resolve generated zip file containing the log files (on the desktop)
-    # get a reference to the date and time (used for the filename generated)
+# run resolve's CaptureLogs app (/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app)
+# wait a second and press "enter" - use pyautogui
+# get a reference to the date and time (used for the filename generated)
+# get a reference to the title of the generated zip file using the date and time (format: "DaVinci-Resolve-logs-20240721-170737")
+# unzip that zip file
+# get reference (log_folder_filepath) to unzipped folder containing log files (/Users/granthall/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs)
 
-    # get a reference to the title of the generated zip file using the date and time (format: "DaVinci-Resolve-logs-20240721-170737")
-    # unzip that zip file
-    # get reference to unzipped folder containing log files (/Users/granthall/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs)
-
-    log_filepaths = get_log_filepaths(log_folder_filepath) # (keep this) get reference to log_filepaths, a list of filepaths
-        # sidenote: this function (get_log_filepaths) will write any new save entries to the new resolve time log
-
-    # add our new resolve_time_log to log_filepaths
-    # and summarize
-
-# log_folder_filepath = # filepath from log app
-summarize(log_filepaths)
+log_filepaths = get_log_filepaths(log_folder_filepath) # (keep this) get reference to log_filepaths, a list of filepaths
+# add our new resolve time log to log_filepaths, at the end of the list
+summarize(log_filepaths) # summarize

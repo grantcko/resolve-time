@@ -31,19 +31,20 @@ txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/
 # Run resolve's CaptureLogs app
 os.system('open "/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app"')
 
-# Wait a second and press "enter" using pyautogui
-pyautogui.PAUSE = 1.0
-pyautogui.press('enter')
-
 # Get a reference to the date and time
 current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
 
+# Wait a second and press "enter" using pyautogui
+pyautogui.PAUSE = 1.0
+pyautogui.press('enter')
+pyautogui.press('enter')
+
 # Get a reference to the title of the generated zip file using the date and time
-zip_file_name = f"DaVinci-Resolve-logs-{current_datetime}.zip"
+zip_file_name = f"DaVinci-Resolve-logs-{current_datetime}.tgz"
 zip_file_path = f"/Users/granthall/Desktop/{zip_file_name}"
 
 # Unzip that zip file
-os.system(f'unzip {zip_file_path} -d /Users/granthall/Desktop/')
+os.system(f'open {zip_file_path}')
 
 # Get reference to the unzipped folder containing log files
 log_folder_filepath = "/Users/granthall/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"

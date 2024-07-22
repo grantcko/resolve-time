@@ -55,6 +55,8 @@ log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get refere
 log_filepaths.append(txt_file_path)
 summarize(log_filepaths) # summarize
 
+print("removing...")
+
 # Remove the two most recently added folders from the desktop
 desktop_path = "/Users/granthall/Desktop"
 folders = sorted([f for f in os.listdir(desktop_path) if os.path.isdir(os.path.join(desktop_path, f))], key=lambda x: os.path.getctime(os.path.join(desktop_path, x)), reverse=True)

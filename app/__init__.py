@@ -52,8 +52,7 @@ log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get refere
 
 # Add our new resolve time log to log_filepaths, at the end of the list
 log_filepaths.append(txt_file_path)
-log_filepaths.append("/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt")
-summarize(log_filepaths)  # summarize
+summarize(log_filepaths) # summarize
 
 # Wait 3 seconds. Not using sleep() because of iteraction with datetime
 threading.Event().wait(3)

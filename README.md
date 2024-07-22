@@ -56,3 +56,12 @@ notes:
 - need to allow accessability
 - can't do anything untill it's done
 - tests not running
+- before i share this, i want to make sure my tests are ok, code is commented, readmes are good, code is refactored
+- there is no information on the start date
+- if this app isn't run often, then some logs are lost and you get incorrect data with no way of seeing what days you missed
+- in the future i want this to be a part of davinci or at least have it auto run upon davinci booting up
+- the best i can do is let my user know if the auto start setting is off, they might have incorrect data.
+- or let user know they might have incorrect data if a resolve-time-log file is already present upon installation.
+- i want there to be a start date displayed
+- i want the program to automatically force quit the capture logs application
+- i would like to test this app vs hand timing vs timeapp

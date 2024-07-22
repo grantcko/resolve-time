@@ -55,4 +55,11 @@ log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get refere
 log_filepaths.append(txt_file_path)
 summarize(log_filepaths) # summarize
 
-# TODO: remove those folders. select the newest 2 folders added to desktop and make sure the same is almost accurate - up to the day with the tgz and up to the end of the word Library with the other folder
+# Remove the two most recently added folders from the desktop
+desktop_path = "/Users/granthall/Desktop"
+folders = sorted([f for f in os.listdir(desktop_path) if os.path.isdir(os.path.join(desktop_path, f))], key=lambda x: os.path.getctime(os.path.join(desktop_path, x)), reverse=True)
+folders_to_remove = folders[:2]
+
+for folder in folders_to_remove:
+    folder_path = os.path.join(desktop_path, folder)
+    subprocess.run(['rm', '-rf', folder_path])

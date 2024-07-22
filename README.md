@@ -52,3 +52,6 @@ notes:
 - dont have any other folders on your desktop
 - users encouraged to backup resolve-time-log file
 - idea from git-hours
+- advantage is that you don't need the app running all the time to use it
+- need to allow accessability
+- can't do anything untill it's done

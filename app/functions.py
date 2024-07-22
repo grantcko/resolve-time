@@ -61,7 +61,6 @@ def build_summary(info, monthly_info):
 
     return summary
 
-
 def collect_save_entries(log_filepaths):
     """
     Function to collect log entries from a file.
@@ -121,11 +120,13 @@ def collect_monthly_save_entries(all_entries):
     return months_worked
     # example :{'04/2024':[save entries], '05/2024':[save entries], '06/2024':[save entries]}
 
-
-def save_entries_info(save_entries):
+def save_entries_info(save_entries): # save entries potato
     """
     Function to get number of work sessions, total hours, hours per project from save entries.
     """
+
+    # if there are no save entries, return an empty summary
+
     if not save_entries:
         return {
              'session_count': 0,

@@ -120,7 +120,7 @@ def collect_monthly_save_entries(all_entries):
     return months_worked
     # example :{'04/2024':[save entries], '05/2024':[save entries], '06/2024':[save entries]}
 
-def save_entries_info(save_entries): # save entries potato
+def save_entries_info(save_entries): # returns dict of total and per project summaries for: all time, per month
     """
     Function to get number of work sessions, total hours, hours per project from save entries.
     """
@@ -134,33 +134,42 @@ def save_entries_info(save_entries): # save entries potato
              'project_work_hours': {}
             }
 
+    ## get starting references for: ##
+    # session count, work hours, current-1 timestamp (to compare with current)
+
     session_count = 1
     work_hours = timedelta(microseconds=0)
     compare_timestamp = None
-    project_work_hours = {}
 
+    ## get starting references for: ##
+    # work summaries per project, current project, current project's hours
+
+    project_work_hours = {}
     current_project = None
     current_project_hours = timedelta(microseconds=0)
 
-    for entry in save_entries:
-        timestamp = datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f')
+    # iterate over each save entry and collect session count and work hours for all time and per project
 
+    for entry in save_entries:
+
+        ## VARIABLES ##
+
+        # current entry's timestamp
+        timestamp = datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f')
+        # if we are on the first entry, set the compare timestamp, continue to next entry
         if compare_timestamp is None:
             compare_timestamp = timestamp
             continue
-
+        # difference between the current timestamp and the last one
         time_difference_min = (timestamp - compare_timestamp).total_seconds() / 60.0
 
+        # IF: AN EDIT SESSION ENDED -> count one more session and set the compare timestamp
+        # ELSE: IF AN EDIT SESSION CONTINUED -> increase work_hours and session count, set project stats if end of project
+
         if time_difference_min > 15:
-
-            # IF AN EDIT SESSION ENDED
-
             session_count += 1
             compare_timestamp = timestamp
         else:
-
-            # IF AN EDIT SESSION CONTINUED
-
             difference = timestamp - compare_timestamp
             work_hours += difference
             current_project_hours += difference
@@ -171,9 +180,6 @@ def save_entries_info(save_entries): # save entries potato
                     project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
                 current_project = entry['project_title']
                 current_project_hours = timedelta(microseconds=0)
-
-    if current_project is not None:
-        project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
 
     return {
         'session_count': session_count,

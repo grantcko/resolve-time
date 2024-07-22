@@ -2,12 +2,11 @@
 
 import sys
 import subprocess
-import time
+import threading
 import pyautogui
 from datetime import datetime
 from functions import *
 
-# COMMAND LINE LOGIC
 
 def summarize(log_filepaths):
     save_entries = collect_save_entries(log_filepaths)
@@ -23,7 +22,7 @@ def summarize(log_filepaths):
     print(summary)
 
 
-## TODO:
+# COMMAND LINE
 
 # Get a reference to txt file filepath
 txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
@@ -55,10 +54,10 @@ log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get refere
 log_filepaths.append(txt_file_path)
 summarize(log_filepaths) # summarize
 
-print("Removing the generated zip file and the unzipped log folder...")
+threading.Event().wait(3)
 
-# Remove the generated zip file
+# # Remove the generated zip file
 subprocess.run(['rm', '-rf', zip_file_path])
 
-# Remove the unzipped log folder
-subprocess.run(['rm', '-rf', log_folder_filepath])
+# # Remove the unzipped log folder
+subprocess.run(['rm', '-rf', "/Users/granthall/Desktop/Library"])

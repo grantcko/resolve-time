@@ -48,3 +48,5 @@ notes:
 - i want to impement a feature that saves logs in a new file in the application folder or application support, or some other folder. Then it really only has to collect the save lines in the files and write them to a new file. then i want the option to change that folder as well
 - research: programatically running applications (/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app), unzipping files,
 - doc for subproccess.call, .extract() and .extractall()
+- dont have any other folders on your desktop
+- users encouraged to backup resolve-time-log file

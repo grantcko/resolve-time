@@ -42,8 +42,19 @@ pyautogui.press('enter')
 zip_file_name = f"DaVinci-Resolve-logs-{current_datetime}.tgz"
 zip_file_path = f"/Users/granthall/Desktop/{zip_file_name}"
 
-# Unzip that zip file
-subprocess.run(['open', zip_file_path]) # TODO: make it so that it runs with a margin of error in the filename. up to the minute in the timpestamp
+# Unzip that zip file with a margin of error in the filename (up to the minute in the timestamp)
+import glob
+import os
+
+# Use a glob pattern to find the file
+zip_file_pattern = f"/Users/granthall/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
+matching_files = glob.glob(zip_file_pattern)
+
+if matching_files:
+    zip_file_path = matching_files[0]
+    subprocess.run(['open', zip_file_path])
+else:
+    print("No matching log file found.")
 
 # Get reference to the unzipped folder containing log files
 log_folder_filepath = "/Users/granthall/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"

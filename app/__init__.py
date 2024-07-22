@@ -59,7 +59,7 @@ print("removing...")
 
 # Remove the two most recently added folders from the desktop
 desktop_path = "/Users/granthall/Desktop"
-folders = sorted([f for f in os.listdir(desktop_path) if os.path.isdir(os.path.join(desktop_path, f))], key=lambda x: os.path.getctime(os.path.join(desktop_path, x)), reverse=True)
+folders = sorted([f for f in subprocess.run(['ls', '-t', desktop_path], capture_output=True, text=True).stdout.split('\n') if subprocess.run(['test', '-d', os.path.join(desktop_path, f)]).returncode == 0], key=lambda x: subprocess.run(['stat', '-f', '%B', os.path.join(desktop_path, x)], capture_output=True, text=True).stdout.strip(), reverse=True)
 folders_to_remove = folders[:2]
 
 for folder in folders_to_remove:

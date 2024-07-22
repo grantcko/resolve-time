@@ -55,8 +55,10 @@ log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get refere
 log_filepaths.append(txt_file_path)
 summarize(log_filepaths) # summarize
 
-print("removing...")
+print("Removing the generated zip file and the unzipped log folder...")
 
-#  Remove those two folders
-subprocess.run([f'rm -rf {zip_file_name}'])
-subprocess.run([f'rm -rf {log_folder_filepath}'])
+# Remove the generated zip file
+subprocess.run(['rm', '-rf', zip_file_path])
+
+# Remove the unzipped log folder
+subprocess.run(['rm', '-rf', log_folder_filepath])

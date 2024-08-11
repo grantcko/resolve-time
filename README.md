@@ -8,7 +8,6 @@
 - weird calulation error between total hours worked and the sole project worked that month (should be same)
 - if this app isn't run often, then some logs are lost and you get incorrect data with no way of seeing what days you missed
 
-
 ## notes:
 - before i share this, i want to make sure my tests are ok, code is commented, readmes are good, code is refactored
 - i want there to be a start date for save information displayed

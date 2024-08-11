@@ -33,6 +33,9 @@ current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
 # Run resolve's CaptureLogs app
 subprocess.run(['open', '/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app'])
 
+# get reference to $HOME environmental variable
+home_path = os.environ["HOME"]
+
 # Exit out of CaptureLogs - Wait a second and press "enter" using pyautogui
 pyautogui.PAUSE = 1.0
 pyautogui.press('enter')
@@ -40,12 +43,12 @@ pyautogui.press('enter')
 
 # Get a reference to the title of the generated zip file using the date and time
 zip_file_name = f"DaVinci-Resolve-logs-{current_datetime}.tgz"
-zip_file_path = f"/Users/granthall/Desktop/{zip_file_name}"
+zip_file_path = f"{home_path}/Desktop/{zip_file_name}"
 
 # Unzip that zip file with a margin of error in the filename (up to the minute in the timestamp)
 
 # Use a glob pattern to find the file
-zip_file_pattern = f"/Users/granthall/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
+zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
 matching_files = glob.glob(zip_file_pattern)
 
 if matching_files:
@@ -55,7 +58,7 @@ else:
     print("No matching log file found.")
 
 # Get reference to the unzipped folder containing log files
-log_folder_filepath = "/Users/granthall/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
+log_folder_filepath = f"{home_path}/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
 
 log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get reference to log_filepaths, a list of filepaths
 
@@ -70,4 +73,4 @@ threading.Event().wait(3)
 subprocess.run(['rm', '-rf', zip_file_path])
 
 # # Remove the unzipped log folder
-subprocess.run(['rm', '-rf', "/Users/granthall/Desktop/Library"])
+subprocess.run(['rm', '-rf', f"{home_path}/Desktop/Library"])

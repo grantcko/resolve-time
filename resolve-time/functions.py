@@ -17,6 +17,8 @@ def get_log_filepaths(log_folder_filepath):
     # Collect all matching file paths
     log_file_paths = glob.glob(log_filepath_pattern)
 
+    # print(log_file_paths)
+
     # Return the list of log file paths
     return log_file_paths
 
@@ -80,30 +82,41 @@ def collect_save_entries(log_filepaths):
 
     log_pattern = re.compile(r"^\S+\s+\|\s+SyManager\.ProjectManager\s+\|\s+INFO\s+\|\s+(?P<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\s+\|\s+Start saving project (?P<project_title>.+)$")
 
+    # log_pattern = re.compile(r".*")
+
     # collect timestamp and project title into into a save entry dict, into save entries list (for each filepath)
+    # and save any new entries to a txt file to the computer
 
     for log_file_path in log_filepaths:
+        # print(log_file_path)
         try:
             with open(log_file_path, 'r') as log_file:
+                num = 1 #
                 for line in log_file:
+                    # print(line)
                     match = log_pattern.match(line)
                     if match:
+                        #
+                        # print("Match" + str(num) + f" : {match.group(0)}")
+                        num += 1
+                        #
                         save_entry = {
                             'timestamp': match.group('timestamp'),
                             'project_title': match.group('project_title')
                         }
                         save_entries.append(save_entry)
+                        # print(save_entry)
 
-                        # Make a txt file at the application support directory
-                        txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
-                        if not os.path.exists(txt_file_path):
-                            with open(txt_file_path, 'w') as txt_file:
-                                txt_file.write(line)
-                        else:
-                            with open(txt_file_path, 'r') as txt_file:
-                                if line not in txt_file.read():
-                                    with open(txt_file_path, 'a') as txt_file_append:
-                                        txt_file_append.write(line)
+                        # # Make a txt file at the application support directory
+                        # txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
+                        # if not os.path.exists(txt_file_path):
+                        #     with open(txt_file_path, 'w') as txt_file:
+                        #         txt_file.write(line)
+                        # else:
+                        #     with open(txt_file_path, 'r') as txt_file:
+                        #         if line not in txt_file.read():
+                        #             with open(txt_file_path, 'a') as txt_file_append:
+                        #                 txt_file_append.write(line)
 
         except FileNotFoundError:
             print(f"The file {log_file_path} does not exist.")

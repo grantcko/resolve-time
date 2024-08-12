@@ -46,7 +46,6 @@ zip_file_name = f"DaVinci-Resolve-logs-{current_datetime}.tgz"
 zip_file_path = f"{home_path}/Desktop/{zip_file_name}"
 
 # Unzip that zip file with a margin of error in the filename (up to the minute in the timestamp)
-
 # Use a glob pattern to find the file
 zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
 matching_files = glob.glob(zip_file_pattern)
@@ -59,11 +58,16 @@ else:
 
 # Get reference to the unzipped folder containing log files
 log_folder_filepath = f"{home_path}/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
+# print("log_folder_filepath : " + log_folder_filepath)
 
-log_filepaths = get_log_filepaths(log_folder_filepath)  # (keep this) get reference to log_filepaths, a list of filepaths
+threading.Event().wait(3)
 
+log_filepaths = get_log_filepaths(log_folder_filepath)  # get reference to log_filepaths, a list of filepaths
+
+print(log_filepaths)
 # Add our new resolve time log to log_filepaths, at the end of the list
 log_filepaths.append(txt_file_path)
+print(log_filepaths)
 summarize(log_filepaths) # summarize
 
 # Wait 3 seconds. Not using sleep() because of iteraction with datetime

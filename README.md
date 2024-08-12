@@ -3,6 +3,7 @@
 ## Status: work in progress
 
 # Known issues:
+- no saves saved after 2024-07-20 20:23:30,238
 - if you change the project name, it will be logged as a different project
 - tests not running and the tests suck.
 - weird calulation error between total hours worked and the sole project worked that month (should be same)

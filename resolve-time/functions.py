@@ -7,6 +7,8 @@ def get_log_filepaths(log_folder_filepath):
 
     """
     Function to get all log file paths in the given directory.
+
+    returns a list of strings
     """
 
     # Define the pattern for the log files
@@ -92,7 +94,6 @@ def collect_save_entries(log_filepaths):
                         }
                         save_entries.append(save_entry)
 
-                        # TODO:
                         # Make a txt file at the application support directory
                         txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
                         if not os.path.exists(txt_file_path):

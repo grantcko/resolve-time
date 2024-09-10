@@ -3,7 +3,6 @@
 ## Status: work in progress
 
 # Known issues:
-- no saves saved after 2024-07-20 20:23:30,238
 - if you change the project name, it will be logged as a different project
 - tests not running and the tests suck.
 - weird calulation error between total hours worked and the sole project worked that month (should be same)
@@ -44,7 +43,7 @@ pytest
 ```
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License.
 
 ## misc notes:
 - make sure my tests are ok, code is commented, readmes are good, code is refactored
@@ -71,4 +70,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 - in the future i want this to be a part of davinci or at least have it auto run upon davinci booting up
 - i want the program to automatically force quit the capture logs application
 - for mac only
--  i want to make decisions on what to do based on problems, features, research, sharing
+- i want to make decisions on what to do based on problems, features, research, sharing

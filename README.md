@@ -3,10 +3,12 @@
 ## Status: work in progress
 
 # Known issues:
+- no saves saved after 2024-07-20 20:23:30,238
 - if you change the project name, it will be logged as a different project
 - tests not running and the tests suck.
 - weird calulation error between total hours worked and the sole project worked that month (should be same)
 - if this app isn't run often, then some logs are lost and you get incorrect data with no way of seeing what days you missed
+- application only calculates from saves, might be inaccurate, better data is with the rest of the log entries because they are not dependent on users saving settings and practicies
 
 ## Introduction
 resolve-time is a tool designed to help you monitor the time spent on DaVinci Resolve video projects

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resolve-time"
+version = "0.0.1"
+dependencies = [
+  "typer",
+  "pyautogui",
+]
+
+[project.scripts]
+resolve-time = "resolvetime.cli:app"

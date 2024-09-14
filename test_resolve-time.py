@@ -1,7 +1,16 @@
-import pytest
-import os
 from datetime import datetime
-from functions import get_log_filepaths, build_summary, collect_save_entries, collect_monthly_save_entries, save_entries_info
+import os
+import pytest
+import sys
+
+sys.path.append(os.path.abspath('src'))
+from resolvetime.functions import get_log_filepaths
+from resolvetime.functions import build_summary
+from resolvetime.functions import collect_save_entries
+from resolvetime.functions import collect_monthly_save_entries
+from resolvetime.functions import save_entries_info
+from resolvetime.functions import auto_gen_logs
+from resolvetime.functions import process_logs
 
 # get references to log filepaths and save entries
 

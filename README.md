@@ -1,7 +1,7 @@
 # resolve-time
 
 # Todo:
-- ☐ Make it so that the program is executable like any other CLI
+- ☑ Make it so that the program is executable like any other CLI
 - ☐ Solve test running problem
 - ☐ Rewrite tests to include new log collection logic
 - ☐ Compare vs. hand timing

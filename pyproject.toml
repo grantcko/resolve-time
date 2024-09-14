@@ -11,4 +11,4 @@ dependencies = [
 ]
 
 [project.scripts]
-greet = "greetings.cli:app"
+resolve-time = "resolvetime.cli:app"

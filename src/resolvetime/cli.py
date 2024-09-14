@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 
 import sys
+import subprocess
 import typer
 from datetime import datetime
-from functions import *
+import threading
+import .functions
 import glob
 import os
 
 #### REFERENCES ####
+
+app = typer.Typer()
 
 # Get a reference to txt file filepath
 txt_filepath = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
@@ -23,13 +27,13 @@ home_path = os.environ["HOME"]
 # TODO: create an option for auto or manual log file generation then define the filepath that gets passed to process the logs accordingly
 
 # auto generate the log files
-auto_gen_logs(current_datetime, home_path)
+app.command()(functions.auto_gen_logs(current_datetime, home_path))
 
 auto_zip_filepath = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
 
-processed_info = process_logs(home_path, current_datetime, txt_filepath, auto_zip_filepath)
+processed_info = app.command()(functions.process_logs(home_path, current_datetime, txt_filepath, auto_zip_filepath))
 
-summary = build_summary(processed_info["info"], processed_info["monthly_info"])
+summary = app.command()(functions.build_summary(processed_info["info"], processed_info["monthly_info"]))
 
 print(summary)
 

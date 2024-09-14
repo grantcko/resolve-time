@@ -2,7 +2,7 @@
 
 # Todo:
 - ☑ Make it so that the program is executable like any other CLI
-- ☐ Solve test running problem
+- ☑ Solve test running problem
 - ☐ Rewrite tests to include new log collection logic
 - ☐ Compare accuracy between resolve-time and hand timing
 

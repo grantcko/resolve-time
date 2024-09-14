@@ -2,6 +2,9 @@ from datetime import datetime, time, timedelta
 import glob
 import os
 import re
+import subprocess
+import threading
+import pyautogui
 
 def get_log_filepaths(log_folder_filepath):
 
@@ -15,12 +18,12 @@ def get_log_filepaths(log_folder_filepath):
     log_filepath_pattern = f'{log_folder_filepath}/davinci_resolve.log*'
 
     # Collect all matching file paths
-    log_file_paths = glob.glob(log_filepath_pattern)
+    log_filepaths = glob.glob(log_filepath_pattern)
 
-    # print(log_file_paths)
+    # print(log_filepaths)
 
     # Return the list of log file paths
-    return log_file_paths
+    return log_filepaths
 
 def build_summary(info, monthly_info):
     """
@@ -71,7 +74,7 @@ def collect_save_entries(log_filepaths):
     Function to collect log entries from a file.
 
     Args:
-    log_file_path (str): Path to the log file.
+    log_filepath (str): Path to the log file.
 
     Returns:
     list: A list of dictionaries containing 'datetime' and 'project_name' from the log entries.
@@ -87,10 +90,10 @@ def collect_save_entries(log_filepaths):
     # collect timestamp and project title into into a save entry dict, into save entries list (for each filepath)
     # and save any new entries to a txt file to the computer
 
-    for log_file_path in log_filepaths:
-        # print(log_file_path)
+    for log_filepath in log_filepaths:
+        # print(log_filepath)
         try:
-            with open(log_file_path, 'r') as log_file:
+            with open(log_filepath, 'r') as log_file:
                 num = 1 #
                 for line in log_file:
                     # print(line)
@@ -108,18 +111,18 @@ def collect_save_entries(log_filepaths):
                         # print(save_entry)
 
                         # Make a txt file at the application support directory
-                        txt_file_path = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
-                        if not os.path.exists(txt_file_path):
-                            with open(txt_file_path, 'w') as txt_file:
+                        txt_filepath = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
+                        if not os.path.exists(txt_filepath):
+                            with open(txt_filepath, 'w') as txt_file:
                                 txt_file.write(line)
                         else:
-                            with open(txt_file_path, 'r') as txt_file:
+                            with open(txt_filepath, 'r') as txt_file:
                                 if line not in txt_file.read():
-                                    with open(txt_file_path, 'a') as txt_file_append:
+                                    with open(txt_filepath, 'a') as txt_file_append:
                                         txt_file_append.write(line)
 
         except FileNotFoundError:
-            print(f"The file {log_file_path} does not exist.")
+            print(f"The file {log_filepath} does not exist.")
         except Exception as e:
             print(f"An error occurred: {e}")
 
@@ -211,4 +214,50 @@ def save_entries_info(save_entries): # returns dict of total and per project sum
         'session_count': session_count,
         'work_hours': work_hours.total_seconds()/60/60,
         'project_work_hours': project_work_hours
+    }
+
+def auto_gen_logs(current_datetime, home_path):
+    # Run resolve's CaptureLogs app
+    subprocess.run(['open', '/Library/Application Support/Blackmagic Design/DaVinci Resolve/CaptureLogs.app'])
+
+    # Exit out of CaptureLogs - Wait a second and press "enter" using pyautogui
+    pyautogui.PAUSE = 1.0
+    pyautogui.press('enter')
+    pyautogui.press('enter')
+
+def process_logs(home_path, current_datetime, txt_filepath, zip_file_pattern):
+    # Unzip that zip file with a margin of error in the filename (up to the minute in the timestamp)
+    # Use a glob pattern to find the file
+    matching_files = glob.glob(zip_file_pattern)
+
+    if matching_files:
+        zip_filepath = matching_files[0]
+        subprocess.run(['open', zip_filepath])
+    else:
+        print("No matching log file found.")
+
+    # Get reference to the unzipped folder containing log files
+    log_folder_filepath = f"{home_path}/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
+
+    threading.Event().wait(3)
+
+    log_filepaths = get_log_filepaths(log_folder_filepath)  # get reference to log_filepaths, a list of filepaths
+
+    # Add our new resolve time log to log_filepaths, at the end of the list
+    log_filepaths.append(txt_filepath)
+
+    save_entries = collect_save_entries(log_filepaths)
+    info = save_entries_info(save_entries)
+    # collect monthly save entries and get save entries info from each month, build summary from info and monthly info
+    monthly_save_entries = collect_monthly_save_entries(save_entries)
+    months = monthly_save_entries.keys()
+    monthly_info = {}
+    for month in months:
+        if month not in monthly_info:
+            monthly_info[month] = save_entries_info(monthly_save_entries[month])
+
+    return {
+        "info":info,
+        "monthly_info":monthly_info,
+        "zip_filepath":zip_filepath,
     }

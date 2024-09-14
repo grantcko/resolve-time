@@ -7,6 +7,7 @@ name = "resolve-time"
 version = "0.0.1"
 dependencies = [
   "typer",
+  "pyautogui",
 ]
 
 [project.scripts]

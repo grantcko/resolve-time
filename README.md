@@ -1,5 +1,11 @@
 # resolve-time
 
+# Todo:
+make it so that the program is executable like any other clt
+solve test running problem
+rewrite tests to include new log collection logic
+compare vs. hand timing
+
 ## Status: work in progress
 
 # Known issues:

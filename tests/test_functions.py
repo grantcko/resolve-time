@@ -14,30 +14,35 @@ from resolvetime.functions import process_logs
 
 # get references to log filepaths and save entries
 
-log_filepaths = get_log_filepaths("./test_logs")
+log_filepaths = get_log_filepaths("tests/test_logs")
 save_entries = collect_save_entries(log_filepaths)
+all_entries = collect_save_entries(log_filepaths)
 monthly_save_entries = collect_monthly_save_entries(save_entries)
+monthly_all_entries = collect_monthly_save_entries(save_entries)
 
 class TestSummaryFunction:
 
-    def test_build_summary(self):
+    def test_build_summary(self): #TODO:
+        raise
         info = save_entries_info(save_entries)
         months = monthly_save_entries.keys()
         monthly_info = {}
         for month in months:
             if month not in monthly_info:
                 monthly_info[month] = save_entries_info(monthly_save_entries[month])
-        # print(monthly_info)
+        # assert that summary includes correct project names
+        # assert that summary includes correct hours
+        # assert that summary includes correct dates
+        # assert that summary includes correct heatmap
+        # assert that summary includes today summary
 
-        assert type(build_summary(info, monthly_info)) is str
-        assert """Total Sessions: 35
-Total Work Hours: 8.47
-Project Work Hours:
-Project: treehouse-doc_1, Hours: 8.41
-Project: --------------CHOP--------------, Hours: 0.05""" in build_summary(info, monthly_info)
-        assert "----04_2024----" in build_summary(info, monthly_info)
-        assert "----05_2024----" in build_summary(info, monthly_info)
-        assert "----06_2024----" in build_summary(info, monthly_info)
+    def test_build_summary_exact(self): #TODO:
+        raise
+        # assert that summary includes correct project names
+        # assert that summary includes correct hours
+        # assert that summary includes correct dates
+        # assert that summary includes correct heatmap
+        # assert that summary includes today summary
 
 class TestLogPaths:
 
@@ -108,3 +113,11 @@ class TestSaveEntriesInfoFunction:
         info = save_entries_info(save_entries)
         project_hours = info['project_work_hours']
         assert type(project_hours) is dict, "project_work_hours is not a dict"
+
+class TestAutoLogGeneration:
+    def test_auto_gen_logs_function(self): #TODO:
+        raise
+
+class TestLogProcessing:
+    def test_process_logs_function(self): #TODO:
+        raise

@@ -75,3 +75,5 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 - i want the program to automatically force quit the capture logs application
 - for mac only
 -  i want to make decisions on what to do based on problems, features, research, sharing
+- i wanna make it so that the user can pass an option to save space by only running calculations based on save entries. that way i don't have to delete the beautiful code i wrote and there is increased functionality for free. otherwise, i think i'm gonna make it so that the app simply backs up and saves the fucking save entries properly, maybe into a postgress database or a mysql database or something to be extra efficient or just into a fucking csv
+anki stats influences the summary of this project

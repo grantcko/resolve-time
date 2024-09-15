@@ -20,7 +20,7 @@ all_entries = collect_save_entries(log_filepaths)
 monthly_save_entries = collect_monthly_save_entries(save_entries)
 monthly_all_entries = collect_monthly_save_entries(save_entries)
 
-class TestSummaryFunction:
+class TestSummaries:
 
     def test_build_summary(self): #TODO:
         raise
@@ -44,7 +44,7 @@ class TestSummaryFunction:
         # assert that summary includes correct heatmap
         # assert that summary includes today summary
 
-class TestLogPaths:
+class TestLogPathsFunction:
 
     # test funciton to collect log filepaths
 
@@ -54,7 +54,7 @@ class TestLogPaths:
         for log_filepath in log_filepaths:
             assert type(log_filepath) is str, "log_filepath is not a string"
 
-class TestLog:
+class TestCollectedSaveEntries:
 
     # test if save entries are actually collected and stored correctly
 
@@ -78,7 +78,7 @@ class TestLog:
         assert timestamps == sorted(timestamps), "Entries are not in chronological order"
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"
 
-class TestSaveEntriesInfoFunction:
+class TestSaveEntriesInfo:
 
     # test if save_entries_info method returns work sessions count
 

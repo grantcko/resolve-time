@@ -226,6 +226,9 @@ def auto_gen_logs(current_datetime, home_path):
     pyautogui.press('enter')
 
 def process_logs(home_path, current_datetime, txt_filepath, zip_file_pattern):
+    """
+    Function to unzip the newly generated log file, save new log entries into master log, and collect info. RETURNS all the info, along with the zip filepath for deletion
+    """
     # Unzip that zip file with a margin of error in the filename (up to the minute in the timestamp)
     # Use a glob pattern to find the file
     matching_files = glob.glob(zip_file_pattern)

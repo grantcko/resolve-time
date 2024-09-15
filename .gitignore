@@ -8,10 +8,6 @@ venv/
 # pytest cache files
 .pytest_cache/
 
-# Log files
-*.log
-test_logs/
-
 # Build files
 *.egg-info/
 *.eggs/

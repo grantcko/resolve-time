@@ -1,35 +1,69 @@
+# Import exernal modules
+
 from datetime import datetime
 import os
 import pytest
 import sys
 
+# Import internal modules
+
 sys.path.append(os.path.abspath('src'))
 from resolvetime.functions import get_log_filepaths
 from resolvetime.functions import build_summary
-from resolvetime.functions import collect_save_entries
-from resolvetime.functions import collect_monthly_save_entries
-from resolvetime.functions import save_entries_info
+from resolvetime.functions import collect_entries
+from resolvetime.functions import sort_monthly
+from resolvetime.functions import entries_info
 from resolvetime.functions import auto_gen_logs
 from resolvetime.functions import process_logs
 
-# get references to log filepaths and save entries
+#### Definitions
 
 log_filepaths = get_log_filepaths("tests/test_logs")
-save_entries = collect_save_entries(log_filepaths)
-all_entries = collect_save_entries(log_filepaths)
-monthly_save_entries = collect_monthly_save_entries(save_entries)
-monthly_all_entries = collect_monthly_save_entries(save_entries)
+
+# Medium accuracy entry processing - aka by save entries
+
+save_entries = collect_entries(log_filepaths, accuracy="medium"),
+save_entries_info = entries_info(save_entries),
+save_entries_monthly = sort_monthly(save_entries),
+save_entries_months = save_entries_monthly.keys(),
+save_entries_monthly_info = {},
+for month in save_entries_months:
+    if month not in save_entries_monthly_info[month]:
+        save_entries_monthly_info[month] = save_entries_info(monthly_entries[month])
+
+medium = {
+    "entries": save_entries,
+    "entries_info": save_entries_info,
+    "entries_monthly": save_entries_monthly,
+    "entries_months": save_entries_months,
+    "monthly_info": save_entries_monthly_info,
+}
+
+# High accuracy - aka by seconds
+
+sec_entries = collect_entries(log_filepaths, accuracy="high"),
+sec_entries_info = entries_info(sec_entries),
+sec_entries_monthly = sort_monthly(sec_entries),
+sec_entries_months = sec_entries_monthly.keys(),
+sec_entries_monthly_info = {},
+for month in sec_entries_months:
+    if month not in sec_entries_monthly_info[month]:
+        sec_entries_monthly_info[month] = sec_entries_info(monthly_entries[month])
+
+
+high = {
+    "entries": sec_entries,
+    "entries_info": sec_entries_info,
+    "entries_monthly": sec_entries_monthly,
+    "entries_months": sec_entries_months,
+    "monthly_info": sec_entries_monthly_info,
+}
+
 
 class TestSummaries:
 
     def test_build_summary(self): #TODO:
         raise
-        info = save_entries_info(save_entries)
-        months = monthly_save_entries.keys()
-        monthly_info = {}
-        for month in months:
-            if month not in monthly_info:
-                monthly_info[month] = save_entries_info(monthly_save_entries[month])
         # assert that summary includes correct project names
         # assert that summary includes correct hours
         # assert that summary includes correct dates
@@ -77,6 +111,9 @@ class TestCollectedSaveEntries:
         assert len(timestamps) > 0, "timestamps should be greater than 0"
         assert timestamps == sorted(timestamps), "Entries are not in chronological order"
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"
+
+class TestCollectedSecEntries: #TODO
+    raise
 
 class TestSaveEntriesInfo:
 

@@ -23,6 +23,7 @@ from resolvetime.functions import get_entries_monthly_info
 #### Definitions
 
 log_filepaths = get_log_filepaths("tests/test_logs")
+home_path = os.environ["HOME"]
 
 # Medium accuracy entry processing - aka by save entries
 
@@ -200,7 +201,6 @@ class TestAutoLogGeneration:
         # Get a reference to the date and time
         current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
         # get reference to $HOME environmental variable
-        home_path = os.environ["HOME"]
         # Genereate the log files
         auto_gen_logs(current_datetime, home_path)
         # Define desired path for log files to end up
@@ -228,10 +228,13 @@ class TestAutoLogGeneration:
         # assert len(log_files) == 0, "log files found on the desktop."
 
 class TestLogProcessing:
-    def test_process_logs_function(self):
-        return
-        # assert info is a dict
-        # assert monthly_info is a list
-        # assert monthly_info > 0
-        # assert monthly_info[0] is a dict
-        # assert zip_filepath is a str
+    def test_process_logs_function(self): # AIDER
+        # run function
+        current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
+        master_log_file = "tests/master_log.txt"
+        output = process_logs(home_path, current_datetime, master_log_file)
+        assert output["info"] is a dict
+        assert output["monthly_info"] is a list
+        assert output["monthly_info"] > 0
+        assert output["monthly_info"][0] is a dict
+        assert output["zip_filepath"] is a str

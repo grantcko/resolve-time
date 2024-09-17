@@ -1,20 +1,23 @@
 # resolve-time (🧑‍💻work in progress🧑‍💻)
+A tool designed to help you monitor time spent in DaVinci Resolve.
 
-# Todo:
+## Todo:
 - ☑ Make it so that the program is executable like any other CLI
-- ☑ Solve test running problem
-- ☐ Rewrite tests to include new log collection logic
+- ☐ Rewrite tests
+- ☐ Implement different collection accuracy logic (high accuracy and low accuracy)
 - ☐ Compare accuracy between resolve-time and hand timing
 
-# Known issues:
+## Known issues:
 - if you change the project name, it will be logged as a different project
 - tests not running and the tests suck.
 - weird calulation error between total hours worked and the sole project worked that month (should be same)
 - if this app isn't run often, then some logs are lost and you get incorrect data with no way of seeing what days you missed
 - application only calculates from saves, might be inaccurate, better data is with the rest of the log entries because they are not dependent on users saving settings and practicies
 
-## Introduction
-resolve-time is a tool designed to help you monitor the time spent on DaVinci Resolve video projects
+## Installation
+
+1. start virtual environment
+2. install with pipx
 
 ## Problem Statement
 Tracking the time spent on DaVinci Resolve video projects is challenging, making it difficult to understand productivity levels or determine appropriate client charges.
@@ -27,16 +30,6 @@ Resolve Time Tracker analyzes your DaVinci Resolve log files and provides a deta
 - **As a user,** I can view a breakdown of time spent on Davnici Resolve projects to understand my effort. (all time and per month (total + per project))
 <!-- - **As a user,** I can view a heatmap graph showing total days spent editing to understand my consistency. -->
 
-## Installation
-
-1. Navigate to project directory
-2. Run:
-```
-cp app/__init__.py /usr/local/bin/resolve-time
-```
-
-## Usage
-
 ## Problem Statement
 Tracking the time spent on DaVinci Resolve video projects is challenging, making it difficult to understand productivity levels or determine appropriate client charges.
 
@@ -47,7 +40,7 @@ pytest
 ```
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License.
 
 ## misc notes:
 - make sure my tests are ok, code is commented, readmes are good, code is refactored

@@ -69,7 +69,7 @@ def build_summary(info, monthly_info):
 
     return summary
 
-def collect_save_entries(log_filepaths):
+def collect_entries(log_filepaths, accuracy="medium"):
     """
     Function to collect log entries from a file.
 
@@ -79,7 +79,7 @@ def collect_save_entries(log_filepaths):
     Returns:
     list: A list of dictionaries containing 'datetime' and 'project_name' from the log entries.
     """
-    save_entries = []
+    entries = []
 
     # Regular expression to match the log line
 
@@ -103,12 +103,12 @@ def collect_save_entries(log_filepaths):
                         # print("Match" + str(num) + f" : {match.group(0)}")
                         num += 1
                         #
-                        save_entry = {
+                        entry = {
                             'timestamp': match.group('timestamp'),
                             'project_title': match.group('project_title')
                         }
-                        save_entries.append(save_entry)
-                        # print(save_entry)
+                        entries.append(entry)
+                        # print(entry)
 
                         # Make a txt file at the application support directory
                         txt_filepath = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
@@ -126,34 +126,35 @@ def collect_save_entries(log_filepaths):
         except Exception as e:
             print(f"An error occurred: {e}")
 
-    # return save_entries, a list of sorted dicts [{'timestamp':'...', 'project_title':'...'},{'...'}]
+    # return entries, a list of sorted dicts [{'timestamp':'...', 'project_title':'...'},{'...'}]
+    all_collected_entries = sorted(entries, key=lambda entry: datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f'))
+    # print(all_collected_entries)
+    return all_collected_entries
 
-    return sorted(save_entries, key=lambda entry: datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f'))
-
-def collect_monthly_save_entries(all_entries):
+def sort_monthly(entries):
     months_worked = {}
     # go through each entry
-    for entry in all_entries:
+    for entry in entries:
         # get ref to mm_yyyy (ex:06_2024) unless it's a duplicate
         mm_yyyy = f"{datetime.strftime(datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f'), '%m_%Y')}"
         # add key:value pair with key as 'mm/yyyy', and value as an empty list, if that month isn't already there
         if mm_yyyy not in months_worked:
             months_worked[mm_yyyy] = []
-        # append current save entry to save_entries list pertaining to the month
+        # append current save entry to entries list pertaining to the month
         # print(months_worked)
         months_worked[mm_yyyy].append(entry)
 
     return months_worked
     # example :{'04/2024':[save entries], '05/2024':[save entries], '06/2024':[save entries]}
 
-def save_entries_info(save_entries): # returns dict of total and per project summaries for: all time, per month
+def entries_info(entries):# returns dict of total and per project summaries for: all time, per month
     """
     Function to get number of work sessions, total hours, hours per project from save entries.
     """
 
     # if there are no save entries, return an empty summary
 
-    if not save_entries:
+    if not entries:
         return {
              'session_count': 0,
              'work_hours': 0.0,
@@ -176,8 +177,8 @@ def save_entries_info(save_entries): # returns dict of total and per project sum
 
     # iterate over each save entry and collect session count and work hours for all time and per project
 
-    for entry in save_entries:
-
+    # print(entries)
+    for entry in entries:
         ## VARIABLES ##
 
         # current entry's timestamp
@@ -249,18 +250,30 @@ def process_logs(home_path, current_datetime, txt_filepath, zip_file_pattern):
     # Add our new resolve time log to log_filepaths, at the end of the list
     log_filepaths.append(txt_filepath)
 
-    save_entries = collect_save_entries(log_filepaths)
-    info = save_entries_info(save_entries)
+    entries = collect_entries(log_filepaths)
+    info = entries_info(entries)
     # collect monthly save entries and get save entries info from each month, build summary from info and monthly info
-    monthly_save_entries = collect_monthly_save_entries(save_entries)
-    months = monthly_save_entries.keys()
+    monthly_entries = sort_monthly(entries)
+    months = monthly_entries.keys()
     monthly_info = {}
     for month in months:
         if month not in monthly_info:
-            monthly_info[month] = save_entries_info(monthly_save_entries[month])
+            monthly_info[month] = entries_info(monthly_entries[month])
 
     return {
         "info":info,
         "monthly_info":monthly_info,
         "zip_filepath":zip_filepath,
     }
+
+def get_entries_monthly_info(entries_monthly):
+    """
+    Function to get info from each month's log entries.
+    Returns a dictionary containing each month's info (also a dict)
+    """
+    entries_months = entries_monthly.keys()
+    entries_monthly_info = {}
+    for month in entries_months:
+        if month not in entries_monthly_info:
+            entries_monthly_info[month] = entries_info(entries_monthly[month])
+    return entries_monthly_info

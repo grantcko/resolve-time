@@ -234,23 +234,40 @@ def log_files_setup_teardown():
     current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
     zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
     auto_gen_logs(current_datetime, home_path)
-    
+
     yield current_datetime, zip_file_pattern
-    
+
     # Teardown: Remove generated files
     subprocess.run(['rm', '-rf', glob.glob(zip_file_pattern)[0]])
     subprocess.run(['rm', '-rf', f"{home_path}/Desktop/Library"])
 
 class TestLogProcessing:
-    def test_process_logs_function(self, log_files_setup_teardown):
+    def test_process_logs_function_mid(self, log_files_setup_teardown):
         current_datetime, zip_file_pattern = log_files_setup_teardown
-        processed = process_logs(home_path, current_datetime, master_log_file, zip_file_pattern)
+        processed = process_logs(home_path, current_datetime, master_log_file, zip_file_pattern, accuracy="medium")
 
         # testing info...
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"
-        assert len(processed["info"]) > 0, "Monthly info should not be empty"
+        assert len(processed["info"]) > 0, "info should not be empty"
+        assert processed["info"] == "whatever", "monthly info should be ???"
         # testing monthly info...
         assert isinstance(processed["monthly_info"], dict), "processed monthly_info should be a dictionary"
         assert len(processed["monthly_info"]) > 0, "Monthly info should not be empty"
         # testing zip filepath
         assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
+        assert processed["monthly_info"] == "whatever", "monthly info should be ???"
+
+    def test_process_logs_function_high(self, log_files_setup_teardown):
+        current_datetime, zip_file_pattern = log_files_setup_teardown
+        processed = process_logs(home_path, current_datetime, master_log_file, zip_file_pattern, accuracy="high")
+
+        # testing info...
+        assert isinstance(processed["info"], dict), "processed info should be a dictionary"
+        assert len(processed["info"]) > 0, "info should not be empty"
+        assert processed["info"] == "whatever", "monthly info should be ???"
+        # testing monthly info...
+        assert isinstance(processed["monthly_info"], dict), "processed monthly_info should be a dictionary"
+        assert len(processed["monthly_info"]) > 0, "Monthly info should not be empty"
+        # testing zip filepath
+        assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
+        assert processed["monthly_info"] == "whatever", "monthly info should be ???"

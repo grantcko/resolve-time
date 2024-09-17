@@ -253,9 +253,9 @@ class TestLogProcessing:
         # testing monthly info...
         assert isinstance(processed["monthly_info"], dict), "processed monthly_info should be a dictionary"
         assert len(processed["monthly_info"]) > 0, "Monthly info should not be empty"
-        # testing zip filepath
-        assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
         assert processed["monthly_info"] == "whatever", "monthly info should be ???"
+        # testing zip filepath...
+        assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
 
     def test_process_logs_function_high(self, log_files_setup_teardown):
         current_datetime, zip_file_pattern = log_files_setup_teardown

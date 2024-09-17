@@ -103,7 +103,7 @@ class TestCollectedSaveEntries:
         assert timestamps == sorted(timestamps), "Entries are not in chronological order"
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"
 
-class TestCollectedSecEntries: #TODO
+class TestCollectedSecEntries:
 
     # test if save entries are actually collected and stored correctly
 
@@ -190,8 +190,8 @@ class TestSecEntriesInfo:
             assert hours > 0, f"Work hours for project {project} should be greater than 0"
 
 class TestAutoLogGeneration:
-    def test_auto_gen_logs_function(self): #TODO:
-        return
+    def test_auto_gen_logs_function(self):
+        # assert that file on the desktop created in the last few minutes starting with "DaVinci-Resolve-logs-" exists
 
 class TestLogProcessing:
     def test_process_logs_function(self): #TODO:

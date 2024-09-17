@@ -1,9 +1,12 @@
 # Import exernal modules
 
 from datetime import datetime
+import glob
 import os
 import pytest
 import sys
+import subprocess
+import time
 
 # Import internal modules
 
@@ -194,22 +197,41 @@ class TestSecEntriesInfo:
 
 class TestAutoLogGeneration:
     def test_auto_gen_logs_function(self):
-        desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
-        log_files = [f for f in os.listdir(desktop_path) if f.startswith("DaVinci-Resolve-logs-")]
-        
+        # Get a reference to the date and time
+        current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
+        # get reference to $HOME environmental variable
+        home_path = os.environ["HOME"]
+        # Genereate the log files
+        auto_gen_logs(current_datetime, home_path)
+        # Define desired path for log files to end up
+        path = os.path.join(os.path.expanduser("~"), "Desktop")
+        # Collect all the log file filepaths in that folder
+        log_files = [f for f in os.listdir(path) if f.startswith("DaVinci-Resolve-logs-")]
+
         assert len(log_files) > 0, "No log files found on the desktop."
 
         # Check if any of the log files were created in the last few minutes
         recent_file_found = False
         for log_file in log_files:
-            file_path = os.path.join(desktop_path, log_file)
+            file_path = os.path.join(path, log_file)
             creation_time = os.path.getctime(file_path)
             if (datetime.now() - datetime.fromtimestamp(creation_time)).total_seconds() < 300:  # 5 minutes
                 recent_file_found = True
                 break
 
-        assert recent_file_found, "No recent log file found on the desktop."
+        assert recent_file_found, "No RENCENT log file found on the desktop."
+
+        time.sleep(1.0)
+        # Remove the generated zip file
+        subprocess.run(['rm', '-rf', glob.glob(f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz")[0]])
+        # log_files = [f for f in os.listdir(path) if f.startswith("DaVinci-Resolve-logs-")]
+        # assert len(log_files) == 0, "log files found on the desktop."
 
 class TestLogProcessing:
-    def test_process_logs_function(self): #TODO:
+    def test_process_logs_function(self):
         return
+        # assert info is a dict
+        # assert monthly_info is a list
+        # assert monthly_info > 0
+        # assert monthly_info[0] is a dict
+        # assert zip_filepath is a str

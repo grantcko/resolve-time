@@ -24,6 +24,7 @@ from resolvetime.functions import get_entries_monthly_info
 
 log_filepaths = get_log_filepaths("tests/test_logs")
 home_path = os.environ["HOME"]
+master_log_file = "tests/master_log.txt"
 
 # Medium accuracy entry processing - aka by save entries
 
@@ -229,13 +230,24 @@ class TestAutoLogGeneration:
 
 class TestLogProcessing:
     def test_process_logs_function(self):
-        # run function
+        # generating log files... AIDER
         current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
-        master_log_file = "tests/master_log.txt"
         zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
-        output = process_logs(home_path, current_datetime, master_log_file, zip_file_pattern)
-        
-        assert isinstance(output["info"], dict), "Output info should be a dictionary"
-        assert isinstance(output["monthly_info"], dict), "Output monthly_info should be a dictionary"
-        assert len(output["monthly_info"]) > 0, "Monthly info should not be empty"
-        assert isinstance(output["zip_filepath"], str), "Zip filepath should be a string"
+        auto_gen_logs(current_datetime, home_path)
+        # processing those logs...
+        processed = process_logs(home_path, current_datetime, master_log_file, zip_file_pattern)
+
+        # testing info...
+        assert isinstance(processed["info"], dict), "processed info should be a dictionary"
+        # assert processed["info"] == "whatever", "monthly info should be ???"
+        assert len(processed["info"]) > 0, "Monthly info should not be empty"
+        # testing monthly info...
+        assert isinstance(processed["monthly_info"], dict), "processed monthly_info should be a dictionary"
+        # assert processed["monthly_info"] == "whatever", "monthly info should be ???"
+        assert len(processed["monthly_info"]) > 0, "Monthly info should not be empty"
+        # testing zip filepath
+        assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
+
+        # Removing generated files... AIDER
+        subprocess.run(['rm', '-rf', processed["zip_filepath"]])
+        subprocess.run(['rm', '-rf', f"{home_path}/Desktop/Library"])

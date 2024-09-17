@@ -194,8 +194,21 @@ class TestSecEntriesInfo:
 
 class TestAutoLogGeneration:
     def test_auto_gen_logs_function(self):
-        # AIDER: assert that file on the desktop created in the last few minutes starting with "DaVinci-Resolve-logs-" exists
-        return
+        desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
+        log_files = [f for f in os.listdir(desktop_path) if f.startswith("DaVinci-Resolve-logs-")]
+        
+        assert len(log_files) > 0, "No log files found on the desktop."
+
+        # Check if any of the log files were created in the last few minutes
+        recent_file_found = False
+        for log_file in log_files:
+            file_path = os.path.join(desktop_path, log_file)
+            creation_time = os.path.getctime(file_path)
+            if (datetime.now() - datetime.fromtimestamp(creation_time)).total_seconds() < 300:  # 5 minutes
+                recent_file_found = True
+                break
+
+        assert recent_file_found, "No recent log file found on the desktop."
 
 class TestLogProcessing:
     def test_process_logs_function(self): #TODO:

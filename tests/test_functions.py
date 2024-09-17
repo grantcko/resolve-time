@@ -52,13 +52,24 @@ high = {
 
 class TestSummaries:
 
-    def test_build_summary(self): #TODO:
-        return
-        # assert that summary includes correct project names
-        # assert that summary includes correct hours
-        # assert that summary includes correct dates
-        # assert that summary includes correct heatmap
-        # assert that summary includes today summary
+    def test_build_summary(self):
+        summary = build_summary(medium["entries_info"], medium["monthly_info"])
+        
+        # Check that the summary includes correct project names
+        for project in medium["entries_info"]["project_work_hours"].keys():
+            assert f"\"{project}\"" in summary, f"Project {project} not found in summary"
+        
+        # Check that the summary includes correct hours
+        for project, hours in medium["entries_info"]["project_work_hours"].items():
+            assert f"{hours:.2f} hours" in summary, f"Hours for project {project} not found in summary"
+        
+        # Check that the summary includes correct dates
+        for month in medium["monthly_info"].keys():
+            assert f"[{month}]" in summary, f"Month {month} not found in summary"
+        
+        # Check that the summary includes correct session count and work hours
+        assert f"sessions : {medium['entries_info']['session_count']}" in summary, "Session count not found in summary"
+        assert f"time : {medium['entries_info']['work_hours']:.2f} hours" in summary, "Work hours not found in summary"
 
     def test_build_summary_exact(self): #TODO:
         return

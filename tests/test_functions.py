@@ -228,13 +228,14 @@ class TestAutoLogGeneration:
         # assert len(log_files) == 0, "log files found on the desktop."
 
 class TestLogProcessing:
-    def test_process_logs_function(self): # AIDER
+    def test_process_logs_function(self):
         # run function
         current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
         master_log_file = "tests/master_log.txt"
-        output = process_logs(home_path, current_datetime, master_log_file)
-        assert output["info"] is a dict
-        assert output["monthly_info"] is a list
-        assert output["monthly_info"] > 0
-        assert output["monthly_info"][0] is a dict
-        assert output["zip_filepath"] is a str
+        zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
+        output = process_logs(home_path, current_datetime, master_log_file, zip_file_pattern)
+        
+        assert isinstance(output["info"], dict), "Output info should be a dictionary"
+        assert isinstance(output["monthly_info"], dict), "Output monthly_info should be a dictionary"
+        assert len(output["monthly_info"]) > 0, "Monthly info should not be empty"
+        assert isinstance(output["zip_filepath"], str), "Zip filepath should be a string"

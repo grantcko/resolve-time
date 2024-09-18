@@ -233,15 +233,10 @@ class TestAutoLogGeneration:
 @pytest.fixture
 def log_files_setup_teardown():
     # Setup: Generate log files
-    current_datetime = datetime.strptime("20240917-185013", "%Y%m%d-%H%M%S")
+    current_datetime = "20240917-185013"
     zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
-    auto_gen_logs(current_datetime, home_path)
 
     yield current_datetime, zip_file_pattern
-
-    # Teardown: Remove generated files
-    subprocess.run(['rm', '-rf', glob.glob(zip_file_pattern)[0]])
-    subprocess.run(['rm', '-rf', f"{home_path}/Desktop/Library"])
 
 class TestLogProcessing:
     def test_process_logs_function_mid(self, log_files_setup_teardown):

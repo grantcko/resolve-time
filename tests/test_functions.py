@@ -310,4 +310,6 @@ class TestLogProcessing:#
 
 @pytest.fixture
 def masterlog_teardown():
-    # AIDER clear the contents of /Users/granthall/code/grantcko/resolve-time/tests/masterlog_blank.txt
+    # Clear the contents of tests/masterlog_blank.txt
+    with open("tests/masterlog_blank.txt", 'w') as masterlog_file:
+        masterlog_file.truncate(0)

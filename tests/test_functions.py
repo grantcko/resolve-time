@@ -24,11 +24,13 @@ from resolvetime.functions import get_entries_monthly_info
 
 log_filepaths = get_log_filepaths("tests/test_logs/sep-b_2024")
 home_path = os.environ["HOME"]
-masterlog_file = "tests/masterlog.txt"
+masterlog_file_blank = "tests/masterlog_blank.txt"
+masterlog_file_missing = "tests/masterlog_missing.txt"
+masterlog_file_overlap = "tests/masterlog_overlap.txt"
 
 # Medium accuracy entry processing - aka by save entries
 
-save_entries = collect_entries(log_filepaths, masterlog_file, accuracy="medium")
+save_entries = collect_entries(log_filepaths, masterlog_file_blank, accuracy="medium")
 save_entries_info = entries_info(save_entries)
 save_entries_monthly = sort_monthly(save_entries)
 save_entries_monthly_info = get_entries_monthly_info(save_entries_monthly)
@@ -42,7 +44,7 @@ medium = {
 
 # High accuracy - aka by seconds
 
-sec_entries = collect_entries(log_filepaths, masterlog_file, accuracy="high")
+sec_entries = collect_entries(log_filepaths, masterlog_file_blank, accuracy="high")
 sec_entries_info = entries_info(sec_entries)
 sec_entries_monthly = sort_monthly(sec_entries)
 sec_entries_monthly_info = get_entries_monthly_info(sec_entries_monthly)
@@ -54,24 +56,67 @@ high = {
     "monthly_info": sec_entries_monthly_info,
 }
 
-
-class TestSummaries: #
-
-    def test_build_summary(self):
+class TestSummariesMediumAccuracy:#
+    def test_with_blank_masterlog(self):
         summary = build_summary(medium["entries_info"], medium["monthly_info"])
-
-        # Check that the summary includes correct project names
-        # Check that the summary includes correct hours
-        # Check that the summary includes correct dates
-        # Check that the summary includes correct session count and work hours
-
-    def test_build_summary_exact(self): #TODO:
-        summary = build_summary(high["entries_info"], medium["monthly_info"])
+        assert summary == "TODO", f"summary should be ???"
         # assert that summary includes correct project names
         # assert that summary includes correct hours
         # assert that summary includes correct dates
         # assert that summary includes correct heatmap
         # assert that summary includes today summary
+        # assert that summary includes correct session count and work hours
+
+    def test_with_missing_entries_masterlog(self):
+        summary = build_summary(medium["entries_info"], medium["monthly_info"])
+        assert summary == "TODO", f"summary should be ???"
+        # assert that summary includes correct project names
+        # assert that summary includes correct hours
+        # assert that summary includes correct dates
+        # assert that summary includes correct heatmap
+        # assert that summary includes today summary
+        # assert that summary includes correct session count and work hours
+
+    def test_with_overlapping_masterlog(self):
+        summary = build_summary(medium["entries_info"], medium["monthly_info"])
+        assert summary == "TODO", f"summary should be ???"
+        # assert that summary includes correct project names
+        # assert that summary includes correct hours
+        # assert that summary includes correct dates
+        # assert that summary includes correct heatmap
+        # assert that summary includes today summary
+        # assert that summary includes correct session count and work hours
+
+class TestSummariesHighAccuracy:
+    def test_with_blank_masterlog(self):
+        summary = build_summary(high["entries_info"], high["monthly_info"])
+        assert summary == "TODO", f"summary should be ???"
+        # assert that summary includes correct project names
+        # assert that summary includes correct hours
+        # assert that summary includes correct dates
+        # assert that summary includes correct heatmap
+        # assert that summary includes today summary
+        # assert that summary includes correct session count and work hours
+
+    def test_with_missing_entries_masterlog(self):
+        summary = build_summary(high["entries_info"], high["monthly_info"])
+        assert summary == "TODO", f"summary should be ???"
+        # assert that summary includes correct project names
+        # assert that summary includes correct hours
+        # assert that summary includes correct dates
+        # assert that summary includes correct heatmap
+        # assert that summary includes today summary
+        # assert that summary includes correct session count and work hours
+
+    def test_with_overlapping_masterlog(self):
+        summary = build_summary(high["entries_info"], high["monthly_info"])
+        assert summary == "TODO", f"summary should be ???"
+        # assert that summary includes correct project names
+        # assert that summary includes correct hours
+        # assert that summary includes correct dates
+        # assert that summary includes correct heatmap
+        # assert that summary includes today summary
+        # assert that summary includes correct session count and work hours
 
 class TestLogPathsFunction:
 
@@ -83,7 +128,7 @@ class TestLogPathsFunction:
         for log_filepath in log_filepaths:
             assert type(log_filepath) is str, "log_filepath is not a string"
 
-class TestCollectedSaveEntries:
+class TestCollectedSaveEntries:#
 
     # test if save entries are actually collected and stored correctly
 
@@ -108,7 +153,7 @@ class TestCollectedSaveEntries:
         assert timestamps == sorted(timestamps), "Entries are not in chronological order"
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"
 
-class TestCollectedSecEntries:
+class TestCollectedSecEntries:#
 
     # test if save entries are actually collected and stored correctly
 
@@ -133,7 +178,7 @@ class TestCollectedSecEntries:
         assert timestamps == sorted(timestamps), "Entries are not in chronological order"
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"
 
-class TestSaveEntriesInfo:
+class TestSaveEntriesInfo:#
 
     # test info generated from save entries
 
@@ -164,7 +209,7 @@ class TestSaveEntriesInfo:
             assert type(hours) is float, f"Work hours for project {project} is not a float"
             assert hours > 0, f"Work hours for project {project} should be greater than 0"
 
-class TestSecEntriesInfo:
+class TestSecEntriesInfo:#
     # test info generated from save entries
 
     # set up a fixture to define which info is being tested (save entries info)
@@ -230,28 +275,28 @@ def log_files_setup_teardown():
     # Setup: Generate log files
     current_datetime = "20240917-185013"
     zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
-
     yield current_datetime, zip_file_pattern
 
-class TestLogProcessing:
-    def test_process_logs_function_mid(self, log_files_setup_teardown):
+class TestLogProcessing:#
+    def test_process_logs_function_mediumac(self, log_files_setup_teardown):
         current_datetime, zip_file_pattern = log_files_setup_teardown
-        processed = process_logs(home_path, current_datetime, masterlog_file, zip_file_pattern, accuracy="medium")
+        processed = process_logs(home_path, current_datetime, masterlog_file_blank, zip_file_pattern, accuracy="medium")
 
         # testing info...
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"
         assert len(processed["info"]) > 0, "info should not be empty"
-        assert processed["info"] == "whatever", "monthly info should be ???"
+        assert processed["info"] == "TODO", "monthly info should be ???"
         # testing monthly info...
         assert isinstance(processed["monthly_info"], dict), "processed monthly_info should be a dictionary"
         assert len(processed["monthly_info"]) > 0, "Monthly info should not be empty"
-        assert processed["monthly_info"] == "whatever", "monthly info should be ???"
+        assert processed["monthly_info"] == "TODO", "monthly info should be ???"
         # testing zip filepath...
         assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
+        # AIDER: clear the contents of the zip_filepath
 
-    def test_process_logs_function_high(self, log_files_setup_teardown):
+    def test_process_logs_function_highac(self, log_files_setup_teardown):
         current_datetime, zip_file_pattern = log_files_setup_teardown
-        processed = process_logs(home_path, current_datetime, masterlog_file, zip_file_pattern, accuracy="high")
+        processed = process_logs(home_path, current_datetime, masterlog_file_blank, zip_file_pattern, accuracy="high")
 
         # testing info...
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"

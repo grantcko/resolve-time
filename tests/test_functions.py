@@ -233,7 +233,7 @@ class TestAutoLogGeneration:
 @pytest.fixture
 def log_files_setup_teardown():
     # Setup: Generate log files
-    current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
+    current_datetime = # AIDER: make a datetime with this date: 20240917-185013 -> datetime.now().strftime("%Y%m%d-%H%M%S")
     zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
     auto_gen_logs(current_datetime, home_path)
 

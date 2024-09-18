@@ -273,6 +273,7 @@ class TestAutoLogGeneration:
 @pytest.fixture
 def log_files_setup_teardown():
     # Setup: Generate log files
+    masterlog_blank = "tests/masterlog_blank.txt"
     current_datetime = "20240917-185013"
     zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
     yield current_datetime, zip_file_pattern

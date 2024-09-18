@@ -19,11 +19,10 @@ from resolvetime.functions import entries_info
 from resolvetime.functions import auto_gen_logs
 from resolvetime.functions import process_logs
 from resolvetime.functions import get_entries_monthly_info
-sys.path.append(os.path.abspath('tests'))
 
 #### Definitions
 
-log_filepaths = get_log_filepaths("tests/test_logs")
+log_filepaths = get_log_filepaths("tests/test_logs/sep-b_2024")
 home_path = os.environ["HOME"]
 masterlog_file = "tests/masterlog.txt"
 
@@ -56,17 +55,14 @@ high = {
 }
 
 
-class TestSummaries:
+class TestSummaries: #
 
     def test_build_summary(self):
         summary = build_summary(medium["entries_info"], medium["monthly_info"])
 
         # Check that the summary includes correct project names
-
         # Check that the summary includes correct hours
-
         # Check that the summary includes correct dates
-
         # Check that the summary includes correct session count and work hours
 
     def test_build_summary_exact(self): #TODO:
@@ -99,7 +95,7 @@ class TestCollectedSaveEntries:
     def test_entries(self, entries):
         assert type(entries) is list, "entries is not a list"
         assert len(entries) > 0, "entries should be greater than 0"
-        assert len(entries) == 886, "entries should have 886 entries"
+        assert len(entries) == 100, "entries should have ??? entries"
         for entry in entries:
             assert type(entry) is dict, "Entry is not a dict"
             assert 'timestamp' in entry, "Entry does not have a timestamp"

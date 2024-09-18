@@ -23,6 +23,8 @@ from resolvetime.functions import get_entries_monthly_info
 #### Definitions
 
 log_filepaths = get_log_filepaths("tests/test_logs/sep-b_2024")
+log_filepaths_missing = get_log_filepaths("tests/test_logs/apr-jun_2024")
+log_filepaths_overlap = get_log_filepaths("tests/test_logs/sep-a_2024")
 home_path = os.environ["HOME"]
 masterlog_file_blank = "tests/masterlog_blank.txt"
 masterlog_file_missing = "tests/masterlog_missing.txt"
@@ -56,8 +58,24 @@ high = {
     "monthly_info": sec_entries_monthly_info,
 }
 
+@pytest.fixture
+def summary_setup_teardown():
+    with open(masterlog_file_blank, 'w') as masterlog_file:
+        masterlog_file.truncate(0)
+    with open(masterlog_file_missing, 'w') as masterlog_file:
+        masterlog_file.truncate(0)
+    collect_entries(log_filepaths_missing, masterlog_file_missing, accuracy="medium")
+    with open(masterlog_file_overlap, 'w') as masterlog_file:
+        masterlog_file.truncate(0)
+    current_datetime = "20240917-185013"
+    zip_file_pattern = f"tests/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
+    collect_entries(log_filepaths_overlap, masterlog_file_overlap, accuracy="medium")
+    processed = process_logs(home_path, current_datetime, masterlog_file_overlap, zip_file_pattern, accuracy="medium")
+    # Remove the unzipped log folder
+    subprocess.run(['rm', '-rf', "tests/zipped_logs/Library*"])
+
 class TestSummariesMediumAccuracy:#
-    def test_with_blank_masterlog(self):
+    def test_with_blank_masterlog(self, summary_setup_teardown):
         summary = build_summary(medium["entries_info"], medium["monthly_info"])
         assert summary == "TODO", f"summary should be ???"
         # assert that summary includes correct project names
@@ -273,13 +291,12 @@ class TestAutoLogGeneration:
 @pytest.fixture
 def log_files_setup_teardown():
     # Setup: Generate log files
-    masterlog_blank = "tests/masterlog_blank.txt"
     current_datetime = "20240917-185013"
-    zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
+    zip_file_pattern = f"./DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
     yield current_datetime, zip_file_pattern
-    # Clear the contents of masterlog_blank using os.remove and open
-    os.remove(masterlog_blank)
-    open(masterlog_blank, 'w').close()
+    # remove masterlog file
+    with open(masterlog_file_blank, 'w') as masterlog_file:
+        masterlog_file.truncate(0)
 
 class TestLogProcessing:#
     def test_process_logs_function_mediumac(self, log_files_setup_teardown):

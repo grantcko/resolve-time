@@ -227,7 +227,7 @@ def auto_gen_logs(current_datetime, home_path):
     pyautogui.press('enter')
     pyautogui.press('enter')
 
-def process_logs(home_path, current_datetime, txt_filepath, zip_file_pattern):
+def process_logs(home_path, current_datetime, txt_filepath, zip_file_pattern, accuracy="medium"):
     """
     Function to unzip the newly generated log file, save new log entries into master log, and collect info. RETURNS all the info, along with the zip filepath for deletion
     """
@@ -251,7 +251,7 @@ def process_logs(home_path, current_datetime, txt_filepath, zip_file_pattern):
     # Add our new resolve time log to log_filepaths, at the end of the list
     log_filepaths.append(txt_filepath)
 
-    entries = collect_entries(log_filepaths)
+    entries = collect_entries(log_filepaths, txt_filepath)
     info = entries_info(entries)
     # collect monthly save entries and get save entries info from each month, build summary from info and monthly info
     monthly_entries = sort_monthly(entries)

@@ -292,7 +292,9 @@ class TestLogProcessing:#
         assert processed["monthly_info"] == "TODO", "monthly info should be ???"
         # testing zip filepath...
         assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
-        # AIDER: clear the contents of the zip_filepath
+        # Clear the contents of the zip_filepath
+        with open(processed["zip_filepath"], 'w') as zip_file:
+            zip_file.truncate(0)
 
     def test_process_logs_function_highac(self, log_files_setup_teardown):
         current_datetime, zip_file_pattern = log_files_setup_teardown

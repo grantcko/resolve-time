@@ -276,6 +276,9 @@ def log_files_setup_teardown():
     current_datetime = "20240917-185013"
     zip_file_pattern = f"{home_path}/Desktop/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
     yield current_datetime, zip_file_pattern
+    #AIDER: try another method of doing this...
+    with open(masterlog_blank, 'w') as masterlog_file:
+        masterlog_file.truncate(0)
 
 class TestLogProcessing:#
     def test_process_logs_function_mediumac(self, log_files_setup_teardown):
@@ -307,9 +310,3 @@ class TestLogProcessing:#
         # testing zip filepath
         assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
         assert processed["monthly_info"] == "whatever", "monthly info should be ???"
-
-@pytest.fixture
-def masterlog_teardown():
-    # Clear the contents of tests/masterlog_blank.txt
-    with open("tests/masterlog_blank.txt", 'w') as masterlog_file:
-        masterlog_file.truncate(0)

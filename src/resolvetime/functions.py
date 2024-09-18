@@ -227,7 +227,7 @@ def auto_gen_logs(current_datetime, home_path):
     pyautogui.press('enter')
     pyautogui.press('enter')
 
-def process_logs(home_path, current_datetime, txt_filepath, zip_file_pattern, accuracy="medium"):
+def process_logs(home_path, current_datetime, txt_filepath, zip_file_pattern, log_folder_filepath="", accuracy="medium"):
     """
     Function to unzip the newly generated log file, save new log entries into master log, and collect info. RETURNS all the info, along with the zip filepath for deletion
     """
@@ -242,7 +242,8 @@ def process_logs(home_path, current_datetime, txt_filepath, zip_file_pattern, ac
         print("No matching log file found.")
 
     # Get reference to the unzipped folder containing log files
-    log_folder_filepath = f"{home_path}/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
+    if log_folder_filepath == "":
+        log_folder_filepath = f"{home_path}/Desktop/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
 
     threading.Event().wait(3)
 

@@ -60,6 +60,12 @@ high = {
 
 @pytest.fixture
 def summary_setup_teardown():
+    current_datetime = "20240917-185013"
+    zip_file_pattern = f"tests/zipped-logs/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
+    # collect_entries(log_filepaths, masterlog_file_missing, accuracy="medium")
+    processed = process_logs(home_path, current_datetime, masterlog_file_missing, zip_file_pattern, log_folder_filepath="tests/zipped-logs/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs", accuracy="medium")
+
+    yield
     with open(masterlog_file_blank, 'w') as masterlog_file:
         masterlog_file.truncate(0)
     with open(masterlog_file_missing, 'w') as masterlog_file:
@@ -67,12 +73,9 @@ def summary_setup_teardown():
     collect_entries(log_filepaths_missing, masterlog_file_missing, accuracy="medium")
     with open(masterlog_file_overlap, 'w') as masterlog_file:
         masterlog_file.truncate(0)
-    current_datetime = "20240917-185013"
-    zip_file_pattern = f"tests/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
     collect_entries(log_filepaths_overlap, masterlog_file_overlap, accuracy="medium")
-    processed = process_logs(home_path, current_datetime, masterlog_file_overlap, zip_file_pattern, accuracy="medium")
     # Remove the unzipped log folder
-    subprocess.run(['rm', '-rf', "tests/zipped_logs/Library*"])
+    subprocess.run(['rm', '-rf', "tests/zipped-logs/Library"])
 
 class TestSummariesMediumAccuracy:#
     def test_with_blank_masterlog(self, summary_setup_teardown):

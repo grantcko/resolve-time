@@ -20,13 +20,12 @@ from resolvetime.functions import auto_gen_logs
 from resolvetime.functions import process_logs
 from resolvetime.functions import get_entries_monthly_info
 sys.path.append(os.path.abspath('tests'))
-import vary_defs
 
 #### Definitions
 
 log_filepaths = get_log_filepaths("tests/test_logs")
 home_path = os.environ["HOME"]
-masterlog_file = vary_defs.masterlog()
+masterlog_file = "tests/masterlog.txt"
 
 # Medium accuracy entry processing - aka by save entries
 

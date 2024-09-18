@@ -19,16 +19,18 @@ from resolvetime.functions import entries_info
 from resolvetime.functions import auto_gen_logs
 from resolvetime.functions import process_logs
 from resolvetime.functions import get_entries_monthly_info
+sys.path.append(os.path.abspath('tests'))
+import vary_defs
 
 #### Definitions
 
 log_filepaths = get_log_filepaths("tests/test_logs")
 home_path = os.environ["HOME"]
-master_log_file = "tests/master_log.txt"
+masterlog_file = vary_defs.masterlog()
 
 # Medium accuracy entry processing - aka by save entries
 
-save_entries = collect_entries(log_filepaths, master_log_file, accuracy="medium")
+save_entries = collect_entries(log_filepaths, masterlog_file, accuracy="medium")
 save_entries_info = entries_info(save_entries)
 save_entries_monthly = sort_monthly(save_entries)
 save_entries_monthly_info = get_entries_monthly_info(save_entries_monthly)
@@ -42,7 +44,7 @@ medium = {
 
 # High accuracy - aka by seconds
 
-sec_entries = collect_entries(log_filepaths, master_log_file, accuracy="high")
+sec_entries = collect_entries(log_filepaths, masterlog_file, accuracy="high")
 sec_entries_info = entries_info(sec_entries)
 sec_entries_monthly = sort_monthly(sec_entries)
 sec_entries_monthly_info = get_entries_monthly_info(sec_entries_monthly)
@@ -244,7 +246,7 @@ def log_files_setup_teardown():
 class TestLogProcessing:
     def test_process_logs_function_mid(self, log_files_setup_teardown):
         current_datetime, zip_file_pattern = log_files_setup_teardown
-        processed = process_logs(home_path, current_datetime, master_log_file, zip_file_pattern, accuracy="medium")
+        processed = process_logs(home_path, current_datetime, masterlog_file, zip_file_pattern, accuracy="medium")
 
         # testing info...
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"
@@ -259,7 +261,7 @@ class TestLogProcessing:
 
     def test_process_logs_function_high(self, log_files_setup_teardown):
         current_datetime, zip_file_pattern = log_files_setup_teardown
-        processed = process_logs(home_path, current_datetime, master_log_file, zip_file_pattern, accuracy="high")
+        processed = process_logs(home_path, current_datetime, masterlog_file, zip_file_pattern, accuracy="high")
 
         # testing info...
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"

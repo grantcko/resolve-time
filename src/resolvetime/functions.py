@@ -69,12 +69,14 @@ def build_summary(info, monthly_info):
 
     return summary
 
-def collect_entries(log_filepaths, accuracy="medium"):
+def collect_entries(log_filepaths, masterlog, accuracy="medium"):
     """
-    Function to collect log entries from a file.
+    Function to collect log entries from serveral files and store them in the master log
 
     Args:
-    log_filepath (str): Path to the log file.
+    log_filepath (list): list of log file paths (strings)
+    masterlog: the master log file
+    accuracy: how many log entries are collected, the resolution.
 
     Returns:
     list: A list of dictionaries containing 'datetime' and 'project_name' from the log entries.
@@ -108,10 +110,9 @@ def collect_entries(log_filepaths, accuracy="medium"):
                             'project_title': match.group('project_title')
                         }
                         entries.append(entry)
-                        # print(entry)
 
                         # Make a txt file at the application support directory
-                        txt_filepath = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/resolve-time-log.txt"
+                        txt_filepath = masterlog
                         if not os.path.exists(txt_filepath):
                             with open(txt_filepath, 'w') as txt_file:
                                 txt_file.write(line)

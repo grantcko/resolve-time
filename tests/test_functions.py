@@ -29,6 +29,9 @@ home_path = os.environ["HOME"]
 masterlog_file_blank = "tests/masterlog_blank.txt"
 masterlog_file_missing = "tests/masterlog_missing.txt"
 masterlog_file_overlap = "tests/masterlog_overlap.txt"
+test_current_datetime = "20240917-185013"
+test_zip_file_pattern = f"tests/zipped-logs/DaVinci-Resolve-logs-{test_current_datetime[:11]}*.tgz"
+test_log_folder_filepath="tests/zipped-logs/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
 
 # Medium accuracy entry processing - aka by save entries
 
@@ -60,12 +63,8 @@ high = {
 
 @pytest.fixture
 def summary_setup_teardown():
-    current_datetime = "20240917-185013"
-    zip_file_pattern = f"tests/zipped-logs/DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
-    # collect_entries(log_filepaths, masterlog_file_missing, accuracy="medium")
-    processed = process_logs(home_path, current_datetime, masterlog_file_missing, zip_file_pattern, log_folder_filepath="tests/zipped-logs/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs", accuracy="medium")
-
     yield
+    # reset master logs to their initial state
     with open(masterlog_file_blank, 'w') as masterlog_file:
         masterlog_file.truncate(0)
     with open(masterlog_file_missing, 'w') as masterlog_file:
@@ -75,11 +74,26 @@ def summary_setup_teardown():
         masterlog_file.truncate(0)
     collect_entries(log_filepaths_overlap, masterlog_file_overlap, accuracy="medium")
     # Remove the unzipped log folder
-    subprocess.run(['rm', '-rf', "tests/zipped-logs/Library"])
+    subprocess.run(['rm', '-rf', "tests/zipped-logs/Library*"])
+    subprocess.run(['rm', '-rf', "tests/zipped-logs/Library*"])
+    subprocess.run(['rm', '-rf', "tests/zipped-logs/Library*"])
 
 class TestSummariesMediumAccuracy:#
     def test_with_blank_masterlog(self, summary_setup_teardown):
-        summary = build_summary(medium["entries_info"], medium["monthly_info"])
+        processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, log_folder_filepath=test_log_folder_filepath, accuracy="medium")
+        summary = build_summary(processed["info"], processed["monthly_info"])
+        assert summary == "TODO", f"summary should be ???"
+
+        # assert that summary includes correct project names
+        # assert that summary includes correct hours
+        # assert that summary includes correct dates
+        # assert that summary includes correct heatmap
+        # assert that summary includes today summary
+        # assert that summary includes correct session count and work hours
+
+    def test_with_missing_entries_masterlog(self, summary_setup_teardown):
+        processed = process_logs(home_path, test_current_datetime, masterlog_file_missing, test_zip_file_pattern, log_folder_filepath=test_log_folder_filepath, accuracy="medium")
+        summary = build_summary(processed["info"], processed["monthly_info"])
         assert summary == "TODO", f"summary should be ???"
         # assert that summary includes correct project names
         # assert that summary includes correct hours
@@ -88,8 +102,9 @@ class TestSummariesMediumAccuracy:#
         # assert that summary includes today summary
         # assert that summary includes correct session count and work hours
 
-    def test_with_missing_entries_masterlog(self):
-        summary = build_summary(medium["entries_info"], medium["monthly_info"])
+    def test_with_overlapping_masterlog(self, summary_setup_teardown):
+        processed = process_logs(home_path, test_current_datetime, masterlog_file_overlap, test_zip_file_pattern, log_folder_filepath=test_log_folder_filepath, accuracy="medium")
+        summary = build_summary(processed["info"], processed["monthly_info"])
         assert summary == "TODO", f"summary should be ???"
         # assert that summary includes correct project names
         # assert that summary includes correct hours
@@ -98,15 +113,20 @@ class TestSummariesMediumAccuracy:#
         # assert that summary includes today summary
         # assert that summary includes correct session count and work hours
 
-    def test_with_overlapping_masterlog(self):
-        summary = build_summary(medium["entries_info"], medium["monthly_info"])
-        assert summary == "TODO", f"summary should be ???"
-        # assert that summary includes correct project names
-        # assert that summary includes correct hours
-        # assert that summary includes correct dates
-        # assert that summary includes correct heatmap
-        # assert that summary includes today summary
-        # assert that summary includes correct session count and work hours
+@pytest.fixture
+def summary_setup_teardown():
+    yield
+    # reset master logs to their initial state
+    with open(masterlog_file_blank, 'w') as masterlog_file:
+        masterlog_file.truncate(0)
+    with open(masterlog_file_missing, 'w') as masterlog_file:
+        masterlog_file.truncate(0)
+    collect_entries(log_filepaths_missing, masterlog_file_missing, accuracy="high")
+    with open(masterlog_file_overlap, 'w') as masterlog_file:
+        masterlog_file.truncate(0)
+    collect_entries(log_filepaths_overlap, masterlog_file_overlap, accuracy="high")
+    # Remove the unzipped log folder
+    subprocess.run(['rm', '-rf', "tests/zipped-logs/Library"])
 
 class TestSummariesHighAccuracy:
     def test_with_blank_masterlog(self):
@@ -293,18 +313,14 @@ class TestAutoLogGeneration:
 
 @pytest.fixture
 def log_files_setup_teardown():
-    # Setup: Generate log files
-    current_datetime = "20240917-185013"
-    zip_file_pattern = f"./DaVinci-Resolve-logs-{current_datetime[:11]}*.tgz"
-    yield current_datetime, zip_file_pattern
+    yield
     # remove masterlog file
     with open(masterlog_file_blank, 'w') as masterlog_file:
         masterlog_file.truncate(0)
 
 class TestLogProcessing:#
     def test_process_logs_function_mediumac(self, log_files_setup_teardown):
-        current_datetime, zip_file_pattern = log_files_setup_teardown
-        processed = process_logs(home_path, current_datetime, masterlog_file_blank, zip_file_pattern, accuracy="medium")
+        processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, accuracy="medium")
 
         # testing info...
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"
@@ -318,8 +334,7 @@ class TestLogProcessing:#
         assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
 
     def test_process_logs_function_highac(self, log_files_setup_teardown):
-        current_datetime, zip_file_pattern = log_files_setup_teardown
-        processed = process_logs(home_path, current_datetime, masterlog_file_blank, zip_file_pattern, accuracy="high")
+        processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, accuracy="high")
 
         # testing info...
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"

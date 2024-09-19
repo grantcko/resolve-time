@@ -19,5 +19,8 @@ build/
 # Aider files
 .aider*
 
+# Temporary files
+*.tmp
+
 # MacOS-specific metadata (if applicable)
 .DS_Store

@@ -2,10 +2,15 @@
 A tool designed to help you monitor time spent in DaVinci Resolve.
 
 ## Todo:
+- ☑ Tests
 - ☑ Make it so that the program is executable like any other CLI
+- ☑ Complete V1
 - ☐ Rewrite tests
-- ☐ Implement different collection accuracy logic (high accuracy and low accuracy)
-- ☐ Compare accuracy between resolve-time and hand timing
+- ☐ Hand time and collect filled logs for comparison
+- ☐ Organize backend
+- ☐ Implement different accuracy collection option
+- ☐ Front end V2
+- ☐ Implement auto generate logs option
 
 ## Known issues:
 - if you change the project name, it will be logged as a different project

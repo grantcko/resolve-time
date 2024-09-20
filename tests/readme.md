@@ -1,8 +1,30 @@
-# Test Logs Info
-- Collected information about the log files being tested.
+# All about the tests
+- Collected information about the tests and the log files being tested.
 
-## what should actually be collected from the logs for accurate calulations?
-- *18 sets of stats*:
+## run
+```bash
+pytest
+```
+
+## calculated stats
+A description of the manually collected information pertaining to the test logs. This section needs update information...
+
+## Here is the timeline of test log files
+- 2024
+  - April - June
+  - *missing data*
+  - July - August
+  - *missing data*
+  - September A
+  - *overlapping*
+  - September B
+  - *missing data (planned)*
+  - September C (planned hand timing with livesave)
+  - *missing data (planned)*
+  - September D (planned hand timing with no livesave)
+
+## what should actually be tested from the logs for accurate calulations?
+- **18 sets of stats**:
   - 3 test cases for existing masterlogs - blank, missing entries, and overlapping entries
   - ✖️3 runs (for pure log stats from sep-b and for hand timing stats, both with live save and without live save)
   - ✖️2 runs for high and medium accuracy

@@ -431,7 +431,7 @@
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-06 18:31:14,644 | Start saving project treehouse-doc_1
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-06 18:31:14,722 | Saving project took 78 ms
 0x3749f3000    | Fusion               | ERROR | 2024-09-06 18:31:18,541 | [string "???"]:1: attempt to index field 'CurrentFrame' (a nil value)
-0x3749f3000    | Fusion               | ERROR | 2024-09-06 18:31:18,541 |
+0x3749f3000    | Fusion               | ERROR | 2024-09-06 18:31:18,541 | 
 0x408b33000    | Fusion               | INFO  | 2024-09-06 18:31:18,694 | Started FusionAudio Worker thread
 0x202b9cf40    | UI.FusionPanel       | INFO  | 2024-09-06 18:31:18,799 | Widget [MEDIAPOOL] is not created by Fusion, does not need to return widget.
 0x202b9cf40    | SyManager.Signals    | INFO  | 2024-09-06 18:31:18,864 | Main view page is changed to 16
@@ -812,7 +812,7 @@
 0x3201e7000    | Fusion               | WARN  | 2024-09-06 19:19:25,678 | Ignoring Fusion dirty notification while in Fusion API call
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 19:19:41,928 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 19:19:41,928 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 19:19:41,928 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 19:19:41,928 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 19:19:43,928 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 19:19:43,928 | Auto saving current project <treehouse-doc_1>
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 19:19:43,928 | Creates an autosave copy for current project in database
@@ -1955,7 +1955,7 @@
 0x3201e7000    | Fusion               | WARN  | 2024-09-06 20:10:38,787 | Ignoring Fusion dirty notification while in Fusion API call
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:10:47,860 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:10:47,861 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:10:47,861 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:10:47,861 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:10:49,847 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:10:49,847 | Auto saving current project <treehouse-doc_1>
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:10:49,847 | Creates an autosave copy for current project in database
@@ -2057,25 +2057,25 @@
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-06 20:19:01,917 | Saving project took 42 ms
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:20:51,872 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:20:51,874 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:20:51,874 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:20:51,874 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:20:53,872 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:20:53,872 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:20:53,872 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:20:53,872 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:20:55,872 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:20:55,872 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:20:55,872 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:20:55,872 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:20:57,872 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:20:57,872 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:20:57,872 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:20:57,872 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:20:59,871 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:20:59,871 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:20:59,871 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:20:59,871 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:21:01,872 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:21:01,872 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:21:01,872 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:21:01,872 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:21:03,872 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:21:03,872 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:21:03,872 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 20:21:03,872 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:21:05,874 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:21:05,874 | Auto saving current project <treehouse-doc_1>
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 20:21:05,874 | Creates an autosave copy for current project in database
@@ -2997,7 +2997,7 @@
 0x202b9cf40    | SyManager.Signals    | INFO  | 2024-09-06 21:32:54,553 | Main view page is changed to 2
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 21:33:14,114 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 21:33:14,115 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 21:33:14,115 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-06 21:33:14,115 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 21:33:16,014 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 21:33:16,015 | Auto saving current project <treehouse-doc_1>
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-06 21:33:16,015 | Creates an autosave copy for current project in database
@@ -3773,7 +3773,7 @@
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-07 10:06:29,330 | Start saving project treehouse-doc_1
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-07 10:06:29,351 | Saving project took 21 ms
 0x383087000    | Fusion               | ERROR | 2024-09-07 10:06:36,090 | [string "???"]:1: attempt to index field 'CurrentFrame' (a nil value)
-0x383087000    | Fusion               | ERROR | 2024-09-07 10:06:36,090 |
+0x383087000    | Fusion               | ERROR | 2024-09-07 10:06:36,090 | 
 0x3cb2f7000    | Fusion               | INFO  | 2024-09-07 10:06:36,636 | Started FusionAudio Worker thread
 0x202b9cf40    | UI.FusionPanel       | INFO  | 2024-09-07 10:06:36,949 | Widget [MEDIAPOOL] is not created by Fusion, does not need to return widget.
 0x202b9cf40    | SyManager.Signals    | INFO  | 2024-09-07 10:06:37,143 | Main view page is changed to 16
@@ -4012,13 +4012,13 @@
 0x202b9cf40    | UI                   | INFO  | 2024-09-07 10:41:34,367 | The buttonId [7] is not found for [0] in [0]
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 10:41:58,228 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 10:41:58,228 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 10:41:58,228 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 10:41:58,228 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 10:42:00,229 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 10:42:00,229 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 10:42:00,229 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 10:42:00,229 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 10:42:02,228 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 10:42:02,229 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 10:42:02,229 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 10:42:02,229 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 10:42:04,229 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 10:42:04,229 | Auto saving current project <treehouse-doc_1>
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 10:42:04,229 | Creates an autosave copy for current project in database
@@ -6614,8 +6614,8 @@
 0x202b9cf40    | UI                   | INFO  | 2024-09-07 14:21:55,422 | Gallery pointer is changed, refreshing gallery browser
 0x202b9cf40    | SyManager.Signals    | INFO  | 2024-09-07 14:21:59,531 | Main view page is changed to 1
 0x202b9cf40    | SyManager.Signals    | INFO  | 2024-09-07 14:22:00,380 | Main view page is changed to 12
-0x202b9cf40    | DbCommon2            | INFO  | 2024-09-07 14:22:29,685 | Project was renamed to
-0x202b9cf40    | DbCommon2            | INFO  | 2024-09-07 14:22:39,851 | Project was renamed to
+0x202b9cf40    | DbCommon2            | INFO  | 2024-09-07 14:22:29,685 | Project was renamed to 
+0x202b9cf40    | DbCommon2            | INFO  | 2024-09-07 14:22:39,851 | Project was renamed to 
 0x202b9cf40    | SyManager.Signals    | INFO  | 2024-09-07 14:22:49,284 | Main view page is changed to 1
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-07 14:22:52,220 | Loading project (treehouse-doc_1) from project library (Local Database) took 63 ms
 0x38ad93000    | SyManager.Signals    | INFO  | 2024-09-07 14:22:52,225 | Media pool relink status changed to 1
@@ -7461,7 +7461,7 @@
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-07 14:46:23,112 | Copied to memory D
 0x202b9cf40    | DbCommon2            | INFO  | 2024-09-07 14:46:23,485 | Initializing fresh project library /Users/granthall/Library/Application Support/Blackmagic Design/DaVinci Resolve/Resolve Disk Database/Resolve Projects/Users/guest/Projects/treehouse-doc_1 (Copy)/Project.db @ Local Database
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-07 14:46:27,308 | Finished saving project as treehouse-doc_1 (Copy)
-0x202b9cf40    | DbCommon2            | INFO  | 2024-09-07 14:46:32,940 | Project was renamed to
+0x202b9cf40    | DbCommon2            | INFO  | 2024-09-07 14:46:32,940 | Project was renamed to 
 0x202b9cf40    | SyManager.ActionExecutor | INFO  | 2024-09-07 14:46:39,335 | Database transaction is ongoing, user initiated action Sync Asset Map is postponed
 0x172367000    | SyManager.ActionExecutor | INFO  | 2024-09-07 14:46:39,391 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
 0x172367000    | SyManager.ActionExecutor | INFO  | 2024-09-07 14:46:39,493 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
@@ -8537,25 +8537,25 @@
 0x202b9cf40    | SyManager.Signals    | INFO  | 2024-09-07 18:25:59,083 | Main view page is changed to 16
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:08,899 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:08,899 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:08,899 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:08,899 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:10,900 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:10,900 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:10,901 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:10,901 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:12,899 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:12,899 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:12,899 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:12,899 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:14,902 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:14,902 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:14,902 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:14,902 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:16,898 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:16,899 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:16,899 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:16,899 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:18,902 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:18,902 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:18,902 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:18,902 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:20,898 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:20,898 | Autosave is not allowed as mouse is pressed
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:20,898 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-07 18:26:20,898 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:22,900 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:22,900 | Auto saving current project <treehouse-doc_3>
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-07 18:26:22,900 | Creates an autosave copy for current project in database
@@ -10053,7 +10053,7 @@
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 17:23:44,010 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 17:23:44,020 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 17:23:44,021 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 17:23:44,021 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 17:23:44,021 | Failed to perform action <AutoSaveAction>: 
 0x31b19f000    | IO                   | ERROR | 2024-09-13 17:23:48,119 | Failed to create decoder for /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV
 0x31b19f000    | IO                   | ERROR | 2024-09-13 17:23:48,119 | Failed to open video file </Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV> for decoding, error: <Codec is not opened yet.>
 0x31b19f000    | IO                   | ERROR | 2024-09-13 17:23:48,119 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV of type QuickTime
@@ -10115,35 +10115,35 @@
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 17:33:45,990 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 17:33:45,990 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 17:33:45,990 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 17:33:45,990 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 17:33:45,990 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 17:43:47,969 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 17:43:47,970 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 17:43:47,970 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 17:43:47,970 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 17:43:47,970 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 17:43:47,971 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 17:43:47,971 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 17:43:47,971 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 17:53:49,947 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 17:53:49,948 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 17:53:49,948 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 17:53:49,948 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 17:53:49,948 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 17:53:49,949 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 17:53:49,949 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 17:53:49,949 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:03:51,915 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:03:51,915 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:03:51,915 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:03:51,915 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:03:51,915 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 18:03:51,915 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:03:51,916 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:03:51,916 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:13:53,895 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:13:53,895 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:13:53,896 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:13:53,896 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:13:53,896 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 18:13:53,896 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:13:53,897 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:13:53,897 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-13 18:14:39,362 | Start saving project -CHOP-
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-13 18:14:39,606 | Saving project took 244 ms
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:23:55,870 | Start autosave
@@ -10152,21 +10152,21 @@
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:23:55,872 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:23:55,872 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 18:23:55,872 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:23:55,873 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:23:55,873 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:33:55,884 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:33:55,885 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:33:55,885 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:33:55,885 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:33:55,885 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 18:33:55,885 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:33:55,885 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:33:55,885 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:43:57,870 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:43:57,870 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:43:57,870 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:43:57,871 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:43:57,871 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 18:43:57,871 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:43:57,871 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:43:57,871 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | BtCommon             | INFO  | 2024-09-13 18:44:09,866 | Entering sleep mode
 0x202b9cf40    | BtCommon             | INFO  | 2024-09-13 18:44:17,559 | Exiting sleep mode
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 18:53:59,873 | Start autosave
@@ -10175,21 +10175,21 @@
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:53:59,874 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 18:53:59,874 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 18:53:59,874 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:53:59,874 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 18:53:59,874 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 19:04:01,843 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 19:04:01,845 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 19:04:01,845 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 19:04:01,845 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 19:04:01,846 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 19:04:01,846 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 19:04:01,846 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 19:04:01,846 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 20:15:48,866 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 20:15:48,866 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 20:15:48,869 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 20:15:48,869 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 20:15:48,869 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 20:15:48,870 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 20:15:48,870 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 20:15:48,870 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | BtCommon             | INFO  | 2024-09-13 20:15:54,619 | Entering sleep mode
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 20:33:35,050 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 20:33:35,050 | Auto saving current project <-CHOP->
@@ -10197,147 +10197,147 @@
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 20:33:35,050 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 20:33:35,050 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 20:33:35,050 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 20:33:35,050 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 20:33:35,050 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 20:50:20,990 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 20:50:20,991 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 20:50:20,994 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 20:50:20,994 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 20:50:20,994 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 20:50:20,994 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 20:50:20,994 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 20:50:20,994 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 21:07:59,034 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 21:07:59,034 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 21:07:59,034 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 21:07:59,034 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 21:07:59,035 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 21:07:59,035 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 21:07:59,035 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 21:07:59,035 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 22:08:58,538 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 22:08:58,538 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 22:08:58,538 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 22:08:58,539 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 22:08:58,539 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 22:08:58,539 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 22:08:58,539 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 22:08:58,539 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 23:00:00,998 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 23:00:00,999 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 23:00:00,999 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 23:00:00,999 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 23:00:00,999 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 23:00:00,999 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 23:00:00,999 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 23:00:00,999 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 23:10:01,698 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 23:10:01,699 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-13 23:10:01,699 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 23:10:01,699 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-13 23:10:01,699 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-13 23:10:01,699 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 23:10:01,699 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-13 23:10:01,699 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 00:10:59,035 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 00:10:59,035 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 00:10:59,035 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 00:10:59,035 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 00:10:59,035 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 00:10:59,036 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 00:10:59,036 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 00:10:59,036 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 01:21:18,762 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 01:21:18,762 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 01:21:18,763 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 01:21:18,763 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 01:21:18,763 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 01:21:18,763 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 01:21:18,763 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 01:21:18,763 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 01:46:11,428 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 01:46:11,428 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 01:46:11,428 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 01:46:11,429 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 01:46:11,429 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 01:46:11,429 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 01:46:11,429 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 01:46:11,429 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 03:07:29,610 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 03:07:29,611 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 03:07:29,611 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 03:07:29,611 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 03:07:29,611 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 03:07:29,611 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 03:07:29,611 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 03:07:29,611 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 03:57:18,443 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 03:57:18,526 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 03:57:18,526 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 03:57:18,526 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 03:57:18,526 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 03:57:18,526 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 03:57:18,526 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 03:57:18,526 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 04:17:36,734 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 04:17:36,735 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 04:17:36,735 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 04:17:36,735 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 04:17:36,735 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 04:17:36,735 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 04:17:36,736 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 04:17:36,736 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 04:46:35,681 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 04:46:35,681 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 04:46:35,681 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 04:46:35,682 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 04:46:35,682 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 04:46:35,682 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 04:46:35,682 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 04:46:35,682 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 06:01:06,064 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 06:01:06,064 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 06:01:06,064 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 06:01:06,064 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 06:01:06,064 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 06:01:06,064 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 06:01:06,064 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 06:01:06,064 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 06:49:46,653 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 06:49:46,653 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 06:49:46,653 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 06:49:46,653 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 06:49:46,654 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 06:49:46,654 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 06:49:46,654 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 06:49:46,654 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 07:00:00,869 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 07:00:00,869 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 07:00:00,869 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 07:00:00,870 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 07:00:00,870 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 07:00:00,870 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 07:00:00,870 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 07:00:00,870 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 07:20:06,280 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 07:20:06,398 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 07:20:06,398 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 07:20:06,398 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 07:20:06,398 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 07:20:06,398 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 07:20:06,398 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 07:20:06,398 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 08:03:06,898 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 08:03:06,900 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 08:03:06,900 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 08:03:06,900 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 08:03:06,900 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 08:03:06,900 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 08:03:06,900 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 08:03:06,900 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 08:13:39,772 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 08:13:39,773 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 08:13:39,773 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 08:13:39,773 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 08:13:39,773 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 08:13:39,773 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 08:13:39,773 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 08:13:39,773 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 08:32:09,323 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 08:32:09,323 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 08:32:09,323 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 08:32:09,323 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 08:32:09,323 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 08:32:09,324 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 08:32:09,324 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 08:32:09,324 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:02:44,866 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:02:44,867 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:02:44,867 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:02:44,867 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:02:44,867 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 09:02:44,867 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:02:44,867 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:02:44,867 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | BtCommon             | INFO  | 2024-09-14 09:02:55,517 | Exiting sleep mode
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:12:45,161 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:12:45,162 | Auto saving current project <-CHOP->
@@ -10345,35 +10345,35 @@
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:12:45,162 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:12:45,162 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 09:12:45,162 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:12:45,162 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:12:45,162 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:22:47,148 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:22:47,148 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:22:47,148 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:22:47,149 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:22:47,149 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 09:22:47,149 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:22:47,149 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:22:47,149 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:32:49,125 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:32:49,125 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:32:49,126 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:32:49,126 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:32:49,126 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 09:32:49,126 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:32:49,127 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:32:49,127 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:42:51,106 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:42:51,106 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:42:51,106 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:42:51,106 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:42:51,107 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 09:42:51,107 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:42:51,107 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:42:51,107 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:52:51,113 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:52:51,113 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 09:52:51,113 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:52:51,113 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 09:52:51,113 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 09:52:51,114 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:52:51,114 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 09:52:51,114 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | BtCommon             | INFO  | 2024-09-14 09:53:24,604 | Entering sleep mode
 0x202b9cf40    | BtCommon             | INFO  | 2024-09-14 09:56:42,416 | Exiting sleep mode
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 10:02:53,091 | Start autosave
@@ -10382,21 +10382,21 @@
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 10:02:53,092 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 10:02:53,092 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 10:02:53,092 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 10:02:53,092 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 10:02:53,092 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 10:12:55,078 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 10:12:55,079 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 10:12:55,080 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 10:12:55,081 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 10:12:55,081 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 10:12:55,081 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 10:12:55,081 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 10:12:55,081 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 10:22:57,062 | Start autosave
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 10:22:57,063 | Auto saving current project <-CHOP->
 0x202b9cf40    | SyManager.AutoSave   | INFO  | 2024-09-14 10:22:57,063 | Creates an autosave copy for current project in database
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 10:22:57,064 | Started loading 2 stills into the cache
 0x202b9cf40    | SyManager.Gallery    | INFO  | 2024-09-14 10:22:57,064 | Finished loading 2 still objects into the cache
 0x202b9cf40    | SyManager.AutoSave   | ERROR | 2024-09-14 10:22:57,064 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
-0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 10:22:57,064 | Failed to perform action <AutoSaveAction>:
+0x202b9cf40    | SyManager.ActionExecutor | WARN  | 2024-09-14 10:22:57,064 | Failed to perform action <AutoSaveAction>: 
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-14 10:23:20,581 | Start saving project -CHOP-
 0x202b9cf40    | SyManager.ProjectManager | INFO  | 2024-09-14 10:23:20,610 | Saving project took 29 ms
 0x31ae57000    | IO                   | ERROR | 2024-09-14 10:23:21,539 | Failed to create decoder for /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV
@@ -10827,7 +10827,7 @@
 0x2039ccf40    | SyManager.Gallery    | INFO  | 2024-09-17 17:30:45,396 | Started loading 0 stills into the cache
 0x2039ccf40    | SyManager.Gallery    | INFO  | 2024-09-17 17:30:45,396 | Finished loading 0 still objects into the cache
 0x2039ccf40    | SyManager.AutoSave   | ERROR | 2024-09-17 17:30:45,396 | DaVinci Resolve failed to backup modern-theft_1 as a backup folder could not be created in the selected Project Backup Location.
-0x2039ccf40    | SyManager.ActionExecutor | WARN  | 2024-09-17 17:30:45,396 | Failed to perform action <AutoSaveAction>:
+0x2039ccf40    | SyManager.ActionExecutor | WARN  | 2024-09-17 17:30:45,396 | Failed to perform action <AutoSaveAction>: 
 0x2039ccf40    | SyManager.Signals    | INFO  | 2024-09-17 17:40:44,396 | Main view page is changed to 12
 0x2039ccf40    | SyManager.AutoSave   | INFO  | 2024-09-17 17:40:45,419 | Start autosave
 0x2039ccf40    | SyManager.AutoSave   | INFO  | 2024-09-17 17:40:45,419 | Auto saving current project <modern-theft_1>
@@ -10835,7 +10835,7 @@
 0x2039ccf40    | SyManager.Gallery    | INFO  | 2024-09-17 17:40:45,419 | Started loading 0 stills into the cache
 0x2039ccf40    | SyManager.Gallery    | INFO  | 2024-09-17 17:40:45,419 | Finished loading 0 still objects into the cache
 0x2039ccf40    | SyManager.AutoSave   | ERROR | 2024-09-17 17:40:45,420 | DaVinci Resolve failed to backup modern-theft_1 as a backup folder could not be created in the selected Project Backup Location.
-0x2039ccf40    | SyManager.ActionExecutor | WARN  | 2024-09-17 17:40:45,420 | Failed to perform action <AutoSaveAction>:
+0x2039ccf40    | SyManager.ActionExecutor | WARN  | 2024-09-17 17:40:45,420 | Failed to perform action <AutoSaveAction>: 
 0x2039ccf40    | SyManager.ListMgt    | WARN  | 2024-09-17 17:40:57,889 | There is no parameter mark at 0:0 of group Qualifier, timeline id 0, return default at 86400:0 instead
 0x2039ccf40    | SyManager.ListMgt    | WARN  | 2024-09-17 17:40:57,889 | There is no parameter mark at 0:0 of group Qualifier, timeline id 0, return default at 86400:0 instead
 0x2039ccf40    | SyManager.ListMgt    | WARN  | 2024-09-17 17:40:57,889 | There is no parameter mark at 0:0 of group Qualifier, timeline id 0, return default at 86400:0 instead

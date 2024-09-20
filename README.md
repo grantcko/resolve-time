@@ -11,6 +11,7 @@ A tool designed to help you monitor time spent in DaVinci Resolve.
 - ☐ Implement different accuracy collection option
 - ☐ Front end V2
 - ☐ Implement auto generate logs option
+- ☐ Choose an actual Licence
 
 ## Known issues:
 - if you change the project name, it will be logged as a different project
@@ -86,3 +87,6 @@ then i gotta calculate out all the fucking test log bullshit like all the stats 
 every test will operate based on sep-b_2024 logs for simplicity sake. And everything is also calculated using a blank existing masterlog except for the summaries where different existing masterlogs are used. that will really be the only place to test for missing known missing data.
 - at some point i have gotta make sure that I have everything documented properly if I want people to work on this with me so...
 - and i have partially gotta explain the blank, missing, and overlap in the tests
+
+- fill the clear log info stats, finish writing the tests
+- hand timing instructions: start using a stopwatch and keep careful logs of resolve sessions, filling all the logs with livesave on, and then filling all the logs with livesave off.

@@ -2,9 +2,10 @@
 - Collected information about the log files being tested.
 
 ## what should actually be collected from the logs for accurate calulations?
-- *6 sets of stats*:
+- *18 sets of stats*:
   - 3 test cases for existing masterlogs - blank, missing entries, and overlapping entries
-  - ✖️2 for high and medium accuracy
+  - ✖️3 runs (for pure log stats from sep-b and for hand timing stats, both with live save and without live save)
+  - ✖️2 runs for high and medium accuracy
 - all time
   - how many sessions
   - how many total log entries collected
@@ -12,7 +13,7 @@
   - which projects worked
   - how many hours across all projects
   - how many hours spent on each project
-  - date range (which months)
+  - how many months
   - when there is missing data
 - per month
   - how many sessions
@@ -21,122 +22,7 @@
   - which projects worked
   - how many hours across all projects
   - how many hours spent on each project
-  - date range (which months)
-
-## BLANK ("sep-b_2024" logs)
-#### MEDIUM ACCURACY:
-- All time
-  - NUMBER OF SESSIONS:
-    - -CHOP- =
-    - CanvasZeroPitch =
-    - treehouse-doc_1 =
-    - Xtreehouse-doc_2 =
-    - treehouse-doc_3 =
-    - treehouse-doc_2 =
-    - modern-theft_1 =
-    - NorthShore =
-    - *total* =
-  - NUMBER OF ENTRIES:
-    - -CHOP- = 14
-    - CanvasZeroPitch = 36
-    - treehouse-doc_1 = 2257
-    - Xtreehouse-doc_2 = 2
-    - treehouse-doc_3 = 128
-    - treehouse-doc_2 = 52
-    - modern-theft_1 = 19
-    - NorthShore = 4
-    - *total* =
-  - NUMBER OF DAYS:
-    - -CHOP- =
-    - CanvasZeroPitch =
-    - treehouse-doc_1 =
-    - Xtreehouse-doc_2 =
-    - treehouse-doc_3 =
-    - treehouse-doc_2 =
-    - modern-theft_1 =
-    - NorthShore =
-    - *total* =
-  - NUMBER OF HOURS:
-    - -CHOP- =
-    - CanvasZeroPitch =
-    - treehouse-doc_1 =
-    - Xtreehouse-doc_2 =
-    - treehouse-doc_3 =
-    - treehouse-doc_2 =
-    - modern-theft_1 =
-    - NorthShore =
-    - *total* =
-  - MONTHS WORKED:
-    - -CHOP- =
-    - CanvasZeroPitch =
-    - treehouse-doc_1 =
-    - Xtreehouse-doc_2 =
-    - treehouse-doc_3 =
-    - treehouse-doc_2 =
-    - modern-theft_1 =
-    - NorthShore =
-    - *total* =
-  - MISSING DATA: False
-- Per month
-  - SEPT:
-    - NUMBER OF SESSIONS:
-      - -CHOP- =
-      - CanvasZeroPitch =
-      - treehouse-doc_1 =
-      - Xtreehouse-doc_2 =
-      - treehouse-doc_3 =
-      - treehouse-doc_2 =
-      - modern-theft_1 =
-      - NorthShore =
-      - *total* =
-    - NUMBER OF ENTRIES:
-      - -CHOP- = 14
-      - CanvasZeroPitch = 36
-      - treehouse-doc_1 = 2257
-      - Xtreehouse-doc_2 = 2
-      - treehouse-doc_3 = 128
-      - treehouse-doc_2 = 52
-      - modern-theft_1 = 19
-      - NorthShore = 4
-      - *total* =
-    - NUMBER OF DAYS:
-      - -CHOP- =
-      - CanvasZeroPitch =
-      - treehouse-doc_1 =
-      - Xtreehouse-doc_2 =
-      - treehouse-doc_3 =
-      - treehouse-doc_2 =
-      - modern-theft_1 =
-      - NorthShore =
-      - *total* =
-    - NUMBER OF HOURS:
-      - -CHOP- =
-      - CanvasZeroPitch =
-      - treehouse-doc_1 =
-      - Xtreehouse-doc_2 =
-      - treehouse-doc_3 =
-      - treehouse-doc_2 =
-      - modern-theft_1 =
-      - NorthShore =
-      - *total* =
-    - MONTHS WORKED:
-      - -CHOP- =
-      - CanvasZeroPitch =
-      - treehouse-doc_1 =
-      - Xtreehouse-doc_2 =
-      - treehouse-doc_3 =
-      - treehouse-doc_2 =
-      - modern-theft_1 =
-      - NorthShore =
-      - *total* =
-#### HIGH ACCURACY:
-## MISSING ("apr-jun_2024" logs + "sep-b_2024" logs)
-#### MEDIUM ACCURACY:
-#### HIGH ACCURACY:
-## OVERLAP ("sep-a_2024" logs + "sep-b_2024" logs)
-#### MEDIUM ACCURACY:
-#### HIGH ACCURACY:
-
+  - how many months
 
 
 ## rambles
@@ -154,3 +40,5 @@ interesting info about log files here: /Users/granthall/Library/Preferences/Blac
 
 llm doublecheck:
 which project is missing from this list according to the log files provided
+
+this is eventually huh... yeah I think I want to first just 3 times through then add testing complexity for high accuracy and after hand timing

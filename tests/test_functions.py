@@ -247,10 +247,9 @@ class TestSummariesMediumAccuracy:#
         processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, log_folder_filepath=test_log_folder_filepath, accuracy="medium")
         summary = build_summary(processed["info"], processed["monthly_info"])
         assert isinstance(summary, str), f"Summary should be a string"
-        # AIDER:
-        # assert summary includes the number stored at sepb_total_entries
-        # assert summary includes the number stored at sepb_day_count
-        # assert summary includes the number stored at sepb_month_count
+        assert str(sepb_total_entries) in summary, f"Summary should include the total entries: {sepb_total_entries}"
+        assert str(sepb_day_count) in summary, f"Summary should include the day count: {sepb_day_count}"
+        assert str(sepb_month_count) in summary, f"Summary should include the month count: {sepb_month_count}"
         #
 
         # TODO:

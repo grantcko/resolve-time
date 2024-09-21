@@ -7,6 +7,7 @@ import pytest
 import sys
 import subprocess
 import time
+import csv
 
 # Import internal modules
 
@@ -34,9 +35,6 @@ test_zip_file_pattern = f"tests/zipped-logs/DaVinci-Resolve-logs-{test_current_d
 test_log_folder_filepath="tests/zipped-logs/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
 
 # calculated stats from test logs
-
-import csv
-
 with open('tests/calculated_stats/blankmstr_medac.csv', newline='') as csvfile:
     reader = csv.reader(csvfile)
     rows = list(reader)

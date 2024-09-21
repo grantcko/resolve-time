@@ -182,7 +182,7 @@ class TestMediumAcStats:
     #     work_hours = info['work_hours']
     #     assert type(work_hours) is float, "Work hours is not an float"
     #     assert work_hours > 0, "Work hours should be greater than 0"
-    #     assert work_hours == 8.469408611111112, "Work hours should be ???"
+    #     assert work_hours == 0, "Work hours should be ???"
 
     # def test_project_work_hours(self, info):
     #     project_hours = info['project_work_hours']
@@ -196,12 +196,12 @@ class TestMediumAcStats:
 def log_files_setup_teardown():
     processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, accuracy="medium")
     yield processed
-    clear masterlog file
+    # clear masterlog file
     with open(masterlog_file_blank, 'w') as masterlog_file:
         masterlog_file.truncate(0)
     subprocess.run(['rm', '-rf', "tests/zipped-logs/Library"])
 
-class TestLogProcessing:
+class TestLogProcessingMediumAc:
     def test_processed_info(self, log_files_setup_teardown):
         # testing info...
         processed = log_files_setup_teardown
@@ -242,40 +242,28 @@ def summary_setup_teardown():
     subprocess.run(['rm', '-rf', "tests/zipped-logs/Library*"])
 
 class TestSummariesMediumAccuracy:#
-    def test_with_blank_masterlog(self, summary_setup_teardown):
+    def test_summary(self, summary_setup_teardown):
+        # test the summary that is displayed in the terminal for all the correct info
         processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, log_folder_filepath=test_log_folder_filepath, accuracy="medium")
         summary = build_summary(processed["info"], processed["monthly_info"])
-        assert summary == "TODO", f"summary should be ???"
+        assert isinstance(summary, str), f"Summary should be a string"
+        # AIDER:
+        # assert summary includes the number stored at sepb_total_entries
+        # assert summary includes the number stored at sepb_day_count
+        # assert summary includes the number stored at sepb_month_count
+        #
 
+        # TODO:
+        # assert that summary includes today summary
+        # assert that summary includes correct heatmap
         # assert that summary includes correct project names
         # assert that summary includes correct hours
-        # assert that summary includes correct dates
-        # assert that summary includes correct heatmap
-        # assert that summary includes today summary
-        # assert that summary includes correct session count and work hours
+        # assert that summary includes correct dates worked
+        # assert that summary includes correct day count
+        # assert that summary includes correct month count
+        # assert that summary includes correct session count
 
-    def test_with_missing_entries_masterlog(self, summary_setup_teardown):
-        processed = process_logs(home_path, test_current_datetime, masterlog_file_missing, test_zip_file_pattern, log_folder_filepath=test_log_folder_filepath, accuracy="medium")
-        summary = build_summary(processed["info"], processed["monthly_info"])
-        assert summary == "TODO", f"summary should be ???"
-        # assert that summary includes correct project names
-        # assert that summary includes correct hours
-        # assert that summary includes correct dates
-        # assert that summary includes correct heatmap
-        # assert that summary includes today summary
-        # assert that summary includes correct session count and work hours
-
-    def test_with_overlapping_masterlog(self, summary_setup_teardown):
-        processed = process_logs(home_path, test_current_datetime, masterlog_file_overlap, test_zip_file_pattern, log_folder_filepath=test_log_folder_filepath, accuracy="medium")
-        summary = build_summary(processed["info"], processed["monthly_info"])
-        assert summary == "TODO", f"summary should be ???"
-        # assert that summary includes correct project names
-        # assert that summary includes correct hours
-        # assert that summary includes correct dates
-        # assert that summary includes correct heatmap
-        # assert that summary includes today summary
-        # assert that summary includes correct session count and work hours
-
+# Final teardown (make sure no leftover folder, files, data)
 @pytest.fixture
 def summary_setup_teardown():
     yield

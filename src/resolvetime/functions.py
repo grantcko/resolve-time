@@ -157,9 +157,13 @@ def entries_info(entries):# returns dict of total and per project summaries for:
 
     if not entries:
         return {
-             'session_count': 0,
-             'work_hours': 0.0,
-             'project_work_hours': {}
+            'session_count': 0,
+            'work_hours': 0.0,
+            'project_work_hours': {},
+            'total_entries':0,
+            'day_count':0,
+            'month_count':0,
+            'dates_worked':0,
             }
 
     ## get starting references for: ##
@@ -215,7 +219,11 @@ def entries_info(entries):# returns dict of total and per project summaries for:
     return {
         'session_count': session_count,
         'work_hours': work_hours.total_seconds()/60/60,
-        'project_work_hours': project_work_hours
+        'project_work_hours': project_work_hours,
+        'total_entries':0,
+        'day_count':0,
+        'month_count':0,
+        'dates_worked':0,
     }
 
 def auto_gen_logs(current_datetime, home_path):

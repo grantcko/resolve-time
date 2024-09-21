@@ -44,7 +44,7 @@ with open('tests/calculated_stats/blankmstr_medac.csv', newline='') as csvfile:
     sepb_day_count = data['total']['days-count']
     sepb_month_count = data['total']['months-count']
     dates_worked = []
-    dates_worked = list(map(int, data['total']['dates-worked-sep'].split()))
+    dates_worked = list(map(int, f"09_{data['total']['dates-worked-sep'].split()}_2024))
 
 
 # Medium accuracy entry processing - aka by save entries
@@ -171,7 +171,8 @@ class TestMediumAcStats:
     def test_dates_worked(self, info):
             dates_worked = info['dates_worked']
             assert type(dates_worked) is dict, f"dates_worked should be a dict"
-            # TODO: assert dates worked includes all the right dates and no more
+            # Aider: assert dates_worked includes "09_13_2024"
+            # Aider: assert dates_worked doesn't include "09_14_2024"
 
     # TODO:
 

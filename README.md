@@ -90,3 +90,7 @@ every test will operate based on sep-b_2024 logs for simplicity sake. And everyt
 
 - fill the clear log info stats, finish writing the tests
 - hand timing instructions: start using a stopwatch and keep careful logs of resolve sessions, filling all the logs with livesave on, and then filling all the logs with livesave off.
+- at a certain point i'm gonna want to change and organize all the files and whatnot into kebab-case and snake_case for consistency but that is for another branch
+- after this branch might be a good time to do that and organize the code into the proper modules actually
+- DECISION: No session or any time counted or any days untill at least 2 saves 10 minutes apart
+- On manually counting the stats for sep-b runs, and all other runs, I will double check by running the numbers by doing everthing 2x

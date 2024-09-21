@@ -36,9 +36,9 @@ test_log_folder_filepath="tests/zipped-logs/Library/Application Support/Blackmag
 
 # calculated stats from test logs
 with open('tests/calculated_stats/blankmstr_medac.csv', newline='') as csvfile:
-    reader = csv.reader(csvfile)
+    reader = csv.DictReader(csvfile)
     rows = list(reader)
-    blankmstr_total_entries = int(rows[9][1])  # Row 10, column 2 (0-indexed)
+    blankmstr_total_entries = int(rows[-1]['entry-count-sep-b'])  # Accessing the 'entry-count-sep-b' column of the 'total' row
 
 # Medium accuracy entry processing - aka by save entries
 

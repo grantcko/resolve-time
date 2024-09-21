@@ -43,61 +43,69 @@ class TestLogPathsFunction:
 
 ## COLLECTED ENTRIES
 
+@pytest.fixture
+def test_entries_setup_teardown():
+    # define which entries are being tested (save entries)
+    entries = collect_entries(log_filepaths, masterlog_file_blank, accuracy="medium")
+    yield entries
+    with open(masterlog_file_blank, 'w') as masterlog_file:
+        masterlog_file.truncate(0)
+
 class TestCollectedMediumAcEntries:
-
     # test if save entries are actually collected and stored correctly
-
-    # set up a fixture to define which entries are being tested (save entries)
-    @pytest.fixture
-    def entries(self):
-        return medium["entries"]
-
-    def test_entries(self, entries):
+    def test_entries(self, test_entries_setup_teardown):
+        entries = test_entries_setup_teardown
         assert type(entries) is list, "entries is not a list"
         assert len(entries) > 0, "entries should be greater than 0"
-        assert len(entries) == sepb_total_entries, f"entries should have {sepb_total_entries} entries"
+        # using bkmr stats because it conveniently has only data on sepb which this test case deals with
+        assert len(entries) == bkmr_total_entries, f"entries should have {bkmr_total_entries} entries"
         for entry in entries:
             assert type(entry) is dict, "Entry is not a dict"
             assert 'timestamp' in entry, "Entry does not have a timestamp"
             assert 'project_title' in entry, "Entry does not have a project_title"
 
     # test if timestamps are in chronological order
-    def test_timestamps_chronological_order(self, entries):
+    def test_timestamps_chronological_order(self, test_entries_setup_teardown):
+        entries = test_entries_setup_teardown
         timestamps = [datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f') for entry in entries]
         assert len(timestamps) > 0, "timestamps should be greater than 0"
         assert timestamps == sorted(timestamps), "Entries are not in chronological order"
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"
 
-## STATS ON PROCESSED DATA (FROM MASTER LOG INCLUDING CURRENT ENRTY SET)
+############ BLANK MASTER LOG
+
+## PROCESSED STATS
+
+# set up a fixture to define which info is being tested
+@pytest.fixture
+def info_setup():
+    info = bkmr_mediumac["entries_info"]
+    yield info
 
 class TestMediumAcStatsBlankMaster:
-    # TODO: change this to test stats from postprocessed data
+    # test info generated from entries
 
-    # test info generated from entries, in this case it is save entries from sep-b_2024
-
-    # set up a fixture to define which info is being tested (save entries info)
-    @pytest.fixture
-    def info(self):
-        return medium["entries_info"]
-
-    def test_day_count(self, info):
-            day_count = info['day_count']
-            assert day_count == sepb_day_count, f"Amount of days worked should be {sepb_day_count}"
+    def test_day_count(self, info_setup):
+        info = info_setup
+        day_count = info['day_count']
+        assert day_count == bkmr_day_count, f"Amount of days worked should be {bkmr_day_count}"
 
     # TODO: test for day count per project
 
-    def test_month_count(self, info):
-            month_count = info['month_count']
-            assert month_count == sepb_month_count, f"Amount of months worked should be {sepb_month_count}"
+    def test_month_count(self, info_setup):
+        info = info_setup
+        month_count = info['month_count']
+        assert month_count == bkmr_month_count, f"Amount of months worked should be {bkmr_month_count}"
 
     # TODO: test for month count per project
 
-    def test_dates_worked(self, info):
-            dates_worked = info['dates_worked']
-            # assert type(dates_worked) is list, f"dates_worked should be a list"
-            # assert "09_13_2024" in dates_worked, "dates_worked should include 09_13_2024"
-            # assert "09_14_2024" not in dates_worked, "dates_worked should not include 09_14_2024"
-            assert dates_worked == bkmr_dates_worked, "dates_worked should me the same as collected stats"
+    def test_dates_worked(self, info_setup):
+        info = info_setup
+        dates_worked = info['dates_worked']
+        # assert type(dates_worked) is list, f"dates_worked should be a list"
+        # assert "09_13_2024" in dates_worked, "dates_worked should include 09_13_2024"
+        # assert "09_14_2024" not in dates_worked, "dates_worked should not include 09_14_2024"
+        assert dates_worked == bkmr_dates_worked, "dates_worked should me the same as collected stats"
 
     # TODO:
 
@@ -105,7 +113,7 @@ class TestMediumAcStatsBlankMaster:
     #     session_count = info['session_count']
     #     assert type(session_count) is int, "Session count is not an integer"
     #     assert session_count > 0, "Session count should be greater than 0"
-    #     assert session_count == sepb_session_count, "Session count should be sepb_session_count"
+    #     assert session_count == bkmr_session_count, "Session count should be bkmr_session_count"
 
     # def test_work_hours(self, info):
     #     work_hours = info['work_hours']
@@ -130,14 +138,14 @@ def log_files_setup_teardown():
         masterlog_file.truncate(0)
     subprocess.run(['rm', '-rf', "tests/zipped-logs/Library"])
 
-class TestLogProcessingMediumAc:
+class TestLogProcessingMediumAcBlankMaster:
     def test_processed_info(self, log_files_setup_teardown):
         # testing info...
         processed = log_files_setup_teardown
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"
         assert len(processed["info"]) > 0, "info should not be empty"
-        assert processed["info"]["total_entries"] == sepb_total_entries, f"There should be {sepb_total_entries} entries, total"
-        assert processed["info"]["day_count"] == sepb_day_count, f"There should be {sepb_day_count} days, total"
+        assert processed["info"]["total_entries"] == bkmr_total_entries, f"There should be {bkmr_total_entries} entries, total"
+        assert processed["info"]["day_count"] == bkmr_day_count, f"There should be {bkmr_day_count} days, total"
 
     def test_processed_monthly_info(self, log_files_setup_teardown):
         # testing monthly info...
@@ -146,7 +154,7 @@ class TestLogProcessingMediumAc:
         assert len(processed["monthly_info"]) > 0, "Monthly info should not be empty"
         assert "09_2024" in processed["monthly_info"], "09_2024 should be a key in monthly_info"
         assert "10_2024" not in processed["monthly_info"], "10_2024 should not be a key in monthly_info"
-        assert processed["monthly_info"]["09_2024"]["total_entries"] == sepb_total_entries, f"There should be {sepb_total_entries} entries, total"
+        assert processed["monthly_info"]["09_2024"]["total_entries"] == bkmr_total_entries, f"There should be {bkmr_total_entries} entries, total"
 
     def test_zip_filepath(self, log_files_setup_teardown):
         # testing zip filepath...
@@ -170,15 +178,15 @@ def summary_setup_teardown():
     # Remove the unzipped log folder
     subprocess.run(['rm', '-rf', "tests/zipped-logs/Library*"])
 
-class TestSummariesMediumAccuracy:#
+class TestSummariesMediumAcBlankMaster:#
     def test_summary(self, summary_setup_teardown):
         # test the summary that is displayed in the terminal for all the correct info
         processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, log_folder_filepath=test_log_folder_filepath, accuracy="medium")
         summary = build_summary(processed["info"], processed["monthly_info"])
         assert isinstance(summary, str), f"Summary should be a string"
-        assert str(sepb_total_entries) in summary, f"Summary should include the total entries: {sepb_total_entries}"
-        assert str(sepb_day_count) in summary, f"Summary should include the day count: {sepb_day_count}"
-        assert str(sepb_month_count) in summary, f"Summary should include the month count: {sepb_month_count}"
+        assert str(bkmr_total_entries) in summary, f"Summary should include the total entries: {bkmr_total_entries}"
+        assert str(bkmr_day_count) in summary, f"Summary should include the day count: {bkmr_day_count}"
+        assert str(bkmr_month_count) in summary, f"Summary should include the month count: {bkmr_month_count}"
         #
 
         # TODO:

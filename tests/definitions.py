@@ -34,20 +34,23 @@ test_current_datetime = "20240917-185013"
 test_zip_file_pattern = f"tests/zipped-logs/DaVinci-Resolve-logs-{test_current_datetime[:11]}*.tgz"
 test_log_folder_filepath="tests/zipped-logs/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
 
-# calculated stats from blank master run
+## CALCULATED STATS
+
+# Calculated stats from blank master run
 
 with open('tests/calculated_stats/blankmstr_medac.csv', newline='') as csvfile:
     reader = csv.reader(csvfile)
     headers = next(reader)[1:]  # Skip the first column for headers
     data = {row[0]: {header: int(value) if value.isdigit() else str(value) for header, value in zip(headers, row[1:])} for row in reader}
 
-    sepb_total_entries = data['total']['entry-count-sep-b']
-    sepb_day_count = data['total']['days-count']
-    sepb_month_count = data['total']['months-count']
+    bkmr_total_entries = data['total']['entry-count-sep-b']
+    bkmr_day_count = data['total']['days-count']
+    bkmr_month_count = data['total']['months-count']
     # bkmr_dates_worked = [f"09_{(data['total']['dates-worked-sep'])}_2024"]
     bkmr_dates_worked = [f"09_{day}_2024" for day in str(data['total']['dates-worked-sep']).split()]
 
-# calculated stats from missing entries master run
+# Calculated stats from missing entries master run
+
 with open('tests/calculated_stats/missingmstr_medac.csv', newline='') as csvfile:
     reader = csv.reader(csvfile)
     headers = next(reader)[1:]  # Skip the first column for headers
@@ -60,6 +63,7 @@ with open('tests/calculated_stats/missingmstr_medac.csv', newline='') as csvfile
     mgmr_dates_worked = [f"09_{day}_2024" for day in str(data['total']['dates-worked-sep']).split()]
 
 # calculated stats from overlap entries master run
+
 with open('tests/calculated_stats/overlapmstr_medac.csv', newline='') as csvfile:
     reader = csv.reader(csvfile)
     headers = next(reader)[1:]  # Skip the first column for headers
@@ -71,30 +75,18 @@ with open('tests/calculated_stats/overlapmstr_medac.csv', newline='') as csvfile
     # bkmr_dates_worked = [f"09_{(data['total']['dates-worked-sep'])}_2024"]
     bkmr_dates_worked = [f"09_{day}_2024" for day in str(data['total']['dates-worked-sep']).split()]
 
-# Medium accuracy entry processing - aka by save entries
+## PROCESSED INFO
+
+#
 
 save_entries = collect_entries(log_filepaths, masterlog_file_blank, accuracy="medium")
 save_entries_info = entries_info(save_entries)
 save_entries_monthly = sort_monthly(save_entries)
 save_entries_monthly_info = get_entries_monthly_info(save_entries_monthly)
 
-medium = {
+bkmr_mediumac = {
     "entries": save_entries,
     "entries_info": save_entries_info,
     "entries_monthly": save_entries_monthly,
     "monthly_info": save_entries_monthly_info,
-}
-
-# High accuracy - aka by seconds
-
-sec_entries = collect_entries(log_filepaths, masterlog_file_blank, accuracy="high")
-sec_entries_info = entries_info(sec_entries)
-sec_entries_monthly = sort_monthly(sec_entries)
-sec_entries_monthly_info = get_entries_monthly_info(sec_entries_monthly)
-
-high = {
-    "entries": sec_entries,
-    "entries_info": sec_entries_info,
-    "entries_monthly": sec_entries_monthly,
-    "monthly_info": sec_entries_monthly_info,
 }

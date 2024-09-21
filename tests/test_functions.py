@@ -171,8 +171,8 @@ class TestMediumAcStats:
     def test_dates_worked(self, info):
             dates_worked = info['dates_worked']
             assert type(dates_worked) is dict, f"dates_worked should be a dict"
-            # Aider: assert dates_worked includes "09_13_2024"
-            # Aider: assert dates_worked doesn't include "09_14_2024"
+            assert "09_13_2024" in dates_worked, "dates_worked should include 09_13_2024"
+            assert "09_14_2024" not in dates_worked, "dates_worked should not include 09_14_2024"
 
     # TODO:
 

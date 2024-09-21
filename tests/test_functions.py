@@ -204,6 +204,7 @@ def log_files_setup_teardown():
 
 class TestLogProcessing:
     def test_processed_info(self, log_files_setup_teardown):
+        # testing info...
         processed = log_files_setup_teardown
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"
         assert len(processed["info"]) > 0, "info should not be empty"
@@ -211,12 +212,15 @@ class TestLogProcessing:
         assert processed["info"]["day_count"] == sepb_day_count, f"There should be {sepb_day_count} days, total"
 
     def test_processed_monthly_info(self, log_files_setup_teardown):
+        # testing monthly info...
         processed = log_files_setup_teardown
         assert isinstance(processed["monthly_info"], dict), "processed monthly_info should be a dictionary"
         assert len(processed["monthly_info"]) > 0, "Monthly info should not be empty"
-        assert processed["monthly_info"] == "TODO", "monthly info should be ???"
+        # aider: assert processed["monthly_info"]["10_2024"] #is a key error#, f"There should be {sepb_total_entries} entries, total"
+        assert processed["monthly_info"]["09_2024"]["total_entries"] == "sepb_total_entries", f"There should be {sepb_total_entries} entries, total"
 
     def test(self, log_files_setup_teardown):
+        # testing zip filepath...
         processed = log_files_setup_teardown
         assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
 

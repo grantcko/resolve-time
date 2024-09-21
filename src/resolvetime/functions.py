@@ -138,7 +138,7 @@ def sort_monthly(entries):
     for entry in entries:
         # get ref to mm_yyyy (ex:06_2024) unless it's a duplicate
         mm_yyyy = f"{datetime.strftime(datetime.strptime(entry['timestamp'], '%Y-%m-%d %H:%M:%S,%f'), '%m_%Y')}"
-        # add key:value pair with key as 'mm/yyyy', and value as an empty list, if that month isn't already there
+        # add key:value pair with key as 'mm_yyyy', and value as an empty list, if that month isn't already there
         if mm_yyyy not in months_worked:
             months_worked[mm_yyyy] = []
         # append current save entry to entries list pertaining to the month
@@ -151,6 +151,7 @@ def sort_monthly(entries):
 def entries_info(entries):# returns dict of total and per project summaries for: all time, per month
     """
     Function to get number of work sessions, total hours, hours per project from save entries.
+    Args: entries ()
     """
 
     # if there are no save entries, return an empty summary
@@ -163,7 +164,7 @@ def entries_info(entries):# returns dict of total and per project summaries for:
             'total_entries':0,
             'day_count':0,
             'month_count':0,
-            'dates_worked':0,
+            'dates_worked':[],
             }
 
     ## get starting references for: ##

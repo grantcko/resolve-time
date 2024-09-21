@@ -192,14 +192,13 @@ class TestMediumAcStats:
     #         assert type(hours) is float, f"Work hours for project {project} is not a float"
     #         assert hours > 0, f"Work hours for project {project} should be greater than 0"
 
-# AIDER please fix this fixture so that processed is accesible in the TestLogProcessingClass
 @pytest.fixture
 def log_files_setup_teardown():
     processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, accuracy="medium")
     yield processed
-    # clear masterlog file
-    # with open(masterlog_file_blank, 'w') as masterlog_file:
-    #     masterlog_file.truncate(0)
+    clear masterlog file
+    with open(masterlog_file_blank, 'w') as masterlog_file:
+        masterlog_file.truncate(0)
     subprocess.run(['rm', '-rf', "tests/zipped-logs/Library"])
 
 class TestLogProcessing:
@@ -220,7 +219,7 @@ class TestLogProcessing:
         assert "10_2024" not in processed["monthly_info"], "10_2024 should not be a key in monthly_info"
         assert processed["monthly_info"]["09_2024"]["total_entries"] == sepb_total_entries, f"There should be {sepb_total_entries} entries, total"
 
-    def test(self, log_files_setup_teardown):
+    def test_zip_filepath(self, log_files_setup_teardown):
         # testing zip filepath...
         processed = log_files_setup_teardown
         assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"

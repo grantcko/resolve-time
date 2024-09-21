@@ -94,3 +94,4 @@ every test will operate based on sep-b_2024 logs for simplicity sake. And everyt
 - after this branch might be a good time to do that and organize the code into the proper modules actually
 - DECISION: No session or any time counted or any days untill at least 2 saves 10 minutes apart
 - On manually counting the stats for sep-b runs, and all other runs, I will double check by running the numbers by doing everthing 2x
+- I need to triple my tests essentially to test for each of the 3 masterlog test cases.

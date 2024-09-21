@@ -35,6 +35,7 @@ test_zip_file_pattern = f"tests/zipped-logs/DaVinci-Resolve-logs-{test_current_d
 test_log_folder_filepath="tests/zipped-logs/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
 
 # calculated stats from test logs
+
 with open('tests/calculated_stats/blankmstr_medac.csv', newline='') as csvfile:
     reader = csv.reader(csvfile)
     headers = next(reader)[1:]  # Skip the first column for headers
@@ -115,7 +116,7 @@ class TestLogPathsFunction:
 
 ## COLLECTED ENTRIES
 
-class TestCollectedMediumAcEntries:#
+class TestCollectedMediumAcEntries:
 
     # test if save entries are actually collected and stored correctly
 
@@ -142,7 +143,8 @@ class TestCollectedMediumAcEntries:#
 
 ## STATS ON PROCESSED DATA (FROM MASTER LOG INCLUDING CURRENT ENRTY SET)
 
-class TestMediumAcStats:#
+class TestMediumAcStats:
+    # TODO: change this to test stats from postprocessed data
 
     # test info generated from entries, in this case it is save entries from sep-b_2024
 
@@ -190,42 +192,33 @@ class TestMediumAcStats:#
     #         assert type(hours) is float, f"Work hours for project {project} is not a float"
     #         assert hours > 0, f"Work hours for project {project} should be greater than 0"
 
+# AIDER please fix this fixture so that processed is accesible in the TestLogProcessingClass
 @pytest.fixture
 def log_files_setup_teardown():
-    yield
+    processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, accuracy="medium")
+    yield processed
     # clear masterlog file
     # with open(masterlog_file_blank, 'w') as masterlog_file:
     #     masterlog_file.truncate(0)
     subprocess.run(['rm', '-rf', "tests/zipped-logs/Library"])
 
-class TestLogProcessing:#
-    def test_process_logs_function_mediumac(self, log_files_setup_teardown):
-        processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, accuracy="medium")
-
+class TestLogProcessing:
+    def test_processed_info(self, log_files_setup_teardown):
         # testing info...
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"
         assert len(processed["info"]) > 0, "info should not be empty"
-        assert processed["info"] == "TODO", "monthly info should be ???"
+        assert processed["info"]["total_entries"] == sepb_total_entries, f"There should be {sepb_total_entries} entries, total"
+        assert processed["info"]["day_count"] == sepb_day_count, f"There should be {sepb_day_count} days, total"
+
+    def test_processed_monthly_info(self, log_files_setup_teardown):
         # testing monthly info...
         assert isinstance(processed["monthly_info"], dict), "processed monthly_info should be a dictionary"
         assert len(processed["monthly_info"]) > 0, "Monthly info should not be empty"
         assert processed["monthly_info"] == "TODO", "monthly info should be ???"
+
+    def test(self, log_files_setup_teardown):
         # testing zip filepath...
         assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
-
-    def test_process_logs_function_highac(self, log_files_setup_teardown):
-        processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, accuracy="high")
-
-        # testing info...
-        assert isinstance(processed["info"], dict), "processed info should be a dictionary"
-        assert len(processed["info"]) > 0, "info should not be empty"
-        assert processed["info"] == "whatever", "monthly info should be ???"
-        # testing monthly info...
-        assert isinstance(processed["monthly_info"], dict), "processed monthly_info should be a dictionary"
-        assert len(processed["monthly_info"]) > 0, "Monthly info should not be empty"
-        # testing zip filepath
-        assert isinstance(processed["zip_filepath"], str), "Zip filepath should be a string"
-        assert processed["monthly_info"] == "whatever", "monthly info should be ???"
 
 ## SUMMARIES, AKA THE FRONT END
 

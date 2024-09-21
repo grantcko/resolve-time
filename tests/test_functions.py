@@ -44,7 +44,7 @@ with open('tests/calculated_stats/blankmstr_medac.csv', newline='') as csvfile:
     sepb_day_count = data['total']['days-count']
     sepb_month_count = data['total']['months-count']
     dates_worked = []
-    dates_worked = [f"09_{day}_2024" for day in data['total']['dates-worked-sep'].split()]
+    dates_worked = [f"09_{day}_2024" for day in str(data['total']['dates-worked-sep']).split()]
 
 
 # Medium accuracy entry processing - aka by save entries

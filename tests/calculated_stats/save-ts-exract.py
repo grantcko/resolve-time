@@ -1,12 +1,14 @@
 import re
 import sys
 
-def extract_timestamps(filepath):
+def extract_timestamps(filepath, prj_name):
 
-
+  """
+  Search for and return the timestamps of the provided prj in the log file.
+  """
 
   # Define the regex pattern to match the timestamp
-  pattern = re.compile('.*\\| INFO  \\| (.*) \\| Start saving project -CHOP-')
+  pattern = re.compile(f'.*\\| INFO  \\| (.*) \\| Start saving project {prj_name}')
 
   count = 0
   try:
@@ -24,7 +26,7 @@ def extract_timestamps(filepath):
   print(f"Total matches: {count}")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: timestamp_extractor.tmp <filepath>")
+    if len(sys.argv) != 3:
+        print("Usage: timestamp_extractor.tmp <filepath> <project name>")
     else:
-        extract_timestamps(sys.argv[1])
+        extract_timestamps(sys.argv[1], sys.argv[2])

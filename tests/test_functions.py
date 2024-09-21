@@ -1,80 +1,4 @@
-# Import exernal modules
-
-from datetime import datetime
-import glob
-import os
-import pytest
-import sys
-import subprocess
-import time
-import csv
-
-# Import internal modules
-
-sys.path.append(os.path.abspath('src'))
-from resolvetime.functions import get_log_filepaths
-from resolvetime.functions import build_summary
-from resolvetime.functions import collect_entries
-from resolvetime.functions import sort_monthly
-from resolvetime.functions import entries_info
-from resolvetime.functions import auto_gen_logs
-from resolvetime.functions import process_logs
-from resolvetime.functions import get_entries_monthly_info
-
-#### Definitions
-
-log_filepaths = get_log_filepaths("tests/test_logs/sep-b_2024")
-log_filepaths_missing = get_log_filepaths("tests/test_logs/apr-jun_2024")
-log_filepaths_overlap = get_log_filepaths("tests/test_logs/sep-a_2024")
-home_path = os.environ["HOME"]
-masterlog_file_blank = "tests/masterlog_blank.txt"
-masterlog_file_missing = "tests/masterlog_missing.txt"
-masterlog_file_overlap = "tests/masterlog_overlap.txt"
-test_current_datetime = "20240917-185013"
-test_zip_file_pattern = f"tests/zipped-logs/DaVinci-Resolve-logs-{test_current_datetime[:11]}*.tgz"
-test_log_folder_filepath="tests/zipped-logs/Library/Application Support/Blackmagic Design/DaVinci Resolve/logs"
-
-# calculated stats from test logs
-
-with open('tests/calculated_stats/blankmstr_medac.csv', newline='') as csvfile:
-    reader = csv.reader(csvfile)
-    headers = next(reader)[1:]  # Skip the first column for headers
-    data = {row[0]: {header: int(value) if value.isdigit() else 0 for header, value in zip(headers, row[1:])} for row in reader}
-    sepb_total_entries = data['total']['entry-count-sep-b']
-    sepb_day_count = data['total']['days-count']
-    sepb_month_count = data['total']['months-count']
-    dates_worked = []
-    dates_worked = [f"09_{day}_2024" for day in str(data['total']['dates-worked-sep']).split()]
-
-
-# Medium accuracy entry processing - aka by save entries
-
-save_entries = collect_entries(log_filepaths, masterlog_file_blank, accuracy="medium")
-save_entries_info = entries_info(save_entries)
-save_entries_monthly = sort_monthly(save_entries)
-save_entries_monthly_info = get_entries_monthly_info(save_entries_monthly)
-
-medium = {
-    "entries": save_entries,
-    "entries_info": save_entries_info,
-    "entries_monthly": save_entries_monthly,
-    "monthly_info": save_entries_monthly_info,
-}
-
-# High accuracy - aka by seconds
-
-sec_entries = collect_entries(log_filepaths, masterlog_file_blank, accuracy="high")
-sec_entries_info = entries_info(sec_entries)
-sec_entries_monthly = sort_monthly(sec_entries)
-sec_entries_monthly_info = get_entries_monthly_info(sec_entries_monthly)
-
-high = {
-    "entries": sec_entries,
-    "entries_info": sec_entries_info,
-    "entries_monthly": sec_entries_monthly,
-    "monthly_info": sec_entries_monthly_info,
-}
-
+from definitions import *
 ## GETTING THE LOGS
 
 class TestAutoLogGeneration:
@@ -146,7 +70,7 @@ class TestCollectedMediumAcEntries:
 
 ## STATS ON PROCESSED DATA (FROM MASTER LOG INCLUDING CURRENT ENRTY SET)
 
-class TestMediumAcStats:
+class TestMediumAcStatsBlankMaster:
     # TODO: change this to test stats from postprocessed data
 
     # test info generated from entries, in this case it is save entries from sep-b_2024
@@ -170,9 +94,10 @@ class TestMediumAcStats:
 
     def test_dates_worked(self, info):
             dates_worked = info['dates_worked']
-            assert type(dates_worked) is dict, f"dates_worked should be a dict"
-            assert "09_13_2024" in dates_worked, "dates_worked should include 09_13_2024"
-            assert "09_14_2024" not in dates_worked, "dates_worked should not include 09_14_2024"
+            # assert type(dates_worked) is list, f"dates_worked should be a list"
+            # assert "09_13_2024" in dates_worked, "dates_worked should include 09_13_2024"
+            # assert "09_14_2024" not in dates_worked, "dates_worked should not include 09_14_2024"
+            assert dates_worked == bkmr_dates_worked, "dates_worked should me the same as collected stats"
 
     # TODO:
 

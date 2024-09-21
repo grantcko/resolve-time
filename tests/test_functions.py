@@ -44,7 +44,7 @@ with open('tests/calculated_stats/blankmstr_medac.csv', newline='') as csvfile:
     sepb_day_count = data['total']['days-count']
     sepb_month_count = data['total']['months-count']
     dates_worked = []
-    # AIDER: data['total']['dates-worked-sep'] returns "3 4 5 6 7 13", i want to collect each of those numbers an an entry in my list, dates_worked
+    dates_worked = list(map(int, data['total']['dates-worked-sep'].split()))
 
 
 # Medium accuracy entry processing - aka by save entries

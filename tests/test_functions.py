@@ -75,8 +75,6 @@ def summary_setup_teardown():
     collect_entries(log_filepaths_overlap, masterlog_file_overlap, accuracy="medium")
     # Remove the unzipped log folder
     subprocess.run(['rm', '-rf', "tests/zipped-logs/Library*"])
-    subprocess.run(['rm', '-rf', "tests/zipped-logs/Library*"])
-    subprocess.run(['rm', '-rf', "tests/zipped-logs/Library*"])
 
 class TestSummariesMediumAccuracy:#
     def test_with_blank_masterlog(self, summary_setup_teardown):
@@ -112,6 +110,7 @@ class TestSummariesMediumAccuracy:#
         # assert that summary includes correct heatmap
         # assert that summary includes today summary
         # assert that summary includes correct session count and work hours
+
 
 @pytest.fixture
 def summary_setup_teardown():
@@ -314,9 +313,10 @@ class TestAutoLogGeneration:
 @pytest.fixture
 def log_files_setup_teardown():
     yield
-    # remove masterlog file
-    with open(masterlog_file_blank, 'w') as masterlog_file:
-        masterlog_file.truncate(0)
+    # clear masterlog file
+    # with open(masterlog_file_blank, 'w') as masterlog_file:
+    #     masterlog_file.truncate(0)
+    subprocess.run(['rm', '-rf', "tests/zipped-logs/Library"])
 
 class TestLogProcessing:#
     def test_process_logs_function_mediumac(self, log_files_setup_teardown):

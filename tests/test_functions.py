@@ -74,7 +74,7 @@ class TestCollectedMediumAcEntries:
         assert timestamps == sorted(timestamps), "Entries are not in chronological order"
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"
 
-############ MISSING MASTER LOG
+############ MISSING MASTER LOG MISSING ENTRIES
 
 ## PROCESSED STATS
 

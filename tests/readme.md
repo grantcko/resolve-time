@@ -64,3 +64,7 @@ llm doublecheck:
 which project is missing from this list according to the log files provided
 
 this is eventually huh... yeah I think I want to first just 3 times through then add testing complexity for high accuracy and after hand timing
+
+so there are processed stats, importing logs, manual calculated stats
+
+OK so eventually i'd like to get to 18 runs for all the different possible test cases but for now all we are testing is test case with missing data in the master file and medium accuracy

@@ -236,7 +236,14 @@ def auto_gen_logs(current_datetime, home_path):
     pyautogui.press('enter')
     pyautogui.press('enter')
 
-def process_logs(home_path, current_datetime, txt_filepath, zip_file_pattern, log_folder_filepath="", accuracy="medium"):
+def process_logs(
+    home_path,
+    current_datetime,
+    txt_filepath,
+    zip_file_pattern,
+    log_folder_filepath="",
+    accuracy="medium"
+    ):
     """
     Function to unzip the newly generated log file, save new log entries into master log, and collect info. RETURNS all the info, along with the zip filepath for deletion
     """

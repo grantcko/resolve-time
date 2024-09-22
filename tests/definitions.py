@@ -56,11 +56,11 @@ with open('tests/calculated_stats/missingmstr_medac.csv', newline='') as csvfile
     headers = next(reader)[1:]  # Skip the first column for headers
     data = {row[0]: {header: int(value) if value.isdigit() else str(value) for header, value in zip(headers, row[1:])} for row in reader}
 
-    msmr_total_entries = data['total']['entry-count-sep-b']
+    msmr_total_entries = data['total']['entry-count-total']
     msmr_day_count = data['total']['days-count']
     msmr_month_count = data['total']['months-count']
     # bkmr_dates_worked = [f"09_{(data['total']['dates-worked-sep'])}_2024"]
-    mgmr_dates_worked = [f"09_{day}_2024" for day in str(data['total']['dates-worked-sep']).split()]
+    msmr_dates_worked = [f"09_{day}_2024" for day in str(data['total']['dates-worked-sep']).split()]
 
 # calculated stats from overlap entries master run
 
@@ -75,9 +75,9 @@ with open('tests/calculated_stats/overlapmstr_medac.csv', newline='') as csvfile
     # bkmr_dates_worked = [f"09_{(data['total']['dates-worked-sep'])}_2024"]
     bkmr_dates_worked = [f"09_{day}_2024" for day in str(data['total']['dates-worked-sep']).split()]
 
-## PROCESSED INFO
+## INFO FROM LOGS BEING IMPORTED
 
-#
+# Blank Master
 
 save_entries = collect_entries(log_filepaths, masterlog_file_blank, accuracy="medium")
 save_entries_info = entries_info(save_entries)
@@ -85,6 +85,34 @@ save_entries_monthly = sort_monthly(save_entries)
 save_entries_monthly_info = get_entries_monthly_info(save_entries_monthly)
 
 bkmr_mediumac = {
+    "entries": save_entries,
+    "entries_info": save_entries_info,
+    "entries_monthly": save_entries_monthly,
+    "monthly_info": save_entries_monthly_info,
+}
+
+# Missing Master
+
+save_entries = collect_entries(log_filepaths, masterlog_file_missing, accuracy="medium")
+save_entries_info = entries_info(save_entries)
+save_entries_monthly = sort_monthly(save_entries)
+save_entries_monthly_info = get_entries_monthly_info(save_entries_monthly)
+
+msmr_mediumac = {
+    "entries": save_entries,
+    "entries_info": save_entries_info,
+    "entries_monthly": save_entries_monthly,
+    "monthly_info": save_entries_monthly_info,
+}
+
+# Overlapping Master
+
+save_entries = collect_entries(log_filepaths, masterlog_file_overlap, accuracy="medium")
+save_entries_info = entries_info(save_entries)
+save_entries_monthly = sort_monthly(save_entries)
+save_entries_monthly_info = get_entries_monthly_info(save_entries_monthly)
+
+opmr_mediumac = {
     "entries": save_entries,
     "entries_info": save_entries_info,
     "entries_monthly": save_entries_monthly,

@@ -46,10 +46,12 @@ class TestLogPathsFunction:
 @pytest.fixture
 def test_entries_setup_teardown():
     # define which entries are being tested (save entries)
-    entries = collect_entries(log_filepaths, masterlog_file_blank, accuracy="medium")
+    entries = collect_entries(log_filepaths, masterlog_file_missing, accuracy="medium")
     yield entries
-    with open(masterlog_file_blank, 'w') as masterlog_file:
+    with open(masterlog_file_missing, 'w') as masterlog_file:
         masterlog_file.truncate(0)
+    collect_entries(log_filepaths_missing, masterlog_file_missing, accuracy="medium")
+
 
 class TestCollectedMediumAcEntries:
     # test if save entries are actually collected and stored correctly
@@ -72,40 +74,38 @@ class TestCollectedMediumAcEntries:
         assert timestamps == sorted(timestamps), "Entries are not in chronological order"
         assert not timestamps == sorted(timestamps, reverse=True), "Entries are not in chronological order"
 
-############ BLANK MASTER LOG
+############ MISSING MASTER LOG
 
 ## PROCESSED STATS
 
 # set up a fixture to define which info is being tested
 @pytest.fixture
 def info_setup():
-    info = bkmr_mediumac["entries_info"]
+    info = msmr_mediumac["entries_info"]
     yield info
 
-class TestMediumAcStatsBlankMaster:
+class TestProcessedStats:
     # test info generated from entries
 
     def test_day_count(self, info_setup):
         info = info_setup
         day_count = info['day_count']
-        assert day_count == bkmr_day_count, f"Amount of days worked should be {bkmr_day_count}"
+        assert day_count == msmr_day_count, f"Amount of days worked should be {msmr_day_count}"
 
     # TODO: test for day count per project
 
     def test_month_count(self, info_setup):
         info = info_setup
         month_count = info['month_count']
-        assert month_count == bkmr_month_count, f"Amount of months worked should be {bkmr_month_count}"
+        assert month_count == msmr_month_count, f"Amount of months worked should be {msmr_month_count}"
 
     # TODO: test for month count per project
 
     def test_dates_worked(self, info_setup):
         info = info_setup
         dates_worked = info['dates_worked']
-        # assert type(dates_worked) is list, f"dates_worked should be a list"
-        # assert "09_13_2024" in dates_worked, "dates_worked should include 09_13_2024"
-        # assert "09_14_2024" not in dates_worked, "dates_worked should not include 09_14_2024"
-        assert dates_worked == bkmr_dates_worked, "dates_worked should me the same as collected stats"
+        assert type(dates_worked) is list, f"dates_worked should be a list"
+        assert dates_worked == msmr_dates_worked, "dates_worked should be the same as collected stats"
 
     # TODO:
 
@@ -113,7 +113,7 @@ class TestMediumAcStatsBlankMaster:
     #     session_count = info['session_count']
     #     assert type(session_count) is int, "Session count is not an integer"
     #     assert session_count > 0, "Session count should be greater than 0"
-    #     assert session_count == bkmr_session_count, "Session count should be bkmr_session_count"
+    #     assert session_count == msmr_session_count, "Session count should be msmr_session_count"
 
     # def test_work_hours(self, info):
     #     work_hours = info['work_hours']
@@ -131,21 +131,28 @@ class TestMediumAcStatsBlankMaster:
 
 @pytest.fixture
 def log_files_setup_teardown():
-    processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, accuracy="medium")
+    processed = process_logs(
+        home_path,
+        test_current_datetime,
+        masterlog_file_missing,
+        test_zip_file_pattern,
+        log_folder_filepath=test_log_folder_filepath,
+        accuracy="medium"
+        )
     yield processed
     # clear masterlog file
-    with open(masterlog_file_blank, 'w') as masterlog_file:
+    with open(masterlog_file_missing, 'w') as masterlog_file:
         masterlog_file.truncate(0)
     subprocess.run(['rm', '-rf', "tests/zipped-logs/Library"])
 
-class TestLogProcessingMediumAcBlankMaster:
+class TestLogProcessing:
     def test_processed_info(self, log_files_setup_teardown):
         # testing info...
         processed = log_files_setup_teardown
         assert isinstance(processed["info"], dict), "processed info should be a dictionary"
         assert len(processed["info"]) > 0, "info should not be empty"
-        assert processed["info"]["total_entries"] == bkmr_total_entries, f"There should be {bkmr_total_entries} entries, total"
-        assert processed["info"]["day_count"] == bkmr_day_count, f"There should be {bkmr_day_count} days, total"
+        assert processed["info"]["total_entries"] == msmr_total_entries, f"There should be {msmr_total_entries} entries, total"
+        assert processed["info"]["day_count"] == msmr_day_count, f"There should be {msmr_day_count} days, total"
 
     def test_processed_monthly_info(self, log_files_setup_teardown):
         # testing monthly info...
@@ -154,7 +161,7 @@ class TestLogProcessingMediumAcBlankMaster:
         assert len(processed["monthly_info"]) > 0, "Monthly info should not be empty"
         assert "09_2024" in processed["monthly_info"], "09_2024 should be a key in monthly_info"
         assert "10_2024" not in processed["monthly_info"], "10_2024 should not be a key in monthly_info"
-        assert processed["monthly_info"]["09_2024"]["total_entries"] == bkmr_total_entries, f"There should be {bkmr_total_entries} entries, total"
+        assert processed["monthly_info"]["09_2024"]["total_entries"] == msmr_total_entries, f"There should be {msmr_total_entries} entries, in Sept"
 
     def test_zip_filepath(self, log_files_setup_teardown):
         # testing zip filepath...
@@ -167,7 +174,7 @@ class TestLogProcessingMediumAcBlankMaster:
 def summary_setup_teardown():
     yield
     # reset master logs to their initial state
-    with open(masterlog_file_blank, 'w') as masterlog_file:
+    with open(masterlog_file_missing, 'w') as masterlog_file:
         masterlog_file.truncate(0)
     with open(masterlog_file_missing, 'w') as masterlog_file:
         masterlog_file.truncate(0)
@@ -178,15 +185,22 @@ def summary_setup_teardown():
     # Remove the unzipped log folder
     subprocess.run(['rm', '-rf', "tests/zipped-logs/Library*"])
 
-class TestSummariesMediumAcBlankMaster:#
+class TestSummaries:#
     def test_summary(self, summary_setup_teardown):
         # test the summary that is displayed in the terminal for all the correct info
-        processed = process_logs(home_path, test_current_datetime, masterlog_file_blank, test_zip_file_pattern, log_folder_filepath=test_log_folder_filepath, accuracy="medium")
+        processed = process_logs(
+            home_path,
+            test_current_datetime,
+            masterlog_file_missing,
+            test_zip_file_pattern,
+            log_folder_filepath=test_log_folder_filepath,
+            accuracy="medium"
+            )
         summary = build_summary(processed["info"], processed["monthly_info"])
         assert isinstance(summary, str), f"Summary should be a string"
-        assert str(bkmr_total_entries) in summary, f"Summary should include the total entries: {bkmr_total_entries}"
-        assert str(bkmr_day_count) in summary, f"Summary should include the day count: {bkmr_day_count}"
-        assert str(bkmr_month_count) in summary, f"Summary should include the month count: {bkmr_month_count}"
+        assert str(msmr_total_entries) in summary, f"Summary should include the total entries: {msmr_total_entries}"
+        assert str(msmr_day_count) in summary, f"Summary should include the day count: {msmr_day_count}"
+        assert str(msmr_month_count) in summary, f"Summary should include the month count: {msmr_month_count}"
         #
 
         # TODO:

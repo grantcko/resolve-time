@@ -5,7 +5,7 @@ A tool designed to help you monitor time spent in DaVinci Resolve.
 - ☑ Tests
 - ☑ Make it so that the program is executable like any other CLI
 - ☑ Complete V1
-- ☐ Rewrite tests
+- ☑ Rewrite tests
 - ☐ Hand time and collect filled logs for comparison
 - ☐ Organize backend
 - ☐ Implement different accuracy collection option

@@ -1,1 +1,26 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment folder
+venv/
+
+# pytest cache files
+.pytest_cache/
+
+# Build files
+*.egg-info/
+*.eggs/
+
+# Python packaging artifacts
+dist/
+build/
+
+# Aider files
 .aider*
+
+# Temporary files
+*.tmp
+
+# MacOS-specific metadata (if applicable)
+.DS_Store

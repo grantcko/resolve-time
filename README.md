@@ -144,3 +144,4 @@ S ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ �
 
 - so the calulated states are the stats i have stored in the csv files that i got by hand
 - the processed stats are what the code is getting for me
+- holy crap, I really need to make sure that the new logic includes the time i spend watching the footage because i might spend a huge chunk of time watching footage but if there is nothing to show for that in the resolve time, I'm fucked.

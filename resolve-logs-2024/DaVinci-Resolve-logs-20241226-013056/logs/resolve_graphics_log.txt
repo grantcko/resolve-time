@@ -1,0 +1,23 @@
+[Info] [GInstance.Create] success
+Platform            	macOS
+Mac OS Version      	15.1.1
+AMD Driver Version  	unset
+Intel Driver Version	unset
+NVIDIA Driver Version	unset
+CPU Core Count      	8
+Physical Memory (MiB)	16384
+[Info] [GInstance.Create] success, backend=Metal
+[Info] SetupShaderEnvironment shader version set to 4.6
+[Info] [GLibrary.Create] success
+GPUID               	gpu:685233f3.5a12414b
+Name                	M1
+Vendor              	Apple
+Type                	Integrated
+Physical Memory (MiB)	10922
+IsMainDisplayGPU    	yes
+Backend             	Metal
+Backend Version     	15.1.1
+GLSL Version        	4.6
+Metal Family        	Apple7 Mac2 
+[Info] Looking for shaders ...
+[Info]  Shaders found.

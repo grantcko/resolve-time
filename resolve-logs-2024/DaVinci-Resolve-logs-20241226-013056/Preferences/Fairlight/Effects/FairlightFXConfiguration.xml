@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Effects version="1.2">
+	<Effect>
+		<ID>AI:1112360033</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>0</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Ambisonics Meter:1112359277</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>0</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Chorus:1112360057</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>2048</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>De-Esser:1112360051</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>4096</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>De-Hummer:1112360040</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>4096</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Delay:1112360057</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>4</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Dialogue Leveler:1112360050</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>0</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Dialogue Leveller:1112360044</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>0</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Dialogue Processor:1112360036</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>2</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Dialogue Separator:1112360013</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>0</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Distortion:1112360051</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>8388608</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Ducker:1112360021</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>0</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Echo:1112360057</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>4</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Flanger:1112360057</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>2048</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Foley Sampler:1112368755</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>128</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Frequency Analyzer:1112360562</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>512</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>LFE Filter:1112362054</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>32768</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Limiter:1112362098</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>8</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Loudness Meter:1112362061</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>512</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Meter:1112362341</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>512</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Mix Assistant:1112360045</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>0</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Modulation:1112362348</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>2048</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Multiband Compressor:1112360043</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>8</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Music Remixer:1112363856</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>0</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Noise Reduction:1112362610</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>4096</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Phase Meter:1112363085</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>512</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Pitch:1112360545</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>8192</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Reverb:1112363618</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>16384</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Soft Clipper:1112363875</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>8</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Stereo Fixer:1112363846</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>65536</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Stereo Width:1112360051</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>64</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Surround Analyzer:1112361574</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>512</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Vocal Channel:1112360057</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>2</CategoryMask>
+	</Effect>
+	<Effect>
+		<ID>Voice Isolation:1112364617</ID>
+		<Favourite>0</Favourite>
+		<CategoryMask>0</CategoryMask>
+	</Effect>
+</Effects>

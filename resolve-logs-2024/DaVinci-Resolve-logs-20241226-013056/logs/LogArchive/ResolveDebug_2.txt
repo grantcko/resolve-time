@@ -1,0 +1,1316 @@
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:49,438 | Running DaVinci Resolve v19.0.3.0005 (macOS/Clang arm64)
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:49,438 | BMD_BUILD_UUID b0eab70d-fd13-4e61-8ec9-374f8df0529d
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:49,438 | BMD_GIT_COMMIT 67f92ed0dbc9aa2b4da3ccfaba0b32405cef11ac
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,540 | Starting GPUDetect 1.2_6-a2
+0x1e86b3840    | GPUDetect            | ERROR | 2024-12-13 16:50:49,544 | Failed to query IOKit monitor information
+0x1e86b3840    | GPUDetect            | ERROR | 2024-12-13 16:50:49,546 | Failed to query IOKit monitor information
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 | Done in 6 ms.
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 | Detected System:
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 |   - OS: MacOS 15.1.1 (Build 24B91)
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 |   - Model: MacBookAir10,1
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 |   - System ID: 355291d4-ed86-54a2-8f78-a98dc8a239a6
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 |   - CPU: Apple M1, 8 threads, arm64
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 |   - RAM: 10.1 GiB used of 16 GiB
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 | Detected 1 GPUs:
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 |   - "Apple M1" (gpu:685233f3.5a12414b) <- Main Display GPU
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 |     Integrated, 10.7 GiB VRAM
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 |     Matches: CoreGraphics, Metal, OpenCL
+0x1e86b3840    | GPUDetect            | INFO  | 2024-12-13 16:50:49,546 | Detected 0 monitors:
+0x1e86b3840    | Main.GPUConfig       | INFO  | 2024-12-13 16:50:49,547 | Compute API set to automatic, defaulting to Metal.
+0x1e86b3840    | Main.GPUConfig       | INFO  | 2024-12-13 16:50:49,547 | Selected compute API: Metal
+0x1e86b3840    | Main.GPUConfig       | INFO  | 2024-12-13 16:50:49,547 | Automatic GPU Selection:
+0x1e86b3840    | Main.GPUConfig       | INFO  | 2024-12-13 16:50:49,547 |   - "Apple M1" (gpu:685233f3.5a12414b)
+0x1e86b3840    | IO                   | INFO  | 2024-12-13 16:50:49,547 | RED InitializeSdk with library path at /Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries
+0x1e86b3840    | IO                   | INFO  | 2024-12-13 16:50:49,586 | R3DAPI 8.5.1-53601 (20240308 Ma64S) R3DSDK 8.5.1-53601 (20240308 Ma64D CNBN) RED METAL 8.5.1-53598 (20240308) [/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/] init is successful
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:49,586 | 0 RED rocket cards available
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:49,586 | Decklink model name: '', version: ''
+0x1e86b3840    | DVIP                 | INFO  | 2024-12-13 16:50:49,586 | DVIP release/19.0.3 build 2 (1d2febb1ee4fe874652901b728218e741ecebe06). Release, version 19.0.3.
+0x16b6d3000    | IO                   | INFO  | 2024-12-13 16:50:49,586 | Using DNxHR library v2.7.5.873r
+0x16b7eb000    | SyManager            | ERROR | 2024-12-13 16:50:49,589 | GetProjectLibraries() - Access token is empty
+0x16b6d3000    | IO                   | INFO  | 2024-12-13 16:50:49,591 | Cinematic API bridge is loaded.
+0x16b647000    | Fusion               | INFO  | 2024-12-13 16:50:50,044 | Fusion Build: 38f265c7_0003 (Oct 11 2024 12:39:17)
+0x16baa7000    | Fusion               | INFO  | 2024-12-13 16:50:50,045 | fusionsystem: = "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/libfusionsystem.dylib"
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:50:50,175 | UI language is set to "en".
+0x16baa7000    | Fusion               | INFO  | 2024-12-13 16:50:50,175 | FusionLibs: = "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/"
+0x16baa7000    | Fusion               | INFO  | 2024-12-13 16:50:50,183 | UserData:   = "/Users/granthall/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion"
+0x16baa7000    | Fusion               | INFO  | 2024-12-13 16:50:50,183 | Profiles:   = "UserData:Profiles/"
+Attribute Qt::AA_ShareOpenGLContexts must be set before QCoreApplication is created.
+0x16bf07000    | DbCommon2            | INFO  | 2024-12-13 16:50:50,191 | Loading dblist file: /Users/granthall/Library/Preferences/Blackmagic Design/DaVinci Resolve/dblist.conf
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:50,250 | Finished loading Application style sheet
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:50,281 | Show splash screen
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:50,282 | Show splash screen message: Starting Up
+*********** WITH DIRECT I/O SWITCHED ON!
+*********** WITH DIRECT I/O SWITCHED ON!
+0x1e86b3840    | IO                   | INFO  | 2024-12-13 16:50:50,338 | Adding directory /Volumes to directory watching list
+2024-12-13 16:50:50.584 Resolve[56093:1110717] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-13 16:50:50.584 Resolve[56093:1110717] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+0x1e86b3840    | UI.GLContext         | INFO  | 2024-12-13 16:50:50,718 | Creating shared OpenGL context for this thread (1 total).
+0x1e86b3840    | UI.GLContext         | INFO  | 2024-12-13 16:50:50,820 | Initialized OpenGL 2.1 (requested 2.0) on device 'Apple Apple M1'
+0x1e86b3840    | BtCommon             | INFO  | 2024-12-13 16:50:50,845 | Memory config: reserved=4055M pinned=3041M log=0
+0x1e86b3840    | BtCommon             | INFO  | 2024-12-13 16:50:50,845 | Using default pooled memory manager
+0x16fba7000    | LeManager            | INFO  | 2024-12-13 16:50:50,845 | 521, 29
+0x16fc33000    | BtCommon             | INFO  | 2024-12-13 16:50:50,845 | BtResourceManager Process Thread Started
+0x16b6d3000    | IO                   | INFO  | 2024-12-13 16:50:50,932 | IO codec library load completed in 1346 ms.
+0x1e86b3840    | IO                   | INFO  | 2024-12-13 16:50:50,940 | Setting codec capacity (0)
+0x1e86b3840    | SyManager            | INFO  | 2024-12-13 16:50:50,943 | Total: 20, NumDtThreads: 8, NumComms: 0, NumSites: 1
+
+0x1e86b3840    | SyManager            | INFO  | 2024-12-13 16:50:50,943 | Lookaheads -> playback = 20, record = 20, stop = 2
+
+Sy High Command Handler Thread ----- (6172323840)
+SY high priority cmd handler thread starts: 6FE63000
+Sy Low Command Handler Thread ----- (6172897280)
+SY low priority cmd handler thread starts: 6FEEF000
+Sy Data Handler Thread ----- (6173470720)
+SY data handler thread starts: 6FF7B000
+Gs High Command Handler Thread ----- (13017804800)
+GS high priority cmd handler thread starts: 07EBF000
+Gs Low Command Handler Thread ----- (13018378240)
+GS low priority cmd handler thread starts: 07F4B000
+0x307fd7000    | GsManager            | INFO  | 2024-12-13 16:50:50,953 | Gs Processor Thread ----- (13018951680)
+
+GS processor thread starts: 07FD7000
+Dt High Command Handler Thread ----- (13648605184)
+Dp High Command Handler Thread ----- (13647458304)
+DP high priority cmd handler thread starts: 2D73B000
+DT high priority cmd handler thhread starts: 2D853000
+0x1e86b3840    | DtManager            | INFO  | 2024-12-13 16:50:50,953 | Using 8 generic IO threads
+Dp Low Command Handler Thread ----- (13648031744)
+DP low priority cmd handler thread starts: 2D7C7000
+Dt Low Command Handler Thread ----- (13649178624)
+DT low priority cmd handler thread starts: 2D8DF000
+0x1e86b3840    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Total of 16 IO threads (including 8 generic and 8 Red decode threads)
+0x32d96b000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Data Handler Thread Started
+DT data handler thread starts: 2D96B000
+0x32da83000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x32d9f7000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x32db0f000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x32db9b000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x32dd3f000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x32de57000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x32dcb3000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x32dffb000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x32dee3000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x32e19f000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+Ls High Command Handler Thread ----- (13662367744)
+Ls Low Command Handler Thread ----- (13661220864)
+LS low priority cmd handler thread starts: 2E45B000
+Ls Low Command Handler Thread ----- (13664661504)
+Ls High Command Handler Thread ----- (13664088064)
+Ls High Command Handler Thread ----- (13660647424)
+LS low priority cmd handler thread starts: 2E7A3000
+0x32df6f000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+Mem Data Transmitter Thread ----- (13684928512)
+Mem data transmitter thread starts: 2FAF7000
+0x32ddcb000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+Ls Low Command Handler Thread ----- (13662941184)
+LS low priority cmd handler thread starts: 2E5FF000
+0x32dc27000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x32e22b000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+Ls Data Handler Thread ----- (13661794304)
+0x32e2b7000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+Ls Data Handler Thread ----- (13663514624)
+Ls Data Handler Thread ----- (13684355072)
+0x32e113000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+LS data handler thread starts: 2E68B000
+0x32e343000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+LS data handler thread starts: 2E4E7000
+0x32e087000    | DtManager            | INFO  | 2024-12-13 16:50:50,954 | Dt Worker Thread Started
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:50,954 | Show splash screen message: Loading Project Libraries
+0x32fa6b000    | GPU.MultiBoardMgr    | INFO  | 2024-12-13 16:50:50,965 | Let There Be Metal Light!
+0x32fa6b000    | GPU.MultiBoardMgr    | INFO  | 2024-12-13 16:50:50,965 | Initializing Metal board manager for Main Display GPU gpu:685233f3.5a12414b.
+0x32fd27000    | GPU.SingleBoardMgr   | INFO  | 2024-12-13 16:50:50,972 | Board manager thread for "Apple M1" (gpu:685233f3.5a12414b) is ready.
+0x32fa6b000    | UI.GLInterop         | INFO  | 2024-12-13 16:50:50,973 | OpenGL interop was initialized.
+0x32fa6b000    | UI.GLInterop         | INFO  | 2024-12-13 16:50:50,973 | OpenGL interop was initialized.
+0x32fa6b000    | GPU.MultiBoardMgr    | INFO  | 2024-12-13 16:50:50,973 | Enabled Metal pinned memory.
+LS data handler thread starts: 2FA6B000
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:50,998 | Show splash screen message: Initializing system components
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:51,003 | Show splash screen message: Loading video codecs
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:51,006 | Show splash screen message: Loading video plugins
+0x16b6d3000    | IO                   | INFO  | 2024-12-13 16:50:51,035 | IO codec initialization completed in 29 ms.
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:51,070 | Show splash screen message: Loading Fairlight Engine
+0x32ff57000    | Fusion               | INFO  | 2024-12-13 16:50:52,528 | 318 templates scanned in 0.25 secs
+0x1e86b3840    | Fairlight            | INFO  | 2024-12-13 16:50:52,561 | 00.00.01.486(001): Running Fairlight (07f8be727ff43663d2ebe3fae8d4323097162fb5)
+0x1e86b3840    | FairlightLoader      | INFO  | 2024-12-13 16:50:52,561 | Fairlight lib initialized in 1488 ms.
+0x37970b000    | UI.GLContext         | INFO  | 2024-12-13 16:50:52,562 | Creating shared OpenGL context for this thread (2 total).
+0x37970b000    | UI.GLIO              | INFO  | 2024-12-13 16:50:52,564 | Initialized MainPlayer OpenGL I/O on Metal device 'Apple M1'
+0x1e86b3840    | UI.GLIO              | INFO  | 2024-12-13 16:50:52,564 | MainPlayer: OpenGL I/O setup done.
+0x379797000    | UI.GLContext         | INFO  | 2024-12-13 16:50:52,564 | Creating shared OpenGL context for this thread (3 total).
+0x379797000    | UI.GLIO              | INFO  | 2024-12-13 16:50:52,566 | Initialized AuxPlayer OpenGL I/O on Metal device 'Apple M1'
+0x1e86b3840    | UI.GLIO              | INFO  | 2024-12-13 16:50:52,566 | AuxPlayer: OpenGL I/O setup done.
+0x37a887000    | UI.GLContext         | INFO  | 2024-12-13 16:50:52,566 | Creating shared OpenGL context for this thread (4 total).
+0x37a887000    | UI.Scopes            | INFO  | 2024-12-13 16:50:52,567 | Initialized GPU Scopes Manager on Metal device 'Apple M1'
+0x1e86b3840    | UI.MenuBar           | WARN  | 2024-12-13 16:50:52,672 | Main menu action [workspaceLayoutFusion_sub001Default]'s slot is not defined: workspaceLayoutFusion_sub001Default_triggered()
+0x1e86b3840    | FusionUtils          | WARN  | 2024-12-13 16:50:52,686 | Fusion DoAction ACTION_SET_FUSION_HOTKEY ignored, init not completed
+SY panel handler thread starts: 7A913000
+socket: 41
+DaVinci Panel API Version: 1.0
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:52,740 | Show splash screen message: Loading Project Settings
+Resolve discovery
+2024-12-13 16:50:53.182 Resolve[56093:1110717] WARNING: Add NSCameraUseContinuityCameraDeviceType to your Info.plist to use AVCaptureDeviceTypeContinuityCamera.
+2024-12-13 16:50:53.353 Resolve[56093:1110717] WARNING: AVCaptureDeviceTypeExternal is deprecated for Continuity Cameras. Please use AVCaptureDeviceTypeContinuityCamera and add NSCameraUseContinuityCameraDeviceType to your Info.plist.
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:53,532 | Show splash screen message: Loading Media Page
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:50:53,602 | Action [fairlightImmersiveAmbisonicsMetering] is not a global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:50:53,602 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:50:53,602 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:50:53,602 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:50:53,602 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | UI.FairlightInterface | WARN  | 2024-12-13 16:50:53,698 | SetActionEnabled: Failed to find action [viewTimelineScrollingFixed]'s action connector for handler Id [1]
+Unknown property letter-spacing
+Unknown property letter-spacing
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:53,900 | Show splash screen message: Loading Cut Page
+0x1e86b3840    | UI.SpeedTimeline     | INFO  | 2024-12-13 16:50:53,986 | Replay UI is enabled.
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:50:54,144 | OFX - plugin not supported on this platform, is being skipped
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:54,202 | Show splash screen message: Loading Edit Page
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:50:54,431 | OFX - plugin not supported on this platform, is being skipped
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:54,472 | Show splash screen message: Loading Fusion Page
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:54,552 | Show splash screen message: Loading Fairlight Page
+2024-12-13 16:50:54.705 Resolve[56093:1110717] CAMetalLayer ignoring invalid setDrawableSize width=89.000000 height=0.000000
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:54,713 | Show splash screen message: Loading Color Page
+libpng warning: iCCP: known incorrect sRGB profile
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:50:54,863 | OFX - plugin not supported on this platform, is being skipped
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:56,059 | Show splash screen message: Loading Waveform Monitor
+****************** Flushing GPU Buffers
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:56,379 | Show splash screen message: Loading Audio Plugins
+0x1e86b3840    | SyManager            | INFO  | 2024-12-13 16:50:56,487 | Collaboration IP  Port 0
+0x1e86b3840    | DbCommon2            | INFO  | 2024-12-13 16:50:56,487 | Sm2SysIdEntry is not supported in local project library (xml) mode
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:56,506 | Show splash screen message: Loading Projects
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:50:56,533 | Current user pointer is changed
+0x1e86b3840    | IO                   | INFO  | 2024-12-13 16:50:56,574 | RED rocket decode has been disabled in the config file
+0x33d14f000    | SyManager            | ERROR | 2024-12-13 16:50:56,648 | Failed to parse key (beta) from JsonObject
+Resolve discovery
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:50:56,889 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:50:56,889 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:50:56,889 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:50:56,889 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e86b3840    | SyManager.Gallery    | INFO  | 2024-12-13 16:50:56,959 | Start purging still caches
+0x1e86b3840    | SyManager.Gallery    | INFO  | 2024-12-13 16:50:56,959 | Finish purging still caches
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:50:56,997 | Media pool relink status changed to 0
+0x1e86b3840    | FusionUtils          | WARN  | 2024-12-13 16:50:57,009 | Fusion DoAction ACTION_SET_FUSION_HOTKEY ignored, init not completed
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:50:57,022 | Launching project manager
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:50:57,024 | Main view page is changed to 12
+2024-12-13 16:50:57.033 Resolve[56093:1110717] Invalid state set [-100].
+2024-12-13 16:50:57.034 Resolve[56093:1110717] Invalid state set [-100].
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:57,038 | Show splash screen message: Ready
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:50:57,062 | Gallery pointer is changed, refreshing color gallery
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:50:57,067 | Gallery pointer is changed, refreshing gallery browser
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:57,127 | Close splash screen
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 16:50:57,128 | Launching main loop
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:50:57,500 | Fusion templates changed
+2024-12-13 16:51:00.645 Resolve[56093:1110717] Invalid state set [-100].
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 16:51:02,165 | Database transaction is ongoing, user initiated action Sync Asset Map is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 16:51:02,240 | Database transaction completed, enqueueing 1 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:51:03,026 | Loading project (-CHOP-) from project library (Local Database) took 2203 ms
+****************** Flushing GPU Buffers
+0x33d267000    | SyManager.Signals    | INFO  | 2024-12-13 16:51:03,034 | Media pool relink status changed to 1
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x35dce3000    | IO                   | ERROR | 2024-12-13 16:51:03,107 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x35dce3000    | IO.Audio             | WARN  | 2024-12-13 16:51:03,107 | Unable to initialize audio decoder - filePath: /Volumes/TASTY/hx-catering_120324/P0077272.MOV, clipFormat: QuickTime, err: Can't open file for reading.
+0x35dce3000    | IO.Audio             | ERROR | 2024-12-13 16:51:03,107 | IOAudioDecoderFacade can not extract audio track info/Volumes/TASTY/hx-catering_120324/P0077272.MOV.
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x35dce3000    | IO                   | ERROR | 2024-12-13 16:51:03,107 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x35dce3000    | IO.Audio             | WARN  | 2024-12-13 16:51:03,107 | Unable to initialize audio decoder - filePath: /Volumes/TASTY/hx-catering_120324/P0077272.MOV, clipFormat: QuickTime, err: Can't open file for reading.
+0x35dce3000    | IO.Audio             | ERROR | 2024-12-13 16:51:03,107 | IOAudioDecoderFacade can not extract audio track info/Volumes/TASTY/hx-catering_120324/P0077272.MOV.
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x35dce3000    | IO                   | ERROR | 2024-12-13 16:51:03,108 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x35dce3000    | IO.Audio             | WARN  | 2024-12-13 16:51:03,108 | Unable to initialize audio decoder - filePath: /Volumes/TASTY/hx-catering_120324/P0077272.MOV, clipFormat: QuickTime, err: Can't open file for reading.
+0x35dce3000    | IO.Audio             | ERROR | 2024-12-13 16:51:03,108 | IOAudioDecoderFacade can not extract audio track info/Volumes/TASTY/hx-catering_120324/P0077272.MOV.
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:51:03,108 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:51:03,108 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:51:03,108 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:51:03,108 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x35dce3000    | IO                   | ERROR | 2024-12-13 16:51:03,108 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x35dce3000    | IO.Audio             | WARN  | 2024-12-13 16:51:03,108 | Unable to initialize audio decoder - filePath: /Volumes/TASTY/hx-catering_120324/P0077272.MOV, clipFormat: QuickTime, err: Can't open file for reading.
+0x35dce3000    | IO.Audio             | ERROR | 2024-12-13 16:51:03,108 | IOAudioDecoderFacade can not extract audio track info/Volumes/TASTY/hx-catering_120324/P0077272.MOV.
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32da83000    | IO                   | ERROR | 2024-12-13 16:51:03,213 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32da83000    | IO                   | ERROR | 2024-12-13 16:51:03,213 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32da83000    | IO                   | ERROR | 2024-12-13 16:51:03,213 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+0x32fd27000    | GPU.SingleBoardMgr   | INFO  | 2024-12-13 16:51:03,221 | Flushing GPU memory...
+0x32fd27000    | UI.GLContext         | INFO  | 2024-12-13 16:51:03,223 | Creating shared OpenGL context for this thread (5 total).
+0x32fd27000    | UI.GLTexPool         | INFO  | 2024-12-13 16:51:03,224 | Released 0 MiB in 0 unused textures.
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:51:03,270 | Media pool relink status changed to 1
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 16:51:03,273 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 16:51:03,273 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 16:51:03,273 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:51:03,303 | Current project pointer changed to (-CHOP-) from DB (Local Database : Local)
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:51:03,303 | Current timeline pointer (3840x2160-23.976p) is changed
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:51:03,453 | The buttonId [7] is not found for [0] in [0]
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:51:03,463 | Gallery pointer is changed, refreshing color gallery
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 16:51:03,464 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 16:51:03,464 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 16:51:03,464 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:51:03,476 | Gallery pointer is changed, refreshing gallery browser
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 16:51:03,528 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 16:51:03,528 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 16:51:03,528 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:51:03,575 | Main view page is changed to 1
+0x1e86b3840    | UI                   | WARN  | 2024-12-13 16:51:03,575 | Failed to get auto update information.
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:51:03,615 | Main view page is changed to 2
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:51:03,712 | Main view page is changed to 2
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 16:51:03,715 | Launching main window
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/31b2d9ef-cf7b-4e60-a4f7-58ab6f44d439'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1e86b3840    | SyManager            | WARN  | 2024-12-13 16:51:03,747 | No reply received from file system, assume successfully deleted folder /Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/31b2d9ef-cf7b-4e60-a4f7-58ab6f44d439.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/31b2d9ef-cf7b-4e60-a4f7-58ab6f44d439'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1e86b3840    | SyManager            | WARN  | 2024-12-13 16:51:03,768 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/31b2d9ef-cf7b-4e60-a4f7-58ab6f44d439.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/.gallery/31b2d9ef-cf7b-4e60-a4f7-58ab6f44d439'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1e86b3840    | SyManager            | WARN  | 2024-12-13 16:51:03,790 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/.gallery/31b2d9ef-cf7b-4e60-a4f7-58ab6f44d439.
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32da83000    | IO                   | ERROR | 2024-12-13 16:51:03,971 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32da83000    | IO                   | ERROR | 2024-12-13 16:51:03,972 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32da83000    | IO                   | ERROR | 2024-12-13 16:51:03,972 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+0x1e86b3840    | UI.GLDispShader      | INFO  | 2024-12-13 16:51:04,554 | Created 1D LUT texture for LUT size 16384
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32db9b000    | IO                   | ERROR | 2024-12-13 16:51:04,851 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32db9b000    | IO                   | ERROR | 2024-12-13 16:51:04,851 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32db9b000    | IO                   | ERROR | 2024-12-13 16:51:04,851 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:54:24,616 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:54:24,673 | Saving project took 57 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:54:25,726 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:54:25,754 | Saving project took 28 ms
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:54:26,798 | Current timeline pointer (1920x1080-23.976p) is changed
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:54:26,820 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:54:26,820 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:54:26,820 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:54:26,820 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:54:26,926 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 16:54:26,927 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 16:54:26,940 | Database transaction completed, enqueueing 1 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:54:26,940 | Saving project took 14 ms
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:26,043 | Import Log (Info) - Start importing /Volumes/PILLAR_OF_AUTUMN/Weddings & Social/2024.12.09 Natalie and Nick's Wedding Video/project/00 - ALL CLIPS.edl.
+0x1e86b3840    | SyManager.EDL        | INFO  | 2024-12-13 16:55:26,071 | Result of loading EDL file '/Volumes/PILLAR_OF_AUTUMN/Weddings & Social/2024.12.09 Natalie and Nick's Wedding Video/project/00 - ALL CLIPS.edl' = 345
+Ignoring audio event no. 107
+Ignoring audio event no. 108
+Ignoring audio event no. 318
+Ignoring audio event no. 345
+Ignoring audio event no. 346
+0x1e86b3840    | SyManager.EDL        | INFO  | 2024-12-13 16:55:35,941 | Result of loading EDL file '/Volumes/PILLAR_OF_AUTUMN/Weddings & Social/2024.12.09 Natalie and Nick's Wedding Video/project/00 - ALL CLIPS.edl' = 345
+Ignoring audio event no. 107
+Ignoring audio event no. 108
+Ignoring audio event no. 318
+Ignoring audio event no. 345
+Ignoring audio event no. 346
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8097.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8098.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8099.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8100.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8101.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8102.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8103.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8104.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8105.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8106.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8107.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,466 | Import Log (Fallback) - The clip "0P1A8108.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8109.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8110.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8111.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8112.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8113.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8114.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8115.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8116.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8117.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8118.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8119.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8120.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8121.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8122.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8123.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8124.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8125.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8126.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,467 | Import Log (Fallback) - The clip "0P1A8127.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8128.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8129.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8130.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8131.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8132.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8133.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8134.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8135.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8136.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8137.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8138.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8139.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8140.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8141.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8142.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8143.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8144.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8145.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8146.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8147.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8148.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8149.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8150.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8151.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8152.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8153.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8154.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8155.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8156.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8157.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8158.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8159.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8160.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8161.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8162.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8163.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8164.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8165.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8166.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8167.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8168.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8169.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8170.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8171.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8172.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8173.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8174.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8175.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8176.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8177.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8178.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8179.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8180.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8181.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8182.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8183.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8184.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8185.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8186.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8187.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8188.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8189.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8190.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8191.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8192.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8193.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8194.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8195.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8196.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8197.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8198.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8199.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8200.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8201.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,468 | Import Log (Fallback) - The clip "0P1A8202.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8203.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8204.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8205.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8206.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8207.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8208.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8209.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8210.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8211.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8212.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8213.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8214.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8215.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8216.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8217.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8218.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8219.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8220.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8221.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8222.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8223.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8224.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8225.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8226.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8227.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8228.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8229.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8230.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8231.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8232.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8233.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8234.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8235.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8236.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8237.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8238.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8239.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8240.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8241.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8242.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8243.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8244.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8245.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8246.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8247.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8248.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8249.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8250.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8251.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8252.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8253.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8254.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8255.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8256.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8257.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8258.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8259.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8260.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8261.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8262.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8263.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8264.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8265.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8266.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8267.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8268.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8269.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8270.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8271.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8272.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8273.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8274.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8275.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8276.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8277.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8278.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8279.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8280.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8281.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8282.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8283.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8284.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,469 | Import Log (Fallback) - The clip "0P1A8285.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8286.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8287.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8288.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8289.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8290.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8291.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8292.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8293.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8294.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8295.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8296.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8297.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8298.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8299.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8300.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8301.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8302.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8303.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8304.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8305.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8306.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8307.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8308.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8309.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8310.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8311.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8312.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8313.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8314.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8315.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8316.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8317.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8318.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8319.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8320.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8321.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8322.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8323.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8324.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8325.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "0P1A8326.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "6D4A1145.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "6D4A1146.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "6D4A1147.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "6D4A1148.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "6D4A1149.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "AQ5A8093.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0351.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0352.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0353.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0354.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0355.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0356.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0357.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0358.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0359.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0360.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0361.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0363.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0364.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0368.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0369.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0370.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0371.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0372.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0373.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0374.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0375.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0376.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0377.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0378.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0379.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0380.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0381.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0382.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0383.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0384.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0385.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0386.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0387.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0388.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0389.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0390.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0391.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,470 | Import Log (Fallback) - The clip "C0392.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0393.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0394.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0395.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0396.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0397.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0398.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0408.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0409.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0410.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0411.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0412.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0413.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0414.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0415.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0416.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0417.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0418.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0420.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0421.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0422.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0423.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0424.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0425.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0426.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0427.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0428.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0429.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0430.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0431.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0432.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0433.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0434.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0435.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0436.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0437.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0438.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0439.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0440.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0441.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0442.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0443.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0444.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0445.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0446.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0447.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0448.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0449.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0450.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0451.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0452.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0453.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0454.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0455.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0456.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0457.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0458.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SmLogger             | INFO  | 2024-12-13 16:55:39,471 | Import Log (Fallback) - The clip "C0459.MP4" failed to link because the timecode extents do not match any clip in the Media Pool.
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 16:55:39,479 | Current timeline pointer (00 - ALL CLIPS) is changed
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markVideoIn] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markAudioIn] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markVideoOut] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markAudioOut] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markVideoResetInOut] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markAudioResetInOut] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markCreateSubClip] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markVideoIn] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markAudioIn] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markVideoOut] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markAudioOut] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markVideoResetInOut] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markAudioResetInOut] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:55:39,503 | Action owner [Viewer] is not active when refreshing shortcut [markCreateSubClip] due to [No focused widget is set yet]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:56:47,571 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:56:47,572 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:56:47,572 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 16:56:47,572 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:56:47,662 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 16:56:47,671 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 16:56:47,799 | Database transaction completed, enqueueing 1 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:56:47,800 | Saving project took 138 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:57:29,978 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 16:57:30,205 | Saving project took 227 ms
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 17:02:32,245 | Create Decoder mx5p gets err: -12906
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 17:02:32,245 | Create Decoder dvh3 gets err: -12906
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 17:02:32,245 | Create Decoder ai12 gets err: -12906
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 17:02:32,246 | Create Decoder xalg gets err: -12906
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 17:02:32,246 | Create Decoder xfi8 gets err: -12906
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 17:02:32,246 | Create Decoder he22 gets err: -12906
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 17:02:32,246 | Create Decoder AVdn gets err: -12906
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:02:36,378 | Could not find action for shortcut [=]
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:02:42,554 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:02:42,554 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:02:42,554 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:02:42,554 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:02:42,663 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:02:42,669 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:02:42,679 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:02:42,683 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:02:42,685 | Database transaction completed, enqueueing 3 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:02:42,686 | Saving project took 23 ms
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:02:52,743 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:02:52,743 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:02:52,743 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:02:52,743 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:02:52,867 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:02:52,878 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:02:52,883 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:02:52,888 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:02:52,890 | Database transaction completed, enqueueing 3 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:02:52,890 | Saving project took 23 ms
+0x1e86b3840    | UI.GLDispShader      | INFO  | 2024-12-13 17:02:54,044 | Created 1D LUT texture for LUT size 16384
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:03:01,050 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:03:01,050 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:03:01,050 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:03:01,050 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | UI                   | WARN  | 2024-12-13 17:03:01,162 | Media for 0P1A8097.MP4 is already unloaded.
+0x1e86b3840    | UI                   | WARN  | 2024-12-13 17:03:01,162 | Waveform data request failed for : 0P1A8097.MP4
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:03:01,178 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:03:01,179 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:03:01,202 | Database transaction completed, enqueueing 1 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:03:01,203 | Saving project took 25 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:03:34,932 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:03:34,954 | Saving project took 22 ms
+2024-12-13 17:03:41.142 Resolve[56093:1110717] TSM AdjustCapsLockLEDForKeyTransitionHandling - _ISSetPhysicalKeyboardCapsLockLED Inhibit
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:03:43,395 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:03:43,417 | Saving project took 22 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:03:44,880 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:03:44,983 | Saving project took 103 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:03:46,097 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:03:46,118 | Saving project took 21 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:45,802 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:45,821 | Saving project took 19 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:46,244 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:46,342 | Saving project took 99 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:46,370 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:46,388 | Saving project took 18 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:46,552 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:46,572 | Saving project took 20 ms
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:47,286 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:47,286 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:47,287 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:47,287 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:47,382 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:47,397 | Saving project took 15 ms
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:47,761 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:47,762 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:47,762 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:47,762 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:47,856 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:47,871 | Saving project took 15 ms
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:48,208 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:48,208 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:48,208 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:04:48,208 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:48,306 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:48,321 | Saving project took 15 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:55,481 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:55,500 | Saving project took 19 ms
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:59,572 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:04:59,588 | Saving project took 16 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:06,201 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:06,232 | Saving project took 31 ms
+0x32de57000    | IO                   | INFO  | 2024-12-13 17:05:09,323 | AVF is performing software encode.
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:18,173 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:18,195 | Saving project took 22 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:23,582 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:23,599 | Saving project took 17 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:25,548 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:25,564 | Saving project took 16 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:31,425 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:31,523 | Saving project took 98 ms
+0x1e86b3840    | UI                   | WARN  | 2024-12-13 17:05:49,416 | Media for 0P1A8097.MP4 is already unloaded.
+0x1e86b3840    | UI                   | WARN  | 2024-12-13 17:05:55,238 | Media for 0P1A8097.MP4 is already unloaded.
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:05:55,417 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:05:55,417 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:05:55,417 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:05:55,417 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:55,525 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:05:55,534 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:05:55,543 | Database transaction completed, enqueueing 1 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:05:55,544 | Saving project took 19 ms
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:02,813 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:02,814 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:02,814 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:02,814 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:02,923 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:06:02,923 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:06:02,939 | Database transaction completed, enqueueing 1 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:02,940 | Saving project took 17 ms
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::begin: Paint device returned engine == 0, type: 2
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:12,658 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:12,686 | Saving project took 28 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:16,817 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:16,842 | Saving project took 25 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:19,634 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:19,656 | Saving project took 22 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:24,606 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:24,626 | Saving project took 20 ms
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:31,514 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:31,514 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:31,514 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:31,514 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:31,627 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:06:31,629 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:06:31,648 | Database transaction completed, enqueueing 1 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:31,648 | Saving project took 21 ms
+*** Init[252]: Failed to read file "/Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+*** Init[252]: Failed to read file "/Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 17:06:36,083 | Failed to create decoder for /Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 17:06:36,083 | Failed to create decoder for /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 17:06:36,084 | Failed to open video file </Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV> for decoding, error: <Codec is not opened yet.>
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 17:06:36,083 | Failed to open video file </Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV> for decoding, error: <Codec is not opened yet.>
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 17:06:36,084 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV of type QuickTime
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 17:06:36,084 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV of type QuickTime
+*** Init[252]: Failed to read file "/Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32dc27000    | IO                   | ERROR | 2024-12-13 17:06:36,085 | Failed to create decoder for /Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV
+0x32dc27000    | IO                   | ERROR | 2024-12-13 17:06:36,085 | Failed to open video file </Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV> for decoding, error: <Codec is not opened yet.>
+0x32dc27000    | IO                   | ERROR | 2024-12-13 17:06:36,085 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV of type QuickTime
+*** Init[252]: Failed to read file "/Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32dc27000    | IO                   | ERROR | 2024-12-13 17:06:36,085 | Failed to create decoder for /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV
+0x32dc27000    | IO                   | ERROR | 2024-12-13 17:06:36,085 | Failed to open video file </Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV> for decoding, error: <Codec is not opened yet.>
+0x32dc27000    | IO                   | ERROR | 2024-12-13 17:06:36,085 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV of type QuickTime
+*** Init[252]: Failed to read file "/Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 17:06:36,085 | Failed to create decoder for /Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 17:06:36,085 | Failed to open video file </Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV> for decoding, error: <Codec is not opened yet.>
+0x32dd3f000    | IO                   | ERROR | 2024-12-13 17:06:36,085 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/01-project-bay/00-LOCAL/payton-promo_080224/2024/2024-07-24/P0074001.MOV of type QuickTime
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 17:06:36,199 | Current timeline pointer (2160x3840-23.976p) is changed
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:36,265 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:36,265 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:36,265 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:36,265 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+*** Init[252]: Failed to read file "/Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 17:06:36,351 | Failed to create decoder for /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 17:06:36,351 | Failed to open video file </Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV> for decoding, error: <Codec is not opened yet.>
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 17:06:36,351 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV of type QuickTime
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+*** Init[252]: Failed to read file "/Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV"
+*** Create[53]: Init() failed with 2
+*** Init[252]: Failed to read file "/Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV"
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32da83000    | IO                   | ERROR | 2024-12-13 17:06:36,386 | Failed to create decoder for /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV
+0x32db9b000    | IO                   | ERROR | 2024-12-13 17:06:36,386 | Failed to create decoder for /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV
+0x32da83000    | IO                   | ERROR | 2024-12-13 17:06:36,386 | Failed to open video file </Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV> for decoding, error: <Codec is not opened yet.>
+0x32db9b000    | IO                   | ERROR | 2024-12-13 17:06:36,386 | Failed to open video file </Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV> for decoding, error: <Codec is not opened yet.>
+0x32da83000    | IO                   | ERROR | 2024-12-13 17:06:36,386 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV of type QuickTime
+0x32db9b000    | IO                   | ERROR | 2024-12-13 17:06:36,386 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV of type QuickTime
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:36,438 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:06:36,442 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:06:36,454 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:06:36,455 | Database transaction completed, enqueueing 2 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:36,455 | Saving project took 17 ms
+*** Init[252]: Failed to read file "/Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 17:06:36,461 | Failed to create decoder for /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 17:06:36,461 | Failed to open video file </Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV> for decoding, error: <Codec is not opened yet.>
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 17:06:36,461 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV of type QuickTime
+*** Init[252]: Failed to read file "/Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32d9f7000    | IO                   | ERROR | 2024-12-13 17:06:36,770 | Failed to create decoder for /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV
+0x32d9f7000    | IO                   | ERROR | 2024-12-13 17:06:36,770 | Failed to open video file </Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV> for decoding, error: <Codec is not opened yet.>
+0x32d9f7000    | IO                   | ERROR | 2024-12-13 17:06:36,770 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV of type QuickTime
+*** Init[252]: Failed to read file "/Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 17:06:36,899 | Failed to create decoder for /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 17:06:36,900 | Failed to open video file </Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV> for decoding, error: <Codec is not opened yet.>
+0x32ddcb000    | IO                   | ERROR | 2024-12-13 17:06:36,900 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/payton-promo_080224/2024/2024-08-20/P0074488.MOV of type QuickTime
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:41,189 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:41,189 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:41,189 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:41,189 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:41,582 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:41,582 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:41,582 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:41,582 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:44,553 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:44,617 | Saving project took 64 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:47,394 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:47,410 | Saving project took 16 ms
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:49,632 | Action [Context_renderInPlace] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:49,632 | Action [Context_openInFusionPage] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:06:49,632 | Action [Context_resetFusionComp] is not a valid global action
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:59,493 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:06:59,568 | Saving project took 75 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:05,494 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:05,522 | Saving project took 28 ms
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32dc27000    | IO                   | ERROR | 2024-12-13 17:07:07,475 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32dc27000    | IO                   | ERROR | 2024-12-13 17:07:07,475 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32dc27000    | IO                   | ERROR | 2024-12-13 17:07:07,475 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 17:07:07,595 | Current timeline pointer (3840x2160-23.976p) is changed
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:07:07,616 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:07:07,616 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:07:07,616 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:07:07,616 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32db0f000    | IO                   | ERROR | 2024-12-13 17:07:07,690 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32db0f000    | IO                   | ERROR | 2024-12-13 17:07:07,690 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32db0f000    | IO                   | ERROR | 2024-12-13 17:07:07,690 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32db0f000    | IO                   | ERROR | 2024-12-13 17:07:07,697 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32db0f000    | IO                   | ERROR | 2024-12-13 17:07:07,697 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 17:07:07,697 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32db0f000    | IO                   | ERROR | 2024-12-13 17:07:07,697 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 17:07:07,697 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32dcb3000    | IO                   | ERROR | 2024-12-13 17:07:07,697 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:07,746 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:07,763 | Saving project took 17 ms
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32da83000    | IO                   | ERROR | 2024-12-13 17:07:07,793 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32da83000    | IO                   | ERROR | 2024-12-13 17:07:07,793 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32da83000    | IO                   | ERROR | 2024-12-13 17:07:07,793 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+*** Init[252]: Failed to read file "/Volumes/TASTY/hx-catering_120324/P0077272.MOV"
+*** Create[53]: Init() failed with 2
+*** BMDMacQuickTimeReader[217]: Movie::Create() failed
+0x32d9f7000    | IO                   | ERROR | 2024-12-13 17:07:08,216 | Failed to create decoder for /Volumes/TASTY/hx-catering_120324/P0077272.MOV
+0x32d9f7000    | IO                   | ERROR | 2024-12-13 17:07:08,216 | Failed to open video file </Volumes/TASTY/hx-catering_120324/P0077272.MOV> for decoding, error: <Codec is not opened yet.>
+0x32d9f7000    | IO                   | ERROR | 2024-12-13 17:07:08,216 | IOVideoDecoderFacade can not decode file /Volumes/TASTY/hx-catering_120324/P0077272.MOV of type QuickTime
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:14,540 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:14,622 | Saving project took 82 ms
+0x1e86b3840    | UI                   | WARN  | 2024-12-13 17:07:22,305 | Media for  is already unloaded.
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:22,317 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:07:22,331 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:07:22,337 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:07:22,348 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:07:22,353 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:07:22,368 | Database transaction completed, enqueueing 4 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:22,369 | Saving project took 52 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:26,677 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:26,855 | Saving project took 178 ms
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:32,929 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:07:32,965 | Saving project took 36 ms
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 17:10:28,055 | Current timeline pointer (00 - ALL CLIPS) is changed
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:10:28,081 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:10:28,081 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:10:28,081 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:10:28,081 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:10:28,242 | Start saving project -CHOP-
+0x16ff7b000    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:10:28,260 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e86b3840    | SyManager.ActionExecutor | INFO  | 2024-12-13 17:10:28,263 | Database transaction completed, enqueueing 1 postponed actions
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:10:28,264 | Saving project took 22 ms
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 17:10:36,121 | Current timeline pointer (3840x2160-23.976p) is changed
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:10:36,141 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:10:36,141 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:10:36,141 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:10:36,141 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:10:36,293 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:10:36,313 | Saving project took 20 ms
+0x1e86b3840    | SyManager.AutoSave   | INFO  | 2024-12-13 17:11:05,997 | Start autosave
+0x1e86b3840    | SyManager.AutoSave   | INFO  | 2024-12-13 17:11:05,998 | Auto saving current project <-CHOP->
+0x1e86b3840    | SyManager.AutoSave   | INFO  | 2024-12-13 17:11:05,998 | Creates an autosave copy for current project in database
+0x1e86b3840    | SyManager.Gallery    | INFO  | 2024-12-13 17:11:05,998 | Started loading 2 stills into the cache
+0x1e86b3840    | SyManager.Gallery    | INFO  | 2024-12-13 17:11:06,008 | Finished loading 2 still objects into the cache
+0x1e86b3840    | SyManager.AutoSave   | ERROR | 2024-12-13 17:11:06,008 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
+Urgent message: DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.||Please ensure that the selected Project Backup Location in User Preferences has appropriate read and write permissions.
+0x1e86b3840    | SyManager.ActionExecutor | WARN  | 2024-12-13 17:11:06,008 | Failed to perform action <AutoSaveAction>: 
+0x1e86b3840    | BtCommon             | INFO  | 2024-12-13 17:25:55,516 | Entering sleep mode
+0x1e86b3840    | SyManager.AutoSave   | INFO  | 2024-12-13 17:31:07,970 | Start autosave
+0x1e86b3840    | SyManager.AutoSave   | INFO  | 2024-12-13 17:31:07,974 | Auto saving current project <-CHOP->
+0x1e86b3840    | SyManager.AutoSave   | INFO  | 2024-12-13 17:31:07,979 | Creates an autosave copy for current project in database
+0x1e86b3840    | SyManager.Gallery    | INFO  | 2024-12-13 17:31:07,986 | Started loading 2 stills into the cache
+0x1e86b3840    | SyManager.Gallery    | INFO  | 2024-12-13 17:31:07,987 | Finished loading 2 still objects into the cache
+0x1e86b3840    | SyManager.AutoSave   | ERROR | 2024-12-13 17:31:07,988 | DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.
+Urgent message: DaVinci Resolve failed to backup -CHOP- as a backup folder could not be created in the selected Project Backup Location.||Please ensure that the selected Project Backup Location in User Preferences has appropriate read and write permissions.
+0x1e86b3840    | SyManager.ActionExecutor | WARN  | 2024-12-13 17:31:07,988 | Failed to perform action <AutoSaveAction>: 
+0x1e86b3840    | BtCommon             | INFO  | 2024-12-13 17:31:11,331 | Exiting sleep mode
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:33:18,354 | Start saving project -CHOP-
+0x1e86b3840    | SyManager.ProjectManager | INFO  | 2024-12-13 17:33:18,543 | Saving project took 190 ms
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:42:05,945 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:42:05,946 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:42:05,946 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e86b3840    | UI.ActionManager     | WARN  | 2024-12-13 17:42:05,946 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e86b3840    | SyManager.Project    | INFO  | 2024-12-13 17:42:06,113 | Unlock project -CHOP-
+0x1e86b3840    | DbCommon2            | INFO  | 2024-12-13 17:42:06,184 | Active collaborators cleared
+0x1e86b3840    | SyManager.Gallery    | INFO  | 2024-12-13 17:42:06,185 | Start purging still caches
+0x1e86b3840    | SyManager.Gallery    | INFO  | 2024-12-13 17:42:06,185 | Finish purging still caches
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 17:42:06,294 | Media pool relink status changed to 0
+Accepted close event on main window
+0x16fba7000    | LeManager            | INFO  | 2024-12-13 17:42:06,608 | 522, 92
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:07,107 | Starting terminate sequence by calling g_MainTerm
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:07,108 | Closing components
+0x1e86b3840    | UI                   | INFO  | 2024-12-13 17:42:07,109 | Audio thread terminated.
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:07,295 | g_MainTerm: BtStartupShutdownControl.Shutdown() - begin
+Exit SY panel handler
+Exit SY data handler
+0x16feef000    | SyManager            | INFO  | 2024-12-13 17:42:07,345 | Exit SY low priority cmd handler
+0x16fe63000    | SyManager            | INFO  | 2024-12-13 17:42:07,350 | Exit SY high priority cmd handler
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:07,367 | SvcManager: SyManager.StopThreads() - end
+0x307fd7000    | GsManager            | INFO  | 2024-12-13 17:42:07,368 | Exit GS process handler
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:07,369 | SvcManager: GsManager.StopThreads() - end
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:07,369 | SvcManager: DpManager.StopThreads() - end
+0x32d73b000    | DpManager            | INFO  | 2024-12-13 17:42:07,369 | Exit DP high priority cmd handler
+0x32d853000    | DtManager            | INFO  | 2024-12-13 17:42:07,369 | Exit DT high priority cmd handler
+0x32d7c7000    | DpManager            | INFO  | 2024-12-13 17:42:07,372 | Exit DP low priority cmd handler
+0x32d96b000    | DtManager            | INFO  | 2024-12-13 17:42:07,381 | Exit DT data handler thread
+Exit GS high priority cmd handler
+Exit GS low priority cmd handler
+0x32d8df000    | DtManager            | INFO  | 2024-12-13 17:42:07,388 | Exit DT low priority cmd handler
+0x32dee3000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32ddcb000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32dcb3000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32e2b7000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32dffb000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32e22b000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32e087000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32df6f000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32dc27000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32db9b000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32e19f000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32e343000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32da83000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32de57000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32d9f7000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32e113000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32dd3f000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x32db0f000    | DtManager            | INFO  | 2024-12-13 17:42:07,396 | Exit DT worker thread
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:07,418 | SvcManager: DtManager.StopThreads() - end
+0x32e4e7000    | LsManager            | INFO  | 2024-12-13 17:42:07,422 | Exit LS data handler
+0x32e3cf000    | LsManager            | INFO  | 2024-12-13 17:42:07,430 | Exit LS high priority cmd handler
+0x32e45b000    | LsManager            | INFO  | 2024-12-13 17:42:07,432 | Exit LS low priority cmd handler
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:07,445 | SvcManager: LsManager.StopThreads() - end
+0x32e5ff000    | LsManager            | INFO  | 2024-12-13 17:42:07,450 | Exit LS low priority cmd handler
+0x32e573000    | LsManager            | INFO  | 2024-12-13 17:42:07,451 | Exit LS high priority cmd handler
+0x32e68b000    | LsManager            | INFO  | 2024-12-13 17:42:07,465 | Exit LS data handler
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:07,472 | SvcManager: LsManager.StopThreads() - end
+0x32e7a3000    | LsManager            | INFO  | 2024-12-13 17:42:07,473 | Exit LS low priority cmd handler
+0x32e717000    | LsManager            | INFO  | 2024-12-13 17:42:07,492 | Exit LS high priority cmd handler
+0x32fd27000    | GPU.SingleBoardMgr   | INFO  | 2024-12-13 17:42:07,621 | Board manager thread for "Apple M1" (gpu:685233f3.5a12414b) is done.
+0x32fa6b000    | LsManager            | INFO  | 2024-12-13 17:42:07,622 | Exit LS data handler
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:07,629 | SvcManager: LsManager.StopThreads() - end
+Exit memory data transmitter
+Delete service manager
+Delete cmd transmitter/receiver
+Delete data transmitter/receiver
+Delete remote cmd receiver
+Delete remote data receiver
+Exit SiteManager
+0x1e86b3840    | IO                   | INFO  | 2024-12-13 17:42:07,640 | RED FinalizeSdk
+0x1e86b3840    | DbCommon2            | INFO  | 2024-12-13 17:42:07,670 | Active collaborators cleared
+0x1e86b3840    | SyManager.Signals    | INFO  | 2024-12-13 17:42:07,670 | Collaboration connection count has changed
+0x16fc33000    | BtCommon             | INFO  | 2024-12-13 17:42:07,672 | Exit BtResourceManager Process Thread
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:08,104 | g_MainTerm: BtStartupShutdownControl.Shutdown() - finished
+0x37a887000    | UI.Scopes            | INFO  | 2024-12-13 17:42:08,105 | GPU Scopes thread done.
+0x37970b000    | UI.GLIO              | INFO  | 2024-12-13 17:42:08,106 | MainPlayer: OpenGL I/O worker thread is done.
+0x1e86b3840    | UI.GLIO              | INFO  | 2024-12-13 17:42:08,107 | MainPlayer: OpenGL I/O uninit done.
+0x379797000    | UI.GLIO              | INFO  | 2024-12-13 17:42:08,107 | AuxPlayer: OpenGL I/O worker thread is done.
+0x1e86b3840    | UI.GLIO              | INFO  | 2024-12-13 17:42:08,107 | AuxPlayer: OpenGL I/O uninit done.
+0x1e86b3840    | UI.GLContext         | INFO  | 2024-12-13 17:42:08,134 | Destroyed main OpenGL context.
+0x1e86b3840    | Main                 | INFO  | 2024-12-13 17:42:08,138 | Main thread exited successfully

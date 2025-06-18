@@ -1,0 +1,12 @@
+FaderDisplayTimeoutSeconds = 600
+LoudnessAnalyseMode = 8
+bounceClipsBitDepth = 24
+bounceClipsFormat = 0
+bounceClipsLocation = /Volumes/TASTY/01-project-bay/0023_treehouse/02postMedia/audio
+deckLinkAudioEnabled = 0
+enableGUIFPS = 0
+enableStreamingDebug = 0
+engineConfig = 1
+ioConfig = 0
+madiConfig = 0
+screenSaverState = 459

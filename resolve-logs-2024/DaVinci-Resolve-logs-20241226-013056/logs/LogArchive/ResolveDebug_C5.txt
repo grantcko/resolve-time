@@ -1,0 +1,582 @@
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:14,741 | Running DaVinci Resolve v19.0.2.0007 (macOS/Clang arm64)
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:14,741 | BMD_BUILD_UUID c126cc5c-16f3-4696-b569-33158a8b3ea7
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:14,741 | BMD_GIT_COMMIT 04ba83669efccc533f9686b6bcc03ea63bc61227
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,825 | Starting GPUDetect 1.2_6-a2
+0x1e95a0f40    | GPUDetect            | ERROR | 2024-10-14 10:45:14,829 | Failed to query IOKit monitor information
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,829 | Done in 4 ms.
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,829 | Detected System:
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,829 |   - OS: MacOS 14.6.1 (Build 23G93)
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,829 |   - Model: MacBookAir10,1
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,829 |   - System ID: 355291d4-ed86-54a2-8f78-a98dc8a239a6
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,829 |   - CPU: Apple M1, 8 threads, arm64
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,829 |   - RAM: 7.9 GiB used of 16 GiB
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,829 | Detected 1 GPUs:
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,829 |   - "Apple M1" (gpu:685233f3.5a12414b) <- Main Display GPU
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,829 |     Integrated, 10.7 GiB VRAM
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,830 |     Matches: CoreGraphics, Metal, OpenCL
+0x1e95a0f40    | GPUDetect            | INFO  | 2024-10-14 10:45:14,830 | Detected 0 monitors:
+0x1e95a0f40    | Main.GPUConfig       | INFO  | 2024-10-14 10:45:14,831 | Compute API set to automatic, defaulting to Metal.
+0x1e95a0f40    | Main.GPUConfig       | INFO  | 2024-10-14 10:45:14,831 | Selected compute API: Metal
+0x1e95a0f40    | Main.GPUConfig       | INFO  | 2024-10-14 10:45:14,831 | Automatic GPU Selection:
+0x1e95a0f40    | Main.GPUConfig       | INFO  | 2024-10-14 10:45:14,831 |   - "Apple M1" (gpu:685233f3.5a12414b)
+0x1e95a0f40    | IO                   | INFO  | 2024-10-14 10:45:14,831 | RED InitializeSdk with library path at /Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries
+0x1e95a0f40    | IO                   | INFO  | 2024-10-14 10:45:14,845 | R3DAPI 8.5.1-53601 (20240308 Ma64S) R3DSDK 8.5.1-53601 (20240308 Ma64D CNBN) RED METAL 8.5.1-53598 (20240308) [/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/] init is successful
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:14,845 | 0 RED rocket cards available
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:14,846 | Decklink model name: '', version: ''
+0x1e95a0f40    | DVIP                 | INFO  | 2024-10-14 10:45:14,846 | DVIP release/19.0.2 build 5 (0b61a6603ba51db806fcfca92effce9f294a2c3f). Release, version 19.0.2.
+0x16de1f000    | IO                   | INFO  | 2024-10-14 10:45:14,846 | Using DNxHR library v2.7.5.873r
+0x16df37000    | SyManager            | ERROR | 2024-10-14 10:45:14,846 | GetProjectLibraries() - Access token is empty
+0x16de1f000    | IO                   | INFO  | 2024-10-14 10:45:14,846 | Cinematic API bridge is loaded.
+0x16de1f000    | IO                   | INFO  | 2024-10-14 10:45:14,990 | IO codec library load completed in 144 ms.
+0x16dd93000    | Fusion               | INFO  | 2024-10-14 10:45:14,992 | Fusion Build: 8a4b3409_0003 (Sep 20 2024 11:16:26)
+0x16e53b000    | Fusion               | INFO  | 2024-10-14 10:45:14,993 | fusionsystem: = "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/libfusionsystem.dylib"
+0x16e53b000    | Fusion               | INFO  | 2024-10-14 10:45:15,000 | FusionLibs: = "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/"
+0x16e53b000    | Fusion               | INFO  | 2024-10-14 10:45:15,000 | UserData:   = "/Users/granthall/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion"
+0x16e53b000    | Fusion               | INFO  | 2024-10-14 10:45:15,000 | Profiles:   = "UserData:Profiles/"
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:15,046 | UI language is set to "en".
+Attribute Qt::AA_ShareOpenGLContexts must be set before QCoreApplication is created.
+0x16e653000    | DbCommon2            | INFO  | 2024-10-14 10:45:15,046 | Loading dblist file: /Users/granthall/Library/Preferences/Blackmagic Design/DaVinci Resolve/dblist.conf
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:15,072 | Finished loading Application style sheet
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:15,085 | Show splash screen
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:15,085 | Show splash screen message: Starting Up
+*********** WITH DIRECT I/O SWITCHED ON!
+*********** WITH DIRECT I/O SWITCHED ON!
+0x1e95a0f40    | IO                   | INFO  | 2024-10-14 10:45:15,109 | Adding directory /Volumes to directory watching list
+2024-10-14 10:45:15.182 Resolve[25012:925565] WARNING: Secure coding is automatically enabled for restorable state! However, not on all supported macOS versions of this application. Opt-in to secure coding explicitly by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState:.
+0x1e95a0f40    | UI.GLContext         | INFO  | 2024-10-14 10:45:15,221 | Creating shared OpenGL context for this thread (1 total).
+0x1e95a0f40    | UI.GLContext         | INFO  | 2024-10-14 10:45:15,281 | Initialized OpenGL 2.1 (requested 2.0) on device 'Apple Apple M1'
+0x1e95a0f40    | BtCommon             | INFO  | 2024-10-14 10:45:15,284 | Memory config: reserved=4055M pinned=3041M log=0
+0x1e95a0f40    | BtCommon             | INFO  | 2024-10-14 10:45:15,284 | Using default pooled memory manager
+0x17ed0b000    | LeManager            | INFO  | 2024-10-14 10:45:15,284 | 521, 29
+0x17ed97000    | BtCommon             | INFO  | 2024-10-14 10:45:15,284 | BtResourceManager Process Thread Started
+0x1e95a0f40    | IO                   | INFO  | 2024-10-14 10:45:15,310 | Setting codec capacity (0)
+0x1e95a0f40    | SyManager            | INFO  | 2024-10-14 10:45:15,311 | Total: 20, NumDtThreads: 8, NumComms: 0, NumSites: 1
+
+0x1e95a0f40    | SyManager            | INFO  | 2024-10-14 10:45:15,311 | Lookaheads -> playback = 20, record = 20, stop = 2
+
+Sy High Command Handler Thread ----- (6425440256)
+SY high priority cmd handler thread starts: 7EFC7000
+Sy Low Command Handler Thread ----- (6434615296)
+SY low priority cmd handler thread starts: 7F887000
+Sy Data Handler Thread ----- (6435188736)
+SY data handler thread starts: 7F913000
+Gs High Command Handler Thread ----- (6436335616)
+GS high priority cmd handler thread starts: 7FA2B000
+Gs Low Command Handler Thread ----- (6436909056)
+GS low priority cmd handler thread starts: 7FAB7000
+0x17fb43000    | GsManager            | INFO  | 2024-10-14 10:45:15,317 | Gs Processor Thread ----- (6437482496)
+
+Dp High Command Handler Thread ----- (6438055936)
+DP high priority cmd handler thread starts: 7FBCF000
+Dp Low Command Handler Thread ----- (6438629376)
+DP low priority cmd handler thread starts: 7FC5B000
+GS processor thread starts: 7FB43000
+Dt High Command Handler Thread ----- (6439202816)
+DT high priority cmd handler thhread starts: 7FCE7000
+Dt Low Command Handler Thread ----- (6439776256)
+DT low priority cmd handler thread starts: 7FD73000
+0x1e95a0f40    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Using 8 generic IO threads
+0x17fdff000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Data Handler Thread Started
+DT data handler thread starts: 7FDFF000
+0x1e95a0f40    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Total of 16 IO threads (including 8 generic and 8 Red decode threads)
+0x17fe8b000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x17ffa3000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x17ff17000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x3134d7000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x313333000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x3133bf000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x313707000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x313793000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x31381f000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x313563000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x31344b000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+Ls High Command Handler Thread ----- (13215051776)
+0x3132a7000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+Ls Low Command Handler Thread ----- (13215625216)
+LS low priority cmd handler thread starts: 13B67000
+Ls Data Handler Thread ----- (13216198656)
+0x3135ef000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+LS data handler thread starts: 13BF3000
+Ls High Command Handler Thread ----- (13216772096)
+0x3138ab000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+Ls Low Command Handler Thread ----- (13217345536)
+LS low priority cmd handler thread starts: 13D0B000
+Ls Data Handler Thread ----- (13217918976)
+LS data handler thread starts: 13D97000
+Ls High Command Handler Thread ----- (13218492416)
+0x31367b000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+Ls Low Command Handler Thread ----- (13219065856)
+LS low priority cmd handler thread starts: 13EAF000
+0x3139c3000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+Ls Data Handler Thread ----- (13219639296)
+0x313937000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+Mem Data Transmitter Thread ----- (13220212736)
+Mem data transmitter thread starts: 13FC7000
+0x313a4f000    | DtManager            | INFO  | 2024-10-14 10:45:15,317 | Dt Worker Thread Started
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:15,317 | Show splash screen message: Loading Project Libraries
+0x313f3b000    | GPU.MultiBoardMgr    | INFO  | 2024-10-14 10:45:15,318 | Let There Be Metal Light!
+0x313f3b000    | GPU.MultiBoardMgr    | INFO  | 2024-10-14 10:45:15,319 | Initializing Metal board manager for Main Display GPU gpu:685233f3.5a12414b.
+0x3140df000    | GPU.SingleBoardMgr   | INFO  | 2024-10-14 10:45:15,323 | Board manager thread for "Apple M1" (gpu:685233f3.5a12414b) is ready.
+0x313f3b000    | UI.GLInterop         | INFO  | 2024-10-14 10:45:15,323 | OpenGL interop was initialized.
+0x313f3b000    | UI.GLInterop         | INFO  | 2024-10-14 10:45:15,323 | OpenGL interop was initialized.
+0x313f3b000    | GPU.MultiBoardMgr    | INFO  | 2024-10-14 10:45:15,323 | Enabled Metal pinned memory.
+LS data handler thread starts: 13F3B000
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:15,344 | Show splash screen message: Initializing system components
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:15,346 | Show splash screen message: Loading video codecs
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:15,348 | Show splash screen message: Loading video plugins
+0x16de1f000    | IO                   | INFO  | 2024-10-14 10:45:15,355 | IO codec initialization completed in 7 ms.
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:15,378 | Show splash screen message: Loading Fairlight Engine
+0x1e95a0f40    | Fairlight            | INFO  | 2024-10-14 10:45:16,019 | 00.00.00.323(001): Running Fairlight (000fba0704cecbff0be9889c3060b578d489e1ca)
+0x1e95a0f40    | FairlightLoader      | INFO  | 2024-10-14 10:45:16,019 | Fairlight lib initialized in 323 ms.
+0x333b73000    | UI.GLContext         | INFO  | 2024-10-14 10:45:16,019 | Creating shared OpenGL context for this thread (2 total).
+0x333b73000    | UI.GLIO              | INFO  | 2024-10-14 10:45:16,021 | Initialized MainPlayer OpenGL I/O on Metal device 'Apple M1'
+0x1e95a0f40    | UI.GLIO              | INFO  | 2024-10-14 10:45:16,021 | MainPlayer: OpenGL I/O setup done.
+0x333bff000    | UI.GLContext         | INFO  | 2024-10-14 10:45:16,021 | Creating shared OpenGL context for this thread (3 total).
+0x333bff000    | UI.GLIO              | INFO  | 2024-10-14 10:45:16,022 | Initialized AuxPlayer OpenGL I/O on Metal device 'Apple M1'
+0x1e95a0f40    | UI.GLIO              | INFO  | 2024-10-14 10:45:16,022 | AuxPlayer: OpenGL I/O setup done.
+0x333c8b000    | UI.GLContext         | INFO  | 2024-10-14 10:45:16,022 | Creating shared OpenGL context for this thread (4 total).
+0x333c8b000    | UI.Scopes            | INFO  | 2024-10-14 10:45:16,022 | Initialized GPU Scopes Manager on Metal device 'Apple M1'
+0x1e95a0f40    | UI.MenuBar           | WARN  | 2024-10-14 10:45:16,067 | Main menu action [workspaceLayoutFusion_sub001Default]'s slot is not defined: workspaceLayoutFusion_sub001Default_triggered()
+0x1e95a0f40    | FusionUtils          | WARN  | 2024-10-14 10:45:16,074 | Fusion DoAction ACTION_SET_FUSION_HOTKEY ignored, init not completed
+SY panel handler thread starts: 33D17000
+socket: 41
+DaVinci Panel API Version: 1.0
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:16,088 | Show splash screen message: Loading Project Settings
+Resolve discovery
+2024-10-14 10:45:16.302 Resolve[25012:925565] WARNING: Add NSCameraUseContinuityCameraDeviceType to your Info.plist to use AVCaptureDeviceTypeContinuityCamera.
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:16,421 | Show splash screen message: Loading Media Page
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:16,459 | Action [fairlightImmersiveAmbisonicsMetering] is not a global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:16,459 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:16,459 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:16,459 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:16,459 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.FairlightInterface | WARN  | 2024-10-14 10:45:16,514 | SetActionEnabled: Failed to find action [viewTimelineScrollingFixed]'s action connector for handler Id [1]
+Unknown property letter-spacing
+Unknown property letter-spacing
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:16,622 | Show splash screen message: Loading Cut Page
+0x1e95a0f40    | UI.SpeedTimeline     | INFO  | 2024-10-14 10:45:16,671 | Replay UI is enabled.
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:16,754 | OFX - plugin not supported on this platform, is being skipped
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:16,786 | Show splash screen message: Loading Edit Page
+0x314053000    | Fusion               | INFO  | 2024-10-14 10:45:16,902 | 318 templates scanned in 0.10 secs
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:16,920 | OFX - plugin not supported on this platform, is being skipped
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:16,945 | Show splash screen message: Loading Fusion Page
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:17,003 | Show splash screen message: Loading Fairlight Page
+2024-10-14 10:45:17.101 Resolve[25012:925565] CAMetalLayer ignoring invalid setDrawableSize width=89.000000 height=0.000000
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:17,104 | Show splash screen message: Loading Color Page
+libpng warning: iCCP: known incorrect sRGB profile
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:17,180 | OFX - plugin not supported on this platform, is being skipped
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:17,940 | Show splash screen message: Loading Waveform Monitor
+****************** Flushing GPU Buffers
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:18,138 | Show splash screen message: Loading Audio Plugins
+0x1e95a0f40    | SyManager            | INFO  | 2024-10-14 10:45:18,199 | Collaboration IP  Port 0
+0x1e95a0f40    | DbCommon2            | INFO  | 2024-10-14 10:45:18,199 | Sm2SysIdEntry is not supported in local project library (xml) mode
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:18,204 | Show splash screen message: Loading Projects
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:18,219 | Current user pointer is changed
+0x1e95a0f40    | IO                   | INFO  | 2024-10-14 10:45:18,242 | RED rocket decode has been disabled in the config file
+Resolve discovery
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:18,429 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:18,429 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:18,429 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:18,429 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x3716b7000    | SyManager            | ERROR | 2024-10-14 10:45:18,467 | Failed to parse key (beta) from JsonObject
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e95a0f40    | SyManager.Gallery    | INFO  | 2024-10-14 10:45:18,490 | Start purging still caches
+0x1e95a0f40    | SyManager.Gallery    | INFO  | 2024-10-14 10:45:18,490 | Finish purging still caches
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:18,512 | Media pool relink status changed to 0
+0x1e95a0f40    | FusionUtils          | WARN  | 2024-10-14 10:45:18,520 | Fusion DoAction ACTION_SET_FUSION_HOTKEY ignored, init not completed
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:18,526 | Launching project manager
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:18,527 | Main view page is changed to 12
+2024-10-14 10:45:18.533 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 10:45:18.533 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:18,537 | Show splash screen message: Ready
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:18,553 | Gallery pointer is changed, refreshing color gallery
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:18,557 | Gallery pointer is changed, refreshing gallery browser
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:18,591 | Close splash screen
+0x1e95a0f40    | Main                 | INFO  | 2024-10-14 10:45:18,592 | Launching main loop
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:18,778 | Fusion templates changed
+0x1e95a0f40    | SyManager.ActionExecutor | INFO  | 2024-10-14 10:45:20,594 | Database transaction is ongoing, user initiated action Sync Asset Map is postponed
+0x1e95a0f40    | SyManager.ActionExecutor | INFO  | 2024-10-14 10:45:20,668 | Database transaction completed, enqueueing 1 postponed actions
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:45:21,497 | Loading project (TCF_trailer_1) from project library (Local Database) took 1270 ms
+****************** Flushing GPU Buffers
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:21,878 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:21,878 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:21,878 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:21,878 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x3140df000    | GPU.SingleBoardMgr   | INFO  | 2024-10-14 10:45:21,984 | Flushing GPU memory...
+0x3140df000    | UI.GLContext         | INFO  | 2024-10-14 10:45:21,984 | Creating shared OpenGL context for this thread (5 total).
+0x3140df000    | UI.GLTexPool         | INFO  | 2024-10-14 10:45:21,984 | Released 0 MiB in 0 unused textures.
+0x1e95a0f40    | SyManager.Gallery    | INFO  | 2024-10-14 10:45:21,997 | Start purging still caches
+0x1e95a0f40    | SyManager.Gallery    | INFO  | 2024-10-14 10:45:21,997 | Finish purging still caches
+0x3134d7000    | IO                   | ERROR | 2024-10-14 10:45:22,040 | Create Decoder mx5p gets err: -12906
+0x3134d7000    | IO                   | ERROR | 2024-10-14 10:45:22,040 | Create Decoder dvh3 gets err: -12906
+0x3134d7000    | IO                   | ERROR | 2024-10-14 10:45:22,040 | Create Decoder ai12 gets err: -12906
+0x3134d7000    | IO                   | ERROR | 2024-10-14 10:45:22,040 | Create Decoder xalg gets err: -12906
+0x3134d7000    | IO                   | ERROR | 2024-10-14 10:45:22,040 | Create Decoder xfi8 gets err: -12906
+0x3134d7000    | IO                   | ERROR | 2024-10-14 10:45:22,040 | Create Decoder he22 gets err: -12906
+0x3134d7000    | IO                   | ERROR | 2024-10-14 10:45:22,040 | Create Decoder AVdn gets err: -12906
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:23,098 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:23,098 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:23,098 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:23,098 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:23,220 | Current timeline pointer (02_selects) is changed
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:24,120 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:24,120 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:24,120 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:24,120 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:24,693 | Current timeline pointer (04_rough_3) is changed
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:24,799 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:24,799 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:24,799 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:45:24,799 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:24,906 | Media pool relink status changed to 0
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:25,210 | Current project pointer changed to (TCF_trailer_1) from DB (Local Database : Local)
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:25,210 | Current timeline pointer (04_rough_3) is changed
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:25,588 | The buttonId [7] is not found for [0] in [0]
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:25,591 | Gallery pointer is changed, refreshing color gallery
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:25,595 | Gallery pointer is changed, refreshing gallery browser
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:25,646 | Main view page is changed to 1
+0x1e95a0f40    | UI                   | WARN  | 2024-10-14 10:45:25,646 | Failed to get auto update information.
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:25,952 | Main view page is changed to 2
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:45:26,038 | Main view page is changed to 2
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:45:26,040 | Launching main window
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/3e607854-1cfa-4da7-ba87-bc4f6c9e3490'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1e95a0f40    | SyManager            | WARN  | 2024-10-14 10:45:26,061 | No reply received from file system, assume successfully deleted folder /Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/3e607854-1cfa-4da7-ba87-bc4f6c9e3490.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/3e607854-1cfa-4da7-ba87-bc4f6c9e3490'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1e95a0f40    | SyManager            | WARN  | 2024-10-14 10:45:26,071 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/3e607854-1cfa-4da7-ba87-bc4f6c9e3490.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/.gallery/3e607854-1cfa-4da7-ba87-bc4f6c9e3490'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1e95a0f40    | SyManager            | WARN  | 2024-10-14 10:45:26,081 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/.gallery/3e607854-1cfa-4da7-ba87-bc4f6c9e3490.
+0x1e95a0f40    | UI.GLDispShader      | INFO  | 2024-10-14 10:45:26,197 | Created 1D LUT texture for LUT size 16384
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:49:14,075 | The buttonId [7] is not found for [0] in [0]
+0x1e95a0f40    | UI                   | INFO  | 2024-10-14 10:49:14,084 | The buttonId [7] is not found for [0] in [0]
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:49:14,088 | Main view page is changed to 1
+0x1e95a0f40    | UI.GLDispShader      | INFO  | 2024-10-14 10:49:14,156 | Created 1D LUT texture for LUT size 16384
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:49:56,384 | Start saving project TCF_trailer_1
+0x17f913000    | SyManager.ActionExecutor | INFO  | 2024-10-14 10:49:56,387 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x17f913000    | SyManager.ActionExecutor | INFO  | 2024-10-14 10:49:56,389 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1e95a0f40    | SyManager.ActionExecutor | INFO  | 2024-10-14 10:49:56,412 | Database transaction completed, enqueueing 2 postponed actions
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:49:56,412 | Saving project took 28 ms
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:50:02,931 | Main view page is changed to 2
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:11,571 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:11,571 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:11,571 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:11,571 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:11,640 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:11,640 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:11,640 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:11,640 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:50:17,975 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:50:18,002 | Saving project took 27 ms
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:19,829 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:19,829 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:19,829 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:19,829 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:22,445 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:22,445 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:22,445 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:22,445 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:23,597 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:23,597 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:23,597 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:23,597 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:24,212 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:24,213 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:24,213 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:50:24,213 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:51:16,586 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:51:16,625 | Saving project took 39 ms
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:17,563 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:17,563 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:17,563 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:17,563 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:18,262 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:18,262 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:18,262 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:18,262 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:18,760 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:18,760 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:18,760 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:18,760 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:51:20,908 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:51:20,941 | Saving project took 33 ms
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:25,212 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:25,212 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:25,212 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:51:25,212 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:51:27,342 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:51:27,369 | Saving project took 27 ms
+2024-10-14 10:51:27.449 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 10:51:39.332 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 10:51:42.645 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 10:51:43.178 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:51:57,560 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:51:57,583 | Saving project took 23 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:52:12,050 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:52:12,073 | Saving project took 23 ms
+2024-10-14 10:52:12.651 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 10:52:17.027 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 10:52:22.128 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:52:23,123 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:52:23,144 | Saving project took 21 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:52:34,848 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:52:34,884 | Saving project took 36 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:52:52,522 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:52:52,539 | Saving project took 17 ms
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:53:18,105 | Main view page is changed to 15
+0x1e95a0f40    | UI.GLDispShader      | INFO  | 2024-10-14 10:53:18,268 | Created 1D LUT texture for LUT size 16384
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:53:19,481 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:53:19,504 | Saving project took 23 ms
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 10:54:03,804 | Main view page is changed to 2
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:55:22,964 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:55:22,990 | Saving project took 26 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:55:28,362 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:55:28,379 | Saving project took 17 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:55:50,464 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:55:50,484 | Saving project took 20 ms
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:56:13,958 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:56:13,959 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:56:13,959 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:56:13,959 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:57:17,083 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:57:17,113 | Saving project took 30 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:57:27,459 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:57:27,479 | Saving project took 20 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:57:41,941 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:57:41,969 | Saving project took 28 ms
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:57:54,004 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:57:54,005 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:57:54,005 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 10:57:54,005 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:58:20,957 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:58:20,988 | Saving project took 31 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:59:03,982 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:59:04,004 | Saving project took 22 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:59:19,981 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:59:19,999 | Saving project took 18 ms
+2024-10-14 10:59:23.689 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 10:59:30.705 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 10:59:35.052 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 10:59:37.534 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 10:59:38.418 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:59:44,571 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:59:44,593 | Saving project took 23 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:59:57,955 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 10:59:57,976 | Saving project took 21 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:00:01,346 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:00:01,367 | Saving project took 21 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:00:07,922 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:00:07,946 | Saving project took 24 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:00:29,452 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:00:29,471 | Saving project took 19 ms
+2024-10-14 11:00:29.912 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:00:29.915 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:00:29,927 | Main view page is changed to 14
+2024-10-14 11:00:40.768 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:00:40,784 | Main view page is changed to 2
+2024-10-14 11:01:07.392 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:01:21,957 | Main view page is changed to 15
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:01:23,453 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:01:23,483 | Saving project took 30 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:01:27,451 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:01:27,479 | Saving project took 28 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:01:49,996 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:01:50,020 | Saving project took 24 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:02:45,842 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:02:45,869 | Saving project took 27 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:04:23,591 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:04:23,619 | Saving project took 28 ms
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:05:13,934 | Main view page is changed to 14
+2024-10-14 11:05:29.315 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:05:29,322 | Main view page is changed to 15
+0x1e95a0f40    | SyManager.AutoSave   | INFO  | 2024-10-14 11:05:29,432 | Start autosave
+0x1e95a0f40    | SyManager.AutoSave   | INFO  | 2024-10-14 11:05:29,432 | Auto saving current project <TCF_trailer_1>
+0x1e95a0f40    | SyManager.AutoSave   | INFO  | 2024-10-14 11:05:29,432 | Creates an autosave copy for current project in database
+0x1e95a0f40    | SyManager.AutoSave   | INFO  | 2024-10-14 11:05:30,133 | Previous autosave backup Project.db.20241012170635 for project TCF_trailer_1 removed
+0x1e95a0f40    | SyManager.Gallery    | INFO  | 2024-10-14 11:05:30,249 | Started loading 0 stills into the cache
+0x1e95a0f40    | SyManager.Gallery    | INFO  | 2024-10-14 11:05:30,249 | Finished loading 0 still objects into the cache
+0x1e95a0f40    | SyManager.AutoSave   | INFO  | 2024-10-14 11:05:30,565 | Incremental backup to '/Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/7234adad-8dd7-4f25-afbd-45800bc8ed85/Project.db.20241014110530' from the original /Users/granthall/Library/Application Support/Blackmagic Design/DaVinci Resolve/Resolve Disk Database/Resolve Projects/Users/guest/Projects/TCF_trailer_1/Project.db
+0x1e95a0f40    | SyManager.AutoSave   | INFO  | 2024-10-14 11:05:30,593 | TCF_trailer_1 backup is created in 1161 ms.
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:05:34,544 | Could not find action for shortcut [=]
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:05:42,829 | Main view page is changed to 2
+2024-10-14 11:05:49.666 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:05:55.503 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:05:55.506 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:05:55,517 | Main view page is changed to 14
+2024-10-14 11:06:41.024 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:06:41,033 | Main view page is changed to 2
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:06:42,927 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:06:42,970 | Saving project took 44 ms
+2024-10-14 11:06:58.727 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:06:58.730 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:06:58,741 | Main view page is changed to 14
+2024-10-14 11:07:45.338 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:07:45,346 | Main view page is changed to 2
+2024-10-14 11:07:53.185 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:07:53.188 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:07:53,201 | Main view page is changed to 14
+2024-10-14 11:07:54.319 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:07:54,326 | Main view page is changed to 2
+2024-10-14 11:07:56.418 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:07:56.422 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:07:56,439 | Main view page is changed to 14
+2024-10-14 11:07:59.208 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:07:59,215 | Main view page is changed to 2
+2024-10-14 11:08:00.313 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:08:00.316 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:08:00,332 | Main view page is changed to 14
+2024-10-14 11:08:30.265 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:08:30,274 | Main view page is changed to 2
+2024-10-14 11:08:33.488 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:08:33.491 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:08:33,502 | Main view page is changed to 14
+2024-10-14 11:08:37.086 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:08:37,093 | Main view page is changed to 2
+2024-10-14 11:08:38.406 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:08:38.409 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:08:38,421 | Main view page is changed to 14
+2024-10-14 11:08:43.393 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:08:43,399 | Main view page is changed to 2
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:08:50,275 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:08:50,275 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:08:50,275 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:08:50,275 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:08:56,802 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:08:56,802 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:08:56,802 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:08:56,802 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:08:58,921 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:08:58,952 | Saving project took 31 ms
+2024-10-14 11:09:08.063 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:08.839 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:09.086 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:09.933 Resolve[25012:925565] TSM AdjustCapsLockLEDForKeyTransitionHandling - _ISSetPhysicalKeyboardCapsLockLED Inhibit
+2024-10-14 11:09:10.189 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:10.193 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:17.866 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:23.887 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:24.073 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:24.370 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:24.372 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:28.805 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:09:29,420 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:09:29,446 | Saving project took 26 ms
+2024-10-14 11:09:30.146 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:30.287 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:30.290 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:40.887 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:09:40.890 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:09:40,903 | Main view page is changed to 14
+2024-10-14 11:09:58.593 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:09:58,601 | Main view page is changed to 2
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:10:05,917 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:10:05,940 | Saving project took 23 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:10:20,360 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:10:20,385 | Saving project took 25 ms
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:22,521 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:22,521 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:22,521 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:22,521 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:23,621 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:23,621 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:23,621 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:23,621 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:24,819 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:24,819 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:24,819 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:24,819 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:31,836 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:31,836 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:31,836 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:10:31,836 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+2024-10-14 11:10:44.361 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:45.669 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:45.882 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:46.334 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:46.338 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:51.639 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:51.932 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:52.070 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:52.073 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:57.343 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:57.532 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:57.684 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:10:57.687 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:04,971 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:04,971 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:04,971 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:04,971 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:05,792 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:05,792 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:05,792 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:05,792 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:06,074 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:06,074 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:06,074 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:06,074 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:06,303 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:06,303 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:06,303 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1e95a0f40    | UI.ActionManager     | WARN  | 2024-10-14 11:11:06,303 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:08,916 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:08,956 | Saving project took 40 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:14,915 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:14,932 | Saving project took 17 ms
+2024-10-14 11:11:23.288 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:11:23.292 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:11:23,305 | Main view page is changed to 14
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:25,829 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:25,885 | Saving project took 56 ms
+2024-10-14 11:11:25.911 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:11:25.911 Resolve[25012:925565] Invalid state set [-100].
+2024-10-14 11:11:26.208 Resolve[25012:925565] Invalid state set [-100].
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:11:26,214 | Main view page is changed to 2
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:27,465 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:27,484 | Saving project took 19 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:33,413 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:33,433 | Saving project took 20 ms
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:45,818 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:45,841 | Saving project took 23 ms
+0x1e95a0f40    | SyManager.Signals    | INFO  | 2024-10-14 11:11:48,916 | Main view page is changed to 11
+0x1e95a0f40    | UI                   | WARN  | 2024-10-14 11:11:48,938 | Unable to submit frame to GPU scopes, legacy OpenGL uploads not supported (Color Page).
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:48,971 | Start saving project TCF_trailer_1
+0x1e95a0f40    | SyManager.ProjectManager | INFO  | 2024-10-14 11:11:48,986 | Saving project took 15 ms
+
+
+==========[CRASH DUMP]==========
+#TIME Mon Oct 14 11:11:49 2024 - Uptime 00:26:34 (hh:mm:ss)
+#PROGRAM_NAME DaVinci Resolve v19.0.2.0007 (macOS/Clang arm64)
+#BMD_ARCHITECTURE arm64
+#BMD_BUILD_UUID c126cc5c-16f3-4696-b569-33158a8b3ea7
+#BMD_GIT_COMMIT 04ba83669efccc533f9686b6bcc03ea63bc61227
+#BMD_UTIL_VERSION 19.0.2.0007
+#OS macOS
+
+0   Resolve                             0x0000000102324984 _ZN5QHashI7QString15QHashDummyValueE11deleteNode2EPN9QHashData4NodeE + 133180
+1   Resolve                             0x0000000102323df8 _ZN5QHashI7QString15QHashDummyValueE11deleteNode2EPN9QHashData4NodeE + 130224
+2   libsystem_platform.dylib            0x0000000181782584 _sigtramp + 56
+3   libsystem_pthread.dylib             0x0000000181751c20 pthread_kill + 288
+4   libsystem_c.dylib                   0x000000018165ea30 abort + 180
+5   libsystem_malloc.dylib              0x000000018156edc4 malloc_vreport + 896
+6   libsystem_malloc.dylib              0x0000000181592ea8 malloc_zone_error + 104
+7   libsystem_malloc.dylib              0x0000000181591d00 free_tiny_botch + 40
+8   Resolve                             0x00000001027a244c _Z75descriptor_table_DbCommon2_2e0_2fSchemas_2fDbCommon_2eproto_metadata_getteri + 80768
+9   Resolve                             0x0000000103a94dd8 _ZN9QtPrivate11QSlotObjectIM26TimelineBackupAsyncManagerFvRK12BtWeakHandleI17Sm2MpTimelineClipEENS_4ListIJS6_EEEvE4implEiPNS_15QSlotObjectBaseEP7QObjectPPvPb + 21652
+10  Resolve                             0x00000001027f2c44 _ZN15QtSharedPointer33ExternalRefCountWithCustomDeleterIN5DbObj18LockDbModifiedTimeENS_13NormalDeleterEE7deleterEPNS_20ExternalRefCountDataE + 24716
+11  Resolve                             0x00000001027f24f4 _ZN15QtSharedPointer33ExternalRefCountWithCustomDeleterIN5DbObj18LockDbModifiedTimeENS_13NormalDeleterEE7deleterEPNS_20ExternalRefCountDataE + 22844
+12  Resolve                             0x00000001027f204c _ZN15QtSharedPointer33ExternalRefCountWithCustomDeleterIN5DbObj18LockDbModifiedTimeENS_13NormalDeleterEE7deleterEPNS_20ExternalRefCountDataE + 21652
+13  Resolve                             0x00000001023d2520 _ZN14BtSerializable14CreateInstanceEv + 58696
+14  libsystem_pthread.dylib             0x0000000181751f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x000000018174cd34 thread_start + 8
+Signal Number = 6
+
+================================

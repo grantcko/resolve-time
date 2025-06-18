@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MonitorIO systemAudio="1">
+	<MonitorCircuit index="0">
+		<SpeakerSets>
+			<SpeakerSet Name="Main" Index="0" Device="BuiltInHeadphoneOutputDevice" OutputFormat="2">
+				<Outputs>
+					<Output outputStem="L" destModule="MT_AUDIO_OUT" destIndex="0" destParameter="AUDIO_OUTPUT"/>
+					<Output outputStem="R" destModule="MT_AUDIO_OUT" destIndex="1" destParameter="AUDIO_OUTPUT"/>
+				</Outputs>
+				<DirectOutputs>
+				</DirectOutputs>
+			</SpeakerSet>
+			<SpeakerSet Name="Near" Index="1" Device="BuiltInSpeakerDevice" OutputFormat="2">
+				<Outputs>
+					<Output outputStem="L" destModule="MT_AUDIO_OUT" destIndex="0" destParameter="AUDIO_OUTPUT"/>
+					<Output outputStem="R" destModule="MT_AUDIO_OUT" destIndex="1" destParameter="AUDIO_OUTPUT"/>
+				</Outputs>
+				<DirectOutputs>
+				</DirectOutputs>
+			</SpeakerSet>
+		</SpeakerSets>
+
+		<ExternalMonitorSources>
+			<ExternalMonitorSource Name="Ext 1" Index="0" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 2" Index="1" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 3" Index="2" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 4" Index="3" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 5" Index="4" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 6" Index="5" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 7" Index="6" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 8" Index="7" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 9" Index="8" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 10" Index="9" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 11" Index="10" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 12" Index="11" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 13" Index="12" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 14" Index="13" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 15" Index="14" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 16" Index="15" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+		</ExternalMonitorSources>
+	</MonitorCircuit>
+
+	<MonitorCircuit index="1">
+		<ExternalMonitorSources>
+			<ExternalMonitorSource Name="Ext 1" Index="0" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 2" Index="1" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 3" Index="2" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 4" Index="3" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 5" Index="4" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 6" Index="5" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 7" Index="6" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 8" Index="7" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 9" Index="8" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 10" Index="9" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 11" Index="10" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 12" Index="11" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 13" Index="12" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 14" Index="13" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 15" Index="14" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+			<ExternalMonitorSource Name="Ext 16" Index="15" InputFormat="0">
+				<Inputs>
+				</Inputs>
+			</ExternalMonitorSource>
+		</ExternalMonitorSources>
+	</MonitorCircuit>
+
+</MonitorIO>

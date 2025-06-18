@@ -1,26 +1,77 @@
 # Python cache files
 __pycache__/
 *.py[cod]
+*$py.class
 
-# Virtual environment folder
+# Virtual environment folders
 venv/
+env/
+ENV/
+.venv/
+.env/
 
 # pytest cache files
 .pytest_cache/
+.coverage
+htmlcov/
 
 # Build files
 *.egg-info/
 *.eggs/
+build/
+dist/
 
 # Python packaging artifacts
-dist/
-build/
+*.egg
+*.whl
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Aider files
 .aider*
 
 # Temporary files
 *.tmp
+*.temp
+*.log
 
-# MacOS-specific metadata (if applicable)
+# OS-specific files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# mypy cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Rope project settings
+.ropeproject/
+
+# mkdocs documentation
+/site
+
+# Pyre type checker
+.pyre/

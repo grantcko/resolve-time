@@ -1,0 +1,375 @@
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:28,349 | Running DaVinci Resolve v19.0.3.0005 (macOS/Clang arm64)
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:28,349 | BMD_BUILD_UUID b0eab70d-fd13-4e61-8ec9-374f8df0529d
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:28,349 | BMD_GIT_COMMIT 67f92ed0dbc9aa2b4da3ccfaba0b32405cef11ac
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,433 | Starting GPUDetect 1.2_6-a2
+0x1f00ff840    | GPUDetect            | ERROR | 2024-11-21 09:51:28,437 | Failed to query IOKit monitor information
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,437 | Done in 4 ms.
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,437 | Detected System:
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,437 |   - OS: MacOS 15.1.1 (Build 24B91)
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,437 |   - Model: MacBookAir10,1
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,438 |   - System ID: 355291d4-ed86-54a2-8f78-a98dc8a239a6
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,438 |   - CPU: Apple M1, 8 threads, arm64
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,438 |   - RAM: 11.5 GiB used of 16 GiB
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,438 | Detected 1 GPUs:
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,438 |   - "Apple M1" (gpu:685233f3.5a12414b) <- Main Display GPU
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,438 |     Integrated, 10.7 GiB VRAM
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,438 |     Matches: CoreGraphics, Metal, OpenCL
+0x1f00ff840    | GPUDetect            | INFO  | 2024-11-21 09:51:28,438 | Detected 0 monitors:
+0x1f00ff840    | Main.GPUConfig       | INFO  | 2024-11-21 09:51:28,439 | Compute API set to automatic, defaulting to Metal.
+0x1f00ff840    | Main.GPUConfig       | INFO  | 2024-11-21 09:51:28,439 | Selected compute API: Metal
+0x1f00ff840    | Main.GPUConfig       | INFO  | 2024-11-21 09:51:28,439 | Automatic GPU Selection:
+0x1f00ff840    | Main.GPUConfig       | INFO  | 2024-11-21 09:51:28,439 |   - "Apple M1" (gpu:685233f3.5a12414b)
+0x1f00ff840    | IO                   | INFO  | 2024-11-21 09:51:28,439 | RED InitializeSdk with library path at /Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries
+0x1f00ff840    | IO                   | INFO  | 2024-11-21 09:51:28,474 | R3DAPI 8.5.1-53601 (20240308 Ma64S) R3DSDK 8.5.1-53601 (20240308 Ma64D CNBN) RED METAL 8.5.1-53598 (20240308) [/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/] init is successful
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:28,474 | 0 RED rocket cards available
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:28,475 | Decklink model name: '', version: ''
+0x1f00ff840    | DVIP                 | INFO  | 2024-11-21 09:51:28,475 | DVIP release/19.0.3 build 2 (1d2febb1ee4fe874652901b728218e741ecebe06). Release, version 19.0.3.
+0x16fc9f000    | IO                   | INFO  | 2024-11-21 09:51:28,476 | Using DNxHR library v2.7.5.873r
+0x16fc9f000    | IO                   | INFO  | 2024-11-21 09:51:28,480 | Cinematic API bridge is loaded.
+0x16fdb7000    | SyManager            | ERROR | 2024-11-21 09:51:28,480 | GetProjectLibraries() - Access token is empty
+0x16fc13000    | Fusion               | INFO  | 2024-11-21 09:51:28,836 | Fusion Build: 38f265c7_0003 (Oct 11 2024 12:39:17)
+0x1703bb000    | Fusion               | INFO  | 2024-11-21 09:51:28,840 | fusionsystem: = "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/libfusionsystem.dylib"
+0x1703bb000    | Fusion               | INFO  | 2024-11-21 09:51:28,900 | FusionLibs: = "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/"
+0x1703bb000    | Fusion               | INFO  | 2024-11-21 09:51:28,900 | UserData:   = "/Users/granthall/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion"
+0x1703bb000    | Fusion               | INFO  | 2024-11-21 09:51:28,900 | Profiles:   = "UserData:Profiles/"
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:28,942 | UI language is set to "en".
+Attribute Qt::AA_ShareOpenGLContexts must be set before QCoreApplication is created.
+0x1704d3000    | DbCommon2            | INFO  | 2024-11-21 09:51:28,945 | Loading dblist file: /Users/granthall/Library/Preferences/Blackmagic Design/DaVinci Resolve/dblist.conf
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:28,975 | Finished loading Application style sheet
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:29,017 | Show splash screen
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:29,017 | Show splash screen message: Starting Up
+*********** WITH DIRECT I/O SWITCHED ON!
+*********** WITH DIRECT I/O SWITCHED ON!
+0x1f00ff840    | IO                   | INFO  | 2024-11-21 09:51:29,054 | Adding directory /Volumes to directory watching list
+2024-11-21 09:51:29.175 Resolve[7204:139419] +[IMKClient subclass]: chose IMKClient_Modern
+2024-11-21 09:51:29.175 Resolve[7204:139419] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+0x1f00ff840    | UI.GLContext         | INFO  | 2024-11-21 09:51:29,221 | Creating shared OpenGL context for this thread (1 total).
+0x1f00ff840    | UI.GLContext         | INFO  | 2024-11-21 09:51:29,295 | Initialized OpenGL 2.1 (requested 2.0) on device 'Apple Apple M1'
+0x174947000    | LeManager            | INFO  | 2024-11-21 09:51:29,326 | 521, 29
+0x1f00ff840    | BtCommon             | INFO  | 2024-11-21 09:51:29,326 | Memory config: reserved=4055M pinned=3041M log=0
+0x1f00ff840    | BtCommon             | INFO  | 2024-11-21 09:51:29,327 | Using default pooled memory manager
+0x1749d3000    | BtCommon             | INFO  | 2024-11-21 09:51:29,327 | BtResourceManager Process Thread Started
+0x1f00ff840    | IO                   | INFO  | 2024-11-21 09:51:29,394 | Setting codec capacity (0)
+0x1f00ff840    | SyManager            | INFO  | 2024-11-21 09:51:29,397 | Total: 20, NumDtThreads: 8, NumComms: 0, NumSites: 1
+
+0x1f00ff840    | SyManager            | INFO  | 2024-11-21 09:51:29,397 | Lookaheads -> playback = 20, record = 20, stop = 2
+
+Sy High Command Handler Thread ----- (6253719552)
+SY high priority cmd handler thread starts: 74C03000
+Sy Low Command Handler Thread ----- (6254292992)
+SY low priority cmd handler thread starts: 74C8F000
+Sy Data Handler Thread ----- (6254866432)
+SY data handler thread starts: 74D1B000
+Gs High Command Handler Thread ----- (6256013312)
+GS high priority cmd handler thread starts: 74E33000
+Gs Low Command Handler Thread ----- (6256586752)
+GS low priority cmd handler thread starts: 74EBF000
+0x174f4b000    | GsManager            | INFO  | 2024-11-21 09:51:29,405 | Gs Processor Thread ----- (6257160192)
+
+Dp High Command Handler Thread ----- (6257733632)
+DP high priority cmd handler thread starts: 74FD7000
+Dp Low Command Handler Thread ----- (6258307072)
+DP low priority cmd handler thread starts: 75063000
+GS processor thread starts: 74F4B000
+Dt High Command Handler Thread ----- (6258880512)
+DT high priority cmd handler thhread starts: 750EF000
+Dt Low Command Handler Thread ----- (6259453952)
+DT low priority cmd handler thread starts: 7517B000
+0x1f00ff840    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Using 8 generic IO threads
+0x175207000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Data Handler Thread Started
+DT data handler thread starts: 75207000
+0x1f00ff840    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Total of 16 IO threads (including 8 generic and 8 Red decode threads)
+0x175293000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+0x1753ab000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+0x175437000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+0x17531f000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+0x17577f000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+0x17554f000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+0x175a3b000    | DtManager            | INFO  | 2024-11-21 09:51:29,406 | Dt Worker Thread Started
+0x175b53000    | DtManager            | INFO  | 2024-11-21 09:51:29,406 | Dt Worker Thread Started
+Ls High Command Handler Thread ----- (6270922752)
+Ls Low Command Handler Thread ----- (6271496192)
+LS low priority cmd handler thread starts: 75CF7000
+0x1756f3000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+0x1754c3000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+Ls High Command Handler Thread ----- (6272643072)
+Ls Low Command Handler Thread ----- (6273216512)
+LS low priority cmd handler thread starts: 75E9B000
+0x17580b000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+Ls High Command Handler Thread ----- (6274363392)
+Ls Low Command Handler Thread ----- (6274936832)
+LS low priority cmd handler thread starts: 7603F000
+0x175897000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+Mem Data Transmitter Thread ----- (6276083712)
+Mem data transmitter thread starts: 76157000
+0x175923000    | DtManager            | INFO  | 2024-11-21 09:51:29,406 | Dt Worker Thread Started
+0x1755db000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+0x1759af000    | DtManager            | INFO  | 2024-11-21 09:51:29,406 | Dt Worker Thread Started
+0x175bdf000    | DtManager            | INFO  | 2024-11-21 09:51:29,406 | Dt Worker Thread Started
+0x175ac7000    | DtManager            | INFO  | 2024-11-21 09:51:29,406 | Dt Worker Thread Started
+0x175667000    | DtManager            | INFO  | 2024-11-21 09:51:29,405 | Dt Worker Thread Started
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:29,406 | Show splash screen message: Loading Project Libraries
+Ls Data Handler Thread ----- (6272069632)
+Ls Data Handler Thread ----- (6273789952)
+LS data handler thread starts: 75F27000
+Ls Data Handler Thread ----- (6275510272)
+LS data handler thread starts: 75D83000
+0x1760cb000    | GPU.MultiBoardMgr    | INFO  | 2024-11-21 09:51:29,419 | Let There Be Metal Light!
+0x1760cb000    | GPU.MultiBoardMgr    | INFO  | 2024-11-21 09:51:29,419 | Initializing Metal board manager for Main Display GPU gpu:685233f3.5a12414b.
+0x176387000    | GPU.SingleBoardMgr   | INFO  | 2024-11-21 09:51:29,425 | Board manager thread for "Apple M1" (gpu:685233f3.5a12414b) is ready.
+0x1760cb000    | UI.GLInterop         | INFO  | 2024-11-21 09:51:29,425 | OpenGL interop was initialized.
+0x1760cb000    | UI.GLInterop         | INFO  | 2024-11-21 09:51:29,425 | OpenGL interop was initialized.
+0x1760cb000    | GPU.MultiBoardMgr    | INFO  | 2024-11-21 09:51:29,425 | Enabled Metal pinned memory.
+LS data handler thread starts: 760CB000
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:29,456 | Show splash screen message: Initializing system components
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:29,460 | Show splash screen message: Loading video codecs
+0x16fc9f000    | IO                   | INFO  | 2024-11-21 09:51:30,429 | IO codec library load completed in 1953 ms.
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:30,429 | Show splash screen message: Loading video plugins
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:30,432 | Show splash screen message: Loading Fairlight Engine
+0x16fc9f000    | IO                   | INFO  | 2024-11-21 09:51:30,464 | IO codec initialization completed in 35 ms.
+0x1f00ff840    | Fairlight            | INFO  | 2024-11-21 09:51:30,823 | 00.00.00.387(001): Running Fairlight (07f8be727ff43663d2ebe3fae8d4323097162fb5)
+0x1f00ff840    | FairlightLoader      | INFO  | 2024-11-21 09:51:30,823 | Fairlight lib initialized in 389 ms.
+0x36168b000    | UI.GLContext         | INFO  | 2024-11-21 09:51:30,824 | Creating shared OpenGL context for this thread (2 total).
+0x36168b000    | UI.GLIO              | INFO  | 2024-11-21 09:51:30,825 | Initialized MainPlayer OpenGL I/O on Metal device 'Apple M1'
+0x1f00ff840    | UI.GLIO              | INFO  | 2024-11-21 09:51:30,825 | MainPlayer: OpenGL I/O setup done.
+0x361717000    | UI.GLContext         | INFO  | 2024-11-21 09:51:30,825 | Creating shared OpenGL context for this thread (3 total).
+0x361717000    | UI.GLIO              | INFO  | 2024-11-21 09:51:30,826 | Initialized AuxPlayer OpenGL I/O on Metal device 'Apple M1'
+0x1f00ff840    | UI.GLIO              | INFO  | 2024-11-21 09:51:30,826 | AuxPlayer: OpenGL I/O setup done.
+0x3617a3000    | UI.GLContext         | INFO  | 2024-11-21 09:51:30,826 | Creating shared OpenGL context for this thread (4 total).
+0x3617a3000    | UI.Scopes            | INFO  | 2024-11-21 09:51:30,827 | Initialized GPU Scopes Manager on Metal device 'Apple M1'
+0x1f00ff840    | UI.MenuBar           | WARN  | 2024-11-21 09:51:30,898 | Main menu action [workspaceLayoutFusion_sub001Default]'s slot is not defined: workspaceLayoutFusion_sub001Default_triggered()
+0x1f00ff840    | FusionUtils          | WARN  | 2024-11-21 09:51:30,906 | Fusion DoAction ACTION_SET_FUSION_HOTKEY ignored, init not completed
+SY panel handler thread starts: 61987000
+socket: 36
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:30,942 | Show splash screen message: Loading Project Settings
+DaVinci Panel API Version: 1.0
+Resolve discovery
+2024-11-21 09:51:31.232 Resolve[7204:139419] WARNING: Add NSCameraUseContinuityCameraDeviceType to your Info.plist to use AVCaptureDeviceTypeContinuityCamera.
+2024-11-21 09:51:31.341 Resolve[7204:139419] WARNING: AVCaptureDeviceTypeExternal is deprecated for Continuity Cameras. Please use AVCaptureDeviceTypeContinuityCamera and add NSCameraUseContinuityCameraDeviceType to your Info.plist.
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:31,470 | Show splash screen message: Loading Media Page
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:31,517 | Action [fairlightImmersiveAmbisonicsMetering] is not a global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:31,517 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:31,517 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:31,517 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:31,517 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1f00ff840    | UI.FairlightInterface | WARN  | 2024-11-21 09:51:31,586 | SetActionEnabled: Failed to find action [viewTimelineScrollingFixed]'s action connector for handler Id [1]
+0x1770a3000    | Fusion               | INFO  | 2024-11-21 09:51:31,700 | 318 templates scanned in 0.09 secs
+Unknown property letter-spacing
+Unknown property letter-spacing
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:31,747 | Show splash screen message: Loading Cut Page
+0x1f00ff840    | UI.SpeedTimeline     | INFO  | 2024-11-21 09:51:31,805 | Replay UI is enabled.
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:31,926 | OFX - plugin not supported on this platform, is being skipped
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:31,967 | Show splash screen message: Loading Edit Page
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:32,114 | OFX - plugin not supported on this platform, is being skipped
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:32,143 | Show splash screen message: Loading Fusion Page
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:32,194 | Show splash screen message: Loading Fairlight Page
+2024-11-21 09:51:32.303 Resolve[7204:139419] CAMetalLayer ignoring invalid setDrawableSize width=89.000000 height=0.000000
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:32,309 | Show splash screen message: Loading Color Page
+libpng warning: iCCP: known incorrect sRGB profile
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:32,396 | OFX - plugin not supported on this platform, is being skipped
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:33,216 | Show splash screen message: Loading Waveform Monitor
+****************** Flushing GPU Buffers
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:33,443 | Show splash screen message: Loading Audio Plugins
+0x1f00ff840    | SyManager            | INFO  | 2024-11-21 09:51:33,516 | Collaboration IP  Port 0
+0x1f00ff840    | DbCommon2            | INFO  | 2024-11-21 09:51:33,516 | Sm2SysIdEntry is not supported in local project library (xml) mode
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:33,523 | Show splash screen message: Loading Projects
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 09:51:33,542 | Current user pointer is changed
+0x1f00ff840    | IO                   | INFO  | 2024-11-21 09:51:33,573 | RED rocket decode has been disabled in the config file
+Resolve discovery
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:33,830 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:33,830 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:33,830 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:33,830 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-11-21 09:51:33,895 | Start purging still caches
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-11-21 09:51:33,895 | Finish purging still caches
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 09:51:33,927 | Media pool relink status changed to 0
+0x1f00ff840    | FusionUtils          | WARN  | 2024-11-21 09:51:33,935 | Fusion DoAction ACTION_SET_FUSION_HOTKEY ignored, init not completed
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:33,941 | Launching project manager
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 09:51:33,942 | Main view page is changed to 12
+2024-11-21 09:51:33.949 Resolve[7204:139419] Invalid state set [-100].
+2024-11-21 09:51:33.949 Resolve[7204:139419] Invalid state set [-100].
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:33,953 | Show splash screen message: Ready
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:33,971 | Gallery pointer is changed, refreshing color gallery
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:33,975 | Gallery pointer is changed, refreshing gallery browser
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:34,018 | Close splash screen
+0x1f00ff840    | Main                 | INFO  | 2024-11-21 09:51:34,019 | Launching main loop
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 09:51:34,236 | Fusion templates changed
+0x1f00ff840    | SyManager.ActionExecutor | INFO  | 2024-11-21 09:51:36,984 | Database transaction is ongoing, user initiated action Sync Asset Map is postponed
+0x1f00ff840    | SyManager.ActionExecutor | INFO  | 2024-11-21 09:51:37,222 | Database transaction completed, enqueueing 1 postponed actions
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-11-21 09:51:37,964 | Loading project (-CHOP-) from project library (Local Database) took 2122 ms
+****************** Flushing GPU Buffers
+0x371b87000    | SyManager.Signals    | INFO  | 2024-11-21 09:51:38,287 | Media pool relink status changed to 1
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:38,331 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:38,331 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:38,331 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 09:51:38,331 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x176387000    | GPU.SingleBoardMgr   | INFO  | 2024-11-21 09:51:38,432 | Flushing GPU memory...
+0x176387000    | UI.GLContext         | INFO  | 2024-11-21 09:51:38,436 | Creating shared OpenGL context for this thread (5 total).
+0x176387000    | UI.GLTexPool         | INFO  | 2024-11-21 09:51:38,437 | Released 0 MiB in 0 unused textures.
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 09:51:38,468 | Media pool relink status changed to 1
+0x17554f000    | IO                   | ERROR | 2024-11-21 09:51:38,515 | Create Decoder mx5p gets err: -12906
+0x17554f000    | IO                   | ERROR | 2024-11-21 09:51:38,515 | Create Decoder dvh3 gets err: -12906
+0x17554f000    | IO                   | ERROR | 2024-11-21 09:51:38,515 | Create Decoder ai12 gets err: -12906
+0x17554f000    | IO                   | ERROR | 2024-11-21 09:51:38,515 | Create Decoder xalg gets err: -12906
+0x17554f000    | IO                   | ERROR | 2024-11-21 09:51:38,515 | Create Decoder xfi8 gets err: -12906
+0x17554f000    | IO                   | ERROR | 2024-11-21 09:51:38,515 | Create Decoder he22 gets err: -12906
+0x17554f000    | IO                   | ERROR | 2024-11-21 09:51:38,515 | Create Decoder AVdn gets err: -12906
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 09:51:38,772 | Current project pointer changed to (-CHOP-) from DB (Local Database : Local)
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 09:51:38,772 | Current timeline pointer (3840x2160-23.976p) is changed
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:38,821 | The buttonId [7] is not found for [0] in [0]
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:39,125 | Gallery pointer is changed, refreshing color gallery
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:39,131 | Gallery pointer is changed, refreshing gallery browser
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 09:51:39,510 | Main view page is changed to 1
+0x1f00ff840    | UI                   | WARN  | 2024-11-21 09:51:39,510 | Failed to get auto update information.
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 09:51:39,540 | Main view page is changed to 2
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 09:51:39,607 | Main view page is changed to 2
+0x1f00ff840    | UI                   | INFO  | 2024-11-21 09:51:39,610 | Launching main window
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/11c58f9a-b14e-4aa6-9262-33c692eb6440'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:39,631 | No reply received from file system, assume successfully deleted folder /Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/11c58f9a-b14e-4aa6-9262-33c692eb6440.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/11c58f9a-b14e-4aa6-9262-33c692eb6440'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:39,642 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/11c58f9a-b14e-4aa6-9262-33c692eb6440.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/.gallery/11c58f9a-b14e-4aa6-9262-33c692eb6440'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:39,653 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/.gallery/11c58f9a-b14e-4aa6-9262-33c692eb6440.
+0x1f00ff840    | UI.GLDispShader      | INFO  | 2024-11-21 09:51:39,909 | Created 1D LUT texture for LUT size 16384
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/c3e26982-6672-4cea-9237-e99941440ae4'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,085 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/c3e26982-6672-4cea-9237-e99941440ae4.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/779bd9ed-86e4-4f0e-90fc-a44c28ba62d7'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,107 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/779bd9ed-86e4-4f0e-90fc-a44c28ba62d7.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/aaf197a3-e10e-4038-950d-752e8bd2086a'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,129 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/aaf197a3-e10e-4038-950d-752e8bd2086a.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/adbccb63-1a11-4ebe-a899-c46334a41c0a'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,139 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/adbccb63-1a11-4ebe-a899-c46334a41c0a.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/aa6094eb-b37b-4d7e-af80-c36b979ecd75'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,150 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/aa6094eb-b37b-4d7e-af80-c36b979ecd75.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/aad890ad-eccc-45ba-82bb-9cbb0070452f'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,161 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/aad890ad-eccc-45ba-82bb-9cbb0070452f.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/2f9c83e1-98e7-43ba-963d-84d3be521ceb'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,172 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/2f9c83e1-98e7-43ba-963d-84d3be521ceb.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/82db7683-3870-454f-89a4-b885a08507b2'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,183 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/82db7683-3870-454f-89a4-b885a08507b2.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/960358d1-f2ac-4d2c-8c2d-5caeadf33f39'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,194 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/960358d1-f2ac-4d2c-8c2d-5caeadf33f39.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/8eabc8a5-45a6-43c7-b765-971312fb5db0'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,206 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/8eabc8a5-45a6-43c7-b765-971312fb5db0.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/d89f755d-fb80-4ea4-8cdc-e9c811b6599f'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,216 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/d89f755d-fb80-4ea4-8cdc-e9c811b6599f.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/6b099464-fa35-43ab-8557-e1eeb9b22a5b'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,229 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/6b099464-fa35-43ab-8557-e1eeb9b22a5b.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/6840f446-a2ba-4cdb-8386-7b2470155b37'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,240 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/6840f446-a2ba-4cdb-8386-7b2470155b37.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/bf7b5497-e834-4899-b508-273ee6af5dd4'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,250 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/bf7b5497-e834-4899-b508-273ee6af5dd4.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/b2617397-e6c2-446c-b3cd-365840552f6b'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,260 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/b2617397-e6c2-446c-b3cd-365840552f6b.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/13253d0f-a967-4f7c-892c-78f568336d78'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,272 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/13253d0f-a967-4f7c-892c-78f568336d78.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/6efcd04b-5feb-4b1d-bac0-011f8e59f794'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,283 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/6efcd04b-5feb-4b1d-bac0-011f8e59f794.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/ed356dfe-3356-4437-9a44-c6b9c1904a6a'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,294 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/ed356dfe-3356-4437-9a44-c6b9c1904a6a.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/733af018-9774-44a0-ab8c-1a5aac84777e'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:53,305 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/733af018-9774-44a0-ab8c-1a5aac84777e.
+rm: /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/d189d758-aba7-40eb-9ddf-93e85ceca654/e7e78a15-20c7-45a8-a436-4b6ffa4b9a72/89ceedbe-a5c8-4ebb-a273-6061cca6bbe8: Permission denied
+rm: /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/d189d758-aba7-40eb-9ddf-93e85ceca654/e7e78a15-20c7-45a8-a436-4b6ffa4b9a72: Permission denied
+0x1f00ff840    | CmdCommon            | WARN  | 2024-11-21 09:51:56,311 | SendSync() timed out in 3006 ms
+
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:56,311 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/d189d758-aba7-40eb-9ddf-93e85ceca654.
+rm: /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/d189d758-aba7-40eb-9ddf-93e85ceca654: Permission denied
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/d189d758-aba7-40eb-9ddf-93e85ceca654'
+### DEL_DBG IOFileSys::DeleteDirFully[1470] - deletion failed.
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = -1, p_ErrMsg = Deletion of directory failed
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/7d7b2e21-01aa-4242-b6c4-192e81a22bc5'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:56,999 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/7d7b2e21-01aa-4242-b6c4-192e81a22bc5.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/af7bb1fb-04cb-40eb-8578-a49d68d2734a'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:57,010 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/af7bb1fb-04cb-40eb-8578-a49d68d2734a.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/155c5d34-1125-4fcb-b03b-41684aeaa07a'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:57,021 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/155c5d34-1125-4fcb-b03b-41684aeaa07a.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/0bec9219-d35f-4990-b6d9-7724ac883df2'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:57,032 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/0bec9219-d35f-4990-b6d9-7724ac883df2.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/3a8f057a-3b97-48d9-9d63-c6836aac7fd7'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:57,042 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/3a8f057a-3b97-48d9-9d63-c6836aac7fd7.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/Collaboration'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-11-21 09:51:57,053 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/27253df8-4fea-4416-9c54-4956e5147159/Collaboration.
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-11-21 09:52:26,848 | Start saving project -CHOP-
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-11-21 09:52:26,960 | Saving project took 112 ms
+0x1f00ff840    | BtCommon             | INFO  | 2024-11-21 10:06:32,886 | Entering sleep mode
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 10:11:42,488 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 10:11:42,489 | Auto saving current project <-CHOP->
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 10:11:42,492 | Creates an autosave copy for current project in database
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 10:11:42,595 | Previous autosave backup Project.db.20241102233717 for project -CHOP- removed
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-11-21 10:11:42,605 | Started loading 2 stills into the cache
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-11-21 10:11:42,621 | Finished loading 2 still objects into the cache
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 10:11:42,792 | Incremental backup to '/Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/27253df8-4fea-4416-9c54-4956e5147159/Project.db.20241121101142' from the original /Users/granthall/Library/Application Support/Blackmagic Design/DaVinci Resolve/Resolve Disk Database/Resolve Projects/Users/guest/Projects/-CHOP-/Project.db
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 10:11:42,844 | -CHOP- backup is created in 355 ms.
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 10:31:44,329 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-11-21 10:31:44,333 | Suppressed autosave project -CHOP- as it has nothing to save
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 10:51:44,363 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-11-21 10:51:44,366 | Suppressed autosave project -CHOP- as it has nothing to save
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 11:11:44,696 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-11-21 11:11:44,699 | Suppressed autosave project -CHOP- as it has nothing to save
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 11:31:45,155 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-11-21 11:31:45,161 | Suppressed autosave project -CHOP- as it has nothing to save
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 11:51:46,759 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-11-21 11:51:46,767 | Suppressed autosave project -CHOP- as it has nothing to save
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 12:11:47,024 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-11-21 12:11:47,038 | Suppressed autosave project -CHOP- as it has nothing to save
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 12:31:48,116 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-11-21 12:31:48,125 | Suppressed autosave project -CHOP- as it has nothing to save
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 12:51:49,428 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-11-21 12:51:49,430 | Suppressed autosave project -CHOP- as it has nothing to save
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 13:11:49,597 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-11-21 13:11:49,608 | Suppressed autosave project -CHOP- as it has nothing to save
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-11-21 13:31:50,612 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-11-21 13:31:50,621 | Suppressed autosave project -CHOP- as it has nothing to save
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 13:46:04,020 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 13:46:04,021 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 13:46:04,021 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-11-21 13:46:04,021 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1f00ff840    | SyManager.Project    | INFO  | 2024-11-21 13:46:04,163 | Unlock project -CHOP-
+0x1f00ff840    | DbCommon2            | INFO  | 2024-11-21 13:46:04,276 | Active collaborators cleared
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-11-21 13:46:04,277 | Start purging still caches
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-11-21 13:46:04,278 | Finish purging still caches
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-11-21 13:46:04,406 | Media pool relink status changed to 0
+Accepted close event on main window
+0x174947000    | LeManager            | INFO  | 2024-11-21 13:46:04,680 | 522, 92
+2024-11-21 13:46:04.804 Resolve[7204:139419] CAMetalLayer ignoring invalid setDrawableSize width=25.000000 height=0.000000
+2024-11-21 13:46:04.804 Resolve[7204:139419] CAMetalLayer ignoring invalid setDrawableSize width=24.000000 height=0.000000
+2024-11-21 13:46:04.805 Resolve[7204:139419] CAMetalLayer ignoring invalid setDrawableSize width=100.000000 height=0.000000
+2024-11-21 13:46:04.805 Resolve[7204:139419] CAMetalLayer ignoring invalid setDrawableSize width=100.000000 height=0.000000
+2024-11-21 13:46:04.806 Resolve[7204:139419] CAMetalLayer ignoring invalid setDrawableSize width=100.000000 height=0.000000
+2024-11-21 13:46:04.806 Resolve[7204:139419] CAMetalLayer ignoring invalid setDrawableSize width=100.000000 height=0.000000
+2024-11-21 13:46:04.806 Resolve[7204:139419] CAMetalLayer ignoring invalid setDrawableSize width=100.000000 height=0.000000
+2024-11-21 13:46:04.806 Resolve[7204:139419] CAMetalLayer ignoring invalid setDrawableSize width=100.000000 height=0.000000
+2024-11-21 13:46:04.820 Resolve[7204:139419] CAMetalLayer ignoring invalid setDrawableSize width=89.000000 height=0.000000

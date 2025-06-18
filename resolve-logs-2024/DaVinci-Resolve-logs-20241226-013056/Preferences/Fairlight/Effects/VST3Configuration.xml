@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Effects version="1.1">
+	<Effect>
+		<Path>/Library/Audio/Plug-Ins/VST3/Surge.vst3</Path>
+		<FileTime>2021-04-21 04:44</FileTime>
+		<Name>Surge</Name>
+		<ID>27B63CC33070416EB55E773970D3F5D4</ID>
+		<Categories>Instrument|Synth</Categories>
+		<CategoryMask>128</CategoryMask>
+		<Favourite>0</Favourite>
+		<Vendor>Surge Synth Team</Vendor>
+		<Inputs>0</Inputs>
+		<Outputs>0</Outputs>
+		<Enabled>1</Enabled>
+		<Working>1</Working>
+	</Effect>
+	<Effect>
+		<Path>/Library/Audio/Plug-Ins/VST3/RX 8 Voice De-noise.vst3</Path>
+		<FileTime>2022-10-16 19:37</FileTime>
+		<Name>RX 8 Voice De-noise</Name>
+		<ID>565354723844305258203820566F6963</ID>
+		<Categories>Fx|Restoration</Categories>
+		<CategoryMask>4096</CategoryMask>
+		<Favourite>0</Favourite>
+		<Vendor>iZotope</Vendor>
+		<Inputs>2</Inputs>
+		<Outputs>2</Outputs>
+		<Enabled>1</Enabled>
+		<Working>1</Working>
+	</Effect>
+	<Effect>
+		<Path>/Library/Audio/Plug-Ins/VST3/RX 8 De-hum.vst3</Path>
+		<FileTime>2022-10-16 19:37</FileTime>
+		<Name>RX 8 De-hum</Name>
+		<ID>56535472384830525820382044652D68</ID>
+		<Categories>Fx|Restoration</Categories>
+		<CategoryMask>4096</CategoryMask>
+		<Favourite>0</Favourite>
+		<Vendor>iZotope</Vendor>
+		<Inputs>2</Inputs>
+		<Outputs>2</Outputs>
+		<Enabled>1</Enabled>
+		<Working>1</Working>
+	</Effect>
+	<Effect>
+		<Path>/Library/Audio/Plug-Ins/VST3/RX 8 De-click.vst3</Path>
+		<FileTime>2022-10-16 19:37</FileTime>
+		<Name>RX 8 De-click</Name>
+		<ID>56535472384B30525820382044652D63</ID>
+		<Categories>Fx|Restoration</Categories>
+		<CategoryMask>4096</CategoryMask>
+		<Favourite>0</Favourite>
+		<Vendor>iZotope</Vendor>
+		<Inputs>2</Inputs>
+		<Outputs>2</Outputs>
+		<Enabled>1</Enabled>
+		<Working>1</Working>
+	</Effect>
+	<Effect>
+		<Path>/Library/Audio/Plug-Ins/VST3/RX 8 De-clip.vst3</Path>
+		<FileTime>2022-10-16 19:37</FileTime>
+		<Name>RX 8 De-clip</Name>
+		<ID>56535472385030525820382044652D63</ID>
+		<Categories>Fx|Restoration</Categories>
+		<CategoryMask>4096</CategoryMask>
+		<Favourite>0</Favourite>
+		<Vendor>iZotope</Vendor>
+		<Inputs>2</Inputs>
+		<Outputs>2</Outputs>
+		<Enabled>1</Enabled>
+		<Working>1</Working>
+	</Effect>
+	<Effect>
+		<Path>/Library/Audio/Plug-Ins/VST3/SurgeEffectsBank.vst3</Path>
+		<FileTime>2021-04-21 04:45</FileTime>
+		<Name>SurgeEffectsBank</Name>
+		<ID>ABCDEF019182FAEB566D624153465842</ID>
+		<Categories>Fx</Categories>
+		<CategoryMask>0</CategoryMask>
+		<Favourite>0</Favourite>
+		<Vendor>Surge Synth Team</Vendor>
+		<Inputs>2</Inputs>
+		<Outputs>2</Outputs>
+		<Enabled>1</Enabled>
+		<Working>1</Working>
+	</Effect>
+</Effects>

@@ -1,0 +1,521 @@
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:47,287 | Running DaVinci Resolve v19.0.3.0005 (macOS/Clang arm64)
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:47,287 | BMD_BUILD_UUID b0eab70d-fd13-4e61-8ec9-374f8df0529d
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:47,287 | BMD_GIT_COMMIT 67f92ed0dbc9aa2b4da3ccfaba0b32405cef11ac
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,381 | Starting GPUDetect 1.2_6-a2
+0x1f00ff840    | GPUDetect            | ERROR | 2024-12-07 18:01:47,382 | Failed to query IOKit monitor information
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 | Done in 1 ms.
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 | Detected System:
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 |   - OS: MacOS 15.1.1 (Build 24B91)
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 |   - Model: MacBookAir10,1
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 |   - System ID: 355291d4-ed86-54a2-8f78-a98dc8a239a6
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 |   - CPU: Apple M1, 8 threads, arm64
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 |   - RAM: 9.5 GiB used of 16 GiB
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 | Detected 1 GPUs:
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 |   - "Apple M1" (gpu:685233f3.5a12414b) <- Main Display GPU
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 |     Integrated, 10.7 GiB VRAM
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 |     Matches: CoreGraphics, Metal, OpenCL
+0x1f00ff840    | GPUDetect            | INFO  | 2024-12-07 18:01:47,382 | Detected 0 monitors:
+0x1f00ff840    | Main.GPUConfig       | INFO  | 2024-12-07 18:01:47,383 | Compute API set to automatic, defaulting to Metal.
+0x1f00ff840    | Main.GPUConfig       | INFO  | 2024-12-07 18:01:47,383 | Selected compute API: Metal
+0x1f00ff840    | Main.GPUConfig       | INFO  | 2024-12-07 18:01:47,383 | Automatic GPU Selection:
+0x1f00ff840    | Main.GPUConfig       | INFO  | 2024-12-07 18:01:47,383 |   - "Apple M1" (gpu:685233f3.5a12414b)
+0x1f00ff840    | IO                   | INFO  | 2024-12-07 18:01:47,383 | RED InitializeSdk with library path at /Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries
+0x1f00ff840    | IO                   | INFO  | 2024-12-07 18:01:47,404 | R3DAPI 8.5.1-53601 (20240308 Ma64S) R3DSDK 8.5.1-53601 (20240308 Ma64D CNBN) RED METAL 8.5.1-53598 (20240308) [/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/] init is successful
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:47,404 | 0 RED rocket cards available
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:47,404 | Decklink model name: '', version: ''
+0x1f00ff840    | DVIP                 | INFO  | 2024-12-07 18:01:47,404 | DVIP release/19.0.3 build 2 (1d2febb1ee4fe874652901b728218e741ecebe06). Release, version 19.0.3.
+0x16fe4f000    | IO                   | INFO  | 2024-12-07 18:01:47,405 | Using DNxHR library v2.7.5.873r
+0x16ff67000    | SyManager            | ERROR | 2024-12-07 18:01:47,406 | GetProjectLibraries() - Access token is empty
+0x16fe4f000    | IO                   | INFO  | 2024-12-07 18:01:47,407 | Cinematic API bridge is loaded.
+0x16fe4f000    | IO                   | INFO  | 2024-12-07 18:01:47,700 | IO codec library load completed in 295 ms.
+0x16fdc3000    | Fusion               | INFO  | 2024-12-07 18:01:47,704 | Fusion Build: 38f265c7_0003 (Oct 11 2024 12:39:17)
+0x1704df000    | Fusion               | INFO  | 2024-12-07 18:01:47,708 | fusionsystem: = "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/libfusionsystem.dylib"
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:01:47,740 | UI language is set to "en".
+Attribute Qt::AA_ShareOpenGLContexts must be set before QCoreApplication is created.
+0x1705f7000    | DbCommon2            | INFO  | 2024-12-07 18:01:47,741 | Loading dblist file: /Users/granthall/Library/Preferences/Blackmagic Design/DaVinci Resolve/dblist.conf
+0x1704df000    | Fusion               | INFO  | 2024-12-07 18:01:47,764 | FusionLibs: = "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/"
+0x1704df000    | Fusion               | INFO  | 2024-12-07 18:01:47,764 | UserData:   = "/Users/granthall/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion"
+0x1704df000    | Fusion               | INFO  | 2024-12-07 18:01:47,764 | Profiles:   = "UserData:Profiles/"
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:47,768 | Finished loading Application style sheet
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:47,796 | Show splash screen
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:47,796 | Show splash screen message: Starting Up
+*********** WITH DIRECT I/O SWITCHED ON!
+*********** WITH DIRECT I/O SWITCHED ON!
+0x1f00ff840    | IO                   | INFO  | 2024-12-07 18:01:47,829 | Adding directory /Volumes to directory watching list
+2024-12-07 18:01:47.893 Resolve[85515:4664299] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-07 18:01:47.893 Resolve[85515:4664299] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+0x1f00ff840    | UI.GLContext         | INFO  | 2024-12-07 18:01:47,938 | Creating shared OpenGL context for this thread (1 total).
+0x1f00ff840    | UI.GLContext         | INFO  | 2024-12-07 18:01:48,006 | Initialized OpenGL 2.1 (requested 2.0) on device 'Apple Apple M1'
+0x17c98f000    | LeManager            | INFO  | 2024-12-07 18:01:48,020 | 521, 29
+0x1f00ff840    | BtCommon             | INFO  | 2024-12-07 18:01:48,020 | Memory config: reserved=4055M pinned=3041M log=0
+0x1f00ff840    | BtCommon             | INFO  | 2024-12-07 18:01:48,020 | Using default pooled memory manager
+0x17ca1b000    | BtCommon             | INFO  | 2024-12-07 18:01:48,020 | BtResourceManager Process Thread Started
+0x1f00ff840    | IO                   | INFO  | 2024-12-07 18:01:48,065 | Setting codec capacity (0)
+0x1f00ff840    | SyManager            | INFO  | 2024-12-07 18:01:48,065 | Total: 20, NumDtThreads: 8, NumComms: 0, NumSites: 1
+
+0x1f00ff840    | SyManager            | INFO  | 2024-12-07 18:01:48,065 | Lookaheads -> playback = 20, record = 20, stop = 2
+
+Sy High Command Handler Thread ----- (6388232192)
+SY high priority cmd handler thread starts: 7CC4B000
+Sy Low Command Handler Thread ----- (6388805632)
+SY low priority cmd handler thread starts: 7CCD7000
+Sy Data Handler Thread ----- (6389379072)
+SY data handler thread starts: 7CD63000
+Gs High Command Handler Thread ----- (6390525952)
+GS high priority cmd handler thread starts: 7CE7B000
+Gs Low Command Handler Thread ----- (6391099392)
+GS low priority cmd handler thread starts: 7CF07000
+0x17cf93000    | GsManager            | INFO  | 2024-12-07 18:01:48,071 | Gs Processor Thread ----- (6391672832)
+
+Dp High Command Handler Thread ----- (6392246272)
+DP high priority cmd handler thread starts: 7D01F000
+GS processor thread starts: 7CF93000
+Dp Low Command Handler Thread ----- (6392819712)
+DP low priority cmd handler thread starts: 7D0AB000
+Dt High Command Handler Thread ----- (6393393152)
+DT high priority cmd handler thhread starts: 7D137000
+Dt Low Command Handler Thread ----- (6440595456)
+DT low priority cmd handler thread starts: 7FE3B000
+0x17fec7000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Data Handler Thread Started
+DT data handler thread starts: 7FEC7000
+0x1f00ff840    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Using 8 generic IO threads
+0x1f00ff840    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Total of 16 IO threads (including 8 generic and 8 Red decode threads)
+0x17ff53000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x30e9cb000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x17ffdf000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x30ebfb000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x30eb6f000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x30ed13000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x30eeb7000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x30ef43000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x30ed9f000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x30eae3000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x30ee2b000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x30ec87000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+Ls High Command Handler Thread ----- (13182529536)
+0x30ea57000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+Ls Low Command Handler Thread ----- (13183102976)
+LS low priority cmd handler thread starts: 11C63000
+0x30efcf000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+0x3119a7000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+Ls High Command Handler Thread ----- (13184249856)
+Ls Data Handler Thread ----- (13183676416)
+0x311a33000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+Ls Low Command Handler Thread ----- (13184823296)
+LS data handler thread starts: 11CEF000
+LS low priority cmd handler thread starts: 11E07000
+0x311abf000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+Ls Data Handler Thread ----- (13185396736)
+Ls High Command Handler Thread ----- (13185970176)
+LS data handler thread starts: 11E93000
+0x311b4b000    | DtManager            | INFO  | 2024-12-07 18:01:48,071 | Dt Worker Thread Started
+Ls Data Handler Thread ----- (13195833344)
+Ls Low Command Handler Thread ----- (13186543616)
+LS low priority cmd handler thread starts: 11FAB000
+Mem Data Transmitter Thread ----- (13196406784)
+Mem data transmitter thread starts: 12913000
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:48,071 | Show splash screen message: Loading Project Libraries
+0x312887000    | GPU.MultiBoardMgr    | INFO  | 2024-12-07 18:01:48,073 | Let There Be Metal Light!
+0x312887000    | GPU.MultiBoardMgr    | INFO  | 2024-12-07 18:01:48,073 | Initializing Metal board manager for Main Display GPU gpu:685233f3.5a12414b.
+0x312a2b000    | GPU.SingleBoardMgr   | INFO  | 2024-12-07 18:01:48,077 | Board manager thread for "Apple M1" (gpu:685233f3.5a12414b) is ready.
+0x312887000    | UI.GLInterop         | INFO  | 2024-12-07 18:01:48,077 | OpenGL interop was initialized.
+0x312887000    | UI.GLInterop         | INFO  | 2024-12-07 18:01:48,077 | OpenGL interop was initialized.
+0x312887000    | GPU.MultiBoardMgr    | INFO  | 2024-12-07 18:01:48,077 | Enabled Metal pinned memory.
+LS data handler thread starts: 12887000
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:48,098 | Show splash screen message: Initializing system components
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:48,101 | Show splash screen message: Loading video codecs
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:48,102 | Show splash screen message: Loading video plugins
+0x16fe4f000    | IO                   | INFO  | 2024-12-07 18:01:48,117 | IO codec initialization completed in 15 ms.
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:48,131 | Show splash screen message: Loading Fairlight Engine
+0x1f00ff840    | Fairlight            | INFO  | 2024-12-07 18:01:48,978 | 00.00.00.844(001): Running Fairlight (07f8be727ff43663d2ebe3fae8d4323097162fb5)
+0x1f00ff840    | FairlightLoader      | INFO  | 2024-12-07 18:01:48,978 | Fairlight lib initialized in 845 ms.
+0x33fd07000    | UI.GLContext         | INFO  | 2024-12-07 18:01:48,979 | Creating shared OpenGL context for this thread (2 total).
+0x33fd07000    | UI.GLIO              | INFO  | 2024-12-07 18:01:48,981 | Initialized MainPlayer OpenGL I/O on Metal device 'Apple M1'
+0x1f00ff840    | UI.GLIO              | INFO  | 2024-12-07 18:01:48,981 | MainPlayer: OpenGL I/O setup done.
+0x33ff4b000    | UI.GLContext         | INFO  | 2024-12-07 18:01:48,981 | Creating shared OpenGL context for this thread (3 total).
+0x33ff4b000    | UI.GLIO              | INFO  | 2024-12-07 18:01:48,981 | Initialized AuxPlayer OpenGL I/O on Metal device 'Apple M1'
+0x1f00ff840    | UI.GLIO              | INFO  | 2024-12-07 18:01:48,981 | AuxPlayer: OpenGL I/O setup done.
+0x33ffd7000    | UI.GLContext         | INFO  | 2024-12-07 18:01:48,982 | Creating shared OpenGL context for this thread (4 total).
+0x33ffd7000    | UI.Scopes            | INFO  | 2024-12-07 18:01:48,982 | Initialized GPU Scopes Manager on Metal device 'Apple M1'
+0x1f00ff840    | UI.MenuBar           | WARN  | 2024-12-07 18:01:49,053 | Main menu action [workspaceLayoutFusion_sub001Default]'s slot is not defined: workspaceLayoutFusion_sub001Default_triggered()
+0x1f00ff840    | FusionUtils          | WARN  | 2024-12-07 18:01:49,061 | Fusion DoAction ACTION_SET_FUSION_HOTKEY ignored, init not completed
+SY panel handler thread starts: 402F3000
+socket: 42
+DaVinci Panel API Version: 1.0
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:49,096 | Show splash screen message: Loading Project Settings
+Resolve discovery
+2024-12-07 18:01:49.382 Resolve[85515:4664299] WARNING: Add NSCameraUseContinuityCameraDeviceType to your Info.plist to use AVCaptureDeviceTypeContinuityCamera.
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:49,525 | Show splash screen message: Loading Media Page
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:01:49,572 | Action [fairlightImmersiveAmbisonicsMetering] is not a global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:01:49,572 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:01:49,572 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:01:49,572 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:01:49,572 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1f00ff840    | UI.FairlightInterface | WARN  | 2024-12-07 18:01:49,641 | SetActionEnabled: Failed to find action [viewTimelineScrollingFixed]'s action connector for handler Id [1]
+Unknown property letter-spacing
+Unknown property letter-spacing
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:49,777 | Show splash screen message: Loading Cut Page
+0x1f00ff840    | UI.SpeedTimeline     | INFO  | 2024-12-07 18:01:49,834 | Replay UI is enabled.
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:01:49,954 | OFX - plugin not supported on this platform, is being skipped
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:49,995 | Show splash screen message: Loading Edit Page
+0x31aadf000    | Fusion               | INFO  | 2024-12-07 18:01:50,132 | 318 templates scanned in 0.09 secs
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:01:50,152 | OFX - plugin not supported on this platform, is being skipped
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:50,180 | Show splash screen message: Loading Fusion Page
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:50,231 | Show splash screen message: Loading Fairlight Page
+2024-12-07 18:01:50.350 Resolve[85515:4664299] CAMetalLayer ignoring invalid setDrawableSize width=89.000000 height=0.000000
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:50,356 | Show splash screen message: Loading Color Page
+libpng warning: iCCP: known incorrect sRGB profile
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:01:50,447 | OFX - plugin not supported on this platform, is being skipped
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:51,270 | Show splash screen message: Loading Waveform Monitor
+****************** Flushing GPU Buffers
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:51,491 | Show splash screen message: Loading Audio Plugins
+0x1f00ff840    | SyManager            | INFO  | 2024-12-07 18:01:51,563 | Collaboration IP  Port 0
+0x1f00ff840    | DbCommon2            | INFO  | 2024-12-07 18:01:51,563 | Sm2SysIdEntry is not supported in local project library (xml) mode
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:51,569 | Show splash screen message: Loading Projects
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:01:51,586 | Current user pointer is changed
+0x1f00ff840    | IO                   | INFO  | 2024-12-07 18:01:51,615 | RED rocket decode has been disabled in the config file
+Resolve discovery
+0x3676b7000    | SyManager            | ERROR | 2024-12-07 18:01:51,766 | Failed to parse key (beta) from JsonObject
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:01:51,862 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:01:51,862 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:01:51,862 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:01:51,862 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-12-07 18:01:51,927 | Start purging still caches
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-12-07 18:01:51,927 | Finish purging still caches
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:01:51,959 | Media pool relink status changed to 0
+0x1f00ff840    | FusionUtils          | WARN  | 2024-12-07 18:01:51,968 | Fusion DoAction ACTION_SET_FUSION_HOTKEY ignored, init not completed
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:01:51,975 | Launching project manager
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:01:51,975 | Main view page is changed to 12
+2024-12-07 18:01:51.983 Resolve[85515:4664299] Invalid state set [-100].
+2024-12-07 18:01:51.983 Resolve[85515:4664299] Invalid state set [-100].
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:51,986 | Show splash screen message: Ready
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:01:52,003 | Gallery pointer is changed, refreshing color gallery
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:01:52,007 | Gallery pointer is changed, refreshing gallery browser
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:52,050 | Close splash screen
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 18:01:52,051 | Launching main loop
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:01:52,292 | Fusion templates changed
+0x1f00ff840    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:02:01,121 | Database transaction is ongoing, user initiated action Sync Asset Map is postponed
+0x1f00ff840    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:02:01,201 | Database transaction completed, enqueueing 1 postponed actions
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:02:01,422 | Loading project (modern-theft_1) from project library (Local Database) took 4518 ms
+****************** Flushing GPU Buffers
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,509 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,509 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,509 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,509 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x312a2b000    | GPU.SingleBoardMgr   | INFO  | 2024-12-07 18:02:01,611 | Flushing GPU memory...
+[mp3float @ 0x376adb8f0] Multiple frames in a packet.
+0x312a2b000    | UI.GLContext         | INFO  | 2024-12-07 18:02:01,613 | Creating shared OpenGL context for this thread (5 total).
+0x312a2b000    | UI.GLTexPool         | INFO  | 2024-12-07 18:02:01,614 | Released 0 MiB in 0 unused textures.
+0x312a2b000    | GPU                  | INFO  | 2024-12-07 18:02:01,679 | Loaded Shaper LUT 'Sony/SLog3SGamut3.CineToCine+709.cube'
+0x30e9cb000    | IO                   | ERROR | 2024-12-07 18:02:01,685 | Create Decoder mx5p gets err: -12906
+0x30e9cb000    | IO                   | ERROR | 2024-12-07 18:02:01,685 | Create Decoder dvh3 gets err: -12906
+0x30e9cb000    | IO                   | ERROR | 2024-12-07 18:02:01,685 | Create Decoder ai12 gets err: -12906
+0x30e9cb000    | IO                   | ERROR | 2024-12-07 18:02:01,685 | Create Decoder xalg gets err: -12906
+0x30e9cb000    | IO                   | ERROR | 2024-12-07 18:02:01,685 | Create Decoder xfi8 gets err: -12906
+0x30e9cb000    | IO                   | ERROR | 2024-12-07 18:02:01,685 | Create Decoder he22 gets err: -12906
+0x30e9cb000    | IO                   | ERROR | 2024-12-07 18:02:01,685 | Create Decoder AVdn gets err: -12906
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,703 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,703 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,703 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,703 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:02:01,813 | Current timeline pointer (04_assembly) is changed
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,868 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,868 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,868 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,868 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:02:01,946 | Current timeline pointer (05_rough_1) is changed
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,984 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,984 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,984 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:02:01,984 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:02:02,055 | Media pool relink status changed to 0
+0x3709f3000    | SyManager.Signals    | INFO  | 2024-12-07 18:02:02,087 | Media pool relink status changed to 1
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:02:02,088 | Current project pointer changed to (modern-theft_1) from DB (Local Database : Local)
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:02:02,088 | Current timeline pointer (05_rough_1) is changed
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:02:02,133 | The buttonId [7] is not found for [0] in [0]
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:02:02,137 | Gallery pointer is changed, refreshing color gallery
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:02:02,142 | Gallery pointer is changed, refreshing gallery browser
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:02:02,171 | Main view page is changed to 1
+0x1f00ff840    | UI                   | WARN  | 2024-12-07 18:02:02,171 | Failed to get auto update information.
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:02:02,202 | Main view page is changed to 2
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:02:02,267 | Main view page is changed to 2
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 18:02:02,270 | Launching main window
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/6e898260-2556-4e88-83d0-a26170388453'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-12-07 18:02:02,291 | No reply received from file system, assume successfully deleted folder /Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/6e898260-2556-4e88-83d0-a26170388453.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/CacheClip/6e898260-2556-4e88-83d0-a26170388453'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-12-07 18:02:02,302 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/CacheClip/6e898260-2556-4e88-83d0-a26170388453.
+### DEL_DBG IOFileSys::DeleteDirFully - command = rm -rf '/Users/granthall/Movies/.gallery/6e898260-2556-4e88-83d0-a26170388453'
+### DEL_DBG IOFileSys::DeletePath[1502] p_OSErrCode = 0, p_ErrMsg = 
+0x1f00ff840    | SyManager            | WARN  | 2024-12-07 18:02:02,313 | No reply received from file system, assume successfully deleted folder /Users/granthall/Movies/.gallery/6e898260-2556-4e88-83d0-a26170388453.
+0x1f00ff840    | UI.GLDispShader      | INFO  | 2024-12-07 18:02:02,574 | Created 1D LUT texture for LUT size 16384
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:04:16,460 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:04:16,557 | Saving project took 98 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:04:20,570 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:04:20,648 | Saving project took 78 ms
+2024-12-07 18:04:34.961 Resolve[85515:4664299] TSM AdjustCapsLockLEDForKeyTransitionHandling - _ISSetPhysicalKeyboardCapsLockLED Inhibit
+Resolve discovery
+0x1f00ff840    | SyManager            | WARN  | 2024-12-07 18:04:48,020 | MsModel | FolderEntry failed with 1:002:/Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups
+0x1f00ff840    | SyManager            | WARN  | 2024-12-07 18:04:48,021 | MsModel | FolderEntry failed with 1:002:/Volumes/TASTY/DaVinciResolveBackups/project-backups
+0x1f00ff840    | SyManager            | WARN  | 2024-12-07 18:04:48,021 | MsModel | FolderEntry failed with 1:002:/Volumes/TASTY/DaVinciResolveBackups
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:05:40,176 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:05:40,254 | Saving project took 78 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:07:16,196 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:07:16,267 | Saving project took 71 ms
+2024-12-07 18:08:29.287 Resolve[85515:4664299] Invalid state set [-100].
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:08:36,611 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:08:36,685 | Saving project took 74 ms
+2024-12-07 18:08:36.717 Resolve[85515:4664299] Invalid state set [-100].
+[mp3float @ 0x39a10a420] Multiple frames in a packet.
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:09:25,845 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:09:25,918 | Saving project took 73 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:09:27,984 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:09:28,002 | Saving project took 18 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:10:59,952 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:11:00,030 | Saving project took 78 ms
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:17:00,592 | Current timeline pointer (04_assembly) is changed
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:17:00,626 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:17:00,626 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:17:00,626 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:17:00,626 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:17:00,723 | Start saving project modern-theft_1
+0x17cd63000    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:17:00,724 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1f00ff840    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:17:00,740 | Database transaction completed, enqueueing 1 postponed actions
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:17:00,741 | Saving project took 18 ms
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:17:06,196 | Current timeline pointer (05_rough_1) is changed
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:17:06,232 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:17:06,232 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:17:06,232 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:17:06,232 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:17:06,352 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:17:06,367 | Saving project took 15 ms
+0x1f00ff840    | UI                   | WARN  | 2024-12-07 18:17:18,200 | CC thumbnail buffer: TIME out
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:17:50,354 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:17:50,429 | Saving project took 75 ms
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:22:04,485 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:22:04,487 | Auto saving current project <modern-theft_1>
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:22:04,487 | Creates an autosave copy for current project in database
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:22:04,663 | Previous autosave backup Project.db.20241110110703 for project modern-theft_1 removed
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:22:04,703 | Previous autosave backup Project.db.20241110162741 for project modern-theft_1 removed
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-12-07 18:22:04,717 | Started loading 0 stills into the cache
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-12-07 18:22:04,717 | Finished loading 0 still objects into the cache
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:22:04,822 | Incremental backup to '/Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/c526d33f-b956-49e7-bbeb-2a552881d528/Project.db.20241207182204' from the original /Users/granthall/Library/Application Support/Blackmagic Design/DaVinci Resolve/Resolve Disk Database/Resolve Projects/Users/guest/Projects/modern-theft_1/Project.db
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:22:04,860 | modern-theft_1 backup is created in 373 ms.
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:22:36,746 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:22:36,826 | Saving project took 80 ms
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:22:51,861 | Current timeline pointer (chop) is changed
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:22:51,885 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:22:51,885 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:22:51,885 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:22:51,885 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:22:52,001 | Start saving project modern-theft_1
+0x17cd63000    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:22:52,004 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x17cd63000    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:22:52,016 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1f00ff840    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:22:52,018 | Database transaction completed, enqueueing 2 postponed actions
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:22:52,018 | Saving project took 17 ms
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:22:53,232 | Current timeline pointer (05_rough_1) is changed
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:22:53,268 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:22:53,268 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:22:53,268 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:22:53,268 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:22:53,372 | Start saving project modern-theft_1
+0x17cd63000    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:22:53,377 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x17cd63000    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:22:53,381 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x17cd63000    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:22:53,389 | Database transaction is ongoing, user initiated action SmActIOCPSigInvoker is postponed
+0x1f00ff840    | SyManager.ActionExecutor | INFO  | 2024-12-07 18:22:53,390 | Database transaction completed, enqueueing 3 postponed actions
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:22:53,391 | Saving project took 19 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:01,692 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:01,748 | Saving project took 56 ms
+0x1f00ff840    | UI.GLDispShader      | INFO  | 2024-12-07 18:23:03,272 | Created 1D LUT texture for LUT size 16384
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:07,403 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:07,425 | Saving project took 22 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:14,466 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:14,490 | Saving project took 24 ms
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:23:19,455 | Current timeline pointer (06_rough_2) is changed
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:23:19,490 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:23:19,490 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:23:19,490 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:23:19,490 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:19,623 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:19,636 | Saving project took 13 ms
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:32,844 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:32,872 | Saving project took 28 ms
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:39,454 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:23:39,480 | Saving project took 26 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:24:02,345 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:24:02,371 | Saving project took 26 ms
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:24:09,100 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:24:09,130 | Saving project took 30 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:24:31,983 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:24:32,014 | Saving project took 31 ms
+Resolve discovery
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:24:35,981 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:24:36,000 | Saving project took 19 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:25:11,030 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:25:11,065 | Saving project took 35 ms
+2024-12-07 18:25:35.085 Resolve[85515:4664299] Invalid state set [-100].
+2024-12-07 18:25:35.090 Resolve[85515:4664299] Invalid state set [-100].
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:25:35,109 | Main view page is changed to 14
+2024-12-07 18:25:46.819 Resolve[85515:4664299] Invalid state set [-100].
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:25:46,826 | Main view page is changed to 2
+2024-12-07 18:25:49.421 Resolve[85515:4664299] Invalid state set [-100].
+2024-12-07 18:25:49.426 Resolve[85515:4664299] Invalid state set [-100].
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:25:49,441 | Main view page is changed to 14
+2024-12-07 18:26:00.899 Resolve[85515:4664299] Invalid state set [-100].
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 18:26:00,906 | Main view page is changed to 2
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:26:07,107 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:26:07,188 | Saving project took 81 ms
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:28:05,014 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:28:05,075 | Saving project took 61 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:29:25,672 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:29:25,775 | Saving project took 103 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:30:48,069 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:30:48,139 | Saving project took 70 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:30:50,882 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:30:50,970 | Saving project took 88 ms
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:31:53,086 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:31:53,176 | Saving project took 90 ms
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:42:06,472 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:42:06,477 | Auto saving current project <modern-theft_1>
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:42:06,480 | Creates an autosave copy for current project in database
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:42:06,640 | Previous autosave backup Project.db.20241110104701 for project modern-theft_1 removed
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:42:06,642 | Previous autosave backup Project.db.20241110160738 for project modern-theft_1 removed
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-12-07 18:42:06,654 | Started loading 0 stills into the cache
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-12-07 18:42:06,654 | Finished loading 0 still objects into the cache
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:42:06,654 | Incremental backup to /Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/c526d33f-b956-49e7-bbeb-2a552881d528/Project.db.20241207184206 from the previous /Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/c526d33f-b956-49e7-bbeb-2a552881d528/Project.db.20241207182204
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 18:42:06,792 | modern-theft_1 backup is created in 317 ms.
+0x1f00ff840    | BtCommon             | INFO  | 2024-12-07 18:42:50,463 | Entering sleep mode
+0x1f00ff840    | BtCommon             | INFO  | 2024-12-07 18:53:53,873 | Exiting sleep mode
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:53:55,041 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 18:53:55,067 | Saving project took 26 ms
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:54:17,569 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:54:17,569 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:54:17,569 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:54:17,569 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:54:19,027 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:54:19,027 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:54:19,027 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 18:54:19,027 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 19:02:06,926 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 19:02:06,928 | Auto saving current project <modern-theft_1>
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 19:02:06,928 | Creates an autosave copy for current project in database
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 19:02:07,053 | Previous autosave backup Project.db.20241110102700 for project modern-theft_1 removed
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-12-07 19:02:07,063 | Started loading 0 stills into the cache
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-12-07 19:02:07,064 | Finished loading 0 still objects into the cache
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 19:02:07,064 | Incremental backup to /Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/c526d33f-b956-49e7-bbeb-2a552881d528/Project.db.20241207190207 from the previous /Volumes/TASTY/DaVinciResolveBackups/project-backups/Resolve Project Backups/Resolve Project Backups/c526d33f-b956-49e7-bbeb-2a552881d528/Project.db.20241207184206
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 19:02:07,114 | modern-theft_1 backup is created in 186 ms.
+Resolve discovery
+0x1f00ff840    | SyManager.AutoSave   | INFO  | 2024-12-07 19:22:08,876 | Start autosave
+0x1f00ff840    | SyManager.AutoSave   | WARN  | 2024-12-07 19:22:08,879 | Suppressed autosave project modern-theft_1 as it has nothing to save
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 19:28:55,583 | Start saving project modern-theft_1
+0x1f00ff840    | SyManager.ProjectManager | INFO  | 2024-12-07 19:28:55,678 | Saving project took 95 ms
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 19:28:57,276 | Action [fairlightImmersiveGenerateImmersiveMaster] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 19:28:57,276 | Action [fairlightImmersiveRendererSettings] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 19:28:57,276 | Action [fairlightImmersiveEditADMScene] is not a valid global action
+0x1f00ff840    | UI.ActionManager     | WARN  | 2024-12-07 19:28:57,276 | Action [fairlightImmersiveAmbisonicsMetering] is not a valid global action
+0x1f00ff840    | SyManager.Project    | INFO  | 2024-12-07 19:28:57,382 | Unlock project modern-theft_1
+0x1f00ff840    | DbCommon2            | INFO  | 2024-12-07 19:28:57,410 | Active collaborators cleared
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-12-07 19:28:57,410 | Start purging still caches
+0x1f00ff840    | SyManager.Gallery    | INFO  | 2024-12-07 19:28:57,410 | Finish purging still caches
+QWidget::setMinimumSize: (frameFirstCutMain/QFrame) Negative sizes (0,-2) are not possible
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 19:28:57,488 | Media pool relink status changed to 0
+Accepted close event on main window
+0x17c98f000    | LeManager            | INFO  | 2024-12-07 19:28:57,863 | 522, 92
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,095 | Starting terminate sequence by calling g_MainTerm
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,096 | Closing components
+0x1f00ff840    | UI                   | INFO  | 2024-12-07 19:28:58,096 | Audio thread terminated.
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,168 | g_MainTerm: BtStartupShutdownControl.Shutdown() - begin
+Exit SY panel handler
+Exit SY data handler
+0x17cc4b000    | SyManager            | INFO  | 2024-12-07 19:28:58,224 | Exit SY high priority cmd handler
+0x17ccd7000    | SyManager            | INFO  | 2024-12-07 19:28:58,226 | Exit SY low priority cmd handler
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,248 | SvcManager: SyManager.StopThreads() - end
+0x17cf93000    | GsManager            | INFO  | 2024-12-07 19:28:58,249 | Exit GS process handler
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,249 | SvcManager: GsManager.StopThreads() - end
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,249 | SvcManager: DpManager.StopThreads() - end
+0x17fec7000    | DtManager            | INFO  | 2024-12-07 19:28:58,265 | Exit DT data handler thread
+Exit GS low priority cmd handler
+0x17d01f000    | DpManager            | INFO  | 2024-12-07 19:28:58,267 | Exit DP high priority cmd handler
+0x17d0ab000    | DpManager            | INFO  | 2024-12-07 19:28:58,267 | Exit DP low priority cmd handler
+Exit GS high priority cmd handler
+0x17d137000    | DtManager            | INFO  | 2024-12-07 19:28:58,268 | Exit DT high priority cmd handler
+0x17fe3b000    | DtManager            | INFO  | 2024-12-07 19:28:58,274 | Exit DT low priority cmd handler
+0x30ee2b000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x311abf000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x3119a7000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x311a33000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x17ffdf000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30ef43000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30ea57000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30ed9f000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30eae3000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30ec87000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x311b4b000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x17ff53000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30eb6f000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30e9cb000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30ebfb000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30ed13000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30eeb7000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x30efcf000    | DtManager            | INFO  | 2024-12-07 19:28:58,276 | Exit DT worker thread
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,298 | SvcManager: DtManager.StopThreads() - end
+0x311cef000    | LsManager            | INFO  | 2024-12-07 19:28:58,303 | Exit LS data handler
+0x311bd7000    | LsManager            | INFO  | 2024-12-07 19:28:58,307 | Exit LS high priority cmd handler
+0x311c63000    | LsManager            | INFO  | 2024-12-07 19:28:58,309 | Exit LS low priority cmd handler
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,325 | SvcManager: LsManager.StopThreads() - end
+0x311e07000    | LsManager            | INFO  | 2024-12-07 19:28:58,328 | Exit LS low priority cmd handler
+0x311d7b000    | LsManager            | INFO  | 2024-12-07 19:28:58,333 | Exit LS high priority cmd handler
+0x311e93000    | LsManager            | INFO  | 2024-12-07 19:28:58,345 | Exit LS data handler
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,352 | SvcManager: LsManager.StopThreads() - end
+0x311fab000    | LsManager            | INFO  | 2024-12-07 19:28:58,353 | Exit LS low priority cmd handler
+0x311f1f000    | LsManager            | INFO  | 2024-12-07 19:28:58,371 | Exit LS high priority cmd handler
+0x312a2b000    | GPU.SingleBoardMgr   | INFO  | 2024-12-07 19:28:58,472 | Board manager thread for "Apple M1" (gpu:685233f3.5a12414b) is done.
+0x312887000    | LsManager            | INFO  | 2024-12-07 19:28:58,477 | Exit LS data handler
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,483 | SvcManager: LsManager.StopThreads() - end
+Exit memory data transmitter
+Delete service manager
+Delete cmd transmitter/receiver
+Delete data transmitter/receiver
+Delete remote cmd receiver
+Delete remote data receiver
+Exit SiteManager
+0x1f00ff840    | IO                   | INFO  | 2024-12-07 19:28:58,491 | RED FinalizeSdk
+0x1f00ff840    | DbCommon2            | INFO  | 2024-12-07 19:28:58,520 | Active collaborators cleared
+0x1f00ff840    | SyManager.Signals    | INFO  | 2024-12-07 19:28:58,520 | Collaboration connection count has changed
+0x17ca1b000    | BtCommon             | INFO  | 2024-12-07 19:28:58,522 | Exit BtResourceManager Process Thread
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,833 | g_MainTerm: BtStartupShutdownControl.Shutdown() - finished
+0x33ffd7000    | UI.Scopes            | INFO  | 2024-12-07 19:28:58,834 | GPU Scopes thread done.
+0x33fd07000    | UI.GLIO              | INFO  | 2024-12-07 19:28:58,837 | MainPlayer: OpenGL I/O worker thread is done.
+0x1f00ff840    | UI.GLIO              | INFO  | 2024-12-07 19:28:58,839 | MainPlayer: OpenGL I/O uninit done.
+0x33ff4b000    | UI.GLIO              | INFO  | 2024-12-07 19:28:58,839 | AuxPlayer: OpenGL I/O worker thread is done.
+0x1f00ff840    | UI.GLIO              | INFO  | 2024-12-07 19:28:58,840 | AuxPlayer: OpenGL I/O uninit done.
+0x1f00ff840    | UI.GLContext         | INFO  | 2024-12-07 19:28:58,886 | Destroyed main OpenGL context.
+0x1f00ff840    | Main                 | INFO  | 2024-12-07 19:28:58,890 | Main thread exited successfully

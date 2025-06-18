@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalProcesses>
+	<ExternalProcess name="RX" path="/Applications/iZotope RX 8 Audio Editor.app/Contents/MacOS/iZotope RX Pro" type="cmdline"/>
+</ExternalProcesses>

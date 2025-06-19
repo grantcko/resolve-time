@@ -41,8 +41,20 @@ dist/
 *.log
 
 # OS-specific files
+# macOS system files
 .DS_Store
 .DS_Store?
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+# macOS thumbnail cache files
+._*
+# macOS Finder tags
+*.AppleDouble
+# macOS resource fork files
+*.ResourceFork
 ._*
 .Spotlight-V100
 .Trashes
@@ -75,3 +87,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+notion

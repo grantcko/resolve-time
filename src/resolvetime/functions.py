@@ -208,6 +208,8 @@ def entries_info(entries):# returns dict of total and per project summaries for:
             current_project_hours += difference
             compare_timestamp = timestamp
 
+            # Check if the project has changed between consecutive log entries.
+            # If so, save the accumulated hours for the previous project before resetting for the new one.
             if current_project != entry['project_title']:
                 if current_project is not None:
                     project_work_hours[current_project] = project_work_hours.get(current_project, 0) + current_project_hours.total_seconds() / 3600
